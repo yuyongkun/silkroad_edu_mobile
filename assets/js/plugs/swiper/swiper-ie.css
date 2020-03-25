@@ -1,0 +1,53 @@
+.swiper-container,.swiper-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-lazy-preloader {
+    display: none;
+}
+
+.swiper-slide {
+    position: absolute;
+        width: 100%;
+    right: -100%;
+}
+
+    .swiper-slide:first-child {
+        display: block;
+        right: 0px;
+    }
+
+.swiper-pagination {
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    text-align: center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: #459e80;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}

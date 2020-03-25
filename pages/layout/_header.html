@@ -1,0 +1,31 @@
+<div class="header">
+    <div class="header-tp" id="header-tp">
+        <div class="header-menu"></div>
+        <ul class="header-menu-list">
+            <li class="header-menu-first">首页</li>
+            @@include('./_course.html',{
+                "diffCouseName":false
+            })
+            <li class="header-menu-first">联系我们</li>
+        </ul>
+        <div class="header-menu-mask"></div>
+        <div class="header-logo"></div>
+        <div class="header-phone"></div>
+    </div>
+    <div class="header-nav">
+        <ul class="header-nav-wrap">
+            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first">课程
+                <span class="arrow-down"></span>
+                <ul class="header-nav-course">
+                    @@include('./_course.html',{
+                    "diffCouseName":true
+                    })
+                </ul>
+            </li>
+            <li class="header-nav-first">名师</li>
+            <li class="header-nav-first">就业</li>
+            <li class="header-nav-first">关于丝路</li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,277 @@
+@import "variable";
+@import "header_footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    height: 100%;
+    background-color: #f9fafc;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font: 20px/1.5 '微软雅黑', tahoma, arial, Hiragino Sans GB, \5b8b\4f53, sans-serif;
+    color: #3a3a3a;
+}
+
+input {
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #666;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.visiable {
+    display: block;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// 公共
+.swiper-slide {
+    overflow: hidden;
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &:hover {
+        .silkroad-hover-detail {
+            display: flex;
+        }
+    }
+}
+
+// 常用按钮
+.btn {
+    display: inline-block;
+    line-height: 1;
+    border-radius: 4px;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: $base-color;
+    vertical-align: middle;
+    padding: 12px 34px;
+    -webkit-appearance: none;
+    font-family: 微软雅黑;
+    transition: all .1s linear 0s;
+    -webkit-transition: all .1s linear 0s;
+    -moz-transition: all .1s linear 0s;
+    -o-transition: all .1s linear 0s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid $base-color;
+
+    &:hover {
+        background-color: #e43e13;
+    }
+}
+
+// 分页
+.list-pagination {
+    margin: 20px 0;
+    text-align: center;
+
+    ul.pagination .active {
+        color: #fff;
+        background-color: #ff5722;
+        border-color: transparent;
+    }
+
+    ul.pagination .active a,
+    ul.pagination .active a:hover {
+        color: #fff;
+    }
+
+    ul.pagination li {
+        display: inline-block;
+        margin-right: 6px;
+        border-radius: 4px;
+        width: 40px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+        border: 1px solid #eee;
+    }
+
+    ul.pagination li a {
+        display: block;
+        color: #3a3a3a;
+    }
+
+    ul.pagination li a:hover {
+        color: #ff5722;
+    }
+
+    ul.pagination li.disabled a {
+        color: #999;
+    }
+
+    ul.pagination li.disabled a:focus,
+    ul.pagination li.disabled a:hover {
+        color: #999;
+        cursor: not-allowed;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 300px;
+    height: 40px;
+    padding: 6px 12px;
+    border: 1px solid #584d46;
+    background-color: rgba($color: #fff, $alpha: 1);
+    vertical-align: middle;
+    transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    -webkit-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    -moz-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    -o-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+    &:hover {
+        border-color: #6e6e6e;
+    }
+
+    &:focus {
+        border-color: #ff5722;
+        outline: none;
+    }
+}
+
+.form-label-inline {
+    display: inline-block;
+}
+
+.form-label {
+    display: block;
+}
+
+.section {
+    padding: 85px 0 115px;
+
+    .section-title {
+        margin-bottom: 16px;
+        font-size: 34px;
+        text-align: center;
+        color: #333436;
+    }
+
+    .section-describe {
+        margin-bottom: 48px;
+        font-size: 16px;
+        text-align: center;
+        color: #5e5f61;
+    }
+
+    .section-btn {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+.section-bg-white {
+    background-color: #fff;
+}
+
+// 表单
+.section-form {
+    padding: 78px 0px;
+    background-color: #27242b;
+    text-align: center;
+    line-height: 1;
+
+    .section-form-title {
+        font-size: 38px;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    .section-form-txt {
+        margin-bottom: 30px;
+        font-size: 24px;
+        color: #959396;
+
+        em {
+            font-style: normal;
+            color: $base-color;
+        }
+    }
+
+    .section-form-row {
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: center;
+
+        .form-group {
+            margin: 0 13px;
+        }
+    }
+}
+
+// hover详情
+.silkroad-hover-detail {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    h3 {
+        margin-bottom: 35px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .silkroad-hover-intro {
+        p {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    }
+}
