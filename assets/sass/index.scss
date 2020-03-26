@@ -1,2 +1,69 @@
 @import "variable";
 @import "base";
+
+.section-serial {
+    text-align: center;
+    font-family: HiraginoSansGB-W3;
+    font-weight: bold;
+
+    .section-serial-number {
+        font-size: 32rem / $font-size-base;
+    }
+
+    .section-serial-line {
+        height: 10px;
+        margin-bottom: 10px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .section-serial-content {
+        font-size: 28rem / $font-size-base;
+    }
+}
+
+.banner {
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+// 为什么学室内设计？
+.study-design-sec {
+    .section-serial {
+        margin-bottom: 47rem / $font-size-base;
+    }
+
+    .study-design-sec2 {
+        margin-top: 97rem / $font-size-base;
+    }
+}
+// 为何大部分设计师沦为“设计民工”？
+.designing-workers-sec{
+    .section-title{
+        font-weight: bold;
+    }
+    .designing-workers-content{
+        .designing-workers-row{
+            margin-bottom: 99rem/$font-size-base;
+            &:first-child{
+                .designing-workers-area{
+                    display: flex;
+                    justify-content: space-between;
+                    img{
+                        width: 336rem/$font-size-base;
+                    }
+                }
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+        
+    }
+    
+}

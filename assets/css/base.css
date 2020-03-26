@@ -29,7 +29,7 @@
   position: absolute;
   left: 0;
   top: 45px;
-  font-size: 16px;
+  font-size: 0.21333rem;
   z-index: 2;
 }
 
@@ -45,7 +45,7 @@
 .header .header-tp ul.header-menu-list li.header-menu-first ul.header-menu-secondlist {
   display: none;
   color: gray;
-  font-size: 15px;
+  font-size: 0.2rem;
 }
 
 .header .header-tp ul.header-menu-list li.header-menu-first ul.header-menu-secondlist li.header-menu-second {
@@ -95,6 +95,7 @@
 }
 
 .header .header-nav {
+  position: relative;
   background: #fff;
 }
 
@@ -102,7 +103,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
+  height: 1.06667rem;
+  font-size: 0.53333rem;
   padding: 0 15px 0 20px;
 }
 
@@ -110,7 +112,7 @@
   display: flex;
   align-items: center;
   width: 20%;
-  font-size: 14px;
+  font-size: 0.37333rem;
   text-align: center;
   color: #666;
 }
@@ -135,7 +137,7 @@
   display: none;
   position: absolute;
   width: 105px;
-  top: 85px;
+  top: 1.06667rem;
   padding: 10px 20px;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -241,7 +243,7 @@
 
 html, body {
   height: 100%;
-  background-color: #f9fafc;
+  background-color: #fff;
 }
 
 html {
@@ -280,10 +282,19 @@ a:hover {
   display: block;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   position: relative;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 0.4rem;
+}
+
+@font-face {
+  font-family: HiraginoSansGB-W3;
+  src: url("../fonts/冬青黑体W3.otf");
 }
 
 .swiper-slide {
@@ -410,30 +421,30 @@ a:hover {
 }
 
 .section {
-  padding: 85px 0 115px;
+  padding: 1.33333rem 0 1.6rem;
 }
 
 .section .section-title {
-  margin-bottom: 16px;
-  font-size: 34px;
+  margin-bottom: 0.64rem;
+  font-size: 0.8rem;
   text-align: center;
   color: #333436;
 }
 
 .section .section-describe {
-  margin-bottom: 48px;
+  margin-bottom: 0.64rem;
   font-size: 16px;
   text-align: center;
   color: #5e5f61;
 }
 
 .section .section-btn {
-  margin-top: 50px;
+  margin-top: 0.53333rem;
   text-align: center;
 }
 
-.section-bg-white {
-  background-color: #fff;
+.section-bg-gray {
+  background-color: #f9f9f9;
 }
 
 .section-form {
