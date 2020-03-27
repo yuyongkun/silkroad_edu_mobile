@@ -68,20 +68,31 @@
             s.parentNode.insertBefore(hm, s);
         },
         headerMenu: function () {
+            var $headerMask = $('#header-mask');
             var $headerTp = $('#header-tp');
             var $headerMenu = $headerTp.find('.header-menu');
-            var $headerMenuMask = $headerTp.find('.header-menu-mask');
             var $headerMenuList = $headerTp.find('.header-menu-list');
             $headerMenu.bind('click', function () {
-                $headerMenu.toggleClass('header-menu-active');
-                $headerMenuList.toggle();
-                $headerMenuMask.toggle();
-                if ($headerMenuMask[0].style.display !== 'none') {
-                    $headerMenuMask.unbind('click').bind('click', function () {
+                if ($headerMask[0].style.display === 'none' || $headerMask.css('display') === 'none') {
+                    $headerMask.show();
+                    $headerMenuList.show();
+                    $headerMenu.addClass('header-menu-active');
+                } else {
+                    //二级导航显示的话，先隐藏二级导航，再显示menu导航
+                    if ($headernavFirstCourse.find('.header-nav-course:visible').length > 0) {
+                        $headerNavCourse.hide();
+                        $headerMenuList.show();
+                        $headerMenu.addClass('header-menu-active');
+                    } else {
+                        $headerMask.hide();
                         $headerMenuList.hide();
-                        $headerMenuMask.hide();
-                    })
+                        $headerMenu.removeClass('header-menu-active');
+                    }
+
+
                 }
+
+
             });
             var headerMenuFirstLength = $headerMenuList.find('.header-menu-first').length - 1;
             $headerMenuList.find('.header-menu-first').bind('click', function () {
@@ -95,6 +106,31 @@
                 }
 
             });
+
+            // 二级导航 
+            var $headernavFirstCourse = $('#header-nav-first-course');
+            var $headerNavCourse = $headernavFirstCourse.find('.header-nav-course');
+            $headernavFirstCourse.bind('click', function () {
+                $headerNavCourse.toggle();
+                $headerMask.toggle();
+                $headerMenuList.hide();
+                $headernavFirstCourse.find('.header-menu-secondlist').hide();
+            })
+            $headerNavCourse.find('.header-menu-first').bind('click', function (e) {
+                e.stopPropagation();
+                $(this).parent().find('.header-menu-secondlist').hide();
+                $(this).find('.header-menu-secondlist').toggle();
+            })
+            // mask
+            $headerMask.unbind('click').bind('click', function () {
+                $headerMenuList.hide();
+                if ($headerMask[0].style.display === 'none' || $headerMask.css('display') === 'none') {
+                    $headerMask.show();
+                } else {
+                    $headerMask.hide();
+                }
+                $headerNavCourse.hide();
+            })
 
         },
         tabHandler: function () {
