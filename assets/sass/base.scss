@@ -1,6 +1,16 @@
 @import "variable";
 @import "header_footer";
 
+@font-face {
+    font-family: HiraginoSansGB-W3;
+    src: url("../fonts/冬青黑体W3.otf");
+}
+
+@font-face {
+    font-family: HiraginoSansGB-W6;
+    src: url("../fonts/苹果丽黑(W6)－Hiragino Sans GB W6.otf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +21,7 @@
 
 html, body {
     height: 100%;
-    background-color: #fff;
+    background-color: #f9fafc;
 }
 
 html {
@@ -20,7 +30,7 @@ html {
 }
 
 body {
-    font: 20px/1.5 '微软雅黑', tahoma, arial, Hiragino Sans GB, \5b8b\4f53, sans-serif;
+    font: 20px/1.5 HiraginoSansGB-W3, '微软雅黑', tahoma, arial, Hiragino Sans GB, \5b8b\4f53, sans-serif;
     color: #3a3a3a;
 }
 
@@ -49,19 +59,17 @@ a:hover {
 .visiable {
     display: block;
 }
-img{
+
+img {
     max-width: 100%;
 }
+
 .container {
     position: relative;
     width: 100%;
-    padding: 0 30rem/$font-size-base;
+    padding: 0 (30rem / $font-size-base);
 }
-@font-face
-{
-font-family: HiraginoSansGB-W3;
-src: url('../fonts/冬青黑体W3.otf');
-}
+
 // 公共
 .swiper-slide {
     overflow: hidden;
@@ -83,76 +91,20 @@ src: url('../fonts/冬青黑体W3.otf');
     display: inline-block;
     line-height: 1;
     border-radius: 4px;
-    margin: 0;
-    font-size: 18px;
+    font-size: 28rem / $font-size-base;
+    padding: 10px 50px;
+    border: 1px solid $base-color;
     text-align: center;
     color: #fff;
     background-color: $base-color;
-    vertical-align: middle;
-    padding: 12px 34px;
     -webkit-appearance: none;
-    font-family: 微软雅黑;
     transition: all .1s linear 0s;
-    -webkit-transition: all .1s linear 0s;
-    -moz-transition: all .1s linear 0s;
-    -o-transition: all .1s linear 0s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     outline: none;
     cursor: pointer;
-    border: 1px solid $base-color;
 
     &:hover {
         background-color: #e43e13;
-    }
-}
-
-// 分页
-.list-pagination {
-    margin: 20px 0;
-    text-align: center;
-
-    ul.pagination .active {
-        color: #fff;
-        background-color: #ff5722;
-        border-color: transparent;
-    }
-
-    ul.pagination .active a,
-    ul.pagination .active a:hover {
-        color: #fff;
-    }
-
-    ul.pagination li {
-        display: inline-block;
-        margin-right: 6px;
-        border-radius: 4px;
-        width: 40px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 13px;
-        border: 1px solid #eee;
-    }
-
-    ul.pagination li a {
-        display: block;
-        color: #3a3a3a;
-    }
-
-    ul.pagination li a:hover {
-        color: #ff5722;
-    }
-
-    ul.pagination li.disabled a {
-        color: #999;
-    }
-
-    ul.pagination li.disabled a:focus,
-    ul.pagination li.disabled a:hover {
-        color: #999;
-        cursor: not-allowed;
     }
 }
 
@@ -191,63 +143,55 @@ src: url('../fonts/冬青黑体W3.otf');
 }
 
 .section {
-    padding: 100rem/$font-size-base 0 120rem/$font-size-base;
+    padding: (100rem / $font-size-base) 0 (120rem / $font-size-base);
 
     .section-title {
-        margin-bottom: 48rem/$font-size-base;
-        font-size: 60rem/$font-size-base;
+        margin-bottom: 45rem / $font-size-base;
+        font-size: 60rem / $font-size-base;
+        font-family: HiraginoSansGB-W6;
         text-align: center;
         color: #333436;
     }
 
     .section-describe {
-        margin-bottom: 48rem/$font-size-base;
-        font-size: 16px;
+        margin-bottom: 48rem / $font-size-base;
+        font-size: 28rem / $font-size-base;
         text-align: center;
         color: #5e5f61;
     }
 
     .section-btn {
-        margin-top: 40rem/$font-size-base;
+        margin-top: 40rem / $font-size-base;
         text-align: center;
     }
 }
 
-.section-bg-gray {
-    background-color: #f9f9f9;
+.section-bg-write {
+    background-color: #fff;
 }
 
 // 表单
 .section-form {
-    padding: 78px 0px;
     background-color: #27242b;
     text-align: center;
     line-height: 1;
 
-    .section-form-title {
-        font-size: 38px;
-        margin-bottom: 30px;
-        color: #fff;
+    form {
+        width: 640rem / $font-size-base;
+        margin: 0 auto;
     }
 
-    .section-form-txt {
-        margin-bottom: 30px;
-        font-size: 24px;
-        color: #959396;
-
-        em {
-            font-style: normal;
-            color: $base-color;
-        }
+    .form-group {
+        margin-bottom: 30rem / $font-size-base;
     }
 
-    .section-form-row {
-        display: flex;
-        margin-bottom: 40px;
-        justify-content: center;
+    .form-control {
+        width: 100%;
+    }
 
-        .form-group {
-            margin: 0 13px;
+    .form-submit {
+        .btn {
+            width: 100%;
         }
     }
 }
@@ -278,6 +222,48 @@ src: url('../fonts/冬青黑体W3.otf');
             text-align: center;
             margin-bottom: 10px;
             font-size: 16px;
+        }
+    }
+}
+
+// tab切换
+.section-nav-tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    .section-nav-item {
+        cursor: pointer;
+    }
+
+    .section-nav-item.section-nav-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200rem / $font-size-base;
+        height: 50rem / $font-size-base;
+        border-radius: 4px;
+        margin: 0 20px;
+        font-size: 24rem / $font-size-base;
+        color: #4b4b4b;
+        background: #8c8c8c;
+    }
+
+    .section-nav-item.section-nav-btn.section-nav-active {
+        color: #fff;
+        background: $base-color;
+    }
+}
+
+.section-tab-list {
+    .section-tab-col {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &:first-child {
+            display: flex;
         }
     }
 }

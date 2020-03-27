@@ -20,7 +20,7 @@
         }
     }
 
-    .section-serial-content {
+    .section-serial-txt {
         font-size: 28rem / $font-size-base;
     }
 }
@@ -42,28 +42,375 @@
         margin-top: 97rem / $font-size-base;
     }
 }
+
 // 为何大部分设计师沦为“设计民工”？
-.designing-workers-sec{
-    .section-title{
+.designing-workers-sec {
+    .section-title {
         font-weight: bold;
     }
-    .designing-workers-content{
-        .designing-workers-row{
-            margin-bottom: 99rem/$font-size-base;
-            &:first-child{
-                .designing-workers-area{
+
+    .designing-workers-content {
+        .designing-workers-row {
+            margin-bottom: 99rem / $font-size-base;
+
+            &:first-child {
+                .designing-workers-area {
                     display: flex;
                     justify-content: space-between;
-                    img{
-                        width: 336rem/$font-size-base;
+
+                    img {
+                        width: 336rem / $font-size-base;
+                        height: 445rem / $font-size-base;
                     }
                 }
             }
-            &:last-child{
+
+            &:last-child {
                 margin-bottom: 0px;
             }
         }
-        
     }
-    
+}
+
+// 哪些人群 适合学室内设计？
+.fit-design-sec {
+    background: url(/assets/images/index/bj1.jpg) no-repeat center;
+    color: #fff;
+
+    .section-title {
+        color: #fff;
+    }
+
+    .fit-design-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .fit-design-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            margin-bottom: 60rem / $font-size-base;
+
+            dl {
+                text-align: center;
+
+                dt {
+                    line-height: 1;
+                    margin-bottom: 20rem / $font-size-base;
+                    font-size: 24rem / $font-size-base;
+                    color: $base-color;
+                }
+
+                dd {
+                    line-height: 36rem / $font-size-base;
+                    font-size: 20rem / $font-size-base;
+                }
+            }
+        }
+    }
+}
+
+// 为什么选择丝路教育？
+.select-silkroad-reason-sec {
+    .select-silkroad-reason-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .select-silkroad-reason-item {
+            width: 340rem / $font-size-base;
+            text-align: center;
+            margin-bottom: 30rem / $font-size-base;
+
+            h3 {
+                font-size: 20rem / $font-size-base;
+                color: #666666;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+// APEC亚太高端室内设计课程
+.apec-course-sec {
+    padding: 0px;
+
+    .apec-course-sec1 {
+        padding: (100rem / $font-size-base) 0 (120rem / $font-size-base);
+        background: url(/assets/images/index/bj2.jpg) no-repeat center;
+        color: #fff;
+
+        .section-serial {
+            margin-bottom: 56rem / $font-size-base;
+        }
+
+        .section-title {
+            color: #fff;
+        }
+
+        .fit-design-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .fit-design-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                margin-bottom: 100rem / $font-size-base;
+
+                img {
+                    width: 100rem / $font-size-base;
+                    height: 100rem / $font-size-base;
+                    margin-bottom: 30rem / $font-size-base;
+                }
+
+                dl {
+                    text-align: center;
+
+                    dt {
+                        line-height: 1;
+                        margin-bottom: 20rem / $font-size-base;
+                        font-size: 24rem / $font-size-base;
+                        color: $base-color;
+                    }
+
+                    dd {
+                        line-height: 36rem / $font-size-base;
+                        font-size: 20rem / $font-size-base;
+                    }
+                }
+            }
+        }
+    }
+
+    .apec-course-sec2 {
+        height: 1180rem / $font-size-base;
+        padding: (100rem / $font-size-base) 0 (120rem / $font-size-base);
+        background: url(/assets/images/index/bj3.jpg) no-repeat center;
+        background-size: cover;
+
+        .section-serial {
+            margin-bottom: 56rem / $font-size-base;
+        }
+
+        .fit-design-list {
+            text-align: center;
+
+            img {
+                width: 80vw;
+            }
+        }
+    }
+
+    .apec-course-sec3 {
+        padding: (100rem / $font-size-base) 0 (120rem / $font-size-base);
+        background-size: cover;
+
+        .section-serial {
+            margin-bottom: 56rem / $font-size-base;
+        }
+
+        .fit-design-list {
+            text-align: center;
+
+            .fit-design-item {
+                width: 690rem / $font-size-base;
+                height: 360rem / $font-size-base;
+                margin-bottom: 32rem / $font-size-base;
+
+                &:nth-child(odd) {
+                    text-align: left;
+                }
+
+                &:nth-child(even) {
+                    text-align: right;
+                }
+
+                dl {
+                    padding: 36rem / $font-size-base;
+                    color: #fff;
+
+                    dt {
+                        margin-bottom: 40rem / $font-size-base;
+                        font-size: 28rem / $font-size-base;
+                    }
+
+                    dd {
+                        margin-bottom: 10rem / $font-size-base;
+                        font-size: 20rem / $font-size-base;
+
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background: #fff;
+                            margin-right: 5px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+
+                &:first-child {
+                    background: url(/assets/images/index/image9-1.png) no-repeat center;
+                    background-size: cover;
+                }
+
+                &:nth-child(2) {
+                    background: url(/assets/images/index/image9-2.png) no-repeat center;
+                    background-size: cover;
+                }
+
+                &:nth-child(3) {
+                    background: url(/assets/images/index/image9-3.png) no-repeat center;
+                    background-size: cover;
+                }
+
+                &:nth-child(4) {
+                    background: url(/assets/images/index/image9-4.png) no-repeat center;
+                    background-size: cover;
+                }
+
+                &:nth-child(5) {
+                    margin-bottom: 0;
+                    background: url(/assets/images/index/image9-5.png) no-repeat center;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+// 一线大咖全力传授设计宝典
+.oneline-coffee-sec {
+    .oneline-coffee-list {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 330rem / $font-size-base;
+            height: 500rem / $font-size-base;
+        }
+    }
+}
+
+// 至高薪资
+.highest-salary-sec {
+    padding-bottom: 0px;
+
+    img {
+        display: block;
+    }
+}
+
+// 优秀作品让你在HR眼里脱颖而出
+.good-works-sec {
+    .section-title {
+        font-family: HiraginoSansGB-W3;
+    }
+
+    .section-nav-tab .section-nav-item.section-nav-btn {
+        width: 149rem / $font-size-base;
+        height: 80rem / $font-size-base;
+        border-radius: 40rem / $font-size-base;
+        margin-bottom: 20rem / $font-size-base;
+        background: #fff;
+        border: 1px solid #333;
+    }
+
+    .section-nav-tab .section-nav-item.section-nav-btn.section-nav-active {
+        border: 1px solid #d2aa4a;
+        color: #d2aa4a;
+    }
+}
+
+// 真实学员评价实力打Call
+.student-evaluation-sec {
+    padding-bottom: 74rem / $font-size-base;
+
+    .student-evaluation-list {
+        .student-evaluation-item {
+            margin-bottom: 20rem / $font-size-base;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+// 丝路教育六大学习保障
+.learning-guarantee-sec {
+    height: 1047rem / $font-size-base;
+    background: url(/assets/images/index/bj4.jpg) no-repeat center;
+
+    .section-title {
+        color: #fff;
+    }
+
+    .learning-guarantee-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        .learning-guarantee-item {
+            width: 33.33%;
+            text-align: center;
+            padding-top: 35rem / $font-size-base;
+            padding-bottom: 40rem / $font-size-base;
+            border-right: 1px solid #999;
+            border-bottom: 1px solid #999;
+
+            &:nth-child(n+4) {
+                border-bottom: none;
+                padding-bottom: 0px;
+                padding-top: 80rem / $font-size-base;
+            }
+
+            &:nth-child(3n) {
+                border-right: none;
+            }
+
+            .learning-guarantee-cover {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto (70rem / $font-size-base);
+                width: 80rem / $font-size-base;
+                height: 65rem / $font-size-base;
+
+                img {
+                    display: block;
+                }
+            }
+
+            h3 {
+                font-size: 26rem / $font-size-base;
+                font-weight: normal;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// 表单
+.section-form {
+    height: 909rem / $font-size-base;
+    background: url(/assets/images/index/bj5.jpg) no-repeat center;
+    background-size: cover;
+
+    form {
+        padding-top: 450rem / $font-size-base;
+    }
 }

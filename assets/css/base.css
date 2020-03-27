@@ -28,8 +28,8 @@
   color: #fff;
   position: absolute;
   left: 0;
-  top: 45px;
-  font-size: 0.21333rem;
+  top: 1.17333rem;
+  font-size: 16px;
   z-index: 2;
 }
 
@@ -45,7 +45,7 @@
 .header .header-tp ul.header-menu-list li.header-menu-first ul.header-menu-secondlist {
   display: none;
   color: gray;
-  font-size: 0.2rem;
+  font-size: 15px;
 }
 
 .header .header-tp ul.header-menu-list li.header-menu-first ul.header-menu-secondlist li.header-menu-second {
@@ -75,6 +75,7 @@
   display: none;
   width: 100%;
   height: 100%;
+  bottom: 0;
   position: fixed;
   background: rgba(0, 0, 0, 0);
   z-index: 1;
@@ -233,6 +234,16 @@
   font-size: 14px;
 }
 
+@font-face {
+  font-family: HiraginoSansGB-W3;
+  src: url("../fonts/冬青黑体W3.otf");
+}
+
+@font-face {
+  font-family: HiraginoSansGB-W6;
+  src: url("../fonts/苹果丽黑(W6)－Hiragino Sans GB W6.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -243,7 +254,7 @@
 
 html, body {
   height: 100%;
-  background-color: #fff;
+  background-color: #f9fafc;
 }
 
 html {
@@ -252,7 +263,7 @@ html {
 }
 
 body {
-  font: 20px/1.5 '微软雅黑', tahoma, arial, Hiragino Sans GB, \5b8b\4f53, sans-serif;
+  font: 20px/1.5 HiraginoSansGB-W3, '微软雅黑', tahoma, arial, Hiragino Sans GB, \5b8b\4f53, sans-serif;
   color: #3a3a3a;
 }
 
@@ -292,11 +303,6 @@ img {
   padding: 0 0.4rem;
 }
 
-@font-face {
-  font-family: HiraginoSansGB-W3;
-  src: url("../fonts/冬青黑体W3.otf");
-}
-
 .swiper-slide {
   overflow: hidden;
 }
@@ -314,76 +320,21 @@ img {
   display: inline-block;
   line-height: 1;
   border-radius: 4px;
-  margin: 0;
-  font-size: 18px;
+  font-size: 0.37333rem;
+  padding: 10px 50px;
+  border: 1px solid #EC6941;
   text-align: center;
   color: #fff;
-  background-color: #f64f23;
-  vertical-align: middle;
-  padding: 12px 34px;
+  background-color: #EC6941;
   -webkit-appearance: none;
-  font-family: 微软雅黑;
   transition: all .1s linear 0s;
-  -webkit-transition: all .1s linear 0s;
-  -moz-transition: all .1s linear 0s;
-  -o-transition: all .1s linear 0s;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   outline: none;
   cursor: pointer;
-  border: 1px solid #f64f23;
 }
 
 .btn:hover {
   background-color: #e43e13;
-}
-
-.list-pagination {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.list-pagination ul.pagination .active {
-  color: #fff;
-  background-color: #ff5722;
-  border-color: transparent;
-}
-
-.list-pagination ul.pagination .active a,
-.list-pagination ul.pagination .active a:hover {
-  color: #fff;
-}
-
-.list-pagination ul.pagination li {
-  display: inline-block;
-  margin-right: 6px;
-  border-radius: 4px;
-  width: 40px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 13px;
-  border: 1px solid #eee;
-}
-
-.list-pagination ul.pagination li a {
-  display: block;
-  color: #3a3a3a;
-}
-
-.list-pagination ul.pagination li a:hover {
-  color: #ff5722;
-}
-
-.list-pagination ul.pagination li.disabled a {
-  color: #999;
-}
-
-.list-pagination ul.pagination li.disabled a:focus,
-.list-pagination ul.pagination li.disabled a:hover {
-  color: #999;
-  cursor: not-allowed;
 }
 
 .form-group {
@@ -425,15 +376,16 @@ img {
 }
 
 .section .section-title {
-  margin-bottom: 0.64rem;
+  margin-bottom: 0.6rem;
   font-size: 0.8rem;
+  font-family: HiraginoSansGB-W6;
   text-align: center;
   color: #333436;
 }
 
 .section .section-describe {
   margin-bottom: 0.64rem;
-  font-size: 16px;
+  font-size: 0.37333rem;
   text-align: center;
   color: #5e5f61;
 }
@@ -443,42 +395,31 @@ img {
   text-align: center;
 }
 
-.section-bg-gray {
-  background-color: #f9f9f9;
+.section-bg-write {
+  background-color: #fff;
 }
 
 .section-form {
-  padding: 78px 0px;
   background-color: #27242b;
   text-align: center;
   line-height: 1;
 }
 
-.section-form .section-form-title {
-  font-size: 38px;
-  margin-bottom: 30px;
-  color: #fff;
+.section-form form {
+  width: 8.53333rem;
+  margin: 0 auto;
 }
 
-.section-form .section-form-txt {
-  margin-bottom: 30px;
-  font-size: 24px;
-  color: #959396;
+.section-form .form-group {
+  margin-bottom: 0.4rem;
 }
 
-.section-form .section-form-txt em {
-  font-style: normal;
-  color: #f64f23;
+.section-form .form-control {
+  width: 100%;
 }
 
-.section-form .section-form-row {
-  display: flex;
-  margin-bottom: 40px;
-  justify-content: center;
-}
-
-.section-form .section-form-row .form-group {
-  margin: 0 13px;
+.section-form .form-submit .btn {
+  width: 100%;
 }
 
 .silkroad-hover-detail {
@@ -506,6 +447,45 @@ img {
   text-align: center;
   margin-bottom: 10px;
   font-size: 16px;
+}
+
+.section-nav-tab {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.section-nav-tab .section-nav-item {
+  cursor: pointer;
+}
+
+.section-nav-tab .section-nav-item.section-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.66667rem;
+  height: 0.66667rem;
+  border-radius: 4px;
+  margin: 0 20px;
+  font-size: 0.32rem;
+  color: #4b4b4b;
+  background: #8c8c8c;
+}
+
+.section-nav-tab .section-nav-item.section-nav-btn.section-nav-active {
+  color: #fff;
+  background: #EC6941;
+}
+
+.section-tab-list .section-tab-col {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-tab-list .section-tab-col:first-child {
+  display: flex;
 }
 
 /*# sourceMappingURL=base.css.map */

@@ -28,8 +28,8 @@
   color: #fff;
   position: absolute;
   left: 0;
-  top: 45px;
-  font-size: 0.21333rem;
+  top: 1.17333rem;
+  font-size: 16px;
   z-index: 2;
 }
 
@@ -45,7 +45,7 @@
 .header .header-tp ul.header-menu-list li.header-menu-first ul.header-menu-secondlist {
   display: none;
   color: gray;
-  font-size: 0.2rem;
+  font-size: 15px;
 }
 
 .header .header-tp ul.header-menu-list li.header-menu-first ul.header-menu-secondlist li.header-menu-second {
@@ -75,6 +75,7 @@
   display: none;
   width: 100%;
   height: 100%;
+  bottom: 0;
   position: fixed;
   background: rgba(0, 0, 0, 0);
   z-index: 1;
@@ -233,6 +234,16 @@
   font-size: 14px;
 }
 
+@font-face {
+  font-family: HiraginoSansGB-W3;
+  src: url("../fonts/冬青黑体W3.otf");
+}
+
+@font-face {
+  font-family: HiraginoSansGB-W6;
+  src: url("../fonts/苹果丽黑(W6)－Hiragino Sans GB W6.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -243,7 +254,7 @@
 
 html, body {
   height: 100%;
-  background-color: #fff;
+  background-color: #f9fafc;
 }
 
 html {
@@ -252,7 +263,7 @@ html {
 }
 
 body {
-  font: 20px/1.5 '微软雅黑', tahoma, arial, Hiragino Sans GB, \5b8b\4f53, sans-serif;
+  font: 20px/1.5 HiraginoSansGB-W3, '微软雅黑', tahoma, arial, Hiragino Sans GB, \5b8b\4f53, sans-serif;
   color: #3a3a3a;
 }
 
@@ -292,11 +303,6 @@ img {
   padding: 0 0.4rem;
 }
 
-@font-face {
-  font-family: HiraginoSansGB-W3;
-  src: url("../fonts/冬青黑体W3.otf");
-}
-
 .swiper-slide {
   overflow: hidden;
 }
@@ -314,76 +320,21 @@ img {
   display: inline-block;
   line-height: 1;
   border-radius: 4px;
-  margin: 0;
-  font-size: 18px;
+  font-size: 0.37333rem;
+  padding: 10px 50px;
+  border: 1px solid #EC6941;
   text-align: center;
   color: #fff;
-  background-color: #f64f23;
-  vertical-align: middle;
-  padding: 12px 34px;
+  background-color: #EC6941;
   -webkit-appearance: none;
-  font-family: 微软雅黑;
   transition: all .1s linear 0s;
-  -webkit-transition: all .1s linear 0s;
-  -moz-transition: all .1s linear 0s;
-  -o-transition: all .1s linear 0s;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   outline: none;
   cursor: pointer;
-  border: 1px solid #f64f23;
 }
 
 .btn:hover {
   background-color: #e43e13;
-}
-
-.list-pagination {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.list-pagination ul.pagination .active {
-  color: #fff;
-  background-color: #ff5722;
-  border-color: transparent;
-}
-
-.list-pagination ul.pagination .active a,
-.list-pagination ul.pagination .active a:hover {
-  color: #fff;
-}
-
-.list-pagination ul.pagination li {
-  display: inline-block;
-  margin-right: 6px;
-  border-radius: 4px;
-  width: 40px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 13px;
-  border: 1px solid #eee;
-}
-
-.list-pagination ul.pagination li a {
-  display: block;
-  color: #3a3a3a;
-}
-
-.list-pagination ul.pagination li a:hover {
-  color: #ff5722;
-}
-
-.list-pagination ul.pagination li.disabled a {
-  color: #999;
-}
-
-.list-pagination ul.pagination li.disabled a:focus,
-.list-pagination ul.pagination li.disabled a:hover {
-  color: #999;
-  cursor: not-allowed;
 }
 
 .form-group {
@@ -425,15 +376,16 @@ img {
 }
 
 .section .section-title {
-  margin-bottom: 0.64rem;
+  margin-bottom: 0.6rem;
   font-size: 0.8rem;
+  font-family: HiraginoSansGB-W6;
   text-align: center;
   color: #333436;
 }
 
 .section .section-describe {
   margin-bottom: 0.64rem;
-  font-size: 16px;
+  font-size: 0.37333rem;
   text-align: center;
   color: #5e5f61;
 }
@@ -443,42 +395,31 @@ img {
   text-align: center;
 }
 
-.section-bg-gray {
-  background-color: #f9f9f9;
+.section-bg-write {
+  background-color: #fff;
 }
 
 .section-form {
-  padding: 78px 0px;
   background-color: #27242b;
   text-align: center;
   line-height: 1;
 }
 
-.section-form .section-form-title {
-  font-size: 38px;
-  margin-bottom: 30px;
-  color: #fff;
+.section-form form {
+  width: 8.53333rem;
+  margin: 0 auto;
 }
 
-.section-form .section-form-txt {
-  margin-bottom: 30px;
-  font-size: 24px;
-  color: #959396;
+.section-form .form-group {
+  margin-bottom: 0.4rem;
 }
 
-.section-form .section-form-txt em {
-  font-style: normal;
-  color: #f64f23;
+.section-form .form-control {
+  width: 100%;
 }
 
-.section-form .section-form-row {
-  display: flex;
-  margin-bottom: 40px;
-  justify-content: center;
-}
-
-.section-form .section-form-row .form-group {
-  margin: 0 13px;
+.section-form .form-submit .btn {
+  width: 100%;
 }
 
 .silkroad-hover-detail {
@@ -508,6 +449,45 @@ img {
   font-size: 16px;
 }
 
+.section-nav-tab {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.section-nav-tab .section-nav-item {
+  cursor: pointer;
+}
+
+.section-nav-tab .section-nav-item.section-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.66667rem;
+  height: 0.66667rem;
+  border-radius: 4px;
+  margin: 0 20px;
+  font-size: 0.32rem;
+  color: #4b4b4b;
+  background: #8c8c8c;
+}
+
+.section-nav-tab .section-nav-item.section-nav-btn.section-nav-active {
+  color: #fff;
+  background: #EC6941;
+}
+
+.section-tab-list .section-tab-col {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-tab-list .section-tab-col:first-child {
+  display: flex;
+}
+
 .section-serial {
   text-align: center;
   font-family: HiraginoSansGB-W3;
@@ -528,7 +508,7 @@ img {
   margin: 0 auto;
 }
 
-.section-serial .section-serial-content {
+.section-serial .section-serial-txt {
   font-size: 0.37333rem;
 }
 
@@ -560,10 +540,337 @@ img {
 
 .designing-workers-sec .designing-workers-content .designing-workers-row:first-child .designing-workers-area img {
   width: 4.48rem;
+  height: 5.93333rem;
 }
 
 .designing-workers-sec .designing-workers-content .designing-workers-row:last-child {
   margin-bottom: 0px;
+}
+
+.fit-design-sec {
+  background: url(/assets/images/index/bj1.jpg) no-repeat center;
+  color: #fff;
+}
+
+.fit-design-sec .section-title {
+  color: #fff;
+}
+
+.fit-design-sec .fit-design-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fit-design-sec .fit-design-list .fit-design-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-bottom: 0.8rem;
+}
+
+.fit-design-sec .fit-design-list .fit-design-item dl {
+  text-align: center;
+}
+
+.fit-design-sec .fit-design-list .fit-design-item dl dt {
+  line-height: 1;
+  margin-bottom: 0.26667rem;
+  font-size: 0.32rem;
+  color: #EC6941;
+}
+
+.fit-design-sec .fit-design-list .fit-design-item dl dd {
+  line-height: 0.48rem;
+  font-size: 0.26667rem;
+}
+
+.select-silkroad-reason-sec .select-silkroad-reason-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.select-silkroad-reason-sec .select-silkroad-reason-list .select-silkroad-reason-item {
+  width: 4.53333rem;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.select-silkroad-reason-sec .select-silkroad-reason-list .select-silkroad-reason-item h3 {
+  font-size: 0.26667rem;
+  color: #666666;
+  font-weight: normal;
+}
+
+.apec-course-sec {
+  padding: 0px;
+}
+
+.apec-course-sec .apec-course-sec1 {
+  padding: 1.33333rem 0 1.6rem;
+  background: url(/assets/images/index/bj2.jpg) no-repeat center;
+  color: #fff;
+}
+
+.apec-course-sec .apec-course-sec1 .section-serial {
+  margin-bottom: 0.74667rem;
+}
+
+.apec-course-sec .apec-course-sec1 .section-title {
+  color: #fff;
+}
+
+.apec-course-sec .apec-course-sec1 .fit-design-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.apec-course-sec .apec-course-sec1 .fit-design-list .fit-design-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-bottom: 1.33333rem;
+}
+
+.apec-course-sec .apec-course-sec1 .fit-design-list .fit-design-item img {
+  width: 1.33333rem;
+  height: 1.33333rem;
+  margin-bottom: 0.4rem;
+}
+
+.apec-course-sec .apec-course-sec1 .fit-design-list .fit-design-item dl {
+  text-align: center;
+}
+
+.apec-course-sec .apec-course-sec1 .fit-design-list .fit-design-item dl dt {
+  line-height: 1;
+  margin-bottom: 0.26667rem;
+  font-size: 0.32rem;
+  color: #EC6941;
+}
+
+.apec-course-sec .apec-course-sec1 .fit-design-list .fit-design-item dl dd {
+  line-height: 0.48rem;
+  font-size: 0.26667rem;
+}
+
+.apec-course-sec .apec-course-sec2 {
+  height: 15.73333rem;
+  padding: 1.33333rem 0 1.6rem;
+  background: url(/assets/images/index/bj3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.apec-course-sec .apec-course-sec2 .section-serial {
+  margin-bottom: 0.74667rem;
+}
+
+.apec-course-sec .apec-course-sec2 .fit-design-list {
+  text-align: center;
+}
+
+.apec-course-sec .apec-course-sec2 .fit-design-list img {
+  width: 80vw;
+}
+
+.apec-course-sec .apec-course-sec3 {
+  padding: 1.33333rem 0 1.6rem;
+  background-size: cover;
+}
+
+.apec-course-sec .apec-course-sec3 .section-serial {
+  margin-bottom: 0.74667rem;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list {
+  text-align: center;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item {
+  width: 9.2rem;
+  height: 4.8rem;
+  margin-bottom: 0.42667rem;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item:nth-child(odd) {
+  text-align: left;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item:nth-child(even) {
+  text-align: right;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item dl {
+  padding: 0.48rem;
+  color: #fff;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item dl dt {
+  margin-bottom: 0.53333rem;
+  font-size: 0.37333rem;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item dl dd {
+  margin-bottom: 0.13333rem;
+  font-size: 0.26667rem;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item dl dd::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item:first-child {
+  background: url(/assets/images/index/image9-1.png) no-repeat center;
+  background-size: cover;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item:nth-child(2) {
+  background: url(/assets/images/index/image9-2.png) no-repeat center;
+  background-size: cover;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item:nth-child(3) {
+  background: url(/assets/images/index/image9-3.png) no-repeat center;
+  background-size: cover;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item:nth-child(4) {
+  background: url(/assets/images/index/image9-4.png) no-repeat center;
+  background-size: cover;
+}
+
+.apec-course-sec .apec-course-sec3 .fit-design-list .fit-design-item:nth-child(5) {
+  margin-bottom: 0;
+  background: url(/assets/images/index/image9-5.png) no-repeat center;
+  background-size: cover;
+}
+
+.oneline-coffee-sec .oneline-coffee-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oneline-coffee-sec .oneline-coffee-list img {
+  width: 4.4rem;
+  height: 6.66667rem;
+}
+
+.highest-salary-sec {
+  padding-bottom: 0px;
+}
+
+.highest-salary-sec img {
+  display: block;
+}
+
+.good-works-sec .section-title {
+  font-family: HiraginoSansGB-W3;
+}
+
+.good-works-sec .section-nav-tab .section-nav-item.section-nav-btn {
+  width: 1.98667rem;
+  height: 1.06667rem;
+  border-radius: 0.53333rem;
+  margin-bottom: 0.26667rem;
+  background: #fff;
+  border: 1px solid #333;
+}
+
+.good-works-sec .section-nav-tab .section-nav-item.section-nav-btn.section-nav-active {
+  border: 1px solid #d2aa4a;
+  color: #d2aa4a;
+}
+
+.student-evaluation-sec {
+  padding-bottom: 0.98667rem;
+}
+
+.student-evaluation-sec .student-evaluation-list .student-evaluation-item {
+  margin-bottom: 0.26667rem;
+}
+
+.student-evaluation-sec .student-evaluation-list .student-evaluation-item:last-child {
+  margin-bottom: 0px;
+}
+
+.student-evaluation-sec .student-evaluation-list .student-evaluation-item img {
+  display: block;
+  margin: 0 auto;
+}
+
+.learning-guarantee-sec {
+  height: 13.96rem;
+  background: url(/assets/images/index/bj4.jpg) no-repeat center;
+}
+
+.learning-guarantee-sec .section-title {
+  color: #fff;
+}
+
+.learning-guarantee-sec .learning-guarantee-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.learning-guarantee-sec .learning-guarantee-list .learning-guarantee-item {
+  width: 33.33%;
+  text-align: center;
+  padding-top: 0.46667rem;
+  padding-bottom: 0.53333rem;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+.learning-guarantee-sec .learning-guarantee-list .learning-guarantee-item:nth-child(n+4) {
+  border-bottom: none;
+  padding-bottom: 0px;
+  padding-top: 1.06667rem;
+}
+
+.learning-guarantee-sec .learning-guarantee-list .learning-guarantee-item:nth-child(3n) {
+  border-right: none;
+}
+
+.learning-guarantee-sec .learning-guarantee-list .learning-guarantee-item .learning-guarantee-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.93333rem;
+  width: 1.06667rem;
+  height: 0.86667rem;
+}
+
+.learning-guarantee-sec .learning-guarantee-list .learning-guarantee-item .learning-guarantee-cover img {
+  display: block;
+}
+
+.learning-guarantee-sec .learning-guarantee-list .learning-guarantee-item h3 {
+  font-size: 0.34667rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.section-form {
+  height: 12.12rem;
+  background: url(/assets/images/index/bj5.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.section-form form {
+  padding-top: 6rem;
 }
 
 /*# sourceMappingURL=index.css.map */
