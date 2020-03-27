@@ -1,17 +1,22 @@
 @import "variable";
 
 .header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.2);
     .header-tp {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 88rem/$font-size-base;
+        height: 88rem / $font-size-base;
         padding: 0 10px;
         background: #1c1a1f;
 
         .header-menu {
-            width: 46rem/$font-size-base;
-            height: 32rem/$font-size-base;
+            width: 46rem / $font-size-base;
+            height: 32rem / $font-size-base;
             background: url(/assets/images/header/menu.png) no-repeat center;
             background-size: cover;
             transition: transform 0.2s;
@@ -29,7 +34,7 @@
             color: #fff;
             position: absolute;
             left: 0;
-            top: 88rem/$font-size-base;
+            top: 88rem / $font-size-base;
             font-size: 16px;
             z-index: 2;
 
@@ -83,15 +88,15 @@
         }
 
         .header-logo {
-            width: 165rem/$font-size-base;
-            height: 40rem/$font-size-base;
+            width: 165rem / $font-size-base;
+            height: 40rem / $font-size-base;
             background: url(/assets/images/header/logo.png) no-repeat center;
             background-size: cover;
         }
 
         .header-phone {
-            width: 40rem/$font-size-base;
-            height: 40rem/$font-size-base;
+            width: 40rem / $font-size-base;
+            height: 40rem / $font-size-base;
             background: url(/assets/images/header/phone.png) no-repeat center;
             background-size: cover;
         }
@@ -99,25 +104,28 @@
 
     .header-nav {
         position: relative;
+        display: flex;
+        height: 80rem / $font-size-base;
         background: #fff;
         ul.header-nav-wrap {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 80rem/$font-size-base;
-            font-size: 40rem/$font-size-base;
+            width: 100vw;
+            font-size: 40rem / $font-size-base;
             padding: 0 15px 0 20px;
 
             li.header-nav-first {
                 display: flex;
                 align-items: center;
                 width: 20%;
-                font-size: 28rem/$font-size-base;
+                font-size: 28rem / $font-size-base;
                 text-align: center;
                 color: #666;
-                &:nth-child(2){
-                    &:hover{
-                        ul.header-nav-course{
+
+                &:nth-child(2) {
+                    &:hover {
+                        ul.header-nav-course {
                             display: block;
                         }
                     }
@@ -140,7 +148,7 @@
                 display: none;
                 position: absolute;
                 width: 105px;
-                top: 80rem/$font-size-base;
+                top: 80rem / $font-size-base;
                 padding: 10px 20px;
                 background: rgba(0, 0, 0, 0.8);
                 color: #fff;
@@ -182,6 +190,10 @@
             }
         }
     }
+}
+
+.header + * {
+    margin-top: 168rem / $font-size-base;
 }
 
 .footer {
