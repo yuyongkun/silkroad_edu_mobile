@@ -5,13 +5,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 45px;
+        height: 88rem/$font-size-base;
         padding: 0 10px;
         background: #1c1a1f;
 
         .header-menu {
-            width: 35px;
-            height: 24px;
+            width: 46rem/$font-size-base;
+            height: 32rem/$font-size-base;
             background: url(/assets/images/header/menu.png) no-repeat center;
             background-size: cover;
             transition: transform 0.2s;
@@ -30,7 +30,7 @@
             position: absolute;
             left: 0;
             top: 45px;
-            font-size: 16px;
+            font-size: 16rem/$font-size-base;
             z-index: 2;
 
             li.header-menu-first {
@@ -44,7 +44,7 @@
                 ul.header-menu-secondlist {
                     display: none;
                     color: gray;
-                    font-size: 15px;
+                    font-size: 15rem/$font-size-base;
 
                     li.header-menu-second {
                         margin-bottom: 20px;
@@ -82,35 +82,36 @@
         }
 
         .header-logo {
-            width: 115px;
-            height: 28px;
+            width: 165rem/$font-size-base;
+            height: 40rem/$font-size-base;
             background: url(/assets/images/header/logo.png) no-repeat center;
             background-size: cover;
         }
 
         .header-phone {
-            width: 34px;
-            height: 34px;
+            width: 40rem/$font-size-base;
+            height: 40rem/$font-size-base;
             background: url(/assets/images/header/phone.png) no-repeat center;
             background-size: cover;
         }
     }
 
     .header-nav {
+        position: relative;
         background: #fff;
-
         ul.header-nav-wrap {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 40px;
+            height: 80rem/$font-size-base;
+            font-size: 40rem/$font-size-base;
             padding: 0 15px 0 20px;
 
             li.header-nav-first {
                 display: flex;
                 align-items: center;
                 width: 20%;
-                font-size: 14px;
+                font-size: 28rem/$font-size-base;
                 text-align: center;
                 color: #666;
                 &:nth-child(2){
@@ -138,7 +139,7 @@
                 display: none;
                 position: absolute;
                 width: 105px;
-                top: 85px;
+                top: 80rem/$font-size-base;
                 padding: 10px 20px;
                 background: rgba(0, 0, 0, 0.8);
                 color: #fff;
