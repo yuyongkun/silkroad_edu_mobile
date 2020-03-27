@@ -781,6 +781,7 @@ img {
 }
 
 .good-works-sec .section-nav-tab .section-nav-item.section-nav-btn {
+  min-width: 66px;
   width: 1.98667rem;
   height: 1.06667rem;
   border-radius: 0.53333rem;

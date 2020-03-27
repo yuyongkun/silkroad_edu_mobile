@@ -317,6 +317,7 @@
     }
 
     .section-nav-tab .section-nav-item.section-nav-btn {
+        min-width: 66px;
         width: 149rem / $font-size-base;
         height: 80rem / $font-size-base;
         border-radius: 40rem / $font-size-base;
