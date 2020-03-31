@@ -10,6 +10,8 @@ let sass = require('gulp-sass');
 let autoprefixer = require('gulp-autoprefixer');
 let px2rem = require('gulp-px2rem-plugin');
 
+let fileinclude = require('gulp-file-include');
+
 let sourcemaps = require('gulp-sourcemaps');
 let base64 = require('gulp-base64');
 let clean = require('gulp-clean');
