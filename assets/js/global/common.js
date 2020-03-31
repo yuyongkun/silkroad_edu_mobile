@@ -130,6 +130,7 @@
                     $headerMask.hide();
                 }
                 $headerNavCourse.hide();
+                $headerMenu.removeClass('header-menu-active');
             })
 
         },

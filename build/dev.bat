@@ -1,8 +1,5 @@
-@echo off
+@ECHO OFF
 cd /d %~dp0
-cmd /c gulp
-pause
+cmd /k gulp
 
-
-
-
+  

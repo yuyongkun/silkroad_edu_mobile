@@ -10,13 +10,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 88rem / $font-size-base;
+        height: 88px;
         padding: 0 10px;
         background: #1c1a1f;
 
         .header-menu {
-            width: 46rem / $font-size-base;
-            height: 32rem / $font-size-base;
+            width: 46px;
+            height: 32px;
             background: url(/assets/images/header/menu.png) no-repeat center;
             background-size: cover;
             transition: transform 0.2s;
@@ -32,7 +32,7 @@
             width: 180px;
             position: absolute;
             left: 0;
-            top: 88rem / $font-size-base;
+            top: 88px;
             line-height: 1;
             font-size: 14px;
             background: #39383e;
@@ -78,15 +78,15 @@
       
 
         .header-logo {
-            width: 165rem / $font-size-base;
-            height: 40rem / $font-size-base;
+            width: 165px;
+            height: 40px;
             background: url(/assets/images/header/logo.png) no-repeat center;
             background-size: cover;
         }
 
         .header-phone {
-            width: 40rem / $font-size-base;
-            height: 40rem / $font-size-base;
+            width: 40px;
+            height: 40px;
             background: url(/assets/images/header/phone.png) no-repeat center;
             background-size: cover;
         }
@@ -95,21 +95,21 @@
     .header-nav {
         position: relative;
         display: flex;
-        height: 80rem / $font-size-base;
+        height: 80px;
         background: #fff;
         ul.header-nav-wrap {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100vw;
-            font-size: 40rem / $font-size-base;
+            font-size: 40px;
             padding: 0 15px 0 20px;
 
             li.header-nav-first {
                 display: flex;
                 align-items: center;
                 width: 20%;
-                font-size: 28rem / $font-size-base;
+                font-size: 28px;
                 text-align: center;
                 color: #666;
             }
@@ -130,7 +130,7 @@
                 display: none;
                 position: absolute;
                 width: 105px;
-                top: 80rem / $font-size-base;
+                top: 80px;
                 padding: 10px 20px;
                 background: rgba(0, 0, 0, 0.8);
                 color: #fff;
@@ -177,7 +177,7 @@
     z-index: 1;
 }
 .header + * {
-    margin-top: 168rem / $font-size-base;
+    margin-top: 168px;
 }
 
 .footer {
