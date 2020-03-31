@@ -10,13 +10,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 88px;
+        height: 88rem/$font-size-base;
         padding: 0 10px;
         background: #1c1a1f;
 
         .header-menu {
-            width: 46px;
-            height: 32px;
+            width: 46rem/$font-size-base;
+            height: 32rem/$font-size-base;
             background: url(/assets/images/header/menu.png) no-repeat center;
             background-size: cover;
             transition: transform 0.2s;
@@ -32,7 +32,7 @@
             width: 180px;
             position: absolute;
             left: 0;
-            top: 88px;
+            top: 88rem/$font-size-base;
             line-height: 1;
             font-size: 14px;
             background: #39383e;
@@ -95,7 +95,7 @@
     .header-nav {
         position: relative;
         display: flex;
-        height: 80px;
+        height: 80rem/$font-size-base;
         background: #fff;
         ul.header-nav-wrap {
             display: flex;
@@ -109,7 +109,7 @@
                 display: flex;
                 align-items: center;
                 width: 20%;
-                font-size: 28px;
+                font-size: 28rem/$font-size-base;
                 text-align: center;
                 color: #666;
             }
@@ -130,7 +130,7 @@
                 display: none;
                 position: absolute;
                 width: 105px;
-                top: 80px;
+                top: 80rem/$font-size-base;
                 padding: 10px 20px;
                 background: rgba(0, 0, 0, 0.8);
                 color: #fff;
@@ -177,8 +177,9 @@
     z-index: 1;
 }
 
+
 .banner {
-    margin-top: 168px;
+    margin-top: 168rem/$font-size-base;
 }
 
 .footer {

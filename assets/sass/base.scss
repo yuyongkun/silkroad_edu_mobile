@@ -146,8 +146,8 @@ img {
     padding: (100rem / $font-size-base) 0 (120rem / $font-size-base);
 
     .section-title {
-        margin-bottom: 45px;
-        font-size: 60px;
+        margin-bottom: 45rem/$font-size-base;
+        font-size: 60rem/$font-size-base;
         font-family: HiraginoSansGB-W6;
         text-align: center;
         color: #333436;

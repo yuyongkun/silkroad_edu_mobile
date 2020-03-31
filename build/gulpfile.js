@@ -93,7 +93,6 @@ gulp.task('sass', () => {
 					})
 				)
 				.pipe(sourcemaps.write('.'))
-				.pipe(px2rem({'width_design':750,'valid_num':6,'pieces':10,'ignore_px':[1,2]}))
 				.pipe(gulp.dest(assets_css_path))
 				.on('end', resolve)
 				.pipe(
