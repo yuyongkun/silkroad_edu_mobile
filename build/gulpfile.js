@@ -85,7 +85,7 @@ gulp.task('sass', () => {
 	return gulp
 		.src(`${assets_sass_path}/**/*.scss`)
 		.pipe(sourcemaps.init())
-		.pipe(sass({ outputStyle: 'compressed' }).on('error', (err) => {
+		.pipe(sass({ outputStyle: 'compressed' }).on('error', function () {
 			//prevent gulp process exit
 			console.log('gulp-sass任务失败：', err);
 			this.emit('end');

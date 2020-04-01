@@ -1,36 +1,14 @@
 @import "../common/variable";
 @import "../common/base";
 
-.section-serial {
-    text-align: center;
-    font-family: HiraginoSansGB-W3;
-    font-weight: bold;
+// banner
+.banner{
+    .section-btn{
+        position: absolute;
 
-    .section-serial-number {
-        font-size: 0.4267rem;
-    }
-
-    .section-serial-line {
-        height: 10px;
-        margin-bottom: 0.3333rem;
-
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    }
-
-    .section-serial-txt {
-        font-size: 0.3733rem;
     }
 }
 
-.banner {
-    img {
-        display: block;
-        width: 100%;
-    }
-}
 
 // 年薪百万的视效大师 都会的软件
 .study-design-sec {
