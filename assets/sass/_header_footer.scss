@@ -29,17 +29,17 @@
 
         ul.header-menu-list {
             display: none;
-            width: 2.4rem;
+            width: 180px;
             position: absolute;
             left: 0;
             top: 1.1733rem;
             line-height: 1;
-            font-size: 0.1867rem;
+            font-size: 14px;
             background: #39383e;
             color: #fff;
             z-index: 2;
             li.header-menu-first {
-                padding: 0.2rem 0.1333rem;
+                padding: 15px 10px;
                 border-bottom: 1px solid #4f4e54;
 
                 &:last-child {
@@ -50,15 +50,15 @@
                     display: none;
                     color: gray;
                     li.header-menu-second {
-                        margin-bottom: 0.2667rem;
+                        margin-bottom: 20px;
                         line-height: 1;
 
                         &:first-child {
-                            margin-top: 0.2667rem;
+                            margin-top: 20px;
                         }
 
                         &:last-child {
-                            margin-bottom: 0.0667rem;
+                            margin-bottom: 5px;
                         }
                     }
                 }
@@ -66,12 +66,12 @@
 
             li.header-menu-first.arrow-right {
                 background: url(/assets/images/header/arrow-right.png) no-repeat 155px center;
-                background-size: 0.16rem;
+                background-size: 12px;
             }
 
             li.header-menu-first.arrow-down {
                 background: url(/assets/images/header/arrow-down.png) no-repeat 155px 15px;
-                background-size: 0.16rem;
+                background-size: 12px;
             }
         }
 
@@ -129,17 +129,18 @@
             ul.header-nav-course {
                 display: none;
                 position: absolute;
-                width: 1.4rem;
+                width: 110px;
                 top: 1.0667rem;
-                padding: 0.1333rem 0.2667rem;
+                padding: 10px 20px;
+                font-size: 13px;
                 background: rgba(0, 0, 0, 0.8);
                 color: #fff;
 
                 .header-menu-secondlist {
                     display: none;
                     position: absolute;
-                    width: 2.0533rem;
-                    left: 1.1333rem;
+                    width: 155px;
+                    left: 90px;
                     top: 0;
                     background: rgba(0, 0, 0, 0.8);
                     color: #fff;
