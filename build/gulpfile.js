@@ -80,36 +80,36 @@ gulp.task('html', () => {
 		.pipe(gulp.dest('../views'));
 });
 
+
 gulp.task('sass', () => {
-	return new Promise((resolve, reject) => {
-		return setTimeout(() => {
-			return gulp
-				.src(`${assets_sass_path}/**/*.scss`)
-				.on('error', function (e) {
-					return reject(e) && this.end();
-				})
-				.pipe(sourcemaps.init())
-				.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-				.pipe(
-					autoprefixer({
-						overrideBrowserslist: ['last 5 versions', 'Android >= 4.0', '> 10%', 'ie 9'],
-						cascade: false
-					})
-				)
-				.pipe(sourcemaps.write('.'))
-				.pipe(chsiRev())
-				.pipe(gulp.dest(assets_css_path))
-				.on('end', resolve)
-				.pipe(
-					reload({
-						stream: true
-					})
-				);
-		}, 200);
-	}).catch(function (e) {
-		return console.warn(e.messageFormatted);
-	});
+	return gulp
+		.src(`${assets_sass_path}/**/*.scss`)
+		.pipe(sourcemaps.init())
+		.pipe(sass({ outputStyle: 'compressed' }).on('error', () => {
+			//prevent gulp process exit
+			console.log('gulp-sass任务失败：', err);
+			this.emit('end');
+			setTimeout(() => {
+				console.log('重新启动gulp-sass');
+				gulp.start('sass');
+			}, 500);
+		}))
+		.pipe(
+			autoprefixer({
+				overrideBrowserslist: ['last 5 versions', 'Android >= 4.0', '> 10%', 'ie 9'],
+				cascade: false
+			})
+		)
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest(assets_css_path))
+		.pipe(chsiRev())
+		.pipe(
+			reload({
+				stream: true
+			})
+		);
 });
+
 
 gulp.task('lint', () => {
 	return gulp
@@ -130,7 +130,7 @@ gulp.task('lint', () => {
 /*------------------------>版本发布<------------------------*/
 
 gulp.task('build', sequence('clean:release', 'clean:sass', 'es6', 'md5', 'imagemin',
- 'img2base64', ['revreplace:html', 'revreplace:css:js'], 'uglify'));
+	'img2base64', ['revreplace:html', 'revreplace:css:js'], 'uglify'));
 
 
 //es6转ea5

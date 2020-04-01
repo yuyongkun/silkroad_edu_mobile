@@ -1,5 +1,5 @@
-@import "variable";
-@import "base";
+@import "./common/variable";
+@import "./common/base";
 
 .section-serial {
     text-align: center;
@@ -25,12 +25,7 @@
     }
 }
 
-.banner {
-    img {
-        display: block;
-        width: 100%;
-    }
-}
+
 
 // 为什么学室内设计？
 .study-design-sec {

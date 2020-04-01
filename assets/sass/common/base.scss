@@ -64,6 +64,10 @@ img {
     max-width: 100%;
 }
 
+.layout {
+    margin-top: 2.24rem;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -90,7 +94,7 @@ img {
 .btn {
     display: inline-block;
     line-height: 1;
-    width:5.3333rem;
+    width: 5.3333rem;
     height: 0.8rem;
     line-height: 0.8rem;
     border-radius: 4px;
@@ -268,5 +272,13 @@ img {
         &:first-child {
             display: flex;
         }
+    }
+}
+
+// banner
+.banner {
+    img {
+        display: block;
+        width: 100%;
     }
 }
