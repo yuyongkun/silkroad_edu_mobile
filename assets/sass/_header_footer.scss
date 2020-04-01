@@ -10,13 +10,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 88rem/$font-size-base;
-        padding: 0 10px;
+        height: 1.1733rem;
+        padding: 0 0.1333rem;
         background: #1c1a1f;
 
         .header-menu {
-            width: 46rem/$font-size-base;
-            height: 32rem/$font-size-base;
+            width: 0.6133rem;
+            height: 0.4267rem;
             background: url(/assets/images/header/menu.png) no-repeat center;
             background-size: cover;
             transition: transform 0.2s;
@@ -32,7 +32,7 @@
             width: 180px;
             position: absolute;
             left: 0;
-            top: 88rem/$font-size-base;
+            top: 1.1733rem;
             line-height: 1;
             font-size: 14px;
             background: #39383e;
@@ -78,15 +78,15 @@
       
 
         .header-logo {
-            width: 165px;
-            height: 40px;
+            width: 2.2rem;
+            height: 0.5333rem;
             background: url(/assets/images/header/logo.png) no-repeat center;
             background-size: cover;
         }
 
         .header-phone {
-            width: 40px;
-            height: 40px;
+            width: 0.5333rem;
+            height: 0.5333rem;
             background: url(/assets/images/header/phone.png) no-repeat center;
             background-size: cover;
         }
@@ -95,21 +95,21 @@
     .header-nav {
         position: relative;
         display: flex;
-        height: 80rem/$font-size-base;
+        height: 1.0667rem;
         background: #fff;
         ul.header-nav-wrap {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100vw;
-            font-size: 40px;
-            padding: 0 15px 0 20px;
+            font-size: 0.5333rem;
+            padding: 0 0.2rem 0 0.2667rem;
 
             li.header-nav-first {
                 display: flex;
                 align-items: center;
                 width: 20%;
-                font-size: 28rem/$font-size-base;
+                font-size: 0.3733rem;
                 text-align: center;
                 color: #666;
             }
@@ -119,8 +119,8 @@
             }
 
             .arrow-down {
-                width: 12px;
-                height: 12px;
+                width: 0.16rem;
+                height: 0.16rem;
                 margin-left: 4px;
                 background: url(/assets/images/header/arrow-down.png) no-repeat center;
                 background-size: cover;
@@ -129,17 +129,18 @@
             ul.header-nav-course {
                 display: none;
                 position: absolute;
-                width: 105px;
-                top: 80rem/$font-size-base;
+                width: 110px;
+                top: 1.0667rem;
                 padding: 10px 20px;
+                font-size: 13px;
                 background: rgba(0, 0, 0, 0.8);
                 color: #fff;
 
                 .header-menu-secondlist {
                     display: none;
                     position: absolute;
-                    width: 154px;
-                    left: 85px;
+                    width: 155px;
+                    left: 90px;
                     top: 0;
                     background: rgba(0, 0, 0, 0.8);
                     color: #fff;
@@ -179,7 +180,7 @@
 
 
 .banner {
-    margin-top: 168rem/$font-size-base;
+    margin-top: 2.24rem;
 }
 
 .footer {
@@ -196,16 +197,16 @@
 
         dl {
             flex: 1;
-            padding: 40px 0px;
+            padding: 0.5333rem 0rem;
 
             dd {
-                margin-bottom: 20px;
-                font-size: 16px;
+                margin-bottom: 0.2667rem;
+                font-size: 0.2133rem;
                 color: #fff;
             }
 
             dt {
-                margin-bottom: 15px;
+                margin-bottom: 0.2rem;
                 font-size: 12px;
                 color: #bdbdbd;
 
@@ -217,7 +218,7 @@
     }
 
     .footer-btm {
-        padding: 25px 0px;
+        padding: 0.3333rem 0rem;
         color: #5b5b5b;
         font-size: 14px;
 
@@ -229,10 +230,10 @@
 
         .footer-friendship-link {
             display: flex;
-            margin-bottom: 15px;
+            margin-bottom: 0.2rem;
 
             a {
-                margin-left: 38px;
+                margin-left: 0.5067rem;
                 font-size: 14px;
             }
         }

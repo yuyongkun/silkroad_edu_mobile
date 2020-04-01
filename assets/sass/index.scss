@@ -1,22 +1,27 @@
 @import "variable";
 @import "base";
+
 .section-serial {
     text-align: center;
     font-family: HiraginoSansGB-W3;
     font-weight: bold;
+
     .section-serial-number {
-        font-size: 32px;
+        font-size: 0.4267rem;
     }
+
     .section-serial-line {
-        height: 10px;
-        margin-bottom: 10px;
+        height:10px;
+        margin-bottom: 0.3333rem;
+
         img {
             display: block;
             margin: 0 auto;
         }
     }
+
     .section-serial-txt {
-        font-size: 28rem/$font-size-base;
+        font-size: 0.3733rem;
     }
 }
 
@@ -30,10 +35,11 @@
 // 为什么学室内设计？
 .study-design-sec {
     .section-serial {
-        margin-bottom: 47px;
+        margin-bottom: 0.6267rem;
     }
+
     .study-design-sec2 {
-        margin-top: 97px;
+        margin-top: 1.2933rem;
     }
 }
 
@@ -42,19 +48,23 @@
     .section-title {
         font-weight: bold;
     }
+
     .designing-workers-content {
         .designing-workers-row {
-            margin-bottom: 99rem / $font-size-base;
+            margin-bottom: 1.32rem;
+
             &:first-child {
                 .designing-workers-area {
                     display: flex;
                     justify-content: space-between;
+
                     img {
-                        width: 336rem / $font-size-base;
-                        height: 445rem / $font-size-base;
+                        width: 4.48rem;
+                        height: 5.9333rem;
                     }
                 }
             }
+
             &:last-child {
                 margin-bottom: 0px;
             }
@@ -66,31 +76,37 @@
 .fit-design-sec {
     background: url(/assets/images/index/bj1.jpg) no-repeat center;
     color: #fff;
+
     .section-title {
         color: #fff;
     }
+
     .fit-design-list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
         .fit-design-item {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             width: 50%;
-            margin-bottom: 60rem / $font-size-base;
+            margin-bottom: 60px;
+
             dl {
                 text-align: center;
+
                 dt {
                     line-height: 1;
-                    margin-bottom: 20rem / $font-size-base;
-                    font-size: 24rem / $font-size-base;
+                    margin-bottom: 0.2667rem;
+                    font-size: 0.32rem;
                     color: $base-color;
                 }
+
                 dd {
-                    line-height: 36rem / $font-size-base;
-                    font-size: 20rem / $font-size-base;
+                    line-height: 0.48rem;
+                    font-size: 0.2667rem;
                 }
             }
         }
@@ -103,12 +119,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
         .select-silkroad-reason-item {
-            width: 340rem / $font-size-base;
+            width: 4.5333rem;
             text-align: center;
-            margin-bottom: 30rem / $font-size-base;
+            margin-bottom: 0.4rem;
+
             h3 {
-                font-size: 20rem / $font-size-base;
+                font-size: 0.2667rem;
                 color: #666666;
                 font-weight: normal;
             }
@@ -119,91 +137,114 @@
 // APEC亚太高端室内设计课程
 .apec-course-sec {
     padding: 0px;
+
     .apec-course-sec1 {
-        padding: (100rem / $font-size-base) 0 (120rem / $font-size-base);
+        height: 20.3733rem;
+        padding-top: 1.3333rem;
         background: url(/assets/images/index/bj2.jpg) no-repeat center;
         color: #fff;
+
         .section-serial {
-            margin-bottom: 56px;
+            margin-bottom: 0.7467rem;
         }
+
         .section-title {
             color: #fff;
         }
+
         .fit-design-list {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+
             .fit-design-item {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 width: 50%;
-                margin-bottom: 100rem / $font-size-base;
+                margin-bottom: 0.6667rem;
+
                 img {
-                    width: 100rem / $font-size-base;
-                    height: 100rem / $font-size-base;
-                    margin-bottom: 30rem / $font-size-base;
+                    width: 1.3333rem;
+                    height: 1.3333rem;
+                    margin-bottom: 0.4rem;
                 }
+
                 dl {
                     text-align: center;
+
                     dt {
                         line-height: 1;
-                        margin-bottom: 20rem / $font-size-base;
-                        font-size: 24rem / $font-size-base;
+                        margin-bottom: 0.2667rem;
+                        font-size: 0.3733rem;
                         color: $base-color;
                     }
+
                     dd {
-                        line-height: 36rem / $font-size-base;
-                        font-size: 20rem / $font-size-base;
+                        font-size: 0.3733rem;
                     }
                 }
             }
         }
     }
+
     .apec-course-sec2 {
-        height: 1180rem / $font-size-base;
-        padding: (100rem / $font-size-base) 0 (120rem / $font-size-base);
+        height: 15.7333rem;
+        padding: 1.3333rem 0 1.6rem;
         background: url(/assets/images/index/bj3.jpg) no-repeat center;
         background-size: cover;
+
         .section-serial {
-            margin-bottom: 56rem / $font-size-base;
+            margin-bottom: 0.7467rem;
         }
+
         .fit-design-list {
             text-align: center;
+
             img {
                 width: 80vw;
             }
         }
     }
+
     .apec-course-sec3 {
-        padding: (100rem / $font-size-base) 0 (120rem / $font-size-base);
-        background-size: cover;
+        padding-top: 1.3333rem;
+        padding-bottom: 0;
+
         .section-serial {
-            margin-bottom: 56px;
+            margin-bottom: 0.7467rem;
         }
+
         .fit-design-list {
             text-align: center;
+
             .fit-design-item {
-                width: 690rem / $font-size-base;
-                height: 360rem / $font-size-base;
-                margin-bottom: 32rem / $font-size-base;
+                width: 9.2rem;
+                height: 4.8rem;
+                margin-bottom: 0.4rem;
+
                 &:nth-child(odd) {
                     text-align: left;
                 }
+
                 &:nth-child(even) {
                     text-align: right;
                 }
+
                 dl {
-                    padding: 36px;
+                    padding: 0.48rem;
                     color: #fff;
+
                     dt {
-                        margin-bottom: 40rem / $font-size-base;
-                        font-size: 28rem / $font-size-base;
+                        margin-bottom: 0.5333rem;
+                        font-size: 0.3733rem;
                     }
+
                     dd {
-                        margin-bottom: 10rem / $font-size-base;
-                        font-size: 20rem / $font-size-base;
+                        margin-bottom: 0.1333rem;
+                        font-size: 0.2667rem;
+
                         &::before {
                             content: '';
                             display: inline-block;
@@ -216,22 +257,27 @@
                         }
                     }
                 }
+
                 &:first-child {
                     background: url(/assets/images/index/image9-1.png) no-repeat center;
                     background-size: cover;
                 }
+
                 &:nth-child(2) {
                     background: url(/assets/images/index/image9-2.png) no-repeat center;
                     background-size: cover;
                 }
+
                 &:nth-child(3) {
                     background: url(/assets/images/index/image9-3.png) no-repeat center;
                     background-size: cover;
                 }
+
                 &:nth-child(4) {
                     background: url(/assets/images/index/image9-4.png) no-repeat center;
                     background-size: cover;
                 }
+
                 &:nth-child(5) {
                     margin-bottom: 0;
                     background: url(/assets/images/index/image9-5.png) no-repeat center;
@@ -247,9 +293,10 @@
     .oneline-coffee-list {
         display: flex;
         justify-content: space-between;
+
         img {
-            width: 330rem / $font-size-base;
-            height: 500rem / $font-size-base;
+            width: 4.4rem;
+            height: 6.6667rem;
         }
     }
 }
@@ -257,6 +304,7 @@
 // 至高薪资
 .highest-salary-sec {
     padding-bottom: 0px;
+
     img {
         display: block;
     }
@@ -267,33 +315,39 @@
     .section-title {
         font-family: HiraginoSansGB-W3;
     }
+
     .section-nav-tab .section-nav-item.section-nav-btn {
-        min-width: 66prem / $font-size-base;
-        width: 149rem / $font-size-base;
-        height: 80rem / $font-size-base;
-        border-radius: 40rem / $font-size-base;
-        margin-bottom: 20rem / $font-size-base;
+        min-width: 0.88rem;
+        width: 1.9867rem;
+        height: 1.0667rem;
+        border-radius: 0.5333rem;
+        margin-bottom: 0.2667rem;
         background: #fff;
         border: 1px solid #333;
     }
+
     .section-nav-tab .section-nav-item.section-nav-btn.section-nav-active {
         border: 1px solid #d2aa4a;
         color: #d2aa4a;
     }
+
     .section-tab-list {
-        padding: 0 (30rem / $font-size-base);
+        padding: 0 0.4rem;
     }
 }
 
 // 真实学员评价实力打Call
 .student-evaluation-sec {
-    padding-bottom: 74rem / $font-size-base;
+    padding-bottom: 0.9867rem;
+
     .student-evaluation-list {
         .student-evaluation-item {
-            margin-bottom: 20rem / $font-size-base;
+            margin-bottom: 0.2667rem;
+
             &:last-child {
                 margin-bottom: 0px;
             }
+
             img {
                 display: block;
                 margin: 0 auto;
@@ -304,42 +358,50 @@
 
 // 丝路教育六大学习保障
 .learning-guarantee-sec {
-    height: 1047rem / $font-size-base;
+    height: 13.96rem;
     background: url(/assets/images/index/bj4.jpg) no-repeat center;
+
     .section-title {
         color: #fff;
     }
+
     .learning-guarantee-list {
         display: flex;
         flex-wrap: wrap;
+
         .learning-guarantee-item {
             width: 33.33%;
             text-align: center;
-            padding-top: 35rem / $font-size-base;
-            padding-bottom: 40rem / $font-size-base;
+            padding-top: 0.4667rem;
+            padding-bottom: 0.5333rem;
             border-right: 1px solid #999;
             border-bottom: 1px solid #999;
+
             &:nth-child(n+4) {
                 border-bottom: none;
                 padding-bottom: 0px;
-                padding-top: 80px;
+                padding-top: 1.0667rem;
             }
+
             &:nth-child(3n) {
                 border-right: none;
             }
+
             .learning-guarantee-cover {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin: 0 auto (70rem / $font-size-base);
-                width: 80rem / $font-size-base;
-                height: 65rem / $font-size-base;
+                margin: 0 auto 0.9333rem;
+                width: 1.0667rem;
+                height: 0.8667rem;
+
                 img {
                     display: block;
                 }
             }
+
             h3 {
-                font-size: 26px;
+                font-size: 0.3467rem;
                 font-weight: normal;
                 color: #fff;
             }
@@ -349,10 +411,11 @@
 
 // 表单
 .section-form {
-    height: 909rem / $font-size-base;
+    height: 12.12rem;
     background: url(/assets/images/index/bj5.jpg) no-repeat center;
     background-size: cover;
+
     form {
-        padding-top: 450rem / $font-size-base;
+        padding-top: 6rem;
     }
 }
