@@ -15,8 +15,12 @@ let sourcemaps = require('gulp-sourcemaps');
 let base64 = require('gulp-base64');
 let clean = require('gulp-clean');
 let babel = require('gulp-babel');
+
 let rev = require('gulp-rev');
 let revReplace = require('gulp-rev-replace');
+
+let chsiRev = require('gulp-chsi-rev');
+
 let browserSync = require('browser-sync').create();
 let reload = browserSync.reload;
 
@@ -72,6 +76,7 @@ gulp.task('html', () => {
 			prefix: '@@',
 			basepath: '@file'
 		}))
+		.pipe(chsiRev())
 		.pipe(gulp.dest('../views'));
 });
 
@@ -92,6 +97,7 @@ gulp.task('sass', () => {
 					})
 				)
 				.pipe(sourcemaps.write('.'))
+				.pipe(chsiRev())
 				.pipe(gulp.dest(assets_css_path))
 				.on('end', resolve)
 				.pipe(
