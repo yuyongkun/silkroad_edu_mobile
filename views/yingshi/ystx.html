@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
     <title>影视特效合成大师班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1585724065217">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1585724065217">
-<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1585724065217">
-    <link rel="stylesheet" href="/assets/css/yingshi/ystx.css?v=1585724065217">
+    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1585726209364">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1585726209364">
+<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1585726209364">
+    <link rel="stylesheet" href="/assets/css/yingshi/ystx.css?v=1585726209364">
 </head>
 
 <body>
@@ -224,7 +224,15 @@
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script>
+<script>
+    var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
+    for (var i = 0, len = doyooBtns.length; i < len; i++) {
+        doyooBtns[i].onclick = function () {
+            doyoo.util.openChat('g=10075108'); return false;
+        }
+    }
+</script>
 </body>
 
 </html>
