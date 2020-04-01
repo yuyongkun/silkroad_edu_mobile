@@ -11,7 +11,7 @@
     }
 
     .section-serial-line {
-        height:10px;
+        height: 10px;
         margin-bottom: 0.3333rem;
 
         img {
@@ -74,7 +74,7 @@
 
 // 哪些人群 适合学室内设计？
 .fit-design-sec {
-    background: url('/assets/images/index/bj1.jpg') no-repeat center;
+    background: url("/assets/images/index/bj1.jpg") no-repeat center;
     color: #fff;
 
     .section-title {
@@ -92,7 +92,13 @@
             align-items: center;
             justify-content: center;
             width: 50%;
-            margin-bottom: 60px;
+            margin-bottom: 0.8rem;
+
+            img {
+                max-width: 1.3333rem;
+                max-height: 1.3333rem;
+                margin-bottom: 0.2667rem;
+            }
 
             dl {
                 text-align: center;
@@ -141,7 +147,7 @@
     .apec-course-sec1 {
         height: 20.3733rem;
         padding-top: 1.3333rem;
-        background: url('/assets/images/index/bj2.jpg') no-repeat center;
+        background: url("/assets/images/index/bj2.jpg") no-repeat center;
         color: #fff;
 
         .section-serial {
@@ -192,7 +198,7 @@
     .apec-course-sec2 {
         height: 15.7333rem;
         padding: 1.3333rem 0 1.6rem;
-        background: url('/assets/images/index/bj3.jpg') no-repeat center;
+        background: url("/assets/images/index/bj3.jpg") no-repeat center;
         background-size: cover;
 
         .section-serial {
@@ -259,28 +265,28 @@
                 }
 
                 &:first-child {
-                    background: url('/assets/images/index/image9-1.png') no-repeat center;
+                    background: url("/assets/images/index/image9-1.png") no-repeat center;
                     background-size: cover;
                 }
 
                 &:nth-child(2) {
-                    background: url('/assets/images/index/image9-2.png') no-repeat center;
+                    background: url("/assets/images/index/image9-2.png") no-repeat center;
                     background-size: cover;
                 }
 
                 &:nth-child(3) {
-                    background: url('/assets/images/index/image9-3.png') no-repeat center;
+                    background: url("/assets/images/index/image9-3.png") no-repeat center;
                     background-size: cover;
                 }
 
                 &:nth-child(4) {
-                    background: url('/assets/images/index/image9-4.png') no-repeat center;
+                    background: url("/assets/images/index/image9-4.png") no-repeat center;
                     background-size: cover;
                 }
 
                 &:nth-child(5) {
                     margin-bottom: 0;
-                    background: url('/assets/images/index/image9-5.png') no-repeat center;
+                    background: url("/assets/images/index/image9-5.png") no-repeat center;
                     background-size: cover;
                 }
             }
@@ -359,7 +365,7 @@
 // 丝路教育六大学习保障
 .learning-guarantee-sec {
     height: 13.96rem;
-    background: url('/assets/images/index/bj4.jpg') no-repeat center;
+    background: url("/assets/images/index/bj4.jpg") no-repeat center;
 
     .section-title {
         color: #fff;
@@ -412,7 +418,7 @@
 // 表单
 .section-form {
     height: 12.12rem;
-    background: url('/assets/images/index/bj5.jpg') no-repeat center;
+    background: url("/assets/images/index/bj5.jpg") no-repeat center;
     background-size: cover;
 
     form {
