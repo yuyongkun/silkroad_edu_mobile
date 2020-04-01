@@ -119,9 +119,8 @@ img {
 }
 
 .form-control {
-    width: 4rem;
-    height: 0.5333rem;
-    padding: 0.08rem 0.16rem;
+    height: 40px;
+    padding: 6px 12px;
     border: 1px solid #584d46;
     background-color: rgba($color: #fff, $alpha: 1);
     vertical-align: middle;
@@ -163,8 +162,8 @@ img {
         margin-bottom: 0.64rem;
         font-size: 0.3733rem;
         text-align: center;
-        font-family: HiraginoSansGB-W6;
-        color: #5e5f61;
+        font-family: 微软雅黑;
+        color: #666;
     }
 
     .section-btn {
