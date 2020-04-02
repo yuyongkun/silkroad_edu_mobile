@@ -4,6 +4,7 @@
 <head>
     @@include('./layout/_meta.html')
     <title>首页</title>
+    @@include('./layout/_link.html')
     <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 
@@ -63,7 +64,7 @@
                             <img src="/assets/images/index/image4-1.jpg" alt="">
                         </div>
                         <div class="section-btn">
-                            <a class="btn" onclick="doyoo.util.openChat('g=10075108');return false;">查看开班计划</a>
+                            <a class="btn doyoo-btn">查看开班计划</a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +115,7 @@
                     </div>
                 </div>
                 <div class="section-btn">
-                    <a class="btn" onclick="doyoo.util.openChat('g=10075108');return false;">免费试听看看</a>
+                    <a class="btn doyoo-btn">免费试听看看</a>
                 </div>
 
             </div>
@@ -154,7 +155,7 @@
                     </div>
                 </div>
                 <div class="section-btn">
-                    <a class="btn" onclick="doyoo.util.openChat('g=10075108');return false;">查看更多荣誉资质</a>
+                    <a class="btn doyoo-btn">查看更多荣誉资质</a>
                 </div>
 
             </div>
@@ -211,7 +212,7 @@
                         </div>
                     </div>
                     <div class="section-btn">
-                        <a class="btn" onclick="doyoo.util.openChat('g=10075108');return false;">看看我适合学吗？</a>
+                        <a class="btn doyoo-btn">看看我适合学吗？</a>
                     </div>
 
                 </div>
@@ -290,7 +291,7 @@
                         </div>
                     </div>
                     <div class="section-btn">
-                        <a class="btn" onclick="doyoo.util.openChat('g=10075108');return false;">查看课程详情</a>
+                        <a class="btn doyoo-btn">查看课程详情</a>
                     </div>
                 </div>
             </div>
@@ -305,7 +306,7 @@
                     <img src="/assets/images/index/image10-2.png" alt="">
                 </div>
                 <div class="section-btn">
-                    <a class="btn" onclick="doyoo.util.openChat('g=10075108');return false;">名师一对一交流</a>
+                    <a class="btn doyoo-btn">名师一对一交流</a>
                 </div>
             </div>
         </div>
@@ -346,7 +347,7 @@
             </div>
             <div class="container">
                 <div class="section-btn">
-                    <a class="btn" onclick="doyoo.util.openChat('g=10075108');return false;">查看更多薪资</a>
+                    <a class="btn doyoo-btn">查看更多薪资</a>
                 </div>
             </div>
         </div>
@@ -411,7 +412,7 @@
                     </div>
                 </div>
                 <div class="section-btn">
-                    <a class="btn" onclick="doyoo.util.openChat('g=10075108');return false;">申请学费减免</a>
+                    <a class="btn doyoo-btn">申请学费减免</a>
                 </div>
             </div>
         </div>
@@ -422,13 +423,14 @@
                 </div>
                 <img src="/assets/images/index/image15-1.jpg" alt="">
                 <div class="section-btn">
-                    <a class="btn" onclick="doyoo.util.openChat('g=10075108');return false;">查看企业招聘信息</a>
+                    <a class="btn doyoo-btn">查看企业招聘信息</a>
                 </div>
             </div>
         </div>
         <!-- 表单统计 -->
         <div class="section-form">
-            <form action="/plus/diy.php" enctype="multipart/form-data" method="post" onsubmit="return checkMobile(this);">
+            <form action="/plus/diy.php" enctype="multipart/form-data" method="post"
+                onsubmit="return checkMobile(this);">
                 <div class="form-group">
                     <input type='text' name='name' placeholder="姓名" class="form-control" />
                 </div>
@@ -441,7 +443,6 @@
             </form>
         </div>
     </div>
-
     @@include('./layout/_script.html')
 </body>
 

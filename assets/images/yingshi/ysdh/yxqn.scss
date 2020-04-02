@@ -1,0 +1,423 @@
+@import "variable";
+@import "base";
+.banner-section {
+    position: relative;
+    padding: 0px;
+    max-width: 100%;
+    background-color: #fff;
+    .container {
+        position: relative;
+    }
+    .banner {
+        position: relative;
+        height: 540px;
+        overflow: hidden;
+        background: url(/static/images/yxqn/banner.jpg) no-repeat center;
+        .btn {
+            position: absolute;
+            top: 300px;
+        }
+    }
+}
+
+// 经常玩游戏，原来其中的门道有那么多？
+.jieshao-bj {
+    background: url(/static/images/yxqn/bj1.jpg)no-repeat center;
+}
+
+.jieshao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .jieshao-item {
+        width: 530px;
+        height: 400px;
+        border: 1px solid #dfb412;
+        padding-top: 13px;
+        padding-left: 15px;
+        margin: 20px;
+    }
+    img {
+        display: block;
+    }
+    p {
+        font-size: 20px;
+        color: #666;
+        text-align: center;
+        padding-top: 4px;
+    }
+}
+
+//  游戏行业高光时刻 不同的职位选择，一样的高薪就业
+.senior-lecturer {
+    display: flex;
+    justify-content: space-between;
+    .senior-lecturer-item {
+        position: relative;
+        cursor: pointer;
+        &:hover {
+            .senior-lecturer-hover {
+                display: flex;
+            }
+            .senior-lecturer-txt {
+                display: none;
+            }
+        }
+        .senior-lecturer-hover {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            padding: 0 20px;
+            color: #fff;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 16px;
+            background: linear-gradient(90deg, rgba(255, 97, 0, 0.88) 50%, rgba(255, 215, 0, 0.88));
+            h3,
+            h4 {
+                font-size: 16px;
+                font-weight: normal;
+            }
+            h4 {
+                margin-top: 40px;
+            }
+        }
+        .senior-lecturer-txt {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            left: 0px;
+            height: 70px;
+            line-height: 70px;
+            padding: 0 20px;
+            color: #fff;
+            font-size: 18px;
+            background: linear-gradient(90deg, rgba(255, 152, 0, 0.88) 50%, rgba(255, 215, 0, 0.88));
+        }
+        img {
+            display: block;
+        }
+    }
+}
+
+// 什么样的人，比较适合选择游戏设计？
+.renqun-bj {
+    background: url(/static/images/yxqn/bj2.jpg) no-repeat center;
+    height: 1420px;
+}
+
+.renqun {
+    display: flex;
+    justify-content: space-between;
+    .renqun-item {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        margin: 34px;
+    }
+    p {
+        font-size: 16px;
+        text-align: center;
+        color: #666;
+        span {
+            font-size: 18px;
+            color: #333;
+        }
+    }
+    img {
+        display: block;
+        width: 130px;
+        height: 130px;
+        margin-bottom: 5px;
+    }
+    .line {
+        background-color: #f64f23;
+        width: 40px;
+        height: 2px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+}
+
+em {
+    font-style: normal;
+    color: #f64f23;
+}
+
+.liuda {
+    margin-top: 150px;
+}
+
+.liuda-title {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.baozhang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .baozhang-item {
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        height: 130px;
+        background-color: #f64f23;
+        box-shadow: 5px 10px 15px 2px rgba(254, 92, 20, 0.2);
+        border-radius: 4px;
+        margin: 26px;
+        img {
+            display: block;
+            width: 60px;
+            margin: 0 auto;
+            margin-top: 14px;
+        }
+        p {
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+
+// 商业游戏制作背景，更懂企业用人需求
+.qiyebj {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qiyebj-item {
+    img {
+        display: block;
+    }
+    p {
+        font-size: 18px;
+        color: #666;
+        text-align: center;
+        margin-top: 6px;
+    }
+}
+
+// 教科书级精编课程，0基础快速提升
+.jiantou {
+    width: 59px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.kcdg-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+    .kcdg-left-item {
+        background-color: rgba(30, 39, 66, 0.4);
+        width: 740px;
+        height: 480px;
+        padding: 44px;
+        margin-top: 100px;
+    }
+    p {
+        font-size: 18px;
+        color: #fff;
+        text-align: left;
+    }
+    .kcdg-title {
+        display: flex;
+        margin-bottom: 20px;
+        P {
+            font-size: 30px;
+            color: #feb028;
+            margin-left: 10px;
+        }
+    }
+}
+
+.kcdg-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
+    .kcdg-left-item {
+        width: 740px;
+        height: 480px;
+        padding: 44px;
+        margin-top: 100px;
+    }
+    p {
+        font-size: 18px;
+        color: #fff;
+        text-align: left;
+    }
+    .kcdg-title {
+        display: flex;
+        margin-bottom: 20px;
+        P {
+            font-size: 30px;
+            color: #feb028;
+            margin-left: 10px;
+        }
+    }
+}
+
+// 你喜爱的爆款游戏，出自丝路讲师明星团
+.jiangshi-bj {
+    background-color: #e6e6e6;
+}
+
+// 在校实训有提成，又长经验又拿钱
+.learn-earn-money {
+    display: flex;
+    .learn-earn-md {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+//  影视市场火爆 继续特效大神加盟
+.secial-effect-god {
+    display: flex;
+}
+
+// 看丝路毕业学员，做游戏没你想的那么难
+.xueyuan {
+    display: flex;
+    justify-content: space-between;
+    .xueyuan-item {
+        width: 290px;
+        height: 428px;
+        background-color: #f3f3f3;
+        .wenzi {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        img {
+            display: block;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            padding-bottom: 4px;
+        }
+        h1 {
+            font-weight: bold;
+            color: #f64f23;
+            font-size: 32px;
+            margin-top: 4px;
+        }
+    }
+}
+
+// 学员作品
+.silkroad-works {
+    .silkroad-works-nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 55px;
+        .silkroad-works-tab {
+            padding-right: 25px;
+            margin-right: 25px;
+            color: #8c8c8c;
+            border-right: 1px solid #ddd;
+            text-align: center;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0px;
+                padding-right: 0px;
+                border-right: none;
+            }
+        }
+        .silkroad-works-tab.silkroad-works-tab-active {
+            color: $base-color;
+        }
+    }
+    .silkroad-works-list {
+        display: none;
+        flex-wrap: wrap;
+        &:first-child {
+            display: flex;
+        }
+        .silkroad-works-item {
+            width: 390px;
+            height: 270px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.1);
+            &:nth-child(3n) {
+                margin-right: 0px;
+            }
+            .silkroad-works-img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+                img {
+                    display: block;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+// 合作企业，合作院校
+.silkroad-cooperative-enterprise {
+    .silkroad-cooperative-nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 55px;
+        .silkroad-cooperative-tab {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            margin-right: 15px;
+            color: #8c8c8c;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #8c8c8c;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0px;
+                padding-right: 0px;
+            }
+        }
+        .silkroad-cooperative-tab.silkroad-cooperative-tab-active {
+            background-color: #f64f23;
+            border-color: #f64f23;
+            color: #fff;
+        }
+    }
+    .silkroad-cooperative-content {
+        .silkroad-cooperative-list {
+            display: none;
+            &:first-child {
+                display: block;
+            }
+        }
+    }
+}
+
+// 表单
+.section-form {
+    background: url(/static/images/yxqn/foot-bj.jpg) no-repeat center;
+    height: 499px;
+    .section-form-title {
+        color: #f64f23;
+        font-weight: bold;
+        text-align: left;
+    }
+    .section-form-txt {
+        text-align: left;
+    }
+}
