@@ -8,12 +8,10 @@
     }
 }
 
-// 年薪百万的视效大师 都会的软件
-.study-design-sec {}
-
 // 中国公映的电影动画票房代表
 .designing-workers-sec {
     height: 10.2667rem;
+    padding-top: 0.8rem;
     background: url("/assets/images/yingshi/ysdh/one-back.jpg");
     background-size: cover;
 
@@ -36,6 +34,7 @@
 
                 p {
                     color: #fff;
+                    font-size: 10px;
                 }
             }
 
@@ -301,16 +300,18 @@
 // 一线项目带入课堂学习实践两不误
 .two-correct-sec {
     .section-item {
-        &:nth-child(2){
-            .two-correct-label{
+        &:nth-child(2) {
+            .two-correct-label {
                 background: #FE743E;
             }
         }
-        &:nth-child(3){
-            .two-correct-label{
+
+        &:nth-child(3) {
+            .two-correct-label {
                 background: #F8C22F;
             }
         }
+
         .two-correct-label {
             display: flex;
             align-items: center;
@@ -325,6 +326,7 @@
             text-align: center;
             background: #E80000;
         }
+
         .section-txt {
             display: flex;
             align-items: center;
@@ -338,31 +340,33 @@
 }
 
 // 学员毕业轻松入职名企成为高薪代言人
-.spokesperson-sec{
-    .section-item{
+.spokesperson-sec {
+    .section-item {
         text-align: center;
         background: transparent;
-        .section-cover{
+
+        .section-cover {
             width: 1.6933rem;
             height: 1.6933rem;
         }
-        p{
-            color: #999;
 
+        p {
+            color: #999;
         }
-        h3{
+
+        h3 {
             color: #333;
-            margin-bottom:0.1333rem;
+            margin-bottom: 0.1333rem;
         }
-        div{
+
+        div {
             margin-top: 0.1333rem;
             font-size: 0.32rem;
             color: #F64F23;
         }
     }
- 
-
 }
+
 // 表单
 .section-form {
     height: 10.6133rem;
