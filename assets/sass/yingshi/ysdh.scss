@@ -11,160 +11,196 @@
 // 年薪百万的视效大师 都会的软件
 .study-design-sec {}
 
-// 谁适合学习C4D？
+// 中国公映的电影动画票房代表
 .designing-workers-sec {
+    height: 10.2667rem;
+    background: url("/assets/images/yingshi/ysdh/one-back.jpg");
+    background-size: cover;
+
     .section-title {
-        font-weight: bold;
+        color: #fff;
+    }
+
+    .designing-workers-list {
+        display: flex;
+        justify-content: space-between;
+
+        .section-item {
+            width: 2.9333rem;
+            height: 4rem;
+            background: transparent;
+
+            .section-txt {
+                padding: 10px 0px;
+                color: #fff;
+
+                p {
+                    color: #fff;
+                }
+            }
+
+            em {
+                color: #FFE612;
+            }
+        }
     }
 }
 
-// 简单的不像实力派
-.not-powerful-sec {
-    .section-title {
-        margin-bottom: 1.2rem;
+//工作时间与财务的双重自由
+.double-freedom-sec {
+    .section-list {
+        .section-item {
+            width: 2.8933rem;
+        }
     }
 
-    .not-powerful-list {
-        text-align: center;
-
-        .not-powerful-item {
-            margin-bottom: 2.1333rem;
+    .double-freedom-content {
+        .double-freedom-row {
+            margin-bottom: 0.6667rem;
+            text-align: center;
 
             &:last-child {
-                margin-bottom: 0;
+                margin-bottom: 0px;
             }
 
-            .not-powerful-title {
-                position: relative;
-                margin-bottom: 0.5333rem;
+            .double-freedom-title {
                 font-size: 0.5333rem;
 
-                .not-powerful-num {
-                    position: absolute;
-                    width: 1.6rem;
-                    height: 1.2667rem;
-                    top: -12px;
-                    left: 0;
-                    right: 0;
-                    margin: auto;
+                em {
+                    font-size: 0.72rem;
+                    color: #F54F23;
                 }
             }
 
-            .not-powerful-imglist {
-                display: flex;
-                justify-content: space-between;
-
-                .not-powerful-imgitem {
-                    width: 3rem;
-
-                    img {
-                        width: 100vw;
-                        height: 1.6rem;
-                    }
-
-                    p {
-                        font-size: 0.2667rem;
-                    }
-                }
+            .double-freedom-describe {
+                margin-bottom: 0.6667rem;
+                font-size: 0.3733rem;
             }
         }
     }
 }
 
-//丝路教育C4D视效大师班特色优势
-.characteristic-sec {
-    .section-serial {
-        margin-bottom: 0.7467rem;
+//行业岗位细分兴趣与高薪兼得
+
+.not-powerful-sec {
+    height: 13.4933rem;
+    background: url("/assets/images/yingshi/ysdh/two-back.jpg");
+    background-size: cover;
+
+    .section-title {
+        margin-bottom: 0.48rem;
     }
 
-    .characteristic-list {
-        display: flex;
-        height: 5.1rem;
-        box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.2);
+    .section-item {
+        width: 2.4rem;
+        background-color: transparent;
 
-        .characteristic-cover {
-            width: 5.3333rem;
-            height: 100%;
-            overflow: hidden;
-
-            img {
-                height: 100%;
-            }
+        .section-cover {
+            width: 2rem;
+            height: 2rem;
         }
 
-        .characteristic-txt {
-            flex: 1;
-            padding: 0.2rem 0;
+        .section-txt {
+            text-align: center;
 
-            dl {
-                dt {
-                    margin-top: 0.2133rem;
-                    font-size: 0.32rem;
-
-                    &:first-child {
-                        margin-top: 0;
-                    }
-                }
-
-                dd {
-                    font-size: 0.2667rem;
-                    color: #666;
-                }
+            p {
+                color: #FF6700;
             }
         }
+    }
+
+    .section-btn {
+        margin-top: 0.2667rem;
     }
 }
 
-// 8周吃透C4D全面掌握三维设计秘诀
-.oneline-coffee-sec {
-    .oneline-coffee-sec1 {
-        margin-bottom: 0.2rem;
+//丝路教育先进课程体系打造高薪人才
+.advanced-system-sec {
+    .section-list {
+        .section-item {
+            width: 2.9733rem;
 
-        img {
-            width: 9.9867rem;
-            height: 4.16rem;
+            .section-txt {
+                p {
+                    margin-top: 0.1333rem;
+                    font-size: 0.24rem;
+                    color: #999;
+                }
+            }
         }
     }
 
-    .oneline-coffee-sec2 {
-        .oneline-coffee-list {
-            .oneline-coffee-item {
-                display: flex;
-                justify-content: space-between;
-                padding: 0.2rem;
-                height: 2.2267rem;
-                background: #fff;
-                margin-bottom: 0.2667rem;
-                box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
+    .double-freedom-content {
+        .double-freedom-row {
+            .double-freedom-title {
+                margin-bottom: 0.8rem;
+                font-size: 0.5333rem;
+                text-align: center;
 
-                &:last-child {
-                    margin-bottom: 0px;
+                em {
+                    margin-right: 0.1067rem;
+                    font-size: 0.72rem;
+                    color: #F54F23;
+                }
+            }
+
+            &:nth-child(2) {
+                padding: 0.9333rem 0;
+                background-color: #f2f2f2;
+
+                .section-item {
+                    width: 25%;
+                    text-align: center;
+                    background-color: transparent;
                 }
 
-                .oneline-coffee-cover {
-                    width: 6rem;
-                    height: 1.72rem;
+                .section-txt {
+                    padding-bottom: 0.5333rem;
                 }
 
-                .oneline-coffee-txt {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    margin-left: 0.4rem;
-                    font-size: 0.32rem;
+                .section-cover {
+                    width: 1.68rem;
+                    height: 1.68rem;
+                }
+            }
 
-                    h3 {
-                        margin-bottom: 0.1rem;
-                        font-size: 0.32rem;
-                        font-weight: normal;
-                    }
+            &:nth-child(3) {
+                padding-top: 0.9333rem;
 
-                    .oneline-coffee-harvest {
-                        color: #666;
+                .intensive-course-list {
+                    .intensive-course-item {
+                        height: 3.84rem;
+                        margin-bottom: 0.2667rem;
+                        color: #fff;
 
-                        em {
-                            font-style: normal;
-                            color: 333;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .intensive-course-num {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 0.76rem;
+                            height: 0.76rem;
+                            margin-left: 0.2667rem;
+                            margin-bottom: 0.4rem;
+                            font-size: 0.3733rem;
+                            background-color: #F54F23;
+                        }
+
+                        .intensive-course-txt {
+                            width: 4.8rem;
+                            margin-left: 0.2667rem;
+
+                            h3 {
+                                margin-bottom: 0.1333rem;
+                                font-size: 0.3733rem;
+                            }
+
+                            p {
+                                font-size: 0.32rem;
+                            }
                         }
                     }
                 }
@@ -173,8 +209,8 @@
     }
 }
 
-// 名师面授你不知道的C4D
-.good-works-sec {
+// 资深讲师阵容助你高薪就业
+.oneline-coffee-sec {
     .good-works-list {
         display: flex;
         flex-wrap: wrap;
@@ -234,7 +270,7 @@
     }
 }
 
-// 真实学员评价实力打Call
+//上市公司强势助力0距离接轨顶级技术
 .student-evaluation-sec {
     padding-bottom: 0.9867rem;
 
@@ -242,31 +278,98 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        .student-evaluation-item {
-            width: 2.9467rem;
-            height: 1.5733rem;
-            margin-bottom: 0.2667rem;
 
-            &:last-child {
-                margin-bottom: 0px;
+        .student-evaluation-item {
+            width: 50%;
+            padding: 0.4rem;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            font-size: 0.3733rem;
+            text-align: center;
+
+            &:nth-child(2n) {
+                border-right: none;
             }
 
-            img {
-                display: block;
-                margin: 0 auto;
+            &:nth-child(n+3) {
+                border-bottom: none;
             }
         }
     }
 }
 
+// 一线项目带入课堂学习实践两不误
+.two-correct-sec {
+    .section-item {
+        &:nth-child(2){
+            .two-correct-label{
+                background: #FE743E;
+            }
+        }
+        &:nth-child(3){
+            .two-correct-label{
+                background: #F8C22F;
+            }
+        }
+        .two-correct-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.1rem;
+            min-width: 75px;
+            height: 0.56rem;
+            margin-right: 0.2667rem;
+            border-top-right-radius: 0.28rem;
+            border-bottom-right-radius: 0.28rem;
+            font-size: 0.16rem;
+            text-align: center;
+            background: #E80000;
+        }
+        .section-txt {
+            display: flex;
+            align-items: center;
+            font-size: 0.2667rem;
 
+            h3 {
+                margin-bottom: 0.1333rem;
+            }
+        }
+    }
+}
+
+// 学员毕业轻松入职名企成为高薪代言人
+.spokesperson-sec{
+    .section-item{
+        text-align: center;
+        background: transparent;
+        .section-cover{
+            width: 1.6933rem;
+            height: 1.6933rem;
+        }
+        p{
+            color: #999;
+
+        }
+        h3{
+            color: #333;
+            margin-bottom:0.1333rem;
+        }
+        div{
+            margin-top: 0.1333rem;
+            font-size: 0.32rem;
+            color: #F64F23;
+        }
+    }
+ 
+
+}
 // 表单
 .section-form {
-    height: 11.4267rem;
-    background: url("/assets/images/yingshi/c4d/biaodan.jpg") no-repeat center;
+    height: 10.6133rem;
+    background: url("/assets/images/yingshi/ysdh/bottom.jpg") no-repeat center;
     background-size: cover;
-  
-    .form-group-txt{
+
+    .form-group-txt {
         line-height: 1rem;
         padding-top: 1.8rem;
         font-size: 0.8rem;
