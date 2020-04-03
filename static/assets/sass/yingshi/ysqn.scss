@@ -296,7 +296,28 @@
         }
     }
 }
-
+// 丝路影视视效设计全能班
+.teristic-superiority-sec{
+    .section-list{
+        justify-content: center;
+        .section-item{
+            width: 2.9333rem;
+            height: 3.7333rem;
+            margin:0 0.0533rem 0.4rem;
+            background: url("/assets/images/yingshi/ysqn/n1.png") no-repeat center;
+            background-size: cover;
+            text-align: center;
+            .section-cover{
+                width:1.4533rem;
+                height: 1.4533rem;
+                margin:0.4rem auto 0;
+            }
+            .section-txt{
+                color: #fff;
+            }
+        }
+    }
+}
 // 表单
 .section-form {
     height: 11.4667rem;
