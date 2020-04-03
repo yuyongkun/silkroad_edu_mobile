@@ -29,7 +29,7 @@ sass.compiler = require('node-sass');
 // 静态资源路径
 let viewlist = ['../pages'];
 
-let assets_path = '../assets';
+let assets_path = '../static/assets';
 let assets_js_path = `${assets_path}/js`;
 let assets_css_path = `${assets_path}/css`;
 let assets_sass_path = `${assets_path}/sass`;
@@ -57,7 +57,7 @@ gulp.task('server', ['sass', 'lint'], () => {
 		port: 3000,
 		watch: true,
 		server: {
-			baseDir: ["../views", "../"]
+			baseDir: ["../views","../static"]
 		},
 	});
 	gulp.watch(`${assets_sass_path}/**/*.scss`, ['sass']);
