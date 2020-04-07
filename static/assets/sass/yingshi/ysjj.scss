@@ -1,2 +1,217 @@
 @import "../common/variable";
 @import "../common/base";
+
+// 丝路教育学员
+.learning-guarantee-sec {
+    .section-list {
+        .section-item {
+            width: 33.33%;
+            margin-bottom: 1.0667rem;
+            font-size: 0.3467rem;
+            color: #666;
+            text-align: center;
+            background: transparent;
+
+            .section-cover {
+                width: 1.92rem;
+                height: 1.92rem;
+                margin-bottom: 0.3333rem;
+            }
+        }
+    }
+}
+
+// 影视已成聚宝地
+.treasure-land-sec {
+    .treasure-land-sec1 {
+        margin-bottom: 0.4rem;
+        text-align: center;
+
+        img {
+            width: 5.2667rem;
+        }
+    }
+
+    .treasure-land-sec2 {
+        display: flex;
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+// 影视剪辑包装
+.film-editing-sec {
+    .section-serial {
+        margin-bottom: 0.5333rem;
+        text-align: center;
+
+        .section-serial-number {
+            font-size: 0.4267rem;
+            margin-bottom: 0.1333rem;
+        }
+
+        .section-serial-txt {
+            font-size: 0.3733rem;
+        }
+
+        .section-serial-line {
+            width: 0.5333rem;
+            height: 0.0533rem;
+            margin: 0 auto 0.4rem;
+            background: linear-gradient(-90deg, rgba(177, 6, 43, 1), rgba(246, 79, 35, 1));
+        }
+    }
+
+    .film-editing-sec1 {
+        margin-bottom: 0.8rem;
+
+        .section-list {
+            .section-item {
+                margin-bottom: 0.1067rem;
+
+                .section-cover {
+                    width: 4.5333rem;
+                    height: 2.6667rem;
+                }
+
+                .section-txt {
+                    font-size: 0.3733rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .film-editing-sec2 {
+        .film-editing-list {
+            .film-editing-item {
+                height: 4.8rem;
+                margin-bottom: 0.4rem;
+
+                &:last-child {
+                    .film-editing-txt {
+                        margin-left: 0.8rem;
+                    }
+                }
+
+                &:first-child {
+                    .film-editing-txt {
+                        margin-left: auto;
+                        padding-right: 0.2667rem;
+                    }
+                }
+
+                .film-editing-txt {
+                    width: 4.5333rem;
+                    padding-top: 0.5333rem;
+                    color: #fff;
+                    font-size: 12px;
+
+                    h3 {
+                        font-size: 0.3733rem;
+                        margin-bottom: 0.4rem;
+                    }
+
+                    ul {
+                        li {
+                            position: relative;
+                            margin-bottom: 0.1333rem;
+
+                            i {
+                                width: 6px;
+                                height: 6px;
+                                position: absolute;
+                                left: -10px;
+                                top: 5px;
+                                border-radius: 50%;
+                                background: #fff;
+                            }
+
+                            div {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 前学院，后企业，大项目，好课程！
+.big-project-sec {
+    background: #1F1F1F;
+    color: #fff;
+
+    .section-title, .section-describe {
+        color: #fff;
+    }
+
+    .big-project-intro {
+        width: 3.8667rem;
+        margin: 0.6667rem auto 0;
+        font-size: 0.32rem;
+
+        em {
+            color: $base-color;
+        }
+    }
+}
+
+// 一线影视制作大咖全程陪同面授教学
+.frontline-sec {
+    .section-list {
+        .section-item {
+            width: 48%;
+            margin-bottom: 0.2667rem;
+        }
+    }
+}
+
+// 你是否还在担心以下问题？
+.worry-question {
+    height: 12.3333rem;
+    background: url("/assets/images/yingshi/ysjj/wt-bj.jpg") no-repeat center;
+    background-size: cover;
+    .section-title{
+        font-size: 0.7rem;
+    }
+    .worry-question-list {
+        .worry-question-item {
+            display: flex;
+            width: 100%;
+            height: 0.8533rem;
+            margin-bottom: 0.2667rem;
+
+            .worry-question-txt {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                padding:0 0.2667rem;
+                font-size: 0.2933rem;
+                background: #fff;
+                color: #999;
+            }
+
+            .worry-question-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.32rem;
+                font-size: 0.3333rem;
+                background: #E43E13;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// 表单
+.section-form {
+    height: 11.3333rem;
+    padding-top: 5.8rem;
+    background: url("/assets/images/yingshi/ysjj/bottom.png") no-repeat center;
+    background-size: cover;
+}
