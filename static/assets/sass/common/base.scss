@@ -1,5 +1,6 @@
 @import "variable";
 @import "header_footer";
+
 @font-face {
     font-family: HiraginoSansGB-W3;
     src: url("../../fonts/冬青黑体W3.otf");
@@ -81,10 +82,12 @@ img {
 // 公共
 .swiper-slide {
     overflow: hidden;
+
     img {
         display: block;
         margin: 0 auto;
     }
+
     &:hover {
         .silkroad-hover-detail {
             display: flex;
@@ -110,6 +113,7 @@ img {
     user-select: none;
     outline: none;
     cursor: pointer;
+
     &:hover {
         background-color: #e43e13;
     }
@@ -129,9 +133,11 @@ img {
     -webkit-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     -moz-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     -o-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
     &:hover {
         border-color: #6e6e6e;
     }
+
     &:focus {
         border-color: #ff5722;
         outline: none;
@@ -148,16 +154,19 @@ img {
 
 .section {
     padding: 1.3333rem 0 1.6rem;
+
     .section-title {
         margin-bottom: 0.6rem;
         font-size: 0.8rem;
         font-family: HiraginoSansGB-W6;
         text-align: center;
         color: #333436;
-        b{
-            font-family: HiraginoSansGB-W3;  
+
+        b {
+            font-family: HiraginoSansGB-W3;
         }
     }
+
     .section-describe {
         margin-bottom: 0.64rem;
         font-size: 0.3733rem;
@@ -165,6 +174,7 @@ img {
         font-family: 微软雅黑;
         color: #666;
     }
+
     .section-btn {
         margin-top: 0.5333rem;
         text-align: center;
@@ -180,38 +190,48 @@ img {
 .section-item {
     position: relative;
     background-color: #fff;
+
     &:hover {
         .section-hover {
             display: flex;
         }
+
         .section-txt.section-abs {
             height: inherit;
+
             h3 {
-                margin-bottom: 10px;
+                margin-bottom: 0.1333rem;
             }
         }
+
         .section-default-hidden {
             display: block;
         }
     }
+
     .section-cover {
         display: block;
         margin: 0 auto;
     }
+
     .section-txt {
-        padding: 10px 0;
-        font-size: 16px;
+        padding: 0.1333rem 0;
+        font-size: 12px;
         color: #333;
+
         em {
             color: #FE743E;
         }
+
         h3 {
             font-weight: normal;
         }
+
         p {
             color: gray;
         }
     }
+
     .section-txt.section-abs {
         position: absolute;
         width: 100%;
@@ -219,14 +239,17 @@ img {
         line-height: 1;
         background-color: rgba(0, 0, 0, 0.4);
         color: #fff;
+
         p {
             color: #fff;
         }
     }
+
     .section-default-hidden {
         display: none;
         line-height: 22px;
     }
+
     .section-hover {
         display: none;
         flex-direction: column;
@@ -238,9 +261,8 @@ img {
         left: 0px;
         right: 0;
         top: 0px;
-        padding: 15px;
+        padding: 0.2rem;
         margin: auto;
-        font-size: 16px;
         background-color: rgba(0, 0, 0, 0.8);
         color: #fff;
     }
@@ -255,16 +277,20 @@ img {
     background-color: #27242b;
     text-align: center;
     line-height: 1;
+
     form {
         width: 8.5333rem;
         margin: 0 auto;
     }
+
     .form-group {
         margin-bottom: 0.4rem;
     }
+
     .form-control {
         width: 100%;
     }
+
     .form-submit {
         .btn {
             width: 100%;
@@ -286,11 +312,13 @@ img {
     line-height: 1;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.6);
+
     h3 {
         margin-bottom: 0.4667rem;
         font-size: 0.2667rem;
         font-weight: normal;
     }
+
     .silkroad-hover-intro {
         p {
             text-align: center;
@@ -306,9 +334,11 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 0.5333rem;
+
     .section-nav-item {
         cursor: pointer;
     }
+
     .section-nav-item.section-nav-btn {
         display: flex;
         align-items: center;
@@ -321,6 +351,7 @@ img {
         color: #4b4b4b;
         background: #8c8c8c;
     }
+
     .section-nav-item.section-nav-btn.section-nav-active {
         color: #fff;
         background: $base-color;
@@ -332,6 +363,7 @@ img {
         display: none;
         flex-wrap: wrap;
         justify-content: space-between;
+
         &:first-child {
             display: flex;
         }
@@ -341,10 +373,12 @@ img {
 // banner
 .banner {
     position: relative;
+
     .banner-cover {
         display: block;
         width: 100%;
     }
+
     .section-btn {
         position: absolute;
         width: 100%;
