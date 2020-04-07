@@ -27,7 +27,7 @@ let reload = browserSync.reload;
 sass.compiler = require('node-sass');
 
 // 静态资源路径
-let viewlist = ['../pages'];
+let viewlist = ['../src/pages'];
 
 let assets_path = '../static/assets';
 let assets_js_path = `${assets_path}/js`;
@@ -57,7 +57,7 @@ gulp.task('server', ['sass', 'lint'], () => {
 		port: 3000,
 		watch: true,
 		server: {
-			baseDir: ["../views","../static"]
+			baseDir: ["../src/views", "../src"]
 		},
 	});
 	gulp.watch(`${assets_sass_path}/**/*.scss`, ['sass']);
@@ -71,13 +71,13 @@ gulp.task('server', ['sass', 'lint'], () => {
 });
 
 gulp.task('html', () => {
-	return gulp.src(['../pages/**', '!../pages/layout', '!../pages/layout/**'])
+	return gulp.src(['../src/pages/**', '!../src/pages/layout', '!../src/pages/layout/**'])
 		.pipe(fileinclude({
 			prefix: '@@',
 			basepath: '@file'
 		}))
 		.pipe(chsiRev())
-		.pipe(gulp.dest('../views'));
+		.pipe(gulp.dest('../src/views'));
 });
 
 

@@ -1,0 +1,25 @@
+@import "../common/variable";
+@import "../common/base";
+
+// banner
+.banner {
+    .section-btn {
+        bottom: 1.2667rem;
+    }
+}
+
+
+
+// 表单
+.section-form {
+    height: 11.4267rem;
+    background: url("/assets/images/youxi/yxyh/foot-bg.jpg") no-repeat center;
+    background-size: cover;
+  
+    .form-group-txt{
+        line-height: 1rem;
+        padding-top: 1.8rem;
+        font-size: 0.8rem;
+        color: #fff;
+    }
+}
