@@ -296,6 +296,49 @@
         }
     }
 }
+
+// 学员作品均为行业代性案例制作
+.stage-works-sec{
+    .section-nav-tab{
+        margin: 0 -0.4rem 0.5333rem;
+        .section-nav-item.section-nav-btn{
+            width:1.9867rem;
+            height: 1.0667rem;
+            border-radius: 0.5333rem;
+            background-color: transparent;
+            border:2px solid $base-color;
+            color: $base-color;
+        }
+        .section-nav-item.section-nav-btn.section-nav-active{
+            background-color: $base-color;
+            color: #fff;
+        }
+    }
+
+}
+
+// 丝路明星学员
+.star-student-sec{
+    .section-list{
+        .section-item{
+            width:4.4rem;
+            box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            .section-cover{
+                width:2.36rem;
+                height: 2.36rem;
+                margin-top: 0.3333rem;
+            }
+            .line{
+                margin: 0.4rem auto 0.2667rem;
+            }
+            .star-student-company{
+                margin-bottom: 0.5333rem;
+            }
+        }
+    }
+}
+
 // 丝路影视视效设计全能班
 .teristic-superiority-sec{
     .section-list{
