@@ -29,7 +29,7 @@ sass.compiler = require('node-sass');
 // 静态资源路径
 let viewlist = ['../src/pages'];
 
-let assets_path = '../static/assets';
+let assets_path = '../src/assets';
 let assets_js_path = `${assets_path}/js`;
 let assets_css_path = `${assets_path}/css`;
 let assets_sass_path = `${assets_path}/sass`;
