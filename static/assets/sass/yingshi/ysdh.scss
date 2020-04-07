@@ -101,9 +101,12 @@
 
         .section-txt {
             text-align: center;
-
+            font-size: 0.3333rem;
             p {
                 color: #FF6700;
+            }
+            h3{
+                font-size: 0.3333rem;
             }
         }
     }
@@ -124,6 +127,9 @@
                     margin-top: 0.1333rem;
                     font-size: 0.24rem;
                     color: #999;
+                }
+                h3{
+                    font-size: 0.2667rem;
                 }
             }
         }
