@@ -1,22 +1,274 @@
 @import "../common/variable";
 @import "../common/base";
 
+.doyoo-btn {
+    img {
+        width: 4.8533rem;
+        height: 0.8rem;
+    }
+}
+
+.section {
+    background-color: #211d25;
+    .section-title {
+        color: #fff;
+    }
+
+    .section-describe {
+        color: #fff;
+    }
+
+    .section-sub-title {
+        line-height: 1;
+        margin-top: -0.4rem;
+        margin-bottom: 0.8rem;
+        font-size: 0.4rem;
+        text-align: center;
+        color: #fff;
+    }
+}
+
 // banner
 .banner {
     .section-btn {
         bottom: 1.2667rem;
     }
 }
+
+// 经常玩游戏
+.games-connotation-sec {
+    background-color: #1a161f;
+}
+
+// 游戏迎来高光时刻
+.highlight-time-sec {
+    background-color: #211d25;
+
+    .section-list {
+        .section-item {
+            width: 2.9333rem;
+            background-color: transparent;
+
+            .section-cover {
+                height: 4.1867rem;
+            }
+
+            .section-txt {
+                text-align: center;
+                color: #9292BA;
+            }
+        }
+    }
+}
+
+.assembly-time-sec {
+    background-color: #1a161f;
+
+    .section-list {
+        .section-item {
+            width: 2.9333rem;
+            background-color: transparent;
+
+            .section-cover {
+                height: 4.1867rem;
+            }
+
+            .section-txt {
+                text-align: center;
+                color: #9292BA;
+
+                h3 {
+                    font-size: 0.2667rem;
+                }
+
+                p {
+                    font-size: 0.3467rem;
+                    color: #FFA800;
+                }
+            }
+        }
+    }
+}
+
+// 丝路教育六大保障
+.six-guarantees-sec {
+    background-color: #211d25;
+
+    .guarantees-title {
+        margin-bottom: 0.6667rem;
+        text-align: center;
+
+        img {
+            width: 3.2rem;
+        }
+
+        p {
+            font-size: 0.4rem;
+            color: #fff;
+        }
+    }
+
+    .six-guarantees-row {
+        padding: 0.8rem 0px;
+    }
+
+    .six-guarantees-sec1 {
+        .section-list {
+            .section-item {
+                width: 33.33%;
+                border-right: 1px solid #373538;
+                border-bottom: 1px solid #373538;
+                background-color: transparent;
+
+                &:nth-child(3n) {
+                    border-right: none;
+                }
+
+                &:nth-child(n+4) {
+                    padding-top: 0.5333rem;
+                    border-bottom: none;
+                }
+
+                .section-cover {
+                    width: 1.92rem;
+                    height: 1.92rem;
+                }
+
+                .section-txt {
+                    margin-bottom: 0.5333rem;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .six-guarantees-sec3 {
+        .guarantees-list {
+            text-align: center;
+        }
+    }
+
+    .six-guarantees-sec4 {
+        .section-list {
+            .section-item {
+                width:50%;
+                margin-bottom: 0.4rem;
+                background-color: transparent;
+                .section-cover {
+                    width: 2.9733rem;
+                    height: 3.56rem;
+                }
+                .section-txt{
+                    width: 3.4667rem;
+                    margin: 0 auto;
+                    color: #fff;
+                    h3{
+                        margin-bottom: 0.3333rem;
+                        font-size: 0.3467rem;
+                        span{
+                            font-size: 0.2667rem;
+                        }
+
+                    }
+                    .six-guarantees-works{
+                        color: #999;
+                        span{
+                            color: #fff;
+                        }
+                        font-size: 0.2667rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 看丝路毕业学员
+.graduate-student-sec{
+    background-color: #1a161f;
+    .line {
+        width: 0.5333rem;
+        height: 0.0533rem;
+        margin: 0.2667rem auto;
+        background: #FFD908;
+    }
+    .section-list{
+        .section-item{
+            width:33.33%;
+            margin-bottom: 0.4rem;
+            background-color: transparent;
+            text-align: center;
+            .section-cover{
+                width: 2.36rem;
+                height: 2.36rem;
+            }
+            .section-txt{
+                color: #fff;
+                em{
+                    color: #FFD908;  
+                }
+            }
+            
+        }
+    }
+
+}
+
+// 你是否有以下疑问
+.worry-question {
+    background-color: #1a161f;
+    .worry-question-list {
+        .worry-question-item {
+            display: flex;
+            width: 100%;
+            height: 0.8533rem;
+            margin-bottom: 0.2667rem;
+
+            .worry-question-txt {
+                display: flex;
+                align-items: center;
+                flex: 1;
+                padding:0 0.2667rem;
+                font-size: 0.2933rem;
+                background: #fff;
+                color: #999;
+            }
+
+            .worry-question-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.32rem;
+                font-size: 0.3333rem;
+                background: #7578AA;
+                color: #fff;
+            }
+        }
+    }
+}
 // 表单
 .section-form {
-    height: 11.4267rem;
+    height: 9.1733rem;
     background: url("/assets/images/youxi/yxqn/foot-bj.png") no-repeat center;
     background-size: cover;
-  
-    .form-group-txt{
-        line-height: 1rem;
-        padding-top: 1.8rem;
+
+    .form-group-txt {
+        line-height: 1.5;
+        padding-top: 0.9333rem;
         font-size: 0.8rem;
         color: #fff;
+
+        p {
+            font-size: 0.3467rem;
+            opacity: 0.5;
+        }
+    }
+
+    .btn {
+        height: 1.0667rem;
+        line-height: 1.0667rem;
+        background-color: #FCAF0E;
+        color: #333;
     }
 }
