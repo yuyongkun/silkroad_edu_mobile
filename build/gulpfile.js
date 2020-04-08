@@ -100,9 +100,9 @@ gulp.task('sass', () => {
 				cascade: false
 			})
 		)
+		.pipe(chsiRev())
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(assets_css_path))
-		.pipe(chsiRev())
 		.pipe(
 			reload({
 				stream: true
