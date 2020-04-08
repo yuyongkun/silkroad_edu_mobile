@@ -1,25 +1,189 @@
 @import "../common/variable";
 @import "../common/base";
 
-// banner
-.banner {
-    .section-btn {
-        bottom: 1.2667rem;
+.line {
+    width: 0.5333rem;
+    height: 0.0533rem;
+    margin: 0.2667rem auto 0.4rem;
+    background: linear-gradient(-90deg, rgba(211, 56, 134, 1), rgba(152, 89, 203, 1));
+}
+
+// 全民游戏热潮
+.game-craze-sec {
+    .section-list {
+        display: flex;
+        justify-content: space-between;
+
+        .section-item {
+            box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
+
+            img {
+                width: 4.04rem;
+                height: 4.8533rem;
+            }
+        }
     }
 }
 
+// 丝路教育5步法
+.fivestep-method-sec {
+    .fivestep-method-nav {
+        text-align: center;
 
+        .fivestep-method-num {
+            font-size: 0.4267rem;
+        }
+
+        .line {
+            margin: 0.1333rem auto 0.4rem;
+        }
+
+        .fivestep-method-title {
+            font-size: 0.3733rem;
+            font-weight: bold;
+        }
+
+        .fivestep-method-describe {
+            margin-bottom: 0.5333rem;
+            font-size: 0.3733rem;
+        }
+    }
+
+    .fivestep-method-sec1 {
+        .fivestep-method-list {
+            .fivestep-method-item {
+                height: 3.4667rem;
+                padding: 0.4rem;
+                margin-bottom: 0.4rem;
+                background: url("/assets/images/youxi/yxyh/kc1.jpg") no-repeat center;
+                background-size: cover;
+                color: #fff;
+
+                &:nth-child(2) {
+                    background: url("/assets/images/youxi/yxyh/kc2.jpg") no-repeat center;
+                    background-size: cover;
+                }
+
+                &:nth-child(3) {
+                    background: url("/assets/images/youxi/yxyh/kc3.jpg") no-repeat center;
+                    background-size: cover;
+                }
+
+                &:nth-child(4) {
+                    background: url("/assets/images/youxi/yxyh/kc4.jpg") no-repeat center;
+                    background-size: cover;
+                }
+
+                dl {
+                    dt {
+                        margin-bottom: 0.1333rem;
+                        font-size: 0.3733rem;
+                    }
+
+                    dd {
+                        margin-bottom: 0.0667rem;
+                        font-size: 0.2667rem;
+                    }
+                }
+            }
+        }
+
+        .fivestep-method-form {
+            height: 6.1333rem;
+            margin-top: 1.6rem;
+            background: url("/assets/images/youxi/yxyh/tonglan.jpg") no-repeat center;
+            background-size: cover;
+            text-align: center;
+
+            h3 {
+                padding-top: 0.7733rem;
+                font-size: 0.5333rem;
+                font-style: italic;
+                color: #F39800;
+            }
+
+            .form-group {
+                margin-bottom: 0.1333rem;
+            }
+
+            .form-control {
+                width: 5.3333rem;
+                height: 0.8rem;
+                border-color: #fff;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .fivestep-method-sec2 {
+        padding-top: 1.3333rem;
+        .fivestep-method-list {
+            .fivestep-method-item {
+                height: 3.4667rem;
+                padding: 0.4rem;
+                margin-bottom: 0.4rem;
+                background: url("/assets/images/youxi/yxyh/tec1.jpg") no-repeat center;
+                background-size: cover;
+                box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
+                &:nth-child(2) {
+                    background: url("/assets/images/youxi/yxyh/tec2.jpg") no-repeat center;
+                    background-size: cover;
+                }
+
+                &:nth-child(3) {
+                    background: url("/assets/images/youxi/yxyh/tec3.jpg") no-repeat center;
+                    background-size: cover;
+                }
+
+                &:nth-child(4) {
+                    background: url("/assets/images/youxi/yxyh/tec4.jpg") no-repeat center;
+                    background-size: cover;
+                }
+
+                dl {
+                    dt {
+                        margin-bottom: 0.1333rem;
+                        font-size: 0.3733rem;
+                    }
+
+                    dd {
+                        margin-bottom: 0.0667rem;
+                        font-size: 0.2667rem;
+                    }
+                }
+            }
+        }
+    }
+    .fivestep-method-sec3{
+        padding-top: 1.3333rem;
+        .section-nav-tab{
+            margin: 0 -0.4rem 0.5333rem;
+            .section-nav-item.section-nav-btn{
+                width:1.9867rem;
+                height: 1.0667rem;
+                border-radius: 0.5333rem;
+                background-color: transparent;
+                border:1px solid #9859cb;
+                color: #9859cb;
+                &:last-child{
+                    width: 2.4rem;
+                }
+            }
+            .section-nav-item.section-nav-btn.section-nav-active{
+                background-color: #9859cb;
+                color: #fff;
+            }
+        }
+    }
+    .fivestep-method-sec4,.fivestep-method-sec5{
+        padding-top: 1.3333rem;
+    }
+}
 
 // 表单
 .section-form {
-    height: 11.4267rem;
+    height: 13.4133rem;
+    padding-top: 7rem;
     background: url("/assets/images/youxi/yxyh/foot-bj.jpg") no-repeat center;
     background-size: cover;
-  
-    .form-group-txt{
-        line-height: 1rem;
-        padding-top: 1.8rem;
-        font-size: 0.8rem;
-        color: #fff;
-    }
 }
