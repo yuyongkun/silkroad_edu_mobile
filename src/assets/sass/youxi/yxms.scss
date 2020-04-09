@@ -1,6 +1,22 @@
 @import "../common/variable";
 @import "../common/base";
 
+// 游戏3D美术适合谁学？
+.suitable-whom-sec {
+    background-color: #FFFBF9;
+}
+
+//  兴趣变职业 娱乐赚大钱
+.interest-career-sec {
+    .swiper-container {
+        height: 6.6667rem;
+
+        .swiper-wrapper {
+            height: 5.6rem;
+        }
+    }
+}
+
 // 项目高提成薪资
 .royalty-sec {
     .section-list {
@@ -210,8 +226,9 @@
         }
     }
 }
+
 // 高质量教学口碑
-.teaching-word-sec{
+.teaching-word-sec {
     .section-list {
         font-size: 0.2667rem;
 
@@ -225,7 +242,7 @@
             }
 
             .section-txt {
-                padding:0.1333rem 0.05rem;
+                padding: 0.1333rem 0.05rem;
                 padding-bottom: 0px;
                 text-align: center;
 
@@ -237,6 +254,7 @@
         }
     }
 }
+
 // 表单
 .section-form {
     height: 10.6667rem;
