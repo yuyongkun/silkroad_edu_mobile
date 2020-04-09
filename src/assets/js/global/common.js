@@ -18,8 +18,13 @@
                 swiperContainer.setAttribute('id', id);
                 var swiperSelector = '#' + id; //swiper插件初始化的目标对象
                 var $swiperContainer = $(swiperSelector); //swiper-container对象
+                if (autoplay && autoplay.toString() == 'false') {
+                    autoplay = false;
+                } else {
+                    autoplay = autoplay || 3000;
+                }
                 var swiperOption = {
-                    autoplay: autoplay || 3000, //可选选项，自动滑动
+                    autoplay: autoplay, //可选选项，自动滑动
                     loop: true,
                     simulateTouch: true,
                     prevButton: swiperSelector + ' .swiper-button-next',
