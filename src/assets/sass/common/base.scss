@@ -2,13 +2,18 @@
 @import "header_footer";
 
 @font-face {
-    font-family: HiraginoSansGB-W3;
+    font-family: 冬青黑体W3;
     src: url("../../fonts/冬青黑体W3.otf");
 }
 
 @font-face {
+    font-family: HiraginoSansGB-W3;
+    src: url("../../fonts/苹果丽黑W3.otf");
+}
+
+@font-face {
     font-family: HiraginoSansGB-W6;
-    src: url("../../fonts/苹果丽黑(W6)－Hiragino Sans GB W6.otf");
+    src: url("../../fonts/苹果丽黑W6.otf");
 }
 
 * {
@@ -31,7 +36,7 @@ html {
 }
 
 body {
-    font: 14px/1.5 HiraginoSansGB-W3, '微软雅黑', tahoma, arial, Hiragino Sans GB, \5b8b\4f53, sans-serif;
+    font: 14px/1.5 冬青黑体W3, '微软雅黑', tahoma, arial, Hiragino Sans GB, \5b8b\4f53, sans-serif;
     color: #3a3a3a;
 }
 
@@ -158,12 +163,12 @@ img {
     .section-title {
         margin-bottom: 0.6rem;
         font-size: 0.8rem;
-        font-family: HiraginoSansGB-W6;
+        font-family: HiraginoSansGB-W3;
         text-align: center;
         color: #333436;
 
         b {
-            font-family: HiraginoSansGB-W3;
+            font-family: HiraginoSansGB-W6;
         }
     }
 
