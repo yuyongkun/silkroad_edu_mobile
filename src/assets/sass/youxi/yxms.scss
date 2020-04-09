@@ -1,22 +1,46 @@
 @import "../common/variable";
 @import "../common/base";
 
-// banner
-.banner {
-    .section-btn {
-        bottom: 1.2667rem;
+// 项目高提成薪资
+.royalty-sec {
+    .section-list {
+        .section-item {
+            width: 2.84rem;
+
+            .section-cover {
+                height: 3.8933rem;
+            }
+
+            .section-txt {
+                text-align: center;
+
+                .royalty-label {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 1.8933rem;
+                    height: 0.5333rem;
+                    margin: 0 auto;
+                    border-radius: 0.1067rem;
+                    font-size: 0.32rem;
+                    background: #FFB400;
+                }
+
+                p {
+                    color: #333;
+                }
+            }
+        }
     }
 }
-
-
 
 // 表单
 .section-form {
     height: 10.6667rem;
     background: url("/assets/images/youxi/yxms/foot-bj.jpg") no-repeat center;
     background-size: cover;
-  
-    .form-group-txt{
+
+    .form-group-txt {
         line-height: 1rem;
         padding-top: 1.8rem;
         margin-bottom: 0.6rem;
