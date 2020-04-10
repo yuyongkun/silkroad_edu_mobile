@@ -1,0 +1,119 @@
+@import "../common/variable";
+@import "../common/base";
+
+.container {
+    padding: 0 0.2667rem;
+}
+
+.section .section-title {
+    font-size: 0.7333rem;
+    font-family: 微软雅黑;
+}
+
+.banner-next-sec {
+    padding: 1.3333rem 0rem;
+    background: #FAFAFA;
+
+    .section-list {
+        .section-item {
+            width: 30%;
+
+            .section-cover {
+                width: 0.8rem;
+                margin-bottom: 0.1333rem;
+            }
+        }
+    }
+}
+
+// BIM：国家“十三五” 规划主推技术
+.five-plan-sec {
+    background: #FAFAFA;
+
+    .section-list {
+        .section-item {
+            width: 32%;
+        }
+    }
+}
+
+// 联手BIM专家梯队教学研发
+.bim-expert-sec {
+    .bim-expert-title {
+        margin-bottom: 0.4rem;
+        font-size: 0.3733rem;
+        color: #F54F23;
+    }
+
+    .bim-expert-sec1 {
+        margin-bottom: 1.3333rem;
+
+        .section-list {
+            .section-item {
+                width: 20%;
+            }
+        }
+    }
+
+    .bim-expert-sec2 {
+        .section-list {
+            .section-item {
+                width: 32%;
+            }
+        }
+    }
+}
+
+// 商用实战课程
+.practice-course-sec {
+    .section-list {
+        .section-item {
+            width: 32%;
+            text-align: center;
+        }
+    }
+}
+
+// 商业级别学员作品
+.commercial-level-sec {
+    .section-list {
+        .section-item {
+            width: 49%;
+        }
+    }
+}
+
+// 为学员满意就业我们付诸行动
+.put-action-sec {
+    .section-list {
+        .section-item {
+            width: 33.33%;
+            text-align: center;
+            .section-cover{
+                width: 1.6rem;
+                height: 1.6rem;
+            }
+        }
+    }
+}
+
+// 表单
+.section-form {
+    height: 7.8667rem;
+    background: url("/assets/images/bim/bimqn/foot-bj.jpg") no-repeat center;
+    background-size: cover;
+
+    .form-group-txt {
+        padding-top: 0.9333rem;
+        margin-bottom: 0.5333rem;
+        font-size: 0.75rem;
+        color: #fff;
+    }
+
+    .btn {
+        height: 1.0667rem;
+        line-height: 1.0667rem;
+        background-color: #F54F23;
+        color: #fff;
+    }
+}
