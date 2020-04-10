@@ -1,255 +1,156 @@
 @import "../common/variable";
 @import "../common/base";
 
-// 游戏3D美术适合谁学？
-.suitable-whom-sec {
-    background-color: #FFFBF9;
-}
+//BIM时代经验丰富抵不过一纸证书
+.five-plan-sec {
+    .section-list {
+        .section-item {
+            display: flex;
 
-//  兴趣变职业 娱乐赚大钱
-.interest-career-sec {
-    .swiper-container {
-        height: 6.6667rem;
+            .section-cover {
+                width: 4.6rem;
+                height: 3.0667rem;
+            }
 
-        .swiper-wrapper {
-            height: 5.6rem;
+            .section-txt {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 0.2rem;
+            }
         }
     }
 }
 
-// 项目高提成薪资
-.royalty-sec {
-    .section-list {
-        .section-item {
-            width: 2.84rem;
+//  一证在手 前程无忧
+.no-worries-sec {
+    .section-describe {
+        font-size: 0.4rem;
+        color: $base-color;
+        font-family: HiraginoSansGB-W6;
+    }
+}
 
-            .section-cover {
-                height: 3.8933rem;
-            }
+// 官方指定培训机构
+.official-designation-sec {
+    .official-designation-title {
+        margin-bottom: 0.5333rem;
+        font-size: 0.4rem;
+        color: $base-color;
+        font-family: HiraginoSansGB-W6;
+    }
 
-            .section-txt {
+    .official-designation-sec1 {
+        margin-bottom: 0.8rem;
+    }
+
+}
+
+// 联手BIM专家梯队教学研发
+.bim-expert-sec {
+    .bim-expert-title {
+        margin-bottom: 0.4rem;
+        font-size: 0.3733rem;
+        color: #F54F23;
+        font-family: HiraginoSansGB-W6;
+    }
+
+    .bim-expert-sec1 {
+        margin-bottom: 1.3333rem;
+
+        .section-list {
+            .section-item {
+                width: 48%;
                 text-align: center;
+            }
+        }
+    }
 
-                .royalty-label {
+    .bim-expert-sec2 {
+        .section-list {
+            .section-item {
+                width: 48%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//  一站式教学 解决所有问题
+.one-teaching-sec {
+    .one-teaching-title {
+        margin-bottom: 0.4rem;
+        font-size: 0.3733rem;
+        color: #F54F23;
+        font-family: HiraginoSansGB-W6;
+    }
+
+    .one-teaching-sec1 {
+        margin-bottom: 1.3333rem;
+    }
+
+    .one-teaching-sec2 {
+        .section-list {
+            .section-item {
+                display: flex;
+                background: #fff;
+
+                .section-cover {
+                    width: 3.4133rem;
+                    height: 4.3867rem;
+                }
+
+                .section-txt {
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
-                    align-items: center;
-                    width: 1.8933rem;
-                    height: 0.5333rem;
-                    margin: 0 auto;
-                    border-radius: 0.1067rem;
-                    font-size: 0.32rem;
-                    background: #FFB400;
-                }
+                    padding-left: 0.5333rem;
 
-                p {
-                    color: #333;
-                }
-            }
-        }
-    }
-}
+                    h3 {
+                        margin-bottom: 0.1333rem;
+                        font-size: 0.3733rem;
+                        font-family: 微软雅黑;
 
-// 完善课程体系助阵
-.perfect-curriculum-sec {
-    .swiper-container {
-        height: 5.4rem;
-    }
+                        span {
+                            font-size: 0.2667rem;
+                        }
+                    }
 
-    .swiper-wrapper {
-        height: 4.9867rem;
-    }
-
-    .swiper-slide {
-        img {
-            height: 100%;
-        }
-    }
-}
-
-// 倾力研发精编课程
-.fivestep-method-sec {
-    .fivestep-method-list {
-        color: #fff;
-
-        .fivestep-method-item {
-            height: 3.4667rem;
-            padding: 0.4rem;
-            margin-bottom: 0.4rem;
-            background: url("/assets/images/youxi/yxms/kc1.png") no-repeat center;
-            background-size: cover;
-            box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
-
-            &:nth-child(odd) {
-                dl {
-                    margin-left: auto;
-                }
-            }
-
-            &:nth-child(2) {
-                background: url("/assets/images/youxi/yxms/kc2.png") no-repeat center;
-                background-size: cover;
-            }
-
-            &:nth-child(3) {
-                background: url("/assets/images/youxi/yxms/kc3.png") no-repeat center;
-                background-size: cover;
-            }
-
-            &:nth-child(4) {
-                background: url("/assets/images/youxi/yxms/kc4.png") no-repeat center;
-                background-size: cover;
-            }
-
-            &:nth-child(5) {
-                background: url("/assets/images/youxi/yxms/kc5.png") no-repeat center;
-                background-size: cover;
-            }
-
-            dl {
-                width: 45%;
-
-                dt {
-                    margin-bottom: 0.1333rem;
-                    font-size: 0.3733rem;
-                }
-
-                dd {
-                    margin-bottom: 0.0667rem;
-                    font-size: 0.2667rem;
-                }
-            }
-        }
-    }
-}
-
-// AAA级项目案例加持
-.level-project-sec {
-    .section-list {
-        .section-item {
-            width: 4.5333rem;
-        }
-    }
-}
-
-// 金牌讲师 倾囊相授
-.medal-lecturer-sec {
-    .section-list {
-        font-size: 0.2667rem;
-
-        .section-item {
-            width: 50%;
-            margin-bottom: 0.4rem;
-            background-color: transparent;
-
-            .section-cover {
-                width: 2.3067rem;
-                height: 2.3067rem;
-            }
-
-            .section-txt {
-                padding: 0.2667rem 0.4rem;
-                text-align: center;
-
-                h3 {
-                    margin-bottom: 0.2667rem;
-                    font-size: 0.3467rem;
-
-                    span {
-                        font-size: 0.2667rem;
+                    .one-teaching-experience {
+                        margin-bottom: 0.2rem;
+                        color: #EC6941;
                     }
                 }
-
-                .medal-lecturer-pos {
-                    margin-bottom: 0.2rem;
-                    color: #F54F23;
-                }
-
-                p {
-                    color: #666;
-                }
             }
         }
     }
 }
 
-// 学员实力展示
-.student-strength-sec {
-    .section-list {
-        font-size: 0.2667rem;
+// 学员升职加薪
+.silkroad-strength-sec {
+    height: 12.5333rem;
+    background: url("/assets/images/bim/bimkz/bj1.jpg") no-repeat center;
+    background-size: cover;
 
-        .section-item {
-            width: 50%;
-            background-color: transparent;
+    .section-title {
+        color: #fff;
+    }
 
-            .section-cover {
-                width: 4.4667rem;
-                height: 2.5867rem;
-            }
-
-            .section-txt {
-                padding-bottom: 0px;
-                text-align: center;
-
-                h3 {
-                    margin-bottom: 0.2667rem;
-                    font-size: 0.3467rem;
-                }
-            }
-        }
+    .section-btn {
+        margin-top: 6.3333rem;
     }
 }
 
-// 独享六大就业保障
-.employment-security-sec {
+// 6大学习保障
+.put-action-sec {
     .section-list {
-        font-size: 0.2667rem;
-
         .section-item {
-            width: 33.33%;
-            background-color: transparent;
+            width:33.33%;
+            text-align: center;
 
             .section-cover {
-                width: 1.92rem;
-                height: 1.92rem;
-            }
-
-            .section-txt {
-                padding-bottom: 0px;
-                text-align: center;
-
-                h3 {
-                    margin-bottom: 0.2667rem;
-                    font-size: 0.3467rem;
-                }
-            }
-        }
-    }
-}
-
-// 高质量教学口碑
-.teaching-word-sec {
-    .section-list {
-        font-size: 0.2667rem;
-
-        .section-item {
-            width: 33.33%;
-            background-color: transparent;
-
-            .section-cover {
-                width: 2.0267rem;
-                height: 2.0267rem;
-            }
-
-            .section-txt {
-                padding: 0.1333rem 0.05rem;
-                padding-bottom: 0px;
-                text-align: center;
-
-                h3 {
-                    margin-bottom: 0.2667rem;
-                    font-size: 0.3467rem;
-                }
+                width: 1.0667rem;
+                height: 0.9333rem;
             }
         }
     }
