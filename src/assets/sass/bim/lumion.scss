@@ -8,144 +8,89 @@
     background: linear-gradient(-90deg, rgba(211, 56, 134, 1), rgba(152, 89, 203, 1));
 }
 
-// 时下热门软件
-.hot-software-sec {
-    .hot-software-list {
-        .hot-software-item {
-            margin-bottom: 0.8rem;
+//Lumion建筑设计师必备神器
+.game-bonus-sec {
+    .section-list {
+        .section-item {
+            width: 2.9733rem;
 
-            &:last-child {
-                .section-nav-tab {
-                    .section-nav-item {
-                        width: 20%;
+            .section-cover {
+                height: 2.4rem;
+            }
 
-                        &:last-child {
-                            width: 40%;
-                        }
+            .section-txt {
+                h3 {
+                    color: $base-color;
+                }
+            }
+        }
+    }
+}
+
+//  课程全新升级一步掌握软件技巧
+.hot-courses-sec {
+    .section-label-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .section-label-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.88rem;
+            height: 0.6667rem;
+            margin-bottom: 0.2667rem;
+            border: 2px solid rgba(245, 79, 35, 0.2);
+            border-radius: 2px;
+            font-size: 0.2667rem;
+        }
+    }
+}
+
+// BIM领域大咖加持
+.software-sec {
+    .section-list {
+        .section-item {
+            display: flex;
+            padding:0.1333rem;
+            border: 1px solid #E6E6E6;
+
+            .section-cover {
+                width: 3.4133rem;
+                height: 4.68rem;
+            }
+
+            .section-txt {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 0.2667rem;
+
+                h3 {
+                    line-height: 1;
+                    font-size: 0.4rem;
+                    color: #F54F23;
+
+                    span {
+                        margin-left: 0.2rem;
+                        font-size: 0.2933rem;
+                        color: #999;
                     }
                 }
-            }
 
-            .hot-software-title {
-                line-height: 1;
-                margin-bottom: 0.5333rem;
-                font-size: 0.3733rem;
-                padding-left: 0.1333rem;
-                border-left: 0.08rem solid #F64F23;
-            }
-
-            .section-nav-tab {
-                .section-nav-item {
-                    width: 50%;
-                    text-align: center;
+                .software-experience {
+                    margin-bottom: 0.0667rem;
                     font-size: 0.2667rem;
+                    color: #666;
                 }
 
-                .section-nav-active {
-                    color: #FFC107;
-                }
-            }
-        }
-    }
-}
-
-// AUTODESK官方指定学院
-.autodesk-official-sec {
-    .swiper-container {
-        height: 5.7rem;
-
-        .swiper-wrapper {
-            height: 4.48rem;
-
-            .swiper-slide {
-                img {
-                    height: 100%;
-                }
-            }
-        }
-
-        .swiper-pagination-bullet {
-            width: 0.2667rem;
-            height: 0.2667rem;
-            border-radius: 50%;
-            background-color: #EC6941;
-        }
-
-        .swiper-pagination-bullet-active {
-            background-color: #F39800;
-        }
-    }
-}
-
-// 课程由浅至深
-.fivestep-method-sec {
-    .fivestep-method-list {
-        color: #fff;
-
-        .fivestep-method-item {
-            height: 4.8rem;
-            padding: 0.4rem 0.1333rem 0.4rem 0.4rem;
-            margin-bottom: 0.4rem;
-            background: url("/assets/images/youxi/yxrj/kc1.png") no-repeat center;
-            background-size: cover;
-            box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
-
-            &:nth-child(odd) {
-                dl {
-                    margin-left: auto;
-                }
-            }
-
-            &:nth-child(2) {
-                background: url("/assets/images/youxi/yxrj/kc2.png") no-repeat center;
-                background-size: cover;
-            }
-
-            &:nth-child(3) {
-                background: url("/assets/images/youxi/yxrj/kc3.png") no-repeat center;
-                background-size: cover;
-            }
-
-            &:nth-child(4) {
-                background: url("/assets/images/youxi/yxrj/kc4.png") no-repeat center;
-                background-size: cover;
-            }
-
-            &:nth-child(5) {
-                background: url("/assets/images/youxi/yxrj/kc5.png") no-repeat center;
-                background-size: cover;
-            }
-
-            &:nth-child(6) {
-                background: url("/assets/images/youxi/yxrj/kc6.png") no-repeat center;
-                background-size: cover;
-            }
-
-            &:nth-child(7) {
-                background: url("/assets/images/youxi/yxrj/kc7.png") no-repeat center;
-                background-size: cover;
-            }
-
-            dl {
-                width: 55%;
-
-                dt {
-                    margin-bottom: 0.2667rem;
-                    font-size: 0.3733rem;
-                }
-
-                dd {
-                    margin-bottom: 0.1333rem;
+                .software-works {
+                    margin-top: 0.0667rem;
                     font-size: 0.2667rem;
-
-                    &:before {
-                        content: '';
-                        display: inline-block;
-                        width: 0.1333rem;
-                        height: 0.1333rem;
-                        vertical-align: middle;
-                        background: #FFFFFF;
-                        border-radius: 50%;
+                    color: #999;
+                    b {
+                        color: #333;
                     }
                 }
             }
@@ -153,35 +98,33 @@
     }
 }
 
-// 名师全程陪同
-.accompanied-teachers-sec{
-   .section-list{
-       .section-item{
-           img{
-               display: block;
-           }
-           margin-bottom: 0.4rem;
-           box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.2);
-       }
-   }
-}
-// 丝路学员成功入职
-.silkroad-stu-sec{
+//  学员独享六大保障
+.perfect-employment-sec{
     .section-list{
         .section-item{
-            width: 4.4rem;
-            img{
-                display: block;
+            width:33.33%;
+            text-align: center;
+            .section-cover{
+                width:1.6rem;
+                height: 1.6rem;
             }
-            margin-bottom: 0.4rem;
-            box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
         }
+
     }
- }
+
+}
 // 表单
 .section-form {
-    height: 11.2267rem;
-    padding-top: 6rem;
-    background: url("/assets/images/youxi/yxrj/foot-bj.jpg") no-repeat center;
+    height: 8.1333rem;
+    padding-top: 0.85rem;
+    background: url("/assets/images/bim/lumion/foot-bj.png") no-repeat center;
     background-size: cover;
+    .form-group-txt{
+        line-height: 1.3;
+        font-size: 0.8rem;
+        color: #fff;
+        em{
+            color: $base-color;
+        }
+    }
 }
