@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
     <title>关于我们</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586759525495">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586759525495">
-<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586759525495">
-    <link rel="stylesheet" href="/assets/css/aboutus.css?v=1586759525495">
+    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586832561032">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586832561032">
+<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586832561032">
+    <link rel="stylesheet" href="/assets/css/aboutus.css?v=1586832561032">
 </head>
 
 <body>
@@ -262,11 +262,14 @@
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
-        doyooBtns[i].onclick = function () {
-            doyoo.util.openChat('g=10075108'); return false;
+        doyooBtns[i].onclick = function() {
+            doyoo.util.openChat('g=10075108');
+            return false;
         }
     }
 </script>
+<!-- 表单 -->
+<script src="/static/js/formbd.js"></script>
 </body>
 
 </html>
