@@ -26,7 +26,7 @@
                 var swiperOption = {
                     autoplay: autoplay, //可选选项，自动滑动
                     loop: true,
-                    simulateTouch: true,
+                    simulateTouch: false,
                     prevButton: swiperSelector + ' .swiper-button-next',
                     nextButton: swiperSelector + ' .swiper-button-prev',
                     pagination: swiperSelector + ' .swiper-pagination',

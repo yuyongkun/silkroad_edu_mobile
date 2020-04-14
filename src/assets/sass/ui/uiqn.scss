@@ -1,13 +1,162 @@
 @import "../common/variable";
 @import "../common/base";
 
+// 互联网新纪元高薪全栈设计岗
+.five-plan-sec {
+    height: 12.72rem;
+    background: #fff url("/assets/images/ui/uiqn/one-bj.png") no-repeat center;
+    background-size: cover;
+
+    .section-list {
+        .section-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 2.92rem;
+            height: 3.6533rem;
+            background: #fff;
+            text-align: center;
+            box-shadow: 0px 6px 30px 0px rgba(86, 101, 178, 0.36);
+            border-radius: 8px;
+
+            .line {
+                bottom: 0px;
+                width: 0.32rem;
+                height: 0.0267rem;
+                margin: 0.1333rem auto 0;
+                background: #FE743E;
+            }
+        }
+    }
+}
+
+// 确认过眼神
+.bim-expert-sec {
+    height: 12.72rem;
+    background: #fff url("/assets/images/ui/uiqn/one-bj.png") no-repeat center;
+    background-size: cover;
+
+    .section-list {
+        .section-item {
+            width: 32%;
+            height: 4.4rem;
+        }
+    }
+}
+
+// UX设计师的《一稿过秘籍》
+.official-designation-sec {
+    padding: 0px;
+
+    .official-designation-num {
+        position: relative;
+        font-size: 0.5333rem;
+        font-family: HiraginoSansGB-W6;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 12px;
+            margin: auto;
+            width: 1.3067rem;
+            height: 0.16rem;
+            background: #FF6529;
+            opacity: 0.96;
+        }
+    }
+
+    .official-designation-title {
+        margin-bottom: 0.6667rem;
+        font-size: 0.5333rem;
+        font-family: HiraginoSansGB-W3;
+    }
+
+    .official-designation-sec1 {
+        padding: 1.3333rem 0 1.6rem;
+    }
+
+    .official-designation-sec2 {
+        padding: 1.3333rem 0 1.6rem;
+        background: #fff url("/assets/images/ui/uiqn/one-bj.png") no-repeat center;
+        background-size: cover;
+
+        .section-list {
+            .section-item {
+                margin-bottom: 0.5333rem;
+                box-shadow: (-1px) 10px 25px 2px rgba(2, 64, 99, 0.16);
+            }
+        }
+    }
+
+    .official-designation-sec3 {
+        padding: 1.3333rem 0 1.6rem;
+
+        .section-list {
+            .section-item {
+                width: 4.5067rem;
+                text-align: center;
+
+                .section-cover {
+                    height: 2.88rem;
+                }
+            }
+        }
+    }
+
+    .official-designation-sec4 {
+        padding: 1.3333rem 0 1.6rem;
+
+        .swiper-container {
+            height: 7.2667rem;
+
+            .swiper-wrapper {
+                height: 6.2667rem;
+
+                .swiper-slide {
+                    box-shadow: 0px 6px 20px 0px rgba(136, 151, 213, 0.5);
+                }
+            }
+        }
+    }
+}
+
+.one-teaching-sec {
+    background: #fff url("/assets/images/ui/uiqn/one-bj.png") no-repeat center;
+    background-size: cover;
+}
+
+// 涨知识还拿奖金的实训！
+.get-bonus-sec {
+    background: #fff url("/assets/images/ui/uiqn/one-bj1.png") no-repeat center;
+    background-size: cover;
+}
+
+.silkroad-strength-sec {
+    background: #fff url("/assets/images/ui/uiqn/one-bj.png") no-repeat center;
+    background-size: cover;
+}
+
+.put-action-sec {
+    background: #fff url("/assets/images/ui/uiqn/one-bj1.png") no-repeat center;
+    background-size: cover;
+
+    .section-list {
+        .section-item {
+            box-shadow: 0px 9px 30px 0px rgba(106, 99, 189, 0.3);
+        }
+    }
+}
+
 // 表单
 .section-form {
-    height: 11.4267rem;
-    background: url("/assets/images/ui/dsmg/foot-bj.jpg") no-repeat center;
+    height: 13.0667rem;
+    background: url("/assets/images/ui/uiqn/bottom.jpg") no-repeat center;
     background-size: cover;
-  
-    .form-group-txt{
+
+    .form-group-txt {
         line-height: 1rem;
         padding-top: 1.8rem;
         font-size: 0.8rem;
