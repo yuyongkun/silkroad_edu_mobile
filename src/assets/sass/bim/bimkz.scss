@@ -1,17 +1,14 @@
 @import "../common/variable";
 @import "../common/base";
-
 //BIM时代经验丰富抵不过一纸证书
 .five-plan-sec {
     .section-list {
         .section-item {
             display: flex;
-
             .section-cover {
                 width: 4.6rem;
                 height: 3.0667rem;
             }
-
             .section-txt {
                 display: flex;
                 flex-direction: column;
@@ -39,11 +36,9 @@
         color: $base-color;
         font-family: HiraginoSansGB-W6;
     }
-
     .official-designation-sec1 {
         margin-bottom: 0.8rem;
     }
-
 }
 
 // 联手BIM专家梯队教学研发
@@ -54,10 +49,8 @@
         color: #F54F23;
         font-family: HiraginoSansGB-W6;
     }
-
     .bim-expert-sec1 {
         margin-bottom: 1.3333rem;
-
         .section-list {
             .section-item {
                 width: 48%;
@@ -65,7 +58,6 @@
             }
         }
     }
-
     .bim-expert-sec2 {
         .section-list {
             .section-item {
@@ -84,38 +76,31 @@
         color: #F54F23;
         font-family: HiraginoSansGB-W6;
     }
-
     .one-teaching-sec1 {
         margin-bottom: 1.3333rem;
     }
-
     .one-teaching-sec2 {
         .section-list {
             .section-item {
                 display: flex;
                 background: #fff;
-
                 .section-cover {
                     width: 3.4133rem;
                     height: 4.3867rem;
                 }
-
                 .section-txt {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     padding-left: 0.5333rem;
-
                     h3 {
                         margin-bottom: 0.1333rem;
                         font-size: 0.3733rem;
                         font-family: 微软雅黑;
-
                         span {
                             font-size: 0.2667rem;
                         }
                     }
-
                     .one-teaching-experience {
                         margin-bottom: 0.2rem;
                         color: #EC6941;
@@ -131,11 +116,9 @@
     height: 12.5333rem;
     background: url("/assets/images/bim/bimkz/bj1.jpg") no-repeat center;
     background-size: cover;
-
     .section-title {
         color: #fff;
     }
-
     .section-btn {
         margin-top: 6.3333rem;
     }
@@ -145,9 +128,8 @@
 .put-action-sec {
     .section-list {
         .section-item {
-            width:33.33%;
+            width: 33.33%;
             text-align: center;
-
             .section-cover {
                 width: 1.0667rem;
                 height: 0.9333rem;
@@ -159,14 +141,20 @@
 // 表单
 .section-form {
     height: 10.6667rem;
-    background: url("/assets/images/youxi/yxms/foot-bj.jpg") no-repeat center;
-    background-size: cover;
-
+    background: url("/assets/images/bim/bimkz/foot-bj.jpg") no-repeat center;
+    height: 13.6rem;
     .form-group-txt {
         line-height: 1rem;
         padding-top: 1.8rem;
         margin-bottom: 0.6rem;
         font-size: 0.8rem;
         color: #fff;
+    }
+    P {
+        font-size: 0.2767rem;
+        color: #fff;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 0.8rem;
     }
 }

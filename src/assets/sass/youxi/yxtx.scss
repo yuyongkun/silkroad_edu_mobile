@@ -1,17 +1,37 @@
 @import "../common/variable";
 @import "../common/base";
-
 // 游戏红利席卷全球
 .game-bonus-sec {
     .game-bonus-sub {
         padding-top: 0.6667rem;
-
         .section-item {
             margin-bottom: 0.4rem;
-
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+}
+
+.game-bonus-sec {
+    .swiper-container {
+        height: 8rem;
+        .swiper-wrapper {
+            height: 7rem;
+            .swiper-slide {
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        .swiper-pagination-bullet {
+            width: 0.1667rem;
+            height: 0.1667rem;
+            border-radius: 50%;
+            background-color: #EC6941;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #F39800;
         }
     }
 }
@@ -23,7 +43,6 @@
             width: 33.33%;
             margin-bottom: 0.8rem;
             text-align: center;
-
             .section-cover {
                 width: 1.6533rem;
                 height: 1.6533rem;
@@ -42,28 +61,27 @@
             padding: 0.5333rem 0.2667rem;
             background: url("/assets/images/youxi/yxtx/kc1.png") no-repeat center;
             background-size: cover;
-
             &:nth-child(2) {
                 background: url("/assets/images/youxi/yxtx/kc2.png") no-repeat center;
                 background-size: cover;
             }
-
             &:nth-child(3) {
                 background: url("/assets/images/youxi/yxtx/kc3.png") no-repeat center;
                 background-size: cover;
             }
-
             .section-txt {
                 width: 6rem;
                 font-size: 0.3733rem;
                 color: #fff;
-
                 h3 {
                     margin-bottom: 0.2rem;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 0.4rem;
                 }
-
                 p {
                     color: #fff;
+                    font-size: 0.3733rem;
                 }
             }
         }
@@ -72,18 +90,15 @@
 
 .software-sec {
     background-color: #F7F2FF;
-
     .section-list {
         .section-item {
             width: 25%;
             margin-bottom: 0.2667rem;
             text-align: center;
-
             .section-cover {
                 width: 1.4667rem;
                 height: 1.4667rem;
             }
-
             h3 {
                 font-size: 0.2667rem;
             }
@@ -97,12 +112,10 @@
         .section-item {
             margin-bottom: 0.2667rem;
             text-align: center;
-
             .section-cover {
                 margin-bottom: 0.2667rem;
                 height: 4.1867rem;
             }
-
             h3 {
                 font-size: 0.2667rem;
             }
@@ -113,19 +126,16 @@
 // 行业一线大咖名师
 .line-coffee-sec {
     background-color: #F7F2FF;
-
     .section-list {
         .section-item {
             width: 50%;
             margin-bottom: 0.2667rem;
             background-color: transparent;
             text-align: center;
-
             .section-cover {
                 width: 4.2rem;
                 margin-bottom: 0.2667rem;
             }
-
             h3 {
                 font-size: 0.2667rem;
             }
@@ -143,10 +153,10 @@
     height: 10.8rem;
     background: url("/assets/images/youxi/yxtx/foot-bj.png") no-repeat center;
     background-size: cover;
-
     .form-group-txt {
         line-height: 1.5;
         padding-top: 1.3333rem;
         color: #fff;
+        font-size: 0.6rem;
     }
 }
