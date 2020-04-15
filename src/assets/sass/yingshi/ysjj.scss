@@ -1,6 +1,5 @@
 @import "../common/variable";
 @import "../common/base";
-
 // 丝路教育学员
 .learning-guarantee-sec {
     .section-list {
@@ -11,7 +10,6 @@
             color: #666;
             text-align: center;
             background: transparent;
-
             .section-cover {
                 width: 1.92rem;
                 height: 1.92rem;
@@ -26,15 +24,13 @@
     .treasure-land-sec1 {
         margin-bottom: 0.4rem;
         text-align: center;
-
         img {
             width: 5.2667rem;
+            box-shadow: 0rem 0.04rem 0.4rem 0rem rgba(102, 102, 102, 0.2);
         }
     }
-
     .treasure-land-sec2 {
         display: flex;
-
         img {
             width: 50%;
         }
@@ -46,16 +42,13 @@
     .section-serial {
         margin-bottom: 0.5333rem;
         text-align: center;
-
         .section-serial-number {
             font-size: 0.4267rem;
             margin-bottom: 0.1333rem;
         }
-
         .section-serial-txt {
             font-size: 0.3733rem;
         }
-
         .section-serial-line {
             width: 0.5333rem;
             height: 0.0533rem;
@@ -63,19 +56,15 @@
             background: linear-gradient(-90deg, rgba(177, 6, 43, 1), rgba(246, 79, 35, 1));
         }
     }
-
     .film-editing-sec1 {
         margin-bottom: 0.8rem;
-
         .section-list {
             .section-item {
                 margin-bottom: 0.1067rem;
-
                 .section-cover {
                     width: 4.5333rem;
                     height: 2.6667rem;
                 }
-
                 .section-txt {
                     font-size: 0.3733rem;
                     text-align: center;
@@ -83,42 +72,35 @@
             }
         }
     }
-
     .film-editing-sec2 {
         .film-editing-list {
             .film-editing-item {
                 height: 4.8rem;
                 margin-bottom: 0.4rem;
-
                 &:last-child {
                     .film-editing-txt {
                         margin-left: 0.8rem;
                     }
                 }
-
                 &:first-child {
                     .film-editing-txt {
                         margin-left: auto;
                         padding-right: 0.2667rem;
                     }
                 }
-
                 .film-editing-txt {
                     width: 4.5333rem;
                     padding-top: 0.5333rem;
                     color: #fff;
                     font-size: 12px;
-
                     h3 {
                         font-size: 0.3733rem;
                         margin-bottom: 0.4rem;
                     }
-
                     ul {
                         li {
                             position: relative;
                             margin-bottom: 0.1333rem;
-
                             i {
                                 width: 6px;
                                 height: 6px;
@@ -128,7 +110,6 @@
                                 border-radius: 50%;
                                 background: #fff;
                             }
-
                             div {
                                 display: inline-block;
                             }
@@ -144,16 +125,14 @@
 .big-project-sec {
     background: #1F1F1F;
     color: #fff;
-
-    .section-title, .section-describe {
+    .section-title,
+    .section-describe {
         color: #fff;
     }
-
     .big-project-intro {
         width: 3.8667rem;
         margin: 0.6667rem auto 0;
         font-size: 0.32rem;
-
         em {
             color: $base-color;
         }
@@ -175,7 +154,7 @@
     height: 12.3333rem;
     background: url("/assets/images/yingshi/ysjj/wt-bj.jpg") no-repeat center;
     background-size: cover;
-    .section-title{
+    .section-title {
         font-size: 0.7rem;
     }
     .worry-question-list {
@@ -184,17 +163,15 @@
             width: 100%;
             height: 0.8533rem;
             margin-bottom: 0.2667rem;
-
             .worry-question-txt {
                 display: flex;
                 align-items: center;
                 flex: 1;
-                padding:0 0.2667rem;
+                padding: 0 0.2667rem;
                 font-size: 0.2933rem;
                 background: #fff;
                 color: #999;
             }
-
             .worry-question-btn {
                 display: flex;
                 align-items: center;

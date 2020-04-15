@@ -1,6 +1,5 @@
 @import "../common/variable";
 @import "../common/base";
-
 // banner
 .banner {
     .section-btn {
@@ -20,22 +19,17 @@
     .section-title {
         margin-bottom: 1.2rem;
     }
-
     .not-powerful-list {
         text-align: center;
-
         .not-powerful-item {
             margin-bottom: 2.1333rem;
-
             &:last-child {
                 margin-bottom: 0;
             }
-
             .not-powerful-title {
                 position: relative;
                 margin-bottom: 0.5333rem;
                 font-size: 0.5333rem;
-
                 .not-powerful-num {
                     position: absolute;
                     width: 1.6rem;
@@ -46,19 +40,15 @@
                     margin: auto;
                 }
             }
-
             .not-powerful-imglist {
                 display: flex;
                 justify-content: space-between;
-
                 .not-powerful-imgitem {
                     width: 3rem;
-
                     img {
                         width: 100vw;
                         height: 1.6rem;
                     }
-
                     p {
                         font-size: 0.2667rem;
                     }
@@ -73,36 +63,30 @@
     .section-serial {
         margin-bottom: 0.7467rem;
     }
-
     .characteristic-list {
         display: flex;
         height: 5.1rem;
         box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.2);
-
         .characteristic-cover {
             width: 5.3333rem;
             height: 100%;
             overflow: hidden;
-
             img {
                 height: 100%;
             }
         }
-
         .characteristic-txt {
             flex: 1;
             padding: 0.2rem 0;
-
             dl {
                 dt {
                     margin-top: 0.2133rem;
                     font-size: 0.32rem;
-
+                    font-weight: bold;
                     &:first-child {
                         margin-top: 0;
                     }
                 }
-
                 dd {
                     font-size: 0.2667rem;
                     color: #666;
@@ -116,49 +100,41 @@
 .oneline-coffee-sec {
     .oneline-coffee-sec1 {
         margin-bottom: 0.2rem;
-
         img {
             width: 9.9867rem;
             height: 4.16rem;
         }
     }
-
     .oneline-coffee-sec2 {
         .oneline-coffee-list {
             .oneline-coffee-item {
                 display: flex;
                 justify-content: space-between;
                 padding: 0.2rem;
-                height: 2.2267rem;
+                height: 2.3267rem;
                 background: #fff;
                 margin-bottom: 0.2667rem;
                 box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
-
                 &:last-child {
                     margin-bottom: 0px;
                 }
-
                 .oneline-coffee-cover {
                     width: 6rem;
                     height: 1.72rem;
+                    display: block;
                 }
-
                 .oneline-coffee-txt {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     margin-left: 0.4rem;
                     font-size: 0.32rem;
-
                     h3 {
                         margin-bottom: 0.1rem;
                         font-size: 0.32rem;
-                        font-weight: normal;
                     }
-
                     .oneline-coffee-harvest {
                         color: #666;
-
                         em {
                             font-style: normal;
                             color: 333;
@@ -176,17 +152,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
         .good-works-item {
             position: relative;
             width: 45vw;
             height: 5.8267rem;
             margin-bottom: 0.4rem;
-
             .good-works-cover {
                 width: 100%;
             }
-
             .good-works-inner {
                 display: flex;
                 flex-direction: column;
@@ -203,26 +176,21 @@
                 border-radius: 5px;
                 background: #fff;
                 box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
-
                 .good-works-user {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
                     h3 {
                         font-size: 0.3733rem;
                         margin-right: 5px;
                     }
-
                     span {
                         font-size: 12px;
                     }
                 }
-
                 .good-works-pos {
                     color: #FE743E;
                 }
-
                 .good-works-works {
                     text-align: center;
                 }
@@ -234,7 +202,6 @@
 // 真实学员评价实力打Call
 .student-evaluation-sec {
     padding-bottom: 0.9867rem;
-
     .student-evaluation-list {
         display: flex;
         flex-wrap: wrap;
@@ -243,11 +210,9 @@
             width: 2.9467rem;
             height: 1.5733rem;
             margin-bottom: 0.2667rem;
-
             &:last-child {
                 margin-bottom: 0px;
             }
-
             img {
                 display: block;
                 margin: 0 auto;
@@ -256,14 +221,12 @@
     }
 }
 
-
 // 表单
 .section-form {
     height: 11.4267rem;
     background: url("/assets/images/yingshi/c4d/biaodan.jpg") no-repeat center;
     background-size: cover;
-  
-    .form-group-txt{
+    .form-group-txt {
         line-height: 1rem;
         padding-top: 1.8rem;
         font-size: 0.8rem;
