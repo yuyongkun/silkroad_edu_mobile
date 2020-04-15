@@ -4,12 +4,65 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script>
+    (function flexible(window, document) {
+        var docEl = document.documentElement
+        var dpr = window.devicePixelRatio || 1
+
+        // adjust body font size
+        function setBodyFontSize() {
+            if (document.body) {
+                document.body.style.fontSize = (12 * dpr) + 'px'
+            }
+            else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            }
+        }
+        setBodyFontSize();
+
+        // set 1rem = viewWidth / 10
+        function setRemUnit() {
+            var rem = docEl.clientWidth / 10
+            docEl.style.fontSize = rem + 'px'
+        }
+
+        setRemUnit()
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit)
+        window.addEventListener('pageshow', function (e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+        })
+
+        // detect 0.5px supports
+        if (dpr >= 2) {
+            var fakeBody = document.createElement('body')
+            var testElement = document.createElement('div')
+            testElement.style.border = '.5px solid transparent'
+            fakeBody.appendChild(testElement)
+            docEl.appendChild(fakeBody)
+            if (testElement.offsetHeight === 1) {
+                docEl.classList.add('hairlines')
+            }
+            docEl.removeChild(fakeBody)
+        }
+    }(window, document))
+</script>
 
     <title>首页</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586919283918">
 <link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586919283918">
 <link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586919283918">
     <link rel="stylesheet" href="/assets/css/index.css?v=1586919283918">
+=======
+    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586917147583">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586917147583">
+<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586917147583">
+    <link rel="stylesheet" href="/assets/css/index.css?v=1586917147583">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
 </head>
 
 <body>
@@ -76,6 +129,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
+<<<<<<< HEAD
      UX全栈课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">UX全栈视效全能班</li>
@@ -83,6 +137,29 @@
         <li class="header-menu-second">品牌视觉创意班</li>
         <li class="header-menu-second">电商美工精英班</li>
         <li class="header-menu-second">全链路设计精英班</li>
+=======
+    
+    UX全栈课程
+    
+    
+
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/views/ui/uiqn.html">UX全栈视效设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/psds.html"> Photoshop大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/pmsj.html">品牌视觉创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/dsmg.html">电商美工精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/wysj.html">全链路设计精英班</a>
+        </li>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -181,6 +258,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
+<<<<<<< HEAD
       UX全栈 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">UX全栈视效全能班</li>
@@ -188,6 +266,29 @@
         <li class="header-menu-second">品牌视觉创意班</li>
         <li class="header-menu-second">电商美工精英班</li>
         <li class="header-menu-second">全链路设计精英班</li>
+=======
+    
+    
+    UX全栈
+    
+
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/views/ui/uiqn.html">UX全栈视效设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/psds.html"> Photoshop大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/pmsj.html">品牌视觉创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/dsmg.html">电商美工精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/wysj.html">全链路设计精英班</a>
+        </li>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -226,10 +327,13 @@
     </div>
 </div>
 <div class="header-mask" id="header-mask"></div>
-<script src="/assets/js/libs/lib-flexible.js"></script>
     <div class="layout">
         <div class="banner">
+<<<<<<< HEAD
             <img class="banner-cover" src="/assets/images/index/banner.jpg?v=1586919283918" alt="">
+=======
+            <img class="banner-cover" src="/assets/images/index/banner.jpg?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
         </div>
         <div class="section section-bg-write study-design-sec">
             <div class="container">
@@ -239,22 +343,38 @@
                 <div class="study-design-sec1">
                     <div class="section-serial">
                         <div class="section-serial-number">01</div>
+<<<<<<< HEAD
                         <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586919283918" alt=""></div>
+=======
+                        <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586917147583" alt=""></div>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         <div class="section-serial-txt">
                             就业范围广<br>单日招聘岗位100000+
                         </div>
                     </div>
+<<<<<<< HEAD
                     <img src="/assets/images/index/image1-1.jpg?v=1586919283918" alt="">
+=======
+                    <img src="/assets/images/index/image1-1.jpg?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                 </div>
                 <div class="study-design-sec2">
                     <div class="section-serial">
                         <div class="section-serial-number">02</div>
+<<<<<<< HEAD
                         <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586919283918" alt=""></div>
+=======
+                        <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586917147583" alt=""></div>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         <div class="section-serial-txt">
                             岗位晋升快<br>升职加薪机会多
                         </div>
                     </div>
+<<<<<<< HEAD
                     <img src="/assets/images/index/image2-1.jpg?v=1586919283918" alt="">
+=======
+                    <img src="/assets/images/index/image2-1.jpg?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                 </div>
             </div>
         </div>
@@ -269,8 +389,13 @@
                             室内设计入行两大人群
                         </div>
                         <div class="designing-workers-area">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image3-1.png?v=1586919283918" alt="">
                             <img src="/assets/images/index/image3-2.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image3-1.png?v=1586917147583" alt="">
+                            <img src="/assets/images/index/image3-2.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         </div>
                     </div>
                     <div class="designing-workers-row">
@@ -278,7 +403,11 @@
                             丝路教育成就非凡设计人生！
                         </div>
                         <div class="designing-workers-area">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image4-1.jpg?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image4-1.jpg?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         </div>
                         <div class="section-btn">
                             <a class="btn doyoo-btn">查看开班计划</a>
@@ -295,7 +424,11 @@
                 </div>
                 <div class="fit-design-list">
                     <div class="fit-design-item">
+<<<<<<< HEAD
                         <img src="/assets/images/index/image5-1.png?v=1586919283918" alt="">
+=======
+                        <img src="/assets/images/index/image5-1.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         <dl>
                             <dt>相关专业毕业</dt>
                             <dd>缺乏项目实操</dd>
@@ -304,7 +437,11 @@
                         </dl>
                     </div>
                     <div class="fit-design-item">
+<<<<<<< HEAD
                         <img src="/assets/images/index/image5-2.png?v=1586919283918" alt="">
+=======
+                        <img src="/assets/images/index/image5-2.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         <dl>
                             <dt>相关专业毕业</dt>
                             <dd>缺乏项目实操</dd>
@@ -313,7 +450,11 @@
                         </dl>
                     </div>
                     <div class="fit-design-item">
+<<<<<<< HEAD
                         <img src="/assets/images/index/image5-3.png?v=1586919283918" alt="">
+=======
+                        <img src="/assets/images/index/image5-3.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         <dl>
                             <dt>相关专业毕业</dt>
                             <dd>缺乏项目实操</dd>
@@ -322,7 +463,11 @@
                         </dl>
                     </div>
                     <div class="fit-design-item">
+<<<<<<< HEAD
                         <img src="/assets/images/index/image5-4.png?v=1586919283918" alt="">
+=======
+                        <img src="/assets/images/index/image5-4.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         <dl>
                             <dt>相关专业毕业</dt>
                             <dd>缺乏项目实操</dd>
@@ -347,6 +492,7 @@
                 </div>
                 <div class="select-silkroad-reason-list">
                     <div class="select-silkroad-reason-item">
+<<<<<<< HEAD
                         <img src="/assets/images/index/image6-1.jpg?v=1586919283918" alt="">
                         <h3>建筑装饰工程设计专项甲级证书</h3>
                     </div>
@@ -368,6 +514,29 @@
                     </div>
                     <div class="select-silkroad-reason-item">
                         <img src="/assets/images/index/image6-6.jpg?v=1586919283918" alt="">
+=======
+                        <img src="/assets/images/index/image6-1.jpg?v=1586917147583" alt="">
+                        <h3>建筑装饰工程设计专项甲级证书</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/image6-2.jpg?v=1586917147583" alt="">
+                        <h3>建筑装饰工程设计专项甲级证书</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/image6-3.jpg?v=1586917147583" alt="">
+                        <h3>建筑装饰工程设计专项甲级证书</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/image6-4.jpg?v=1586917147583" alt="">
+                        <h3>建筑装饰工程设计专项甲级证书</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/image6-5.jpg?v=1586917147583" alt="">
+                        <h3>建筑装饰工程设计专项甲级证书</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/image6-6.jpg?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         <h3>建筑装饰工程设计专项甲级证书</h3>
                     </div>
                 </div>
@@ -385,14 +554,22 @@
                     </div>
                     <div class="section-serial">
                         <div class="section-serial-number">01</div>
+<<<<<<< HEAD
                         <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586919283918" alt=""></div>
+=======
+                        <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586917147583" alt=""></div>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         <div class="section-serial-txt">
                             自我超越<br>课如其名
                         </div>
                     </div>
                     <div class="fit-design-list">
                         <div class="fit-design-item">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image7-1.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image7-1.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                             <dl>
                                 <dt>10年不断磨砺课程</dt>
                                 <dd>相当</dd>
@@ -401,7 +578,11 @@
                             </dl>
                         </div>
                         <div class="fit-design-item">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image7-2.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image7-2.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                             <dl>
                                 <dt> 吸纳高端设计精髓</dt>
                                 <dd>相当</dd>
@@ -410,7 +591,11 @@
                             </dl>
                         </div>
                         <div class="fit-design-item">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image7-3.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image7-3.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                             <dl>
                                 <dt>贴合业界岗位需求</dt>
                                 <dd>相当</dd>
@@ -419,7 +604,11 @@
                             </dl>
                         </div>
                         <div class="fit-design-item">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image7-4.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image7-4.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                             <dl>
                                 <dt> 商业项目案例实训</dt>
                                 <dd>相当</dd>
@@ -438,13 +627,21 @@
                 <div class="container">
                     <div class="section-serial">
                         <div class="section-serial-number">02</div>
+<<<<<<< HEAD
                         <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586919283918" alt=""></div>
+=======
+                        <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586917147583" alt=""></div>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         <div class="section-serial-txt">
                             掌握主流软件<br>全面提升技能
                         </div>
                     </div>
                     <div class="fit-design-list">
+<<<<<<< HEAD
                         <img src="/assets/images/index/image8-1.png?v=1586919283918" alt="">
+=======
+                        <img src="/assets/images/index/image8-1.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                     </div>
                 </div>
             </div>
@@ -452,7 +649,11 @@
                 <div class="container">
                     <div class="section-serial">
                         <div class="section-serial-number">03</div>
+<<<<<<< HEAD
                         <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586919283918" alt=""></div>
+=======
+                        <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586917147583" alt=""></div>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         <div class="section-serial-txt">
                             汇聚前沿高端技术<br>hold住职场竞争力
                         </div>
@@ -519,8 +720,13 @@
                     一线大咖<br>全力传授设计宝典
                 </div>
                 <div class="oneline-coffee-list">
+<<<<<<< HEAD
                     <img src="/assets/images/index/image10-1.png?v=1586919283918" alt="">
                     <img src="/assets/images/index/image10-2.png?v=1586919283918" alt="">
+=======
+                    <img src="/assets/images/index/image10-1.png?v=1586917147583" alt="">
+                    <img src="/assets/images/index/image10-2.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                 </div>
                 <div class="section-btn">
                     <a class="btn doyoo-btn">名师一对一交流</a>
@@ -528,7 +734,11 @@
             </div>
         </div>
         <div class="section highest-salary-sec">
+<<<<<<< HEAD
             <img src="/assets/images/index/image11-1.jpg?v=1586919283918" alt="">
+=======
+            <img src="/assets/images/index/image11-1.jpg?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
         </div>
         <div class="section section-bg-write good-works-sec">
             <div class="section-title">
@@ -544,6 +754,7 @@
             </div>
             <div class="section-tab-list">
                 <div class="section-tab-col">
+<<<<<<< HEAD
                     <img src="/assets/images/index/image12-1.jpg?v=1586919283918" alt="">
                 </div>
                 <div class="section-tab-col">
@@ -560,6 +771,24 @@
                 </div>
                 <div class="section-tab-col">
                     <img src="/assets/images/index/image12-1.jpg?v=1586919283918" alt="">
+=======
+                    <img src="/assets/images/index/image12-1.jpg?v=1586917147583" alt="">
+                </div>
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/image12-2.jpg?v=1586917147583" alt="">
+                </div>
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/image12-1.jpg?v=1586917147583" alt="">
+                </div>
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/image12-1.jpg?v=1586917147583" alt="">
+                </div>
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/image12-1.jpg?v=1586917147583" alt="">
+                </div>
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/image12-1.jpg?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                 </div>
             </div>
             <div class="container">
@@ -574,9 +803,15 @@
                     真实学员评价<br><b>实力打Call</b>
                 </div>
                 <div class="student-evaluation-list">
+<<<<<<< HEAD
                     <div class="student-evaluation-item"><img src="/assets/images/index/image13-1.png?v=1586919283918" alt=""></div>
                     <div class="student-evaluation-item"><img src="/assets/images/index/image13-2.png?v=1586919283918" alt=""></div>
                     <div class="student-evaluation-item"><img src="/assets/images/index/image13-3.png?v=1586919283918" alt=""></div>
+=======
+                    <div class="student-evaluation-item"><img src="/assets/images/index/image13-1.png?v=1586917147583" alt=""></div>
+                    <div class="student-evaluation-item"><img src="/assets/images/index/image13-2.png?v=1586917147583" alt=""></div>
+                    <div class="student-evaluation-item"><img src="/assets/images/index/image13-3.png?v=1586917147583" alt=""></div>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                 </div>
             </div>
         </div>
@@ -588,41 +823,65 @@
                 <div class="learning-guarantee-list">
                     <div class="learning-guarantee-item">
                         <div class="learning-guarantee-cover">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image14-1.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image14-1.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         </div>
                         <h3>免费试学</h3>
                     </div>
                     <div class="learning-guarantee-item">
                         <div class="learning-guarantee-cover">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image14-2.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image14-2.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         </div>
 
                         <h3>免费试学</h3>
                     </div>
                     <div class="learning-guarantee-item">
                         <div class="learning-guarantee-cover">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image14-3.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image14-3.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         </div>
 
                         <h3>免费试学</h3>
                     </div>
                     <div class="learning-guarantee-item">
                         <div class="learning-guarantee-cover">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image14-4.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image14-4.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         </div>
 
                         <h3>免费试学</h3>
                     </div>
                     <div class="learning-guarantee-item">
                         <div class="learning-guarantee-cover">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image14-5.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image14-5.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         </div>
 
                         <h3>免费试学</h3>
                     </div>
                     <div class="learning-guarantee-item">
                         <div class="learning-guarantee-cover">
+<<<<<<< HEAD
                             <img src="/assets/images/index/image14-6.png?v=1586919283918" alt="">
+=======
+                            <img src="/assets/images/index/image14-6.png?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                         </div>
 
                         <h3>免费试学</h3>
@@ -638,7 +897,11 @@
                 <div class="section-title">
                     <b>3000+合作企业</b><br>轻松入职名企
                 </div>
+<<<<<<< HEAD
                 <img src="/assets/images/index/image15-1.jpg?v=1586919283918" alt="">
+=======
+                <img src="/assets/images/index/image15-1.jpg?v=1586917147583" alt="">
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                 <div class="section-btn">
                     <a class="btn doyoo-btn">查看企业招聘信息</a>
                 </div>
@@ -646,7 +909,11 @@
         </div>
         <!-- 表单统计 -->
         <div class="section-form">
+<<<<<<< HEAD
             <form action="/plus/diy.php?v=1586919283918" enctype="multipart/form-data" method="post"
+=======
+            <form action="/plus/diy.php?v=1586917147583" enctype="multipart/form-data" method="post"
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
                 onsubmit="return checkMobile(this);">
                 <div class="form-group">
                     <input type='text' name='name' placeholder="姓名" class="form-control" />
@@ -661,10 +928,11 @@
         </div>
     </div>
     <script src="/assets/js/libs/jquery.min.js"></script>
-<script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
+<script src="/assets/js/plugs/vide7.4.1/js/video.min.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
-<script src="/assets/js/plugs/swiper/swiper.js"></script>
+<script src="/assets/js/plugs/swiper/swiper.min.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
+<script src="/assets/js/plugs/formbd.js"></script>
 <script src="/assets/js/global/common.js"></script>
 <!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
@@ -676,8 +944,12 @@
         }
     }
 </script>
+<<<<<<< HEAD
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
+=======
+
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
 </body>
 
 </html>

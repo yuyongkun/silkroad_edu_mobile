@@ -4,12 +4,67 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script>
+    (function flexible(window, document) {
+        var docEl = document.documentElement
+        var dpr = window.devicePixelRatio || 1
 
+        // adjust body font size
+        function setBodyFontSize() {
+            if (document.body) {
+                document.body.style.fontSize = (12 * dpr) + 'px'
+            }
+            else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            }
+        }
+        setBodyFontSize();
+
+        // set 1rem = viewWidth / 10
+        function setRemUnit() {
+            var rem = docEl.clientWidth / 10
+            docEl.style.fontSize = rem + 'px'
+        }
+
+<<<<<<< HEAD
     <title>特效合成大师班</title>
     <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586919283918">
 <link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586919283918">
 <link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586919283918">
     <link rel="stylesheet" href="/assets/css/yingshi/ystx.css?v=1586919283918">
+</head>
+=======
+        setRemUnit()
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit)
+        window.addEventListener('pageshow', function (e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+        })
+
+        // detect 0.5px supports
+        if (dpr >= 2) {
+            var fakeBody = document.createElement('body')
+            var testElement = document.createElement('div')
+            testElement.style.border = '.5px solid transparent'
+            fakeBody.appendChild(testElement)
+            docEl.appendChild(fakeBody)
+            if (testElement.offsetHeight === 1) {
+                docEl.classList.add('hairlines')
+            }
+            docEl.removeChild(fakeBody)
+        }
+    }(window, document))
+</script>
+
+    <title>特效合成大师班</title>
+    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586917147583">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586917147583">
+<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586917147583">
+    <link rel="stylesheet" href="/assets/css/yingshi/ystx.css?v=1586917147583">
 </head>
 
 <body>
@@ -76,6 +131,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
+<<<<<<< HEAD
      UX全栈课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">UX全栈视效全能班</li>
@@ -83,6 +139,29 @@
         <li class="header-menu-second">品牌视觉创意班</li>
         <li class="header-menu-second">电商美工精英班</li>
         <li class="header-menu-second">全链路设计精英班</li>
+=======
+    
+    UX全栈课程
+    
+    
+
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/views/ui/uiqn.html">UX全栈视效设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/psds.html"> Photoshop大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/pmsj.html">品牌视觉创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/dsmg.html">电商美工精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/wysj.html">全链路设计精英班</a>
+        </li>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -181,6 +260,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
+<<<<<<< HEAD
       UX全栈 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">UX全栈视效全能班</li>
@@ -188,6 +268,29 @@
         <li class="header-menu-second">品牌视觉创意班</li>
         <li class="header-menu-second">电商美工精英班</li>
         <li class="header-menu-second">全链路设计精英班</li>
+=======
+    
+    
+    UX全栈
+    
+
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/views/ui/uiqn.html">UX全栈视效设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/psds.html"> Photoshop大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/pmsj.html">品牌视觉创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/dsmg.html">电商美工精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/wysj.html">全链路设计精英班</a>
+        </li>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -225,6 +328,7 @@
         </ul>
     </div>
 </div>
+<<<<<<< HEAD
 <div class="header-mask" id="header-mask"></div>
 <script src="/assets/js/libs/lib-flexible.js"></script>
     <div class="layout">
@@ -626,11 +730,414 @@
     </div>
 
     </div>
+=======
+<div class="header-mask" id="header-mask"></div>
+    <div class="layout">
+        <div class="banner">
+            <a class="doyoo-btn">
+                <img class="banner-cover" src="/assets/images/yingshi/ystx/banner.jpg?v=1586917147583" alt="">
+            </a>
+        </div>
+        <div class="section section-bg-write hot-market-sec">
+            <div class="container">
+                <div class="section-title">
+                    影视市场火爆
+                    <br>急需特效大神加盟
+                </div>
+                <div class="section-describe">
+                    影视作品制作中，影视特效已经占据了不可或缺
+                    <br/>的地位，随着美拍、快手、抖音等一系列APP的上线，
+                    <br/>视频制作人才的需求也越来越多。据有关专家分析，
+                    <br/>未来几年影视后期特效合成人才将呈现严重
+                    <br/>不足的局面。
+                </div>
+                <div class="hot-market-list">
+                    <div class="hot-market-item">
+                        <img src="/assets/images/yingshi/ystx/two1.png?v=1586917147583" alt="">
+                    </div>
+                    <div class="hot-market-item">
+                        <img src="/assets/images/yingshi/ystx/two2.png?v=1586917147583" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section designing-workers-sec">
+            <div class="container">
+                <div class="section-title">
+                    学完影视特效合成
+                    <br> 体验人生“薪”高度
+                </div>
+                <div class="designing-workers-list">
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/yingshi/ystx/zy1.jpg?v=1586917147583">
+                        <div class="section-txt">
+                            <h3>影视特效师</h3>
+                            <p>12K-18K/月</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/yingshi/ystx/zy2.jpg?v=1586917147583">
+                        <div class="section-txt">
+                            <h3>广告特效师</h3>
+                            <p>10K-15K/月</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/yingshi/ystx/zy3.jpg?v=1586917147583">
+                        <div class="section-txt">
+                            <h3>三维特效师</h3>
+                            <p>10K-12K/月</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/yingshi/ystx/zy4.jpg?v=1586917147583">
+                        <div class="section-txt">
+                            <h3>后期合成师</h3>
+                            <p>10K-13K/月</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/yingshi/ystx/zy5.jpg?v=1586917147583">
+                        <div class="section-txt">
+                            <h3>动画合成师</h3>
+                            <p>12K-15K/月</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/yingshi/ystx/zy6.jpg?v=1586917147583">
+                        <div class="section-txt">
+                            <h3>特效合成师</h3>
+                            <p>12K-16K/月</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-sources">（数据来源：BOSS直聘招聘信息）</div>
+                <div class="section-btn">
+                    <a class="btn doyoo-btn">了解更多职位</a>
+                </div>
+            </div>
+        </div>
+        <div class="section character-superiority-sec ">
+            <div class="character-superiority-sec1 section-bg-write">
+                <div class="section-title">
+                    丝路教育特色优势
+                    <br> 丝路学员专享福利
+                </div>
+                <div class="container">
+                    <div class="character-superiority-title">
+                        优势1<br> 10大主流软件 掌握特效技能
+                    </div>
+                    <img src="/assets/images/yingshi/ystx/rj.png?v=1586917147583">
+                    <div class="section-btn">
+                        <a class="btn doyoo-btn">免费获取软件包</a>
+                    </div>
+                </div>
+            </div>
+            <div class="character-superiority-sec2 section-bg-write">
+                <div class="container">
+                    <div class="character-superiority-title">优势2<br>定制课程大纲 塑造全能型人才</div>
+                    <div class="character-superiority-list">
+                        <div class="character-superiority-item">
+                            <img class="character-superiority-cover" src="/assets/images/yingshi/ystx/kc1.png?v=1586917147583">
+                            <div class="character-superiority-txt">
+                                <h3>制作基础课程</h3>
+                                <p>
+                                    提升自身的观察能力以及审美能力，为后续特效制作合成打下基础。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="character-superiority-item">
+                            <img class="character-superiority-cover" src="/assets/images/yingshi/ystx/kc2.png?v=1586917147583">
+                            <div class="character-superiority-txt">
+                                <h3>影视剪辑课程</h3>
+                                <p>
+                                    了解常用工具的命令使用，掌握不同视频的剪辑技巧、影视调色技巧。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="character-superiority-item">
+                            <img class="character-superiority-cover" src="/assets/images/yingshi/ystx/kc3.png?v=1586917147583">
+                            <div class="character-superiority-txt">
+                                <h3>特效技术课程</h3>
+                                <p>
+                                    掌握AE软件的操作技巧，制作出影视中常见的各种酷炫的特效。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="character-superiority-item">
+                            <img class="character-superiority-cover" src="/assets/images/yingshi/ystx/kc4.png?v=1586917147583">
+                            <div class="character-superiority-txt">
+                                <h3>视效合成课程</h3>
+                                <p>
+                                    掌握视效合成技术、粒子视觉创意、影视级别的视觉呈现能力。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="character-superiority-item">
+                            <img class="character-superiority-cover" src="/assets/images/yingshi/ystx/kc5.png?v=1586917147583">
+                            <div class="character-superiority-txt">
+                                <h3>C4D特效课程</h3>
+                                <p>
+                                    熟练调节C4D动力学模块的各项参数，完成刚体，柔体等的模拟。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="character-superiority-item">
+                            <img class="character-superiority-cover" src="/assets/images/yingshi/ystx/kc6.png?v=1586917147583">
+                            <div class="character-superiority-txt">
+                                <h3>实战演练课程</h3>
+                                <p>
+                                    拥有丰厚的知识贮备能力以及项目实战经验，不断提升影视设计能力。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-btn">
+                        <a class="btn doyoo-btn">了解课程详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="character-superiority-sec3">
+                <div class="container">
+                    <div class="character-superiority-title">优势3<br> 上市公司强势助力 学员背后最坚实的力量</div>
+                    <div class="character-superiority-describe">丝路教育隶属于上市公司丝路视觉旗下全国CG人才
+                        <br/>培养基地， 丝路视觉作为国家动漫企业和高新技术企业
+                        <br/>标杆， 多次参与国际性影视项目制作，将“奥斯卡”
+                        <br/>级项目作为丝路教育独家教学素材，是技能
+                        <br/> 培养最坚实的后盾。
+                    </div>
+                    <div class="student-evaluation-list">
+                        <div class="student-evaluation-item">
+                            企业营销影片年产量<br> 1500+部
+                        </div>
+                        <div class="student-evaluation-item">
+                            多部作品获得美国<br> AUTODESK大奖
+                        </div>
+                        <div class="student-evaluation-item">
+                            亚洲微电影<br> 金海棠奖
+                        </div>
+                        <div class="student-evaluation-item">
+                            中国国际动漫节<br> 金猴奖
+                        </div>
+                    </div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ystx/zp1.jpg?v=1586917147583">
+                            <div class="section-txt">
+                                <h3>《战狼2》</h3>
+                                <p>累计票房：<em>56.79亿</em></p>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ystx/zp2.jpg?v=1586917147583">
+                            <div class="section-txt">
+                                <h3>《流浪地球》</h3>
+                                <p>累计票房：<em>46.84亿</em></p>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ystx/zp3.jpg?v=1586917147583">
+                            <div class="section-txt">
+                                <h3>《哪吒之魔童降世》</h3>
+                                <p>累计票房：<em>50.13亿</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-btn">
+                        <a class="btn doyoo-btn">了解更多实力</a>
+                    </div>
+                </div>
+            </div>
+            <div class="character-superiority-sec4 section-bg-write">
+                <div class="container">
+                    <div class="character-superiority-title">优势4<br>一线资深讲师助阵 攻克影视特效壁垒</div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ystx/ls1.png?v=1586917147583">
+                            <div class="section-txt">
+                                <div class="good-works-inner">
+                                    <div class="good-works-user">
+                                        <h3>铁礼东</h3>
+                                        <span>/10年从业经验</span>
+                                    </div>
+                                    <div class="good-works-pos">影视视效高级讲师</div>
+                                    <div class="good-works-works">
+                                        代表项目：《魔法俏佳人大电影》《王修田全国巡回书画展》......
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ystx/ls2.png?v=1586917147583">
+                            <div class="section-txt">
+                                <div class="good-works-inner">
+                                    <div class="good-works-user">
+                                        <h3>杨文强</h3>
+                                        <span>/9年从业经验</span>
+                                    </div>
+                                    <div class="good-works-pos">影视视效高级讲师</div>
+                                    <div class="good-works-works">
+                                        代表项目：《天龙八部3D》 《风云》……
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ystx/ls3.png?v=1586917147583">
+                            <div class="section-txt">
+                                <div class="good-works-inner">
+                                    <div class="good-works-user">
+                                        <h3>贡昆仑</h3>
+                                        <span>/6年从业经验</span>
+                                    </div>
+                                    <div class="good-works-pos">影视视效高级讲师</div>
+                                    <div class="good-works-works">
+                                        代表项目： 《极限挑战》 《珀莱雅》......
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ystx/ls4.png?v=1586917147583">
+                            <div class="section-txt">
+                                <div class="good-works-inner">
+                                    <div class="good-works-user">
+                                        <h3>叶志</h3>
+                                        <span>/6年从业经验</span>
+                                    </div>
+                                    <div class="good-works-pos">影视视效高级讲师</div>
+                                    <div class="good-works-works">
+                                        代表项目：《乐事薯片》 《360推广视频》……
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-btn">
+                        <a class="btn doyoo-btn">与名师交流</a>
+                    </div>
+                </div>
+            </div>
+            <div class="character-superiority-sec5">
+                <div class="container">
+                    <div class="character-superiority-title">优势5<br>在校参与一线项目实训 技能+经验双提升
+                    </div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ystx/sx1.jpg?v=1586917147583">
+                            <div class="section-txt section-abs">
+                                <div class="two-correct-label">国家级项目</div>
+                                <div class="two-correct-txt">
+                                    <h3>《真理永恒》-献礼“十九大”</h3>
+                                    <p>项目分工：三维模型/渲染-特效/视效-后期包装-剪辑</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ystx/sx2.jpg?v=1586917147583">
+                            <div class="section-txt section-abs">
+                                <div class="two-correct-label">一线企业项目</div>
+                                <div class="two-correct-txt">
+                                    <h3>南方航空安全须知”宣传片</h3>
+                                    <p>项目分工：三维设计-实拍-特效/视效-后期合成-剪辑</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-btn">
+                        <a class="btn doyoo-btn">查看更多实训案例</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-bg-write">
+            <div class="container">
+                <div class="section-title">
+                    独享6大保障
+                    <br> 就业无负担
+                </div>
+                <img src="/assets/images/yingshi/ystx/bz.png?v=1586917147583">
+            </div>
+        </div>
+        <div class="section spokesperson-sec">
+            <div class="container">
+                <div class="section-title">
+                    开启职场“薪”时代
+                    <br>他们都是亲历者
+                </div>
+                <div class="section-list">
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/yingshi/ystx/xy1.png?v=1586917147583" alt="">
+                        <div class="section-txt">
+                            <h3>姓名：潘**</h3>
+                            <p>公司：丝路视觉</p>
+                            <p>项目：玛丽黛佳美妆</p>
+                            <div>月薪：10000+</div>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/yingshi/ystx/xy2.png?v=1586917147583" alt="">
+                        <div class="section-txt">
+                            <h3>姓名：谢**</h3>
+                            <p>公司：深圳百度</p>
+                            <p>项目：极米PLAY</p>
+                            <div>月薪：15000+</div>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/yingshi/ystx/xy3.png?v=1586917147583" alt="">
+                        <div class="section-txt">
+                            <h3>姓名：许**</h3>
+                            <p>公司：绿联科技</p>
+                            <p>项目：视觉营销</p>
+                            <div>月薪：15000+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-btn">
+                    <a class="btn doyoo-btn">查看更多就业学员</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-bg-write">
+            <div class="container">
+                <div class="section-title">
+                    3000+名企合作<br>直通高薪岗位
+                </div>
+                <img src="/assets/images/yingshi/c4d/logo.jpg?v=1586917147583" alt="">
+            </div>
+        </div>
+        <!-- 表单统计 -->
+        <div class="section-form">
+            <form id="form">
+                <div class="form-group form-group-txt">
+                    高薪就职
+                    <br> 只有一步距离
+                </div>
+                <div class="form-group">
+                    <input type='text' name='name' id="name" placeholder="姓名：请填写姓名" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name='tel' id="tel" class="form-control" placeholder="联系方式：请填写手机号码" />
+                </div>
+                <input type="text" name='time' id='time' style="display: none;" />
+
+                <div class="form-submit">
+                    <button class="btn" type="button" onclick="add_ajaxmessage()">一键预约免费试听</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
     <script src="/assets/js/libs/jquery.min.js"></script>
-<script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
+<script src="/assets/js/plugs/vide7.4.1/js/video.min.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
-<script src="/assets/js/plugs/swiper/swiper.js"></script>
+<script src="/assets/js/plugs/swiper/swiper.min.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
+<script src="/assets/js/plugs/formbd.js"></script>
 <script src="/assets/js/global/common.js"></script>
 <!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
@@ -642,8 +1149,14 @@
         }
     }
 </script>
+<<<<<<< HEAD
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
 </body>
 
+=======
+
+</body>
+
+>>>>>>> b6d61aba2e8acefee754546817a6c2d9f49a3f9c
 </html>
