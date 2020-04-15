@@ -17,7 +17,6 @@
                 var id = 'swiper-container-' + parseInt(Math.random() * 10000);
                 swiperContainer.setAttribute('id', id);
                 var swiperSelector = '#' + id; //swiper插件初始化的目标对象
-                var $swiperContainer = $(swiperSelector); //swiper-container对象
                 if (autoplay && autoplay.toString() == 'false') {
                     autoplay = false;
                 } else {
@@ -52,17 +51,6 @@
                     })
                 }
                 var swiper = new Swiper(swiperSelector, swiperOption);
-                var $swiperSlide = $swiperContainer.find('.swiper-slide'); //swiper-slide对象
-                // 鼠标移入
-                $swiperSlide.mouseenter(function () {
-                    // 鼠标引入暂停swiper滑动
-                    swiper.stopAutoplay();
-                })
-                // 鼠标移出
-                $swiperSlide.mouseleave(function () {
-                    // 鼠标离开开启swiper滑动
-                    swiper.startAutoplay();
-                })
             }
         },
         initBd: function () {
