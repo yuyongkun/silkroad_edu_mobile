@@ -1,15 +1,177 @@
 @import "../common/variable";
 @import "../common/base";
 
+.section .section-title em {
+    color: #8B22E7;
+}
+
+.section-btn {
+    .doyoo-btn {
+        img {
+            margin: 0 auto;
+            width: 4rem;
+        }
+    }
+}
+
+.high-suppliers-sec {
+    .high-suppliers-nav {
+        margin-top: 1.2rem;
+        margin-bottom: 0.56rem;
+        text-align: center;
+
+        h3 {
+            margin-bottom: 0.48rem;
+            font-size: 0.4rem;
+            font-family: HiraginoSansGB-W6;
+            color: #8B22E7;
+
+            span {
+                color: #DDD7FD;
+            }
+        }
+
+        p {
+            font-size: 0.32rem;
+            font-family: HiraginoSansGB-W3;
+        }
+    }
+
+    .high-suppliers-sec2 {
+        .section-list {
+            width: 7.84rem;
+            margin: 0 auto;
+
+            .section-item {
+                width: 2.4rem;
+                height: 4.7733rem;
+            }
+        }
+    }
+}
+
+.five-plan-sec {
+    background: #FFF2D0;
+
+    .container {
+        padding: 0 0.5733rem;
+    }
+
+    .section-list {
+        .section-item {
+            width: 4.2rem;
+            height: 6.6667rem;
+        }
+    }
+}
+
+.no-worries-sec {
+    .no-worries-nav {
+        margin-top: 1.2rem;
+        margin-bottom: 0.56rem;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.48rem;
+            font-size: 0.4rem;
+            font-family: 微软雅黑;
+            color: #8B22E7;
+
+            span {
+                margin-right: 0.1333rem;
+                font-size: 0.64rem;
+                color: #DDD7FD;
+            }
+        }
+    }
+
+    .no-worries-sec1 {
+        .no-worrie-tab {
+            width: 5rem;
+            height: 0.6667rem;
+            margin: 0 auto 0.6667rem;
+
+            img {
+                display: block;
+            }
+        }
+    }
+
+    .no-worries-sec3 {
+        .no-worries-rt {
+            text-align: left;
+        }
+    }
+}
+
+.actual-combat-sec {
+    height: 25.12rem;
+    background: url("/assets/images/ui/dsmg/bj1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.bim-expert-sec {
+    .section-list {
+        .section-item {
+            width: 4.4rem;
+            height: 3.7333rem;
+        }
+    }
+}
+
+.one-teaching-sec {
+    background: #FFF2D0;
+
+    .swiper-container {
+        height: 6.2rem;
+
+        .swiper-wrapper {
+            height: 5.3333rem;
+            font-size: 0.2667rem;
+
+            .one-teaching-cover {
+                width: 4.2667rem;
+                margin-bottom: 0.2rem;
+            }
+
+            h3 {
+                font-size: 0.3733rem;
+
+                span {
+                    font-size: 0.2667rem;
+                }
+            }
+
+            .one-teaching-experience {
+                text-align: center;
+                color: $base-color;
+            }
+
+            .one-teaching-works {
+                color: #666;
+            }
+        }
+    }
+}
+
+.put-action-sec {
+    background: #fffbe8;
+}
+
 // 表单
 .section-form {
-    height: 11.4267rem;
-    background: url("/assets/images/ui/dsmg/foot-bj.jpg") no-repeat center;
+    height: 10.5333rem;
+    background: url("/assets/images/ui/dsmg/bottom.jpg") no-repeat center;
     background-size: cover;
-  
-    .form-group-txt{
+
+    .form-group-txt {
         line-height: 1rem;
-        padding-top: 1.8rem;
+        margin-bottom: 1.3333rem;
+        padding-top: 1.3333rem;
         font-size: 0.8rem;
         color: #fff;
     }

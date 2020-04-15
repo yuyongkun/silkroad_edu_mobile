@@ -60,10 +60,8 @@
     }
 }
 
+// 网上自学软件VS丝路系统教学
 .no-worries-sec {
-    .container{
-        margin-bottom: 1.2rem;
-    }
     .section-list {
         &:nth-of-type(2) {
             margin-bottom: 2rem;
@@ -71,10 +69,54 @@
     }
 }
 
+// banner
+.banner-sec {
+    padding: 0px;
+}
+
+// wap.silusheji.com/admin@cs/
+.official-designation-sec {
+    background: #E6EAED;
+}
+
+// 不止PS课程
+.bim-expert-sec {
+    background: #F2FDFF;
+
+    .section-list {
+        .section-item {
+            width: 4.2133rem;
+            height: 5.0267rem;
+        }
+    }
+}
+
+// 丝路教育Adobe官方授权培训机构
+.bim-expert-sec {
+    .section-list {
+        .section-item {
+            width: 4.5333rem;
+            height: 3.2933rem;
+        }
+    }
+}
+
+// 职位+薪资同步UP
+.up-sec {
+    background: #FAFAFA;
+
+    .section-list {
+        .section-item {
+            box-shadow: 0px 8px 46px 0px rgba(200, 191, 255, 0.38);
+            border-radius: 8px;
+        }
+    }
+}
+
 // 表单
 .section-form {
-    height: 11.4267rem;
-    background: url("/assets/images/ui/dsmg/foot-bj.jpg") no-repeat center;
+    height: 10.88rem;
+    background: url("/assets/images/ui/psds/bottom.jpg") no-repeat center;
     background-size: cover;
 
     .form-group-txt {

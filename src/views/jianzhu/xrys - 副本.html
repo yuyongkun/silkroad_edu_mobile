@@ -4,58 +4,12 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<script>
-    (function flexible(window, document) {
-        var docEl = document.documentElement
-        var dpr = window.devicePixelRatio || 1
 
-        // adjust body font size
-        function setBodyFontSize() {
-            if (document.body) {
-                document.body.style.fontSize = (12 * dpr) + 'px'
-            }
-            else {
-                document.addEventListener('DOMContentLoaded', setBodyFontSize)
-            }
-        }
-        setBodyFontSize();
-
-        // set 1rem = viewWidth / 10
-        function setRemUnit() {
-            var rem = docEl.clientWidth / 10
-            docEl.style.fontSize = rem + 'px'
-        }
-
-        setRemUnit()
-
-        // reset rem unit on page resize
-        window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
-            if (e.persisted) {
-                setRemUnit()
-            }
-        })
-
-        // detect 0.5px supports
-        if (dpr >= 2) {
-            var fakeBody = document.createElement('body')
-            var testElement = document.createElement('div')
-            testElement.style.border = '.5px solid transparent'
-            fakeBody.appendChild(testElement)
-            docEl.appendChild(fakeBody)
-            if (testElement.offsetHeight === 1) {
-                docEl.classList.add('hairlines')
-            }
-            docEl.removeChild(fakeBody)
-        }
-    }(window, document))
-</script>
-
-    <title>渲染艺术精英班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1586934576676">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586934576676">
-<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1586934576676">
-    <link rel="stylesheet" href="/assets/css/jianzhu/xrys.css?v=1586934576676">
+    <title>建筑视效全能班</title>
+    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586829421674">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586829421674">
+<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586829421674">
+    <link rel="stylesheet" href="/assets/css/jianzhu/xrys.css?v=1586829421674">
 </head>
 
 <body>
@@ -128,23 +82,12 @@
     UX全栈课程
     
     
-
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">
-            <a href="/views/ui/uiqn.html">UX全栈视效设计全能班</a>
-        </li>
-        <li class="header-menu-second">
-            <a href="/views/ui/psds.html"> Photoshop大师班</a>
-        </li>
-        <li class="header-menu-second">
-            <a href="/views/ui/pmsj.html">品牌视觉创意班</a>
-        </li>
-        <li class="header-menu-second">
-            <a href="/views/ui/dsmg.html">电商美工精英班</a>
-        </li>
-        <li class="header-menu-second">
-            <a href="/views/ui/wysj.html">全链路设计精英班</a>
-        </li>
+        <li class="header-menu-second">影视后期全能班</li>
+        <li class="header-menu-second">影视特效合成大师班</li>
+        <li class="header-menu-second">剪辑包装创意班</li>
+        <li class="header-menu-second">影视动画精英班</li>
+        <li class="header-menu-second">C4D特效大师班</li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -255,23 +198,12 @@
     
     UX全栈
     
-
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">
-            <a href="/views/ui/uiqn.html">UX全栈视效设计全能班</a>
-        </li>
-        <li class="header-menu-second">
-            <a href="/views/ui/psds.html"> Photoshop大师班</a>
-        </li>
-        <li class="header-menu-second">
-            <a href="/views/ui/pmsj.html">品牌视觉创意班</a>
-        </li>
-        <li class="header-menu-second">
-            <a href="/views/ui/dsmg.html">电商美工精英班</a>
-        </li>
-        <li class="header-menu-second">
-            <a href="/views/ui/wysj.html">全链路设计精英班</a>
-        </li>
+        <li class="header-menu-second">影视后期全能班</li>
+        <li class="header-menu-second">影视特效合成大师班</li>
+        <li class="header-menu-second">剪辑包装创意班</li>
+        <li class="header-menu-second">影视动画精英班</li>
+        <li class="header-menu-second">C4D特效大师班</li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -316,10 +248,11 @@
     </div>
 </div>
 <div class="header-mask" id="header-mask"></div>
+<script src="/assets/js/libs/lib-flexible.js"></script>
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img class="banner-cover" src="/assets/images/jianzhu/xrys/banner.jpg?v=1586934576676" alt="">
+                <img class="banner-cover" src="/assets/images/jianzhu/xrys/banner.jpg?v=1586829421674" alt="">
             </a>
         </div>
         <!-- 渲染艺术 -->
@@ -329,7 +262,7 @@
                     渲染艺术
                     <br>建筑表现的灵魂
                 </div>
-                <img src="/assets/images/jianzhu/xrys/img1-1.png?v=1586934576676" alt="">
+                <img src="/assets/images/jianzhu/xrys/img1-1.png?v=1586829421674" alt="">
                         
             </div>
         </div>
@@ -342,13 +275,13 @@
                 </div>
                 <div class=" zh">
                    <div>
-                       <img src="/assets/images/jianzhu/xrys/img2-1.jpg?v=1586934576676">
+                       <img src="/assets/images/jianzhu/xrys/img2-1.jpg?v=1586829421674">
                    </div>
                    <div class="zj">
-                    <img src="/assets/images/jianzhu/xrys/img2-2.jpg?v=1586934576676">
+                    <img src="/assets/images/jianzhu/xrys/img2-2.jpg?v=1586829421674">
                 </div>
                 <div>
-                    <img src="/assets/images/jianzhu/xrys/img2-3.jpg?v=1586934576676">
+                    <img src="/assets/images/jianzhu/xrys/img2-3.jpg?v=1586829421674">
                 </div>
                 </div>
             </div>
@@ -361,19 +294,19 @@
             <div class="container">
                 <div class="section-title">
                     就业“钱”景广阔
-                    <br>一个有颜又有钱的职业
+                    <br><b>一个有颜又有钱的职业</b>
                 </div>
                 <div class="zy-img">
-                    <img src="/assets/images/jianzhu/xrys/img3-1.jpg?v=1586934576676" alt="">
+                    <img src="/assets/images/jianzhu/xrys/img3-1.jpg?v=1586829421674" alt="">
                 </div>
                 <div class="zy-img">
-                    <img src="/assets/images/jianzhu/xrys/img3-2.jpg?v=1586934576676" alt="">
+                    <img src="/assets/images/jianzhu/xrys/img3-2.jpg?v=1586829421674" alt="">
                 </div>
                 <div class="zy-img">
-                    <img src="/assets/images/jianzhu/xrys/img3-3.jpg?v=1586934576676" alt="">
+                    <img src="/assets/images/jianzhu/xrys/img3-3.jpg?v=1586829421674" alt="">
                 </div>
                 <div class="zy-img">
-                    <img src="/assets/images/jianzhu/xrys/img3-4.jpg?v=1586934576676" alt="">
+                    <img src="/assets/images/jianzhu/xrys/img3-4.jpg?v=1586829421674" alt="">
                 </div>
             </div>
             <div class="section-btn">
@@ -385,12 +318,12 @@
             <div class="container">
                 <div class="section-title">
                     视觉领域上市公司
-                    <br>奥斯卡级云渲染团队
+                    <br><b>奥斯卡级云渲染团队</b>
                 </div>
                 <div class="section-describe">
                     丝路旗下瑞云科技，作品包括诸多著名建筑地产项目案例，是中国“自助式云渲染”的开创者，亚洲最大的云渲染工厂。丝路教育为学员提供行业最前沿的项目实训案例和实践机会，让丝路学员在校即接触行业真实项目。
                 </div>
-                <img src="/assets/images/jianzhu/xrys/xm.jpg?v=1586934576676" alt="">
+                <img src="/assets/images/jianzhu/xrys/xm.jpg?v=1586829421674" alt="">
                 
             </div>
             <div class="section-btn">
@@ -409,17 +342,17 @@
                 <div class="rc">
                     人才委培协议
                 </div>
-                <img src="/assets/images/jianzhu/xrys/img5-1.jpg?v=1586934576676" alt="">
-                <img src="/assets/images/jianzhu/xrys/img5-2.jpg?v=1586934576676" alt="">
-                <img src="/assets/images/jianzhu/xrys/img5-3.jpg?v=1586934576676" alt="">
-                <div class="rc" style="margin-top: 0.7rem;?v=1586934576676">
+                <img src="/assets/images/jianzhu/xrys/img5-1.jpg?v=1586829421674" alt="">
+                <img src="/assets/images/jianzhu/xrys/img5-2.jpg?v=1586829421674" alt="">
+                <img src="/assets/images/jianzhu/xrys/img5-3.jpg?v=1586829421674" alt="">
+                <div class="rc" style="margin-top: 0.7rem;?v=1586829421674">
                     合作企业办公环境
                 </div>
-                <img src="/assets/images/jianzhu/xrys/img6-1.jpg?v=1586934576676" alt="">
-                <div class="rc" style="margin-top: 0.7rem;?v=1586934576676">
+                <img src="/assets/images/jianzhu/xrys/img6-1.jpg?v=1586829421674" alt="">
+                <div class="rc" style="margin-top: 0.7rem;?v=1586829421674">
                     往期入职学员
                 </div>
-                <img src="/assets/images/jianzhu/xrys/img7-1.png?v=1586934576676" alt="">
+                <img src="/assets/images/jianzhu/xrys/img7-1.png?v=1586829421674" alt="">
             </div>
             <div class="section-btn">
                 <a class="btn doyoo-btn">我要加入大厂</a>
@@ -436,8 +369,8 @@
                     <div class="section-describe">
                         丝路教育渲染艺术精英班课程大纲根据建筑表现类专业要求制定，渲染课程共分2个进阶阶段，承接母公司丝路视觉真实项目案例实训，从软件操作到实际应用一应覆盖。日有所进，让你的成长看得见，为高薪就业打下坚实基础。
                     </div>
-                    <img class="section-cover" src="/assets/images/jianzhu/xrys/img8-1.jpg?v=1586934576676" alt="">                    
-                    <img class="section-cover" src="/assets/images/jianzhu/xrys/img8-2.jpg?v=1586934576676" alt="">
+                    <img class="section-cover" src="/assets/images/jianzhu/xrys/img8-1.jpg?v=1586829421674" alt="">                    
+                    <img class="section-cover" src="/assets/images/jianzhu/xrys/img8-2.jpg?v=1586829421674" alt="">
                                             
                     </div>
                 </div>
@@ -458,19 +391,19 @@
                     
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/xrys/img9-1.jpg?v=1586934576676" alt="">
+                            <img class="section-cover" src="/assets/images/jianzhu/xrys/img9-1.jpg?v=1586829421674" alt="">
                             
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/xrys/img9-2.jpg?v=1586934576676" alt="">
+                            <img class="section-cover" src="/assets/images/jianzhu/xrys/img9-2.jpg?v=1586829421674" alt="">
                             
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/xrys/img9-3.jpg?v=1586934576676" alt="">
+                            <img class="section-cover" src="/assets/images/jianzhu/xrys/img9-3.jpg?v=1586829421674" alt="">
                             
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/xrys/img9-4.jpg?v=1586934576676" alt="">
+                            <img class="section-cover" src="/assets/images/jianzhu/xrys/img9-4.jpg?v=1586829421674" alt="">
                             
                         </div>                        
                     </div>
@@ -487,7 +420,7 @@
                     佳作才能配高薪
                     <br>感受丝路学员毕业成果
                 </div>
-                <img src="/assets/images/jianzhu/xrys/img10-1.jpg?v=1586934576676" alt="">
+                <img src="/assets/images/jianzhu/xrys/img10-1.jpg?v=1586829421674" alt="">
                
             </div>
             <div class="section-btn">
@@ -501,9 +434,9 @@
                     企业对学员的认可
                     <br>印证丝路真实教学效果
                 </div>
-                <img src="/assets/images/jianzhu/xrys/img11-1.jpg?v=1586934576676" alt="">
-                <img src="/assets/images/jianzhu/xrys/img11-2.jpg?v=1586934576676" alt="">
-                <img src="/assets/images/jianzhu/xrys/img11-3.jpg?v=1586934576676" alt="">
+                <img src="/assets/images/jianzhu/xrys/img11-1.jpg?v=1586829421674" alt="">
+                <img src="/assets/images/jianzhu/xrys/img11-2.jpg?v=1586829421674" alt="">
+                <img src="/assets/images/jianzhu/xrys/img11-3.jpg?v=1586829421674" alt="">
             </div>
             <div class="section-btn">
                 <a class="btn doyoo-btn">查看更多企业评价</a>
@@ -516,7 +449,7 @@
                     丝路教育渲染艺术精英班
                     <br>特色优势
                 </div>
-                <img src="/assets/images/jianzhu/xrys/icon.png?v=1586934576676" alt="">
+                <img src="/assets/images/jianzhu/xrys/icon.png?v=1586829421674" alt="">
             </div>
             
         </div>
@@ -528,7 +461,7 @@
                     3000+合作名企
                     <br>就业机会触手可及
                 </div>
-                <img src="/assets/images/jianzhu/xrys/logo.jpg?v=1586934576676" alt="">
+                <img src="/assets/images/jianzhu/xrys/logo.jpg?v=1586829421674" alt="">
             </div>
            
         </div>
@@ -559,24 +492,21 @@
             </form>
         </div>
     </div>
-    <script src="/assets/js/libs/zepto.min.js"></script>
-<script src="/assets/js/plugs/vide-7.4.1/js/video.min.js"></script>
+    <script src="/assets/js/libs/jquery.min.js"></script>
+<script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
-<script src="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.jquery.min.js"></script>
-<script src="/assets/js/plugs/layer-v3.1.1/layer/mobile/layer.js"></script>
-<script src="/assets/js/plugs/formbd.js"></script>
+<script src="/assets/js/plugs/swiper/swiper.js"></script>
+<script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
 <!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
-        doyooBtns[i].onclick = function() {
-            doyoo.util.openChat('g=10075108');
-            return false;
+        doyooBtns[i].onclick = function () {
+            doyoo.util.openChat('g=10075108'); return false;
         }
     }
 </script>
-
 
 
    
