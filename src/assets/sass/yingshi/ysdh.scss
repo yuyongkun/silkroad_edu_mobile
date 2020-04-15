@@ -1,6 +1,5 @@
 @import "../common/variable";
 @import "../common/base";
-
 // banner
 .banner {
     .section-btn {
@@ -14,30 +13,30 @@
     padding-top: 0.8rem;
     background: url("/assets/images/yingshi/ysdh/one-back.jpg");
     background-size: cover;
-
     .section-title {
         color: #fff;
     }
-
     .designing-workers-list {
         display: flex;
         justify-content: space-between;
-
         .section-item {
             width: 2.9333rem;
             height: 4rem;
             background: transparent;
-
             .section-txt {
                 padding: 10px 0px;
                 color: #fff;
-
+                text-align: center;
+                h3 {
+                    font-size: 12px;
+                    text-align: center;
+                }
                 p {
                     color: #fff;
                     font-size: 10px;
+                    text-align: center;
                 }
             }
-
             em {
                 color: #FFE612;
             }
@@ -52,25 +51,20 @@
             width: 2.8933rem;
         }
     }
-
     .double-freedom-content {
         .double-freedom-row {
             margin-bottom: 0.6667rem;
             text-align: center;
-
             &:last-child {
                 margin-bottom: 0px;
             }
-
             .double-freedom-title {
                 font-size: 0.5333rem;
-
                 em {
                     font-size: 0.72rem;
                     color: #F54F23;
                 }
             }
-
             .double-freedom-describe {
                 margin-bottom: 0.6667rem;
                 font-size: 0.3733rem;
@@ -80,37 +74,31 @@
 }
 
 //行业岗位细分兴趣与高薪兼得
-
 .not-powerful-sec {
     height: 13.4933rem;
     background: url("/assets/images/yingshi/ysdh/two-back.jpg");
     background-size: cover;
-
     .section-title {
         margin-bottom: 0.48rem;
     }
-
     .section-item {
         width: 2.4rem;
         background-color: transparent;
-
         .section-cover {
             width: 2rem;
             height: 2rem;
         }
-
         .section-txt {
             text-align: center;
             font-size: 0.3333rem;
             p {
                 color: #FF6700;
             }
-            h3{
+            h3 {
                 font-size: 0.3333rem;
             }
         }
     }
-
     .section-btn {
         margin-top: 0.2667rem;
     }
@@ -121,67 +109,56 @@
     .section-list {
         .section-item {
             width: 2.9733rem;
-
             .section-txt {
                 p {
                     margin-top: 0.1333rem;
                     font-size: 0.24rem;
                     color: #999;
                 }
-                h3{
+                h3 {
                     font-size: 0.2667rem;
                 }
             }
         }
     }
-
     .double-freedom-content {
         .double-freedom-row {
             .double-freedom-title {
                 margin-bottom: 0.8rem;
                 font-size: 0.5333rem;
                 text-align: center;
-
                 em {
                     margin-right: 0.1067rem;
                     font-size: 0.72rem;
                     color: #F54F23;
                 }
             }
-
             &:nth-child(2) {
                 padding: 0.9333rem 0;
                 background-color: #f2f2f2;
-
                 .section-item {
                     width: 25%;
                     text-align: center;
                     background-color: transparent;
                 }
-
                 .section-txt {
                     padding-bottom: 0.5333rem;
                 }
-
                 .section-cover {
                     width: 1.68rem;
                     height: 1.68rem;
                 }
             }
-
             &:nth-child(3) {
                 padding-top: 0.9333rem;
-
                 .intensive-course-list {
                     .intensive-course-item {
                         height: 3.84rem;
                         margin-bottom: 0.2667rem;
                         color: #fff;
-
                         &:last-child {
                             margin-bottom: 0;
                         }
-
                         .intensive-course-num {
                             display: flex;
                             align-items: center;
@@ -193,16 +170,13 @@
                             font-size: 0.3733rem;
                             background-color: #F54F23;
                         }
-
                         .intensive-course-txt {
                             width: 4.8rem;
                             margin-left: 0.2667rem;
-
                             h3 {
                                 margin-bottom: 0.1333rem;
                                 font-size: 0.3733rem;
                             }
-
                             p {
                                 font-size: 0.32rem;
                             }
@@ -220,17 +194,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
         .good-works-item {
             position: relative;
             width: 45vw;
             height: 5.8267rem;
             margin-bottom: 0.4rem;
-
             .good-works-cover {
                 width: 100%;
             }
-
             .good-works-inner {
                 display: flex;
                 flex-direction: column;
@@ -247,26 +218,21 @@
                 border-radius: 5px;
                 background: #fff;
                 box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
-
                 .good-works-user {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
                     h3 {
                         font-size: 0.3733rem;
                         margin-right: 5px;
                     }
-
                     span {
                         font-size: 12px;
                     }
                 }
-
                 .good-works-pos {
                     color: #FE743E;
                 }
-
                 .good-works-works {
                     text-align: center;
                 }
@@ -278,12 +244,10 @@
 //上市公司强势助力0距离接轨顶级技术
 .student-evaluation-sec {
     padding-bottom: 0.9867rem;
-
     .student-evaluation-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
         .student-evaluation-item {
             width: 50%;
             padding: 0.4rem;
@@ -291,11 +255,9 @@
             border-bottom: 1px solid #ddd;
             font-size: 0.3733rem;
             text-align: center;
-
             &:nth-child(2n) {
                 border-right: none;
             }
-
             &:nth-child(n+3) {
                 border-bottom: none;
             }
@@ -311,13 +273,11 @@
                 background: #FE743E;
             }
         }
-
         &:nth-child(3) {
             .two-correct-label {
                 background: #F8C22F;
             }
         }
-
         .two-correct-label {
             display: flex;
             align-items: center;
@@ -332,14 +292,15 @@
             text-align: center;
             background: #E80000;
         }
-
         .section-txt {
             display: flex;
             align-items: center;
             font-size: 0.2667rem;
-
             h3 {
                 margin-bottom: 0.1333rem;
+            }
+            p {
+                line-height: 1.5em;
             }
         }
     }
@@ -350,21 +311,17 @@
     .section-item {
         text-align: center;
         background: transparent;
-
         .section-cover {
             width: 1.6933rem;
             height: 1.6933rem;
         }
-
         p {
             color: #999;
         }
-
         h3 {
             color: #333;
             margin-bottom: 0.1333rem;
         }
-
         div {
             margin-top: 0.1333rem;
             font-size: 0.32rem;
@@ -378,7 +335,6 @@
     height: 10.6133rem;
     background: url("/assets/images/yingshi/ysdh/bottom.jpg") no-repeat center;
     background-size: cover;
-
     .form-group-txt {
         line-height: 1rem;
         padding-top: 1.8rem;
