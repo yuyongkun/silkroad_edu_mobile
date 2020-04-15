@@ -8,8 +8,11 @@
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
-        doyooBtns[i].onclick = function () {
-            doyoo.util.openChat('g=10075108'); return false;
+        doyooBtns[i].onclick = function() {
+            doyoo.util.openChat('g=10075108');
+            return false;
         }
     }
 </script>
+<!-- 表单 -->
+<script src="/static/js/formbd.js"></script>

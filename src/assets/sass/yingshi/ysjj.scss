@@ -1,5 +1,12 @@
 @import "../common/variable";
 @import "../common/base";
+.title-line {
+    width: 0.5333rem;
+    height: 0.0533rem;
+    background: linear-gradient(-90deg, rgba(177, 6, 43, 1), rgba(246, 79, 35, 1));
+    margin: 0 auto 0.4rem;
+}
+
 // 丝路教育学员
 .learning-guarantee-sec {
     .section-list {
@@ -26,13 +33,15 @@
         text-align: center;
         img {
             width: 5.2667rem;
-            box-shadow: 0rem 0.04rem 0.4rem 0rem rgba(102, 102, 102, 0.2);
+            height: 6.52rem;
         }
     }
     .treasure-land-sec2 {
         display: flex;
         img {
             width: 50%;
+            width: 4.6rem;
+            height: 6.52rem;
         }
     }
 }
@@ -129,8 +138,24 @@
     .section-describe {
         color: #fff;
     }
+    .swiper-container {
+        background-color: #fff;
+        border-radius: 8px;
+        padding-bottom: 0.2667rem;
+        h3 {
+            font-size: 0.3733rem;
+            text-align: center;
+            margin-top: 0.1333rem;
+            color: #333;
+        }
+        dd {
+            font-size: 0.32rem;
+            text-align: center;
+            color: #999;
+        }
+    }
     .big-project-intro {
-        width: 3.8667rem;
+        width: 4.8667rem;
         margin: 0.6667rem auto 0;
         font-size: 0.32rem;
         em {
@@ -151,7 +176,7 @@
 
 // 你是否还在担心以下问题？
 .worry-question {
-    height: 12.3333rem;
+    height: 13.3333rem;
     background: url("/assets/images/yingshi/ysjj/wt-bj.jpg") no-repeat center;
     background-size: cover;
     .section-title {

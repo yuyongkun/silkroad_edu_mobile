@@ -1,6 +1,5 @@
 @import "../common/variable";
 @import "../common/base";
-
 //影视市场火爆急需特效大神加盟
 .hot-market-sec {
     .hot-market-list {
@@ -15,26 +14,22 @@
         text-align: center;
         font-size: 12px;
     }
-
     .designing-workers-list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-
         .section-item {
             width: 2.9333rem;
             margin-bottom: 0.4rem;
             background: #EB4300;
-
             .section-txt {
                 padding: 10px 0px;
                 text-align: center;
                 color: #fff;
-
                 h3 {
                     font-size: 0.3733rem;
+                    color: #fff;
                 }
-
                 p {
                     color: #fff;
                     font-size: 0.3733rem;
@@ -46,6 +41,7 @@
 
 //丝路教育特色优势丝路学员专享福利
 .character-superiority-sec {
+    padding-top: 0;
     padding-bottom: 0.8rem;
     .character-superiority-title {
         margin-bottom: 0.6667rem;
@@ -54,40 +50,32 @@
         color: #F54F23;
         font-family: MicrosoftYaHei;
     }
-
     .character-superiority-describe {
         margin-bottom: 0.6667rem;
         font-size: 0.3733rem;
         text-align: center;
         color: #666;
     }
-
     .character-superiority-sec1 {
         padding: 0.6667rem 0;
     }
-
     .character-superiority-sec2 {
         padding: 0.6667rem 0;
-
         .character-superiority-list {
             .character-superiority-item {
                 display: flex;
                 align-items: center;
                 margin-bottom: 0.2667rem;
                 box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.1);
-
                 .character-superiority-cover {
                     height: 2.4933rem;
                 }
-
                 .character-superiority-txt {
                     padding: 0.2667rem;
-
                     h3 {
                         margin-bottom: 0.1333rem;
                         font-size: 0.3733rem;
                     }
-
                     p {
                         font-size: 0.3733rem;
                         color: #666;
@@ -96,16 +84,13 @@
             }
         }
     }
-
     .character-superiority-sec3 {
         padding: 0.6667rem 0;
-
         .student-evaluation-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin-bottom: 0.5333rem;
-
             .student-evaluation-item {
                 width: 50%;
                 padding: 0.4rem;
@@ -113,47 +98,37 @@
                 border-bottom: 1px solid #ddd;
                 font-size: 0.3733rem;
                 text-align: center;
-
                 &:nth-child(2n) {
                     border-right: none;
                 }
-
                 &:nth-child(n+3) {
                     border-bottom: none;
                 }
             }
         }
-
         .section-list {
             .section-item {
                 width: 2.92rem;
-
                 .section-cover {
                     height: 1.9067rem;
                 }
-
                 .section-txt {
                     text-align: center;
                 }
             }
         }
     }
-
     .character-superiority-sec4 {
         padding: 0.6667rem 0;
-
         .section-list {
             .section-item {
                 width: 50%;
-
                 .section-cover {
                     height: 2.4133rem;
                 }
-
                 .section-txt {
                     text-align: center;
                 }
-
                 .good-works-inner {
                     display: flex;
                     flex-direction: column;
@@ -161,26 +136,21 @@
                     align-items: center;
                     font-size: 12px;
                     border-radius: 5px;
-
                     .good-works-user {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-
                         h3 {
                             font-size: 0.3733rem;
                             margin-right: 5px;
                         }
-
                         span {
                             font-size: 12px;
                         }
                     }
-
                     .good-works-pos {
                         color: #FE743E;
                     }
-
                     .good-works-works {
                         display: flex;
                         padding: 0 5px;
@@ -189,27 +159,22 @@
             }
         }
     }
-
     .character-superiority-sec5 {
         padding: 0.6667rem 0;
-
         .section-list {
             flex-direction: column;
         }
-
         .section-item {
             &:nth-child(2) {
                 .two-correct-label {
                     background: #FE743E;
                 }
             }
-
             &:nth-child(3) {
                 .two-correct-label {
                     background: #F8C22F;
                 }
             }
-
             .two-correct-label {
                 display: flex;
                 align-items: center;
@@ -220,25 +185,23 @@
                 margin-right: 0.2667rem;
                 border-top-right-radius: 0.28rem;
                 border-bottom-right-radius: 0.28rem;
-                font-size: 0.16rem;
+                font-size: 0.18rem;
                 text-align: center;
                 background: #E80000;
             }
-
             .section-txt {
                 display: flex;
                 align-items: center;
                 font-size: 0.2667rem;
-
                 .two-correct-txt {
                     padding-right: 5px;
-
                     p {
-                        line-height: 1.2;
+                        line-height: 1.5;
                     }
-
                     h3 {
                         margin-bottom: 0.1333rem;
+                        color: #fff;
+                        font-weight: bold;
                     }
                 }
             }
@@ -247,18 +210,20 @@
 }
 
 // 开启职场“薪”时代
-.spokesperson-sec{
-    .section-item{
-        width:32%;
+.spokesperson-sec {
+    .section-item {
+        width: 33%;
         background: $base-color;
-        .section-txt{
-            padding:5px;
+        .section-txt {
+            padding: 2px;
             color: #fff;
-            p{
-                color: #fff;  
+            h3 {
+                color: #fff;
+            }
+            p {
+                color: #fff;
             }
         }
-
     }
 }
 
@@ -267,7 +232,6 @@
     height: 10.5333rem;
     background: url("/assets/images/yingshi/ystx/bottom.jpg") no-repeat center;
     background-size: cover;
-
     .form-group-txt {
         line-height: 1rem;
         padding-top: 1.8rem;
