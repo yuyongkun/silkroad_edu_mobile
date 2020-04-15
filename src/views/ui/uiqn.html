@@ -4,12 +4,58 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script>
+    (function flexible(window, document) {
+        var docEl = document.documentElement
+        var dpr = window.devicePixelRatio || 1
+
+        // adjust body font size
+        function setBodyFontSize() {
+            if (document.body) {
+                document.body.style.fontSize = (12 * dpr) + 'px'
+            }
+            else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            }
+        }
+        setBodyFontSize();
+
+        // set 1rem = viewWidth / 10
+        function setRemUnit() {
+            var rem = docEl.clientWidth / 10
+            docEl.style.fontSize = rem + 'px'
+        }
+
+        setRemUnit()
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit)
+        window.addEventListener('pageshow', function (e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+        })
+
+        // detect 0.5px supports
+        if (dpr >= 2) {
+            var fakeBody = document.createElement('body')
+            var testElement = document.createElement('div')
+            testElement.style.border = '.5px solid transparent'
+            fakeBody.appendChild(testElement)
+            docEl.appendChild(fakeBody)
+            if (testElement.offsetHeight === 1) {
+                docEl.classList.add('hairlines')
+            }
+            docEl.removeChild(fakeBody)
+        }
+    }(window, document))
+</script>
 
     <title>UX全栈视效设计全能班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586916346191">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586916346191">
-<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586916346191">
-    <link rel="stylesheet" href="/assets/css/ui/uiqn.css?v=1586916346191">
+    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586917147583">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586917147583">
+<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586917147583">
+    <link rel="stylesheet" href="/assets/css/ui/uiqn.css?v=1586917147583">
 </head>
 
 <body>
@@ -270,11 +316,10 @@
     </div>
 </div>
 <div class="header-mask" id="header-mask"></div>
-<script src="/assets/js/libs/lib-flexible.js"></script>
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img src="/assets/images/ui/uiqn/banner.png?v=1586916346191" alt="">
+                <img src="/assets/images/ui/uiqn/banner.png?v=1586917147583" alt="">
             </a>
         </div>
         <div class="section section-bg-write">
@@ -285,7 +330,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/nr.png?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/nr.png?v=1586917147583">
                     </div>
                 </div>
             </div>
@@ -346,7 +391,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/zy.png?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/zy.png?v=1586917147583">
                     </div>
                 </div>
             </div>
@@ -360,13 +405,13 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/jy1.png?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/jy1.png?v=1586917147583">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/jy2.png?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/jy2.png?v=1586917147583">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/jy3.png?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/jy3.png?v=1586917147583">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -388,7 +433,7 @@
                 <div class="official-designation-title tac">软件操作 多！快！好！省！</div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/rj.png?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/rj.png?v=1586917147583">
                     </div>
                 </div>
             </div>
@@ -399,19 +444,19 @@
                 <div class="official-designation-title tac">课程大纲面面俱到 实操应用无孔不入</div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/kc1.jpg?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/kc1.jpg?v=1586917147583">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/kc2.jpg?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/kc2.jpg?v=1586917147583">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/kc3.jpg?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/kc3.jpg?v=1586917147583">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/kc4.jpg?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/kc4.jpg?v=1586917147583">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/kc5.jpg?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/kc5.jpg?v=1586917147583">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -435,19 +480,19 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/zs1.jpg?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/zs1.jpg?v=1586917147583">
                         <h3>移动端应用设计师</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/zs2.jpg?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/zs2.jpg?v=1586917147583">
                         <h3>移动端应用设计师</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/zs3.jpg?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/zs3.jpg?v=1586917147583">
                         <h3>移动端应用设计师</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/zs4.jpg?v=1586916346191">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/zs4.jpg?v=1586917147583">
                         <h3>移动端应用设计师</h3>
                     </div>
                 </div>
@@ -463,10 +508,10 @@
                 <div class="swiper-container" slidesPerView='2' spaceBetween='15'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/images/ui/uiqn/ls1.jpg?v=1586916346191">
+                            <img src="/assets/images/ui/uiqn/ls1.jpg?v=1586917147583">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/ui/uiqn/ls2.jpg?v=1586916346191">
+                            <img src="/assets/images/ui/uiqn/ls2.jpg?v=1586917147583">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -487,7 +532,7 @@
             </div>
             <div class="section-list">
                 <div class="section-item">
-                    <img class="section-cover" src="/assets/images/ui/uiqn/zp.png?v=1586916346191">
+                    <img class="section-cover" src="/assets/images/ui/uiqn/zp.png?v=1586917147583">
                 </div>
             </div>
             <div class="section-btn">
@@ -505,7 +550,7 @@
                 让学员在真实实践中获取经验、积累行业人脉，优秀团队学员还将获得项目提成，最高可达上万元！</div>
             <div class="section-list">
                 <div class="section-item">
-                    <img class="section-cover" src="/assets/images/ui/uiqn/hj.jpg?v=1586916346191">
+                    <img class="section-cover" src="/assets/images/ui/uiqn/hj.jpg?v=1586917147583">
                 </div>
             </div>
         </div>
@@ -518,7 +563,7 @@
             </div>
             <div class="section-list">
                 <div class="section-item">
-                    <img class="section-cover" src="/assets/images/ui/uiqn/bz.jpg?v=1586916346191">
+                    <img class="section-cover" src="/assets/images/ui/uiqn/bz.jpg?v=1586917147583">
                 </div>
             </div>
         </div>
@@ -533,17 +578,17 @@
             <div class="section-list">
                 <div class="section-item">
                     <div class="section-cover">
-                        <img src="/assets/images/ui/uiqn/xy1.jpg?v=1586916346191">
+                        <img src="/assets/images/ui/uiqn/xy1.jpg?v=1586917147583">
                     </div>
                 </div>
                 <div class="section-item">
                     <div class="section-cover">
-                        <img src="/assets/images/ui/uiqn/xy2.jpg?v=1586916346191">
+                        <img src="/assets/images/ui/uiqn/xy2.jpg?v=1586917147583">
                     </div>
                 </div>
                 <div class="section-item">
                     <div class="section-cover">
-                        <img src="/assets/images/ui/uiqn/xy3.jpg?v=1586916346191">
+                        <img src="/assets/images/ui/uiqn/xy3.jpg?v=1586917147583">
                     </div>
                 </div>
             </div>
@@ -559,7 +604,7 @@
                 3000+合作名企
                 <br>让你掌握就业主动权
             </div>
-            <img src="/assets/images/ui/uiqn/hz.png?v=1586916346191" alt="">
+            <img src="/assets/images/ui/uiqn/hz.png?v=1586917147583" alt="">
             <div class="section-btn">
                 <a class="btn doyoo-btn">查看更多合作企业</a>
             </div>
@@ -567,7 +612,7 @@
     </div>
     <!-- 表单统计 -->
     <div class="section-form">
-        <form action="/plus/diy.php?v=1586916346191" enctype="multipart/form-data" method="post" onsubmit="return checkMobile(this);">
+        <form action="/plus/diy.php?v=1586917147583" enctype="multipart/form-data" method="post" onsubmit="return checkMobile(this);">
             <div class="form-group form-group-txt">
                 学习和锻炼身体一样，<br>
                 任何时候都不<br>
@@ -590,6 +635,7 @@
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
+<script src="/assets/js/plugs/formbd.js"></script>
 <script src="/assets/js/global/common.js"></script>
 <!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
@@ -601,8 +647,7 @@
         }
     }
 </script>
-<!-- 表单 -->
-<script src="/static/js/formbd.js"></script>
+
 </body>
 
 </html>
