@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script>
+    (function flexible(window, document) {
+        var docEl = document.documentElement
+        var dpr = window.devicePixelRatio || 1
+
+        // adjust body font size
+        function setBodyFontSize() {
+            if (document.body) {
+                document.body.style.fontSize = (12 * dpr) + 'px'
+            }
+            else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            }
+        }
+        setBodyFontSize();
+
+        // set 1rem = viewWidth / 10
+        function setRemUnit() {
+            var rem = docEl.clientWidth / 10
+            docEl.style.fontSize = rem + 'px'
+        }
+
+        setRemUnit()
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit)
+        window.addEventListener('pageshow', function (e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+        })
+
+        // detect 0.5px supports
+        if (dpr >= 2) {
+            var fakeBody = document.createElement('body')
+            var testElement = document.createElement('div')
+            testElement.style.border = '.5px solid transparent'
+            fakeBody.appendChild(testElement)
+            docEl.appendChild(fakeBody)
+            if (testElement.offsetHeight === 1) {
+                docEl.classList.add('hairlines')
+            }
+            docEl.removeChild(fakeBody)
+        }
+    }(window, document))
+</script>
+
+    <title>品牌视觉创意班</title>
+    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586912670844">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586912670844">
+<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586912670844">
+    <link rel="stylesheet" href="/assets/css/ui/pmsj.css?v=1586912670844">
+</head>
+
+<body>
+    <div class="header">
+    <div class="header-tp" id="header-tp">
+        <div class="header-menu"></div>
+        <ul class="header-menu-list">
+            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first arrow-right">
+    
+    影视视效课程
+    
+    
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/yingshi/ysqn.html">影视后期全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ystx.html">影视特效合成大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysjj.html">剪辑包装创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysdh.html">影视动画精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/c4d.html">C4D特效大师班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+    
+    游戏视觉课程
+    
+    
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/youxi/yxqn.html">游戏视觉设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxyh.html">游戏原画创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxms.html">游戏3D美术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxrj.html">游戏软件精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxtx.html">游戏动作特效精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+    
+    APEC室内课程
+    
+    
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">影视后期全能班</li>
+        <li class="header-menu-second">影视特效合成大师班</li>
+        <li class="header-menu-second">剪辑包装创意班</li>
+        <li class="header-menu-second">影视动画精英班</li>
+        <li class="header-menu-second">C4D特效大师班</li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+    
+    UX全栈课程
+    
+    
+
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/views/ui/uiqn.html">UX全栈视效设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/psds.html"> Photoshop大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/pmsj.html">品牌视觉创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/dsmg.html">电商美工精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/wysj.html">全链路设计精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+    
+    建筑视效课程
+    
+    
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">影视后期全能班</li>
+        <li class="header-menu-second">影视特效合成大师班</li>
+        <li class="header-menu-second">剪辑包装创意班</li>
+        <li class="header-menu-second">影视动画精英班</li>
+        <li class="header-menu-second">C4D特效大师班</li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+    
+    BIM应用课程
+    
+    
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/bim/bimqn.html">BIM应用全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/bimkz.html">BIM考证精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/revitds.html">Revit大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/lumion.html">Lumion大师班</a>
+        </li>
+    </ul>
+</li>
+            <li class="header-menu-first">联系我们</li>
+        </ul>
+        <div class="header-logo"></div>
+        <div class="header-phone"></div>
+    </div>
+    <div class="header-nav">
+        <ul class="header-nav-wrap">
+            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first" id="header-nav-first-course">课程
+                <span class="arrow-down"></span>
+                <ul class="header-nav-course">
+                    <li class="header-menu-first arrow-right">
+    
+    
+    影视视效
+    
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/yingshi/ysqn.html">影视后期全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ystx.html">影视特效合成大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysjj.html">剪辑包装创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysdh.html">影视动画精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/c4d.html">C4D特效大师班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+    
+    
+    游戏视觉
+    
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/youxi/yxqn.html">游戏视觉设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxyh.html">游戏原画创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxms.html">游戏3D美术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxrj.html">游戏软件精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxtx.html">游戏动作特效精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+    
+    
+    APEC室内
+    
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">影视后期全能班</li>
+        <li class="header-menu-second">影视特效合成大师班</li>
+        <li class="header-menu-second">剪辑包装创意班</li>
+        <li class="header-menu-second">影视动画精英班</li>
+        <li class="header-menu-second">C4D特效大师班</li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+    
+    
+    UX全栈
+    
+
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/views/ui/uiqn.html">UX全栈视效设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/psds.html"> Photoshop大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/pmsj.html">品牌视觉创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/dsmg.html">电商美工精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/wysj.html">全链路设计精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+    
+    
+    建筑视效
+    
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">影视后期全能班</li>
+        <li class="header-menu-second">影视特效合成大师班</li>
+        <li class="header-menu-second">剪辑包装创意班</li>
+        <li class="header-menu-second">影视动画精英班</li>
+        <li class="header-menu-second">C4D特效大师班</li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+    
+    
+    BIM应用
+    
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/bim/bimqn.html">BIM应用全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/bimkz.html">BIM考证精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/revitds.html">Revit大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/lumion.html">Lumion大师班</a>
+        </li>
+    </ul>
+</li>
+                </ul>
+            </li>
+            <li class="header-nav-first">名师</li>
+            <li class="header-nav-first">就业</li>
+            <li class="header-nav-first">关于丝路</li>
+        </ul>
+    </div>
+</div>
+<div class="header-mask" id="header-mask"></div>
+    <div class="layout">
+        <div class="banner">
+            <a class="doyoo-btn">
+                <img src="/assets/images/ui/pmsj/banner.jpg?v=1586912670844" alt="">
+            </a>
+        </div>
+        <div class="section section-bg-write">
+            <div class="container">
+                <div class="section-title">
+                    BIM人才需求为何这么高？
+                </div>
+                <div class="section-describe">
+                    BIM是指建筑信息模型（Building Information Modeling），是一种应用于工程设计建造管理的
+                    数据化工具。近几年行业的发展让各企业对于BIM技术的认可度不断地提升，该证书的应用已经逐渐成为建筑行业竞争的软实力。
+                </div>
+                <div class="section-list">
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/bim/bimkz/img1-1.jpg?v=1586912670844">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section five-plan-sec">
+            <div class="container">
+                <div class="section-title">
+                    BIM时代<br>
+                    经验丰富抵不过一纸证书
+                </div>
+                <div class="section-describe">
+                    大型项目明确要求应用BIM技术：国家体育场、青岛海湾大桥、广州西塔等工程项目成功实现4D 施工动态集成管理；上海中心项目工程总承包招标，明确要求应用BIM
+                    技术；上海金融交易广场和广联达信息大厦项目，不仅在方案设计阶段运用BIM 技术，还规划引入面向建筑全生命周期的BIM 应用整体方案。
+                </div>
+                <div class="section-list">
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/bim/bimkz/img2-1.jpg?v=1586912670844">
+                        <div class="section-txt">
+                            <h3>BIM证书，权威代名词</h3>
+                            <p>人社部教培中心、中国图学学会联合发证，证书编号官网可查</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/bim/bimkz/img2-2.jpg?v=1586912670844">
+                        <div class="section-txt">
+                            <h3>BIM证书，权威代名词</h3>
+                            <p>人社部教培中心、中国图学学会联合发证，证书编号官网可查</p>
+                        </div>
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/bim/bimkz/img2-3.jpg?v=1586912670844">
+                        <div class="section-txt">
+                            <h3>BIM证书，权威代名词</h3>
+                            <p>人社部教培中心、中国图学学会联合发证，证书编号官网可查</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-bg-write no-worries-sec">
+            <div class="container">
+                <div class="section-title">
+                    一证在手 前程无忧
+                </div>
+                <div class="section-describe">
+                    建筑行业中不同BIM岗位平均薪资（元/月）
+                </div>
+                <div class="section-list">
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/bim/bimkz/img3-1.png?v=1586912670844">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section official-designation-sec">
+            <div class="container">
+                <div class="section-title">
+                    官方指定培训机构<br>
+                    严谨的考证流程
+                </div>
+                <div class="section-describe">
+                    丝路教育与中国图学学会达成深度合作，是官方指定的专业培训机构。在丝路教育你可以通过学习，轻松考取建筑/工程等企业最关注的BIM技能证书，目前考试难度较小，考试通过率高。
+                </div>
+                <div class="official-designation-sec1">
+                    <div class="official-designation-title tac">一站式取证流程</div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img4-1.png?v=1586912670844">
+                        </div>
+                    </div>
+                </div>
+                <div class="official-designation-sec2">
+                    <div class="official-designation-title tac">全国BIM技能等级考试证书</div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img5-1.jpg?v=1586912670844">
+                        </div>
+                    </div>
+                </div>
+                <div class="section-btn">
+                    <a class="btn doyoo-btn">查看报考须知</a>
+                </div>
+            </div>
+        </div>
+        <div class="section section-bg-write bim-expert-sec">
+            <div class="container">
+                <div class="section-title">
+                    丝路教育<br>
+                    视觉创意领域的先行者
+                </div>
+                <div class="section-describe">
+                    丝路教育依托上市集团二十年大型视觉项目经验和技术成果，开设CG艺术领域培训课程，拥有Adobe与Autodesk公司权威资格认证，是国内唯一拥有展览展示设计及施工甲级资质、高级建筑装饰工程设计及施工资质的教育学院。
+                </div>
+                <div class="bim-expert-sec1">
+                    <div class="bim-expert-title tac">
+                        学院荣誉
+                    </div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-1.jpg?v=1586912670844">
+                            <h3>亚洲教育十大领军企业 </h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-2.jpg?v=1586912670844">
+                            <h3>亚洲教育十大领军企业 </h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-3.jpg?v=1586912670844">
+                            <h3>亚洲教育十大领军企业 </h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-4.jpg?v=1586912670844">
+                            <h3>亚洲教育十大领军企业 </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="bim-expert-sec2">
+                    <div class="bim-expert-title tac">
+                        学院资质
+                    </div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-1.jpg?v=1586912670844">
+                            <h3>Adobe官方认证证书</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-2.jpg?v=1586912670844">
+                            <h3>Adobe官方认证证书</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-3.jpg?v=1586912670844">
+                            <h3>Adobe官方认证证书</h3>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-4.jpg?v=1586912670844">
+                            <h3>Adobe官方认证证书</h3>
+                        </div>
+                    </div>
+                    <div class="section-btn">
+                        <a class="btn doyoo-btn">查看更多学院资质荣誉</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section one-teaching-sec">
+            <div class="container">
+                <div class="section-title">
+                    一站式教学 解决所有问题
+                </div>
+
+                <div class="one-teaching-sec1">
+                    <div class="one-teaching-title tac">
+                        01全新升级的课程内容
+                    </div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img8-1.jpg?v=1586912670844">
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img8-2.jpg?v=1586912670844">
+                        </div>
+                    </div>
+                    <div class="section-btn">
+                        <a class="btn doyoo-btn">查看课程详情</a>
+                    </div>
+                </div>
+                <div class="one-teaching-sec2">
+                    <div class="one-teaching-title tac">
+                        02专业的教资团队
+                    </div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img9-1.jpg?v=1586912670844">
+                            <div class="section-txt">
+                                <h3>
+                                    肖丽红 <span>
+                                        / BIM应用高级讲师
+                                    </span>
+                                </h3>
+                                <div class="one-teaching-experience">
+                                    8年从业经验
+                                </div>
+                                <p>多次参与国内外重大的模型项目和BIM项目制作，曾任北京伟景行数字科技有限公司可视化设计项目负责人，被中铁十一局等多家企业指定为BIM专业课程培训讲师。</p>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img9-2.jpg?v=1586912670844">
+                            <div class="section-txt">
+                                <h3>
+                                    肖丽红 <span>
+                                        / BIM应用高级讲师
+                                    </span>
+                                </h3>
+                                <div class="one-teaching-experience">
+                                    8年从业经验
+                                </div>
+                                <p>多次参与国内外重大的模型项目和BIM项目制作，曾任北京伟景行数字科技有限公司可视化设计项目负责人，被中铁十一局等多家企业指定为BIM专业课程培训讲师。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-btn">
+                        <a class="btn doyoo-btn">查看讲师课程安排</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section silkroad-strength-sec">
+            <div class="container">
+                <div class="section-title">
+                    学员升职加薪
+                    <br>见证丝路实力
+                </div>
+                <div class="section-btn">
+                    <a class="btn doyoo-btn">查看更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="section section-bg-write put-action-sec">
+            <div class="container">
+                <div class="section-title">
+                    6大学习保障<br>
+                    丝路教育学员独享
+                </div>
+                <div class="section-list">
+                    <div class="section-item">
+                        <div class="section-cover">
+                            <img src="/assets/images/bim/bimkz/icon1.png?v=1586912670844">
+                        </div>
+                        <h3>0元试听</h3>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-cover">
+                            <img src="/assets/images/bim/bimkz/icon2.png?v=1586912670844">
+                        </div>
+                        <h3>先学后付</h3>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-cover">
+                            <img src="/assets/images/bim/bimkz/icon3.png?v=1586912670844">
+                        </div>
+                        <h3>免费重修</h3>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-cover">
+                            <img src="/assets/images/bim/bimkz/icon4.png?v=1586912670844">
+                        </div>
+                        <h3>名师面授</h3>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-cover">
+                            <img src="/assets/images/bim/bimkz/icon5.png?v=1586912670844">
+                        </div>
+                        <h3>商业实训</h3>
+                    </div>
+                    <div class="section-item">
+                        <div class="section-cover">
+                            <img src="/assets/images/bim/bimkz/icon6.png?v=1586912670844">
+                        </div>
+                        <h3>名企就业</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 丝路与3000+名企合作 -->
+        <div class="section">
+            <div class="container">
+                <div class="section-title">
+                    委培企业3000+
+                    <br>就业无忧
+                </div>
+                <div class="section-describe">
+                    与建筑设计/工程施工/房地产等众多名企进行合作，了解市场最新动态，培养企业紧缺优秀人才，
+                    实现真正的持证上岗两无忧。
+                </div>
+                <img src="/assets/images/bim/bimkz/logo.jpg?v=1586912670844" alt="">
+            </div>
+        </div>
+        <!-- 表单统计 -->
+        <div class="section-form">
+            <form action="/plus/diy.php?v=1586912670844" enctype="multipart/form-data" method="post"
+                onsubmit="return checkMobile(this);">
+                <div class="form-group form-group-txt">
+                    你离掌握BIM只差一门课！
+                </div>
+                <div class="form-group">
+                    <input type='text' name='name' placeholder="姓名：请填写姓名" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name='tel' class="form-control" placeholder="联系方式：请填写手机号码" />
+                </div>
+                <div class="form-submit">
+                    <button class="btn" type="submit">预约免费试听</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/js/libs/jquery.min.js"></script>
+<script src="/assets/js/plugs/vide7.4.1/js/video.min.js"></script>
+<script src="/assets/js/plugs/picViewer/picViewer.js"></script>
+<script src="/assets/js/plugs/swiper/swiper.min.js"></script>
+<script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
+<script src="/assets/js/plugs/formbd.js"></script>
+<script src="/assets/js/global/common.js"></script>
+<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script>
+    var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
+    for (var i = 0, len = doyooBtns.length; i < len; i++) {
+        doyooBtns[i].onclick = function() {
+            doyoo.util.openChat('g=10075108');
+            return false;
+        }
+    }
+</script>
+
+</body>
+
+</html>

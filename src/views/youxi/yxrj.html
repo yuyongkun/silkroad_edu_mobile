@@ -4,12 +4,58 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script>
+    (function flexible(window, document) {
+        var docEl = document.documentElement
+        var dpr = window.devicePixelRatio || 1
 
-    <title>C4D特效大师班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586912670844">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586912670844">
-<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586912670844">
-    <link rel="stylesheet" href="/assets/css/youxi/yxrj.css?v=1586912670844">
+        // adjust body font size
+        function setBodyFontSize() {
+            if (document.body) {
+                document.body.style.fontSize = (12 * dpr) + 'px'
+            }
+            else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            }
+        }
+        setBodyFontSize();
+
+        // set 1rem = viewWidth / 10
+        function setRemUnit() {
+            var rem = docEl.clientWidth / 10
+            docEl.style.fontSize = rem + 'px'
+        }
+
+        setRemUnit()
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit)
+        window.addEventListener('pageshow', function (e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+        })
+
+        // detect 0.5px supports
+        if (dpr >= 2) {
+            var fakeBody = document.createElement('body')
+            var testElement = document.createElement('div')
+            testElement.style.border = '.5px solid transparent'
+            fakeBody.appendChild(testElement)
+            docEl.appendChild(fakeBody)
+            if (testElement.offsetHeight === 1) {
+                docEl.classList.add('hairlines')
+            }
+            docEl.removeChild(fakeBody)
+        }
+    }(window, document))
+</script>
+
+    <title>游戏软件精英班</title>
+    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1586917147583">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586917147583">
+<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1586917147583">
+    <link rel="stylesheet" href="/assets/css/youxi/yxrj.css?v=1586917147583">
 </head>
 
 <body>
@@ -82,12 +128,23 @@
     UX全栈课程
     
     
+
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/views/ui/uiqn.html">UX全栈视效设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/psds.html"> Photoshop大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/pmsj.html">品牌视觉创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/dsmg.html">电商美工精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/wysj.html">全链路设计精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -198,12 +255,23 @@
     
     UX全栈
     
+
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/views/ui/uiqn.html">UX全栈视效设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/psds.html"> Photoshop大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/pmsj.html">品牌视觉创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/dsmg.html">电商美工精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/views/ui/wysj.html">全链路设计精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -248,11 +316,10 @@
     </div>
 </div>
 <div class="header-mask" id="header-mask"></div>
-<script src="/assets/js/libs/lib-flexible.js"></script>
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img class="banner-cover" src="/assets/images/youxi/yxrj/banner.jpg?v=1586912670844" alt="">
+                <img class="banner-cover" src="/assets/images/youxi/yxrj/banner.jpg?v=1586917147583" alt="">
             </a>
         </div>
         <div class="section section-bg-write hot-software-sec">
@@ -271,8 +338,8 @@
                             <div class="section-nav-item">Unity 3D引擎</div>
                         </div>
                         <div class="section-tab-list">
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-1.jpg?v=1586912670844" alt=""></div>
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-1.jpg?v=1586912670844" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-1.jpg?v=1586917147583" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-1.jpg?v=1586917147583" alt=""></div>
                         </div>
                     </div>
                     <div class="hot-software-item">
@@ -284,10 +351,10 @@
                             <div class="section-nav-item">Substance Painter</div>
                         </div>
                         <div class="section-tab-list">
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-1.jpg?v=1586912670844" alt=""></div>
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-1.jpg?v=1586912670844" alt=""></div>
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-1.jpg?v=1586912670844" alt=""></div>
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-1.jpg?v=1586912670844" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-1.jpg?v=1586917147583" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-1.jpg?v=1586917147583" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-1.jpg?v=1586917147583" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-1.jpg?v=1586917147583" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -301,7 +368,7 @@
                         学软件，做游戏，拿高薪
                     </b>
                 </div>
-                <img src="/assets/images/youxi/yxrj/xinzi.jpg?v=1586912670844" alt="">
+                <img src="/assets/images/youxi/yxrj/xinzi.jpg?v=1586917147583" alt="">
             </div>
         </div>
         <div class="section section-bg-write">
@@ -315,12 +382,12 @@
                 <div class="section-describe">
                     掌握游戏主流软件，更好“淘金”
                 </div>
-                <img src="/assets/images/youxi/yxrj/dachang1.jpg?v=1586912670844" alt="">
+                <img src="/assets/images/youxi/yxrj/dachang1.jpg?v=1586917147583" alt="">
                 <br><br>
                 <div class="section-describe">
                     游戏产业概况
                 </div>
-                <img src="/assets/images/youxi/yxrj/dachang2.jpg?v=1586912670844" alt="">
+                <img src="/assets/images/youxi/yxrj/dachang2.jpg?v=1586917147583" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">查看更多薪资</a>
                 </div>
@@ -337,7 +404,7 @@
                     丝路教育深耕游戏培训十数年，拥有完善的培训与就业体系，学员毕业即就业，85%的毕业学员入职2-3年
                     晋升管理层！
                 </div>
-                <img src="/assets/images/youxi/yxrj/duibi.jpg?v=1586912670844" alt="">
+                <img src="/assets/images/youxi/yxrj/duibi.jpg?v=1586917147583" alt="">
             </div>
         </div>
         <div class="section section-bg-write autodesk-official-sec">
@@ -353,10 +420,10 @@
                 </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1586912670844" alt=""></div>
-                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1586912670844" alt=""></div>
-                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1586912670844" alt=""></div>
-                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1586912670844" alt=""></div>
+                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1586917147583" alt=""></div>
+                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1586917147583" alt=""></div>
+                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1586917147583" alt=""></div>
+                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1586917147583" alt=""></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -371,7 +438,7 @@
                         一身神装战职场
                     </b>
                 </div>
-                <img src="/assets/images/youxi/yxrj/ruanjian1.jpg?v=1586912670844" alt="">
+                <img src="/assets/images/youxi/yxrj/ruanjian1.jpg?v=1586917147583" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">领取学习教程</a>
                 </div>
@@ -519,16 +586,16 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/tec1.jpg?v=1586912670844" alt="">
+                        <img src="/assets/images/youxi/yxrj/tec1.jpg?v=1586917147583" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/tec2.jpg?v=1586912670844" alt="">
+                        <img src="/assets/images/youxi/yxrj/tec2.jpg?v=1586917147583" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/tec3.jpg?v=1586912670844" alt="">
+                        <img src="/assets/images/youxi/yxrj/tec3.jpg?v=1586917147583" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/tec4.jpg?v=1586912670844" alt="">
+                        <img src="/assets/images/youxi/yxrj/tec4.jpg?v=1586917147583" alt="">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -549,16 +616,16 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/stu1.jpg?v=1586912670844" alt="">
+                        <img src="/assets/images/youxi/yxrj/stu1.jpg?v=1586917147583" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/stu2.jpg?v=1586912670844" alt="">
+                        <img src="/assets/images/youxi/yxrj/stu2.jpg?v=1586917147583" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/stu3.jpg?v=1586912670844" alt="">
+                        <img src="/assets/images/youxi/yxrj/stu3.jpg?v=1586917147583" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/stu4.jpg?v=1586912670844" alt="">
+                        <img src="/assets/images/youxi/yxrj/stu4.jpg?v=1586917147583" alt="">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -578,7 +645,7 @@
                     在校学习有机会参与一线大厂项目制作，
                     涨经验还拿奖金！
                 </div>
-                <img src="/assets/images/youxi/yxrj/shixun.png?v=1586912670844" alt="">
+                <img src="/assets/images/youxi/yxrj/shixun.png?v=1586917147583" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">了解项目实训过程</a>
                 </div>
@@ -592,12 +659,12 @@
                         助你搭乘高薪直通车
                     </b>
                 </div>
-                <img src="/assets/images/youxi/yxrj/logo.png?v=1586912670844" alt="">
+                <img src="/assets/images/youxi/yxrj/logo.png?v=1586917147583" alt="">
             </div>
         </div>
         <!-- 表单统计 -->
         <div class="section-form">
-            <form action="/plus/diy.php?v=1586912670844" enctype="multipart/form-data" method="post"
+            <form action="/plus/diy.php?v=1586917147583" enctype="multipart/form-data" method="post"
                 onsubmit="return checkMobile(this);">
                 <div class="form-group">
                     <input type='text' name='name' placeholder="姓名：" class="form-control" />
@@ -612,21 +679,23 @@
         </div>
     </div>
     <script src="/assets/js/libs/jquery.min.js"></script>
-<script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
+<script src="/assets/js/plugs/vide7.4.1/js/video.min.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
-<script src="/assets/js/plugs/swiper/swiper.js"></script>
+<script src="/assets/js/plugs/swiper/swiper.min.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
+<script src="/assets/js/plugs/formbd.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!--<script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
-        doyooBtns[i].onclick = function () {
-            doyoo.util.openChat('g=10075108'); return false;
+        doyooBtns[i].onclick = function() {
+            doyoo.util.openChat('g=10075108');
+            return false;
         }
     }
 </script>
- <script src="/assets/js/plugs/formbd.js"></script>
+
 </body>
 
 </html>
