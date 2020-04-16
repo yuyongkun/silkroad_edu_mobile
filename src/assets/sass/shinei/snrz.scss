@@ -1,0 +1,82 @@
+@import "../common/variable";
+@import "../common/base";
+.section-serial {
+    text-align: center;
+    font-family: HiraginoSansGB-W3;
+    
+
+    .section-serial-number {
+        font-size: 0.4267rem;
+    }
+
+    .section-serial-line {
+        height: 10px;
+        margin-bottom: 0.3333rem;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .section-serial-txt {
+        font-size: 0.3733rem;
+    }
+    .section-serial-txt1 {
+        font-size: 0.5rem;
+        color: #333;
+        font-weight:bold;
+    }
+}
+
+.huisedi{
+    background: #eeeeee;
+}
+
+
+//介绍
+.study-design-sec {
+    .section-serial {
+        margin-bottom: 0.6267rem;
+    }
+
+    .study-design-sec2 {
+        margin-top: 1.2933rem;
+    }
+}
+
+
+
+
+
+//证书
+
+.zhengshubj{
+    background: url("/assets/images/shinei/cad/zhengshubj.jpg") no-repeat center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 表单
+.section-form {
+    height: 12.12rem;
+    background: url("/assets/images/shinei/snrz/biaodan.png") no-repeat center;
+    background-size: cover;
+
+    form {
+        padding-top: 6rem;
+    }
+}
+

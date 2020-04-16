@@ -37,7 +37,7 @@ html {
 
 body {
     font: 14px/1.5 冬青黑体W3, '微软雅黑', tahoma, arial, Hiragino Sans GB, \5b8b\4f53, sans-serif;
-    color: #333;
+    color: #3a3a3a;
 }
 
 input {
@@ -68,10 +68,6 @@ em {
 
 .visiable {
     display: block;
-}
-
-.tac {
-    text-align: center;
 }
 
 img {
@@ -184,10 +180,6 @@ img {
         b {
             font-family: HiraginoSansGB-W6;
         }
-
-        em {
-            color: #F54F23;
-        }
     }
 
     .section-describe {
@@ -212,25 +204,7 @@ img {
 
 .section-item {
     position: relative;
-    margin-bottom: 0.2667rem;
-
-    & > h3, & > p {
-        margin-top: 0.1333rem;
-    }
-
-    em {
-        color: #FE743E;
-    }
-
-    h3 {
-        font-size: 0.32rem;
-        margin-bottom: 0.0667rem;
-        font-weight: normal;
-    }
-
-    p {
-        color: gray;
-    }
+    background-color: #fff;
 
     &:hover {
         .section-hover {
@@ -259,6 +233,18 @@ img {
         padding: 0.1333rem 0;
         font-size: 12px;
         color: #333;
+
+        em {
+            color: #FE743E;
+        }
+
+        h3 {
+            font-weight: normal;
+        }
+
+        p {
+            color: gray;
+        }
     }
 
     .section-txt.section-abs {
@@ -308,7 +294,7 @@ img {
     line-height: 1;
 
     form {
-        width: 90vw;
+        width: 8.5333rem;
         margin: 0 auto;
     }
 
