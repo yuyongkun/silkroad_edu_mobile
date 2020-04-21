@@ -13,8 +13,7 @@
         function setBodyFontSize() {
             if (document.body) {
                 document.body.style.fontSize = (12 * dpr) + 'px'
-            }
-            else {
+            } else {
                 document.addEventListener('DOMContentLoaded', setBodyFontSize)
             }
         }
@@ -30,7 +29,7 @@
 
         // reset rem unit on page resize
         window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
+        window.addEventListener('pageshow', function(e) {
             if (e.persisted) {
                 setRemUnit()
             }
@@ -50,12 +49,11 @@
         }
     }(window, document))
 </script>
-
     <title>首页</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1586932461356">
-    <link rel="stylesheet" href="/assets/css/index.css?v=1586932461356">
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1587179319710">
+    <link rel="stylesheet" href="/assets/css/index.css?v=1587179319710">
 </head>
 
 <body>
@@ -63,7 +61,9 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
      影视视效课程  
     <ul class="header-menu-secondlist">
@@ -105,7 +105,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     APEC室内课程  
+     室内设计课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -115,30 +115,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     UX全栈课程  
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
      建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -158,14 +187,25 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
@@ -210,7 +250,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      APEC室内 
+      室内设计 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -220,30 +260,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      UX全栈 
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
       建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -265,453 +334,544 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
 <div class="header-mask" id="header-mask"></div>
     <div class="layout">
         <div class="banner">
-            <img class="banner-cover" src="/assets/images/index/banner.jpg?v=1586932461356" alt="">
+            <a class="doyoo-btn">
+                <img class="banner-cover" src="/assets/images/index/banner.jpg?v=1587179319710" alt="">
+            </a>
         </div>
-        <div class="section section-bg-write study-design-sec">
-            <div class="container">
-                <div class="section-title">
-                    为什么学室内设计？
+        <div class="section-bg-write banner-next">
+            <div class="section-list">
+                <div class="section-item">
+                    <img class="section-cover" src="/assets/images/index/banner-icon1.png?v=1587179319710">
+                    <h3>上市企业
+                        <br/>办学</h3>
                 </div>
-                <div class="study-design-sec1">
-                    <div class="section-serial">
-                        <div class="section-serial-number">01</div>
-                        <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586932461356" alt=""></div>
-                        <div class="section-serial-txt">
-                            就业范围广<br>单日招聘岗位100000+
-                        </div>
-                    </div>
-                    <img src="/assets/images/index/image1-1.jpg?v=1586932461356" alt="">
+                <div class="section-item">
+                    <img class="section-cover" src="/assets/images/index/banner-icon2.png?v=1587179319710">
+                    <h3>Adobe
+                        <br/>官方认证</h3>
                 </div>
-                <div class="study-design-sec2">
-                    <div class="section-serial">
-                        <div class="section-serial-number">02</div>
-                        <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586932461356" alt=""></div>
-                        <div class="section-serial-txt">
-                            岗位晋升快<br>升职加薪机会多
-                        </div>
-                    </div>
-                    <img src="/assets/images/index/image2-1.jpg?v=1586932461356" alt="">
+                <div class="section-item">
+                    <img class="section-cover" src="/assets/images/index/banner-icon3.png?v=1587179319710">
+                    <h3>100+
+                        <br/>高校实训基地</h3>
+                </div>
+                <div class="section-item">
+                    <img class="section-cover" src="/assets/images/index/banner-icon4.png?v=1587179319710">
+                    <h3>3000+
+                        <br/>委培企业</h3>
                 </div>
             </div>
         </div>
-        <div class="section section-bg-write designing-workers-sec">
-            <div class="container">
-                <div class="section-title">
-                    为何大部分设计师沦为<br> “设计民工”？
-                </div>
-                <div class="designing-workers-content">
-                    <div class="designing-workers-row">
-                        <div class="section-describe">
-                            室内设计入行两大人群
-                        </div>
-                        <div class="designing-workers-area">
-                            <img src="/assets/images/index/image3-1.png?v=1586932461356" alt="">
-                            <img src="/assets/images/index/image3-2.png?v=1586932461356" alt="">
-                        </div>
-                    </div>
-                    <div class="designing-workers-row">
-                        <div class="section-describe">
-                            丝路教育成就非凡设计人生！
-                        </div>
-                        <div class="designing-workers-area">
-                            <img src="/assets/images/index/image4-1.jpg?v=1586932461356" alt="">
-                        </div>
-                        <div class="section-btn">
-                            <a class="btn doyoo-btn">查看开班计划</a>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-        <div class="section fit-design-sec">
-            <div class="container">
-                <div class="section-title">
-                    哪些人群<br> 适合学室内设计？
-                </div>
-                <div class="fit-design-list">
-                    <div class="fit-design-item">
-                        <img src="/assets/images/index/image5-1.png?v=1586932461356" alt="">
-                        <dl>
-                            <dt>相关专业毕业</dt>
-                            <dd>缺乏项目实操</dd>
-                            <dd>想提升实战</dd>
-                            <dd>技巧与能力</dd>
-                        </dl>
-                    </div>
-                    <div class="fit-design-item">
-                        <img src="/assets/images/index/image5-2.png?v=1586932461356" alt="">
-                        <dl>
-                            <dt>相关专业毕业</dt>
-                            <dd>缺乏项目实操</dd>
-                            <dd>想提升实战</dd>
-                            <dd>技巧与能力</dd>
-                        </dl>
-                    </div>
-                    <div class="fit-design-item">
-                        <img src="/assets/images/index/image5-3.png?v=1586932461356" alt="">
-                        <dl>
-                            <dt>相关专业毕业</dt>
-                            <dd>缺乏项目实操</dd>
-                            <dd>想提升实战</dd>
-                            <dd>技巧与能力</dd>
-                        </dl>
-                    </div>
-                    <div class="fit-design-item">
-                        <img src="/assets/images/index/image5-4.png?v=1586932461356" alt="">
-                        <dl>
-                            <dt>相关专业毕业</dt>
-                            <dd>缺乏项目实操</dd>
-                            <dd>想提升实战</dd>
-                            <dd>技巧与能力</dd>
-                        </dl>
-                    </div>
-                </div>
-                <div class="section-btn">
-                    <a class="btn doyoo-btn">免费试听看看</a>
-                </div>
-
-            </div>
-        </div>
-        <div class="section section-bg-write select-silkroad-reason-sec">
-            <div class="container">
-                <div class="section-title">
-                    为什么选择丝路教育？
-                </div>
-                <div class="section-describe">
-                    国内唯一具备最高建筑装饰设计、展览展示工程资质的培训机构
-                </div>
-                <div class="select-silkroad-reason-list">
-                    <div class="select-silkroad-reason-item">
-                        <img src="/assets/images/index/image6-1.jpg?v=1586932461356" alt="">
-                        <h3>建筑装饰工程设计专项甲级证书</h3>
-                    </div>
-                    <div class="select-silkroad-reason-item">
-                        <img src="/assets/images/index/image6-2.jpg?v=1586932461356" alt="">
-                        <h3>建筑装饰工程设计专项甲级证书</h3>
-                    </div>
-                    <div class="select-silkroad-reason-item">
-                        <img src="/assets/images/index/image6-3.jpg?v=1586932461356" alt="">
-                        <h3>建筑装饰工程设计专项甲级证书</h3>
-                    </div>
-                    <div class="select-silkroad-reason-item">
-                        <img src="/assets/images/index/image6-4.jpg?v=1586932461356" alt="">
-                        <h3>建筑装饰工程设计专项甲级证书</h3>
-                    </div>
-                    <div class="select-silkroad-reason-item">
-                        <img src="/assets/images/index/image6-5.jpg?v=1586932461356" alt="">
-                        <h3>建筑装饰工程设计专项甲级证书</h3>
-                    </div>
-                    <div class="select-silkroad-reason-item">
-                        <img src="/assets/images/index/image6-6.jpg?v=1586932461356" alt="">
-                        <h3>建筑装饰工程设计专项甲级证书</h3>
-                    </div>
-                </div>
-                <div class="section-btn">
-                    <a class="btn doyoo-btn">查看更多荣誉资质</a>
-                </div>
-
-            </div>
-        </div>
-        <div class="section apec-course-sec">
-            <div class="apec-course-sec1">
-                <div class="container">
-                    <div class="section-title">
-                        APEC亚太高端<br>室内设计课程
-                    </div>
-                    <div class="section-serial">
-                        <div class="section-serial-number">01</div>
-                        <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586932461356" alt=""></div>
-                        <div class="section-serial-txt">
-                            自我超越<br>课如其名
-                        </div>
-                    </div>
-                    <div class="fit-design-list">
-                        <div class="fit-design-item">
-                            <img src="/assets/images/index/image7-1.png?v=1586932461356" alt="">
-                            <dl>
-                                <dt>10年不断磨砺课程</dt>
-                                <dd>相当</dd>
-                                <dd>北美大学</dd>
-                                <dd>3年的教学内容</dd>
-                            </dl>
-                        </div>
-                        <div class="fit-design-item">
-                            <img src="/assets/images/index/image7-2.png?v=1586932461356" alt="">
-                            <dl>
-                                <dt> 吸纳高端设计精髓</dt>
-                                <dd>相当</dd>
-                                <dd>北美大学</dd>
-                                <dd>3年的教学内容</dd>
-                            </dl>
-                        </div>
-                        <div class="fit-design-item">
-                            <img src="/assets/images/index/image7-3.png?v=1586932461356" alt="">
-                            <dl>
-                                <dt>贴合业界岗位需求</dt>
-                                <dd>相当</dd>
-                                <dd>北美大学</dd>
-                                <dd>3年的教学内容</dd>
-                            </dl>
-                        </div>
-                        <div class="fit-design-item">
-                            <img src="/assets/images/index/image7-4.png?v=1586932461356" alt="">
-                            <dl>
-                                <dt> 商业项目案例实训</dt>
-                                <dd>相当</dd>
-                                <dd>北美大学</dd>
-                                <dd>3年的教学内容</dd>
-                            </dl>
-                        </div>
-                    </div>
-                    <div class="section-btn">
-                        <a class="btn doyoo-btn">看看我适合学吗？</a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="apec-course-sec2">
-                <div class="container">
-                    <div class="section-serial">
-                        <div class="section-serial-number">02</div>
-                        <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586932461356" alt=""></div>
-                        <div class="section-serial-txt">
-                            掌握主流软件<br>全面提升技能
-                        </div>
-                    </div>
-                    <div class="fit-design-list">
-                        <img src="/assets/images/index/image8-1.png?v=1586932461356" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="apec-course-sec3">
-                <div class="container">
-                    <div class="section-serial">
-                        <div class="section-serial-number">03</div>
-                        <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1586932461356" alt=""></div>
-                        <div class="section-serial-txt">
-                            汇聚前沿高端技术<br>hold住职场竞争力
-                        </div>
-                    </div>
-                    <div class="section-describe">
-                        2020课程全新迭代，适用广泛，更适合你
-                    </div>
-                    <div class="fit-design-list">
-                        <div class="fit-design-item">
-                            <dl>
-                                <dt>设计基础阶段</dt>
-                                <dd>徒手手绘表现 </dd>
-                                <dd>设计方案深化</dd>
-                                <dd>SketchUp表现</dd>
-                                <dd>Enscape表现</dd>
-                            </dl>
-                        </div>
-                        <div class="fit-design-item">
-                            <dl>
-                                <dt>室内表现阶段</dt>
-                                <dd>徒手手绘表现 </dd>
-                                <dd>设计方案深化</dd>
-                                <dd>SketchUp表现</dd>
-                                <dd>Enscape表现</dd>
-                            </dl>
-                        </div>
-                        <div class="fit-design-item">
-                            <dl>
-                                <dt>家装设计阶段</dt>
-                                <dd>徒手手绘表现 </dd>
-                                <dd>设计方案深化</dd>
-                                <dd>SketchUp表现</dd>
-                                <dd>Enscape表现</dd>
-                            </dl>
-                        </div>
-                        <div class="fit-design-item">
-                            <dl>
-                                <dt>公装设计阶段</dt>
-                                <dd>徒手手绘表现 </dd>
-                                <dd>设计方案深化</dd>
-                                <dd>SketchUp表现</dd>
-                                <dd>Enscape表现</dd>
-                            </dl>
-                        </div>
-                        <div class="fit-design-item">
-                            <dl>
-                                <dt>项目实战 </dt>
-                                <dd>徒手手绘表现 </dd>
-                                <dd>设计方案深化</dd>
-                                <dd>SketchUp表现</dd>
-                                <dd>Enscape表现</dd>
-                            </dl>
-                        </div>
-                    </div>
-                    <div class="section-btn">
-                        <a class="btn doyoo-btn">查看课程详情</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section oneline-coffee-sec">
-            <div class="container">
-                <div class="section-title">
-                    一线大咖<br>全力传授设计宝典
-                </div>
-                <div class="oneline-coffee-list">
-                    <img src="/assets/images/index/image10-1.png?v=1586932461356" alt="">
-                    <img src="/assets/images/index/image10-2.png?v=1586932461356" alt="">
-                </div>
-                <div class="section-btn">
-                    <a class="btn doyoo-btn">名师一对一交流</a>
-                </div>
-            </div>
-        </div>
-        <div class="section highest-salary-sec">
-            <img src="/assets/images/index/image11-1.jpg?v=1586932461356" alt="">
-        </div>
+        <!--  丝路出品 必属精品 -->
         <div class="section section-bg-write good-works-sec">
             <div class="section-title">
-                优秀作品<br>让你在HR眼里脱颖而出
+                丝路出品，必属精品
+                <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1587179319710" alt=""></div>
             </div>
             <div class="section-nav-tab">
-                <div class="section-nav-item section-nav-btn section-nav-active"> 室内手绘</div>
-                <div class="section-nav-item section-nav-btn"> CAD施工图</div>
-                <div class="section-nav-item section-nav-btn"> 家装设计</div>
-                <div class="section-nav-item section-nav-btn"> 公装设计</div>
-                <div class="section-nav-item section-nav-btn"> 720全景</div>
-                <div class="section-nav-item section-nav-btn"> 软装方案</div>
+                <div class="section-nav-item section-nav-btn section-nav-active"> 影视视效</div>
+                <div class="section-nav-item section-nav-btn"> 游戏视觉</div>
+                <div class="section-nav-item section-nav-btn"> 室内设计</div>
+                <div class="section-nav-item section-nav-btn"> U X 全栈</div>
+                <div class="section-nav-item section-nav-btn"> 建筑视效</div>
+                <div class="section-nav-item section-nav-btn"> BIM应用</div>
             </div>
             <div class="section-tab-list">
                 <div class="section-tab-col">
-                    <img src="/assets/images/index/image12-1.jpg?v=1586932461356" alt="">
+                    <div class="item">
+                        <a href="/yingshi/ysqn.html">
+                            <img src="/assets/images/index/yingshi1.png?v=1587179319710" alt="">
+                            <p>影视视效全能班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/yingshi/ystx.html">
+                            <img src="/assets/images/index/yingshi2.png?v=1587179319710" alt="">
+                            <p>特效合成大师班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/yingshi/ysjj.html">
+                            <img src="/assets/images/index/yingshi3.png?v=1587179319710" alt="">
+                            <p>剪辑包装创意班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/yingshi/ysdh.html">
+                            <img src="/assets/images/index/yingshi4.png?v=1587179319710" alt="">
+                            <p>影视动画精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/yingshi/c4d.html">
+                            <img src="/assets/images/index/yingshi5.png?v=1587179319710" alt="">
+                            <p>C4D视效大师班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="doyoo-btn">
+                            <img src="/assets/images/index/work-btn.png?v=1587179319710" alt="">
+                        </a>
+                    </div>
                 </div>
                 <div class="section-tab-col">
-                    <img src="/assets/images/index/image12-2.jpg?v=1586932461356" alt="">
+                    <div class="item">
+                        <a href="/youxi/yxqn.html">
+                            <img src="/assets/images/index/youxi1.png?v=1587179319710" alt="">
+                            <p>游戏视觉全能班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/youxi/yxyh.html">
+                            <img src="/assets/images/index/youxi2.png?v=1587179319710" alt="">
+                            <p>游戏原画创意班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/youxi/yxms.html">
+                            <img src="/assets/images/index/youxi3.png?v=1587179319710" alt="">
+                            <p>3D美术精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/youxi/yxrj.html">
+                            <img src="/assets/images/index/youxi4.png?v=1587179319710" alt="">
+                            <p>游戏软件精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/youxi/yxtx.html">
+                            <img src="/assets/images/index/youxi5.png?v=1587179319710" alt="">
+                            <p>动作特效精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="doyoo-btn">
+                            <img src="/assets/images/index/work-btn.png?v=1587179319710" alt="">
+                        </a>
+                    </div>
                 </div>
+
                 <div class="section-tab-col">
-                    <img src="/assets/images/index/image12-1.jpg?v=1586932461356" alt="">
+                    <div class="item">
+                        <a href="/shinei/snqk.html">
+                            <img src="/assets/images/index/shinei1.png?v=1587179319710" alt="">
+                            <p>APEC室内设计</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/shinei/cad.html">
+                            <img src="/assets/images/index/shinei2.png?v=1587179319710" alt="">
+                            <p>CAD制图大师班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/shinei/snrz.html">
+                            <img src="/assets/images/index/shinei3.png?v=1587179319710" alt="">
+                            <p>室内软装精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/shinei/snsh.html">
+                            <img src="/assets/images/index/shinei4.png?v=1587179319710" alt="">
+                            <p>室内手绘创意班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/shinei/snxgt.html">
+                            <img src="/assets/images/index/shinei5.png?v=1587179319710" alt="">
+                            <p>室内效果图精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="doyoo-btn">
+                            <img src="/assets/images/index/work-btn.png?v=1587179319710" alt="">
+                        </a>
+                    </div>
                 </div>
+
+
                 <div class="section-tab-col">
-                    <img src="/assets/images/index/image12-1.jpg?v=1586932461356" alt="">
+                    <div class="item">
+                        <a href="/ui/uiqn.html">
+                            <img src="/assets/images/index/ui1.png?v=1587179319710" alt="">
+                            <p>UX全栈视效全能班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/ui/psds.html">
+                            <img src="/assets/images/index/ui2.png?v=1587179319710" alt="">
+                            <p>Photoshop大师班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/ui/pmsj.html">
+                            <img src="/assets/images/index/ui3.png?v=1587179319710" alt="">
+                            <p>品牌视觉创意班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/ui/dsmg.html">
+                            <img src="/assets/images/index/ui4.png?v=1587179319710" alt="">
+                            <p>电商美工精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/ui/wysj.html">
+                            <img src="/assets/images/index/ui5.png?v=1587179319710" alt="">
+                            <p>全链路设计精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="doyoo-btn">
+                            <img src="/assets/images/index/work-btn.png?v=1587179319710" alt="">
+                        </a>
+                    </div>
                 </div>
+
                 <div class="section-tab-col">
-                    <img src="/assets/images/index/image12-1.jpg?v=1586932461356" alt="">
+                    <div class="item">
+                        <a href="/jianzhu/jzsx.html">
+                            <img src="/assets/images/index/jianzhu1.png?v=1587179319710" alt="">
+                            <p>建筑视效全能班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/jianzhu/3dsMax.html">
+                            <img src="/assets/images/index/jianzhu2.png?v=1587179319710" alt="">
+                            <p>3ds Max大师班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/jianzhu/3djm.html">
+                            <img src="/assets/images/index/jianzhu3.png?v=1587179319710" alt="">
+                            <p>3D建模精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/jianzhu/xrys.html">
+                            <img src="/assets/images/index/jianzhu4.png?v=1587179319710" alt="">
+                            <p>渲染艺术精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/jianzhu/jzxgt.html">
+                            <img src="/assets/images/index/jianzhu5.png?v=1587179319710" alt="">
+                            <p>建筑效果图精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="doyoo-btn">
+                            <img src="/assets/images/index/work-btn.png?v=1587179319710" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div class="section-tab-col">
-                    <img src="/assets/images/index/image12-1.jpg?v=1586932461356" alt="">
+
+                <div class="section-tab-col section-tab-col20">
+                    <div class="item">
+                        <a href="/bim/bimqn.html">
+                            <img src="/assets/images/index/bim1.png?v=1587179319710" alt="">
+                            <p>BIM应用全能班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/bim/bimkz.html">
+                            <img src="/assets/images/index/bim2.png?v=1587179319710" alt="">
+                            <p>BIM考证精英班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/bim/revitds.html">
+                            <img src="/assets/images/index/bim3.png?v=1587179319710" alt="">
+                            <p>Revit大师班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/bim/lumion.html">
+                            <img src="/assets/images/index/bim4.png?v=1587179319710" alt="">
+                            <p>Lumion大师班</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="doyoo-btn">
+                            <img src="/assets/images/index/work-btn.png?v=1587179319710" alt="">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="container">
                 <div class="section-btn">
-                    <a class="btn doyoo-btn">查看更多薪资</a>
+                    <a class="btn doyoo-btn">查看上课时间</a>
                 </div>
             </div>
         </div>
-        <div class="section student-evaluation-sec">
+
+        <!-- 众所周知的实训项目 -->
+
+        <div class="section section-bg-write shixun">
             <div class="container">
                 <div class="section-title">
-                    真实学员评价<br><b>实力打Call</b>
+                    众所周知的实训项目
+                    <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1587179319710" alt=""></div>
                 </div>
-                <div class="student-evaluation-list">
-                    <div class="student-evaluation-item"><img src="/assets/images/index/image13-1.png?v=1586932461356" alt=""></div>
-                    <div class="student-evaluation-item"><img src="/assets/images/index/image13-2.png?v=1586932461356" alt=""></div>
-                    <div class="student-evaluation-item"><img src="/assets/images/index/image13-3.png?v=1586932461356" alt=""></div>
+                <div class="section-describe">
+                    丝路视觉大量知名商业项目资源，供丝路学参与
+                    <br/>制作实训，在校即获取一手行业经验。
                 </div>
-            </div>
-        </div>
-        <div class="section learning-guarantee-sec">
-            <div class="container">
-                <div class="section-title">
-                    丝路教育<br><b> 六大学习保障</b>
-                </div>
-                <div class="learning-guarantee-list">
-                    <div class="learning-guarantee-item">
-                        <div class="learning-guarantee-cover">
-                            <img src="/assets/images/index/image14-1.png?v=1586932461356" alt="">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/assets/images/index/shixun1.png?v=1587179319710" alt="">
                         </div>
-                        <h3>免费试学</h3>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/index/shixun2.png?v=1587179319710" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/index/shixun3.png?v=1587179319710" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/index/shixun4.png?v=1587179319710" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/index/shixun5.png?v=1587179319710" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/index/shixun6.png?v=1587179319710" alt="">
+                        </div>
                     </div>
-                    <div class="learning-guarantee-item">
-                        <div class="learning-guarantee-cover">
-                            <img src="/assets/images/index/image14-2.png?v=1586932461356" alt="">
-                        </div>
 
-                        <h3>免费试学</h3>
-                    </div>
-                    <div class="learning-guarantee-item">
-                        <div class="learning-guarantee-cover">
-                            <img src="/assets/images/index/image14-3.png?v=1586932461356" alt="">
-                        </div>
-
-                        <h3>免费试学</h3>
-                    </div>
-                    <div class="learning-guarantee-item">
-                        <div class="learning-guarantee-cover">
-                            <img src="/assets/images/index/image14-4.png?v=1586932461356" alt="">
-                        </div>
-
-                        <h3>免费试学</h3>
-                    </div>
-                    <div class="learning-guarantee-item">
-                        <div class="learning-guarantee-cover">
-                            <img src="/assets/images/index/image14-5.png?v=1586932461356" alt="">
-                        </div>
-
-                        <h3>免费试学</h3>
-                    </div>
-                    <div class="learning-guarantee-item">
-                        <div class="learning-guarantee-cover">
-                            <img src="/assets/images/index/image14-6.png?v=1586932461356" alt="">
-                        </div>
-
-                        <h3>免费试学</h3>
-                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <div class="section-btn">
-                    <a class="btn doyoo-btn">申请学费减免</a>
+                    <a class="btn doyoo-btn">查看更多实训项目</a>
                 </div>
             </div>
         </div>
-        <div class="section section-bg-write">
+
+        <!-- 掌握核心资质
+打造精英人才 -->
+
+        <div class="section section-bg-write select-silkroad-reason-sec">
             <div class="container">
                 <div class="section-title">
-                    <b>3000+合作企业</b><br>轻松入职名企
+                    掌握核心资质
+                    <br/>打造精英人才
+                    <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1587179319710" alt=""></div>
                 </div>
-                <img src="/assets/images/index/image15-1.jpg?v=1586932461356" alt="">
-                <div class="section-btn">
-                    <a class="btn doyoo-btn">查看企业招聘信息</a>
+                <div class="section-describe">
+                    拥有众多国家级资质，设计培训领域首屈一指
+                </div>
+                <div class="select-silkroad-reason-list">
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/jz1.jpg?v=1587179319710" alt="">
+                        <h3>国家高新技术企业</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/jz2.jpg?v=1587179319710" alt="">
+                        <h3>国家动漫企业</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/jz3.jpg?v=1587179319710" alt="">
+                        <h3>AAA级企业信用等级</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/jz4.jpg?v=1587179319710" alt="">
+                        <h3>建筑装饰工程设计专项甲级 </h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/jz5.jpg?v=1587179319710" alt="">
+                        <h3> 展览展示设计工程甲级</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/jz6.jpg?v=1587179319710" alt="">
+                        <h3>展览展示制作施工一级资质</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/jz7.jpg?v=1587179319710" alt="">
+                        <h3>Adobe官方认证</h3>
+                    </div>
+                    <div class="select-silkroad-reason-item">
+                        <img src="/assets/images/index/jz8.jpg?v=1587179319710" alt="">
+                        <h3> Autodesk官方认证</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- 丝路教育行业人才“兵工厂” -->
+        <div class="section section-bg-write designing-workers-sec">
+            <div class="container">
+                <div class="section-title">
+                    丝路教育
+                    <br/>行业人才“兵工厂”
+                    <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1587179319710" alt=""></div>
+                </div>
+                <div class="section-describe">
+                    成立至今每年向行业输送数以万计的优秀设计人才，
+                    <br/>学员们的成功就业是丝路教育最大的欣慰。
+                </div>
+                <div class="designing-workers-content">
+                    <div class="designing-workers-area">
+                        <img src="/assets/images/index/xy.jpg?v=1587179319710" alt="">
+
+                    </div>
+                    <div class="section-btn">
+                        <a class="btn doyoo-btn">查看更多优秀学员</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- 表单统计 -->
-        <div class="section-form">
-            <form action="/plus/diy.php?v=1586932461356" enctype="multipart/form-data" method="post"
-                onsubmit="return checkMobile(this);">
-                <div class="form-group">
-                    <input type='text' name='name' placeholder="姓名" class="form-control" />
+
+        <!-- 一张作品决胜职场 -->
+
+        <div class="section section-bg-write stu-work">
+            <div class="section-title">
+                一张作品决胜职场
+                <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1587179319710" alt=""></div>
+            </div>
+            <div class="section-describe">
+                丝路学员在校学习，不同课程阶段作品均会得到导师<br/>专业指导， 作为学员就业时的“敲门砖”。
+            </div>
+            <div class="section-nav-tab">
+                <div class="section-nav-item section-nav-btn section-nav-active"> 影视作品</div>
+                <div class="section-nav-item section-nav-btn"> 游戏作品 </div>
+                <div class="section-nav-item section-nav-btn"> 室内作品</div>
+                <div class="section-nav-item section-nav-btn"> UX作品</div>
+                <div class="section-nav-item section-nav-btn"> 建筑作品</div>
+                <div class="section-nav-item section-nav-btn"> BIM作品</div>
+            </div>
+            <div class="section-tab-list">
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/zp1.jpg?v=1587179319710" alt="">
                 </div>
-                <div class="form-group">
-                    <input type="text" name='tel' class="form-control" placeholder="电话" />
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/zp2.jpg?v=1587179319710" alt="">
                 </div>
-                <div class="form-submit">
-                    <button class="btn" type="submit">预约免费试听</button>
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/zp3.jpg?v=1587179319710" alt="">
                 </div>
-            </form>
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/zp4.jpg?v=1587179319710" alt="">
+                </div>
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/zp5.jpg?v=1587179319710" alt="">
+                </div>
+                <div class="section-tab-col">
+                    <img src="/assets/images/index/zp6.jpg?v=1587179319710" alt="">
+                </div>
+            </div>
+            <div class="section-btn">
+                <a class="btn doyoo-btn">查看更多学员作品</a>
+            </div>
+
         </div>
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+
+
+    <!-- 舒心环境，浓厚氛围 -->
+
+    <div class="section section-bg-write">
+        <div class="container">
+            <div class="section-title">
+                舒心环境，浓厚氛围
+                <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1587179319710" alt=""></div>
+            </div>
+            <div class="section-describe">
+                丝路教育校区均配备Apple电脑，硬件设施完备，
+                <br/>校区环境优美，设施完善，给学员5A级学习环境。
+            </div>
+            <div class="designing-workers-content">
+                <div class="designing-workers-area">
+                    <img src="/assets/images/index/hj.jpg?v=1587179319710" alt="">
+
+                </div>
+                <div class="section-btn">
+                    <a class="btn doyoo-btn">查看更多校区图片</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 百家高校的信任 知名企业的选择 -->
+    <div class="section section-bg-write logo">
+        <div class="section-title">
+            百家高校的信任
+            <br/>知名企业的选择
+            <div class="section-serial-line"> <img src="/assets/images/index/line.png?v=1587179319710" alt=""></div>
+        </div>
+
+        <div class="section-nav-tab">
+            <div class="section-nav-item section-nav-btn section-nav-active"> 合作企业</div>
+            <div class="section-nav-item section-nav-btn"> 合作院校 </div>
+
+        </div>
+        <div class="section-tab-list">
+            <div class="section-tab-col">
+                <img src="/assets/images/index/hzlogo.jpg?v=1587179319710" alt="">
+            </div>
+            <div class="section-tab-col">
+                <img src="/assets/images/index/hzlogo1.jpg?v=1587179319710" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 表单统计 -->
+    <div class="section-form">
+        <form id="form">
+            <div class="form-group form-group-txt">
+                创造未来
+                <br/> 从沉迷当下开始！
+            </div>
+            <div class="form-group">
+                <input type='text' name='name' id="name" placeholder="姓名：请填写姓名" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="text" name='tel' id="tel" class="form-control" placeholder="联系方式：请填写手机号码" />
+            </div>
+            <input type="text" name='time' id='time' style="display: none;" />
+
+            <div class="form-submit">
+                <button class="btn" type="button" onclick="add_ajaxmessage()"> 预约免费试听</button>
+            </div>
+        </form>
+    </div>
+
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
@@ -723,6 +883,8 @@
 </script>
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
+
+</div>
 </body>
 
 </html>

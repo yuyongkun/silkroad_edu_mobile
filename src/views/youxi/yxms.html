@@ -13,8 +13,7 @@
         function setBodyFontSize() {
             if (document.body) {
                 document.body.style.fontSize = (12 * dpr) + 'px'
-            }
-            else {
+            } else {
                 document.addEventListener('DOMContentLoaded', setBodyFontSize)
             }
         }
@@ -30,7 +29,7 @@
 
         // reset rem unit on page resize
         window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
+        window.addEventListener('pageshow', function(e) {
             if (e.persisted) {
                 setRemUnit()
             }
@@ -50,12 +49,11 @@
         }
     }(window, document))
 </script>
-
     <title>3D美术精英班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1586932461356">
-    <link rel="stylesheet" href="/assets/css/youxi/yxms.css?v=1586932461356">
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1587179319710">
+    <link rel="stylesheet" href="/assets/css/youxi/yxms.css?v=1587179319710">
 </head>
 
 <body>
@@ -63,7 +61,9 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
      影视视效课程  
     <ul class="header-menu-secondlist">
@@ -105,7 +105,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     APEC室内课程  
+     室内设计课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -115,30 +115,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     UX全栈课程  
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
      建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -158,14 +187,25 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
@@ -210,7 +250,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      APEC室内 
+      室内设计 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -220,30 +260,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      UX全栈 
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
       建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -265,9 +334,15 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
@@ -275,7 +350,7 @@
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img src="/assets/images/youxi/yxms/banner.jpg?v=1586932461356" alt="">
+                <img src="/assets/images/youxi/yxms/banner.jpg?v=1587179319710" alt="">
             </a>
         </div>
         <div class="section">
@@ -286,8 +361,8 @@
                         行业“薪”机遇
                     </b>
                 </div>
-                <img src="/assets/images/youxi/yxms/shju1.png?v=1586932461356" alt="">
-                <img src="/assets/images/youxi/yxms/shju2.png?v=1586932461356" alt="">
+                <img src="/assets/images/youxi/yxms/shju1.png?v=1587179319710" alt="">
+                <img src="/assets/images/youxi/yxms/shju2.png?v=1587179319710" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">了解游戏行业前景</a>
                 </div>
@@ -298,7 +373,7 @@
                 <div class="section-title">
                     游戏3D美术适合谁学？
                 </div>
-                <img src="/assets/images/youxi/yxms/renqun.png?v=1586932461356" alt="">
+                <img src="/assets/images/youxi/yxms/renqun.png?v=1587179319710" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">看看我适合学吗？</a>
                 </div>
@@ -312,13 +387,13 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxms/xz1.png?v=1586932461356" alt="">
+                            <img src="/assets/images/youxi/yxms/xz1.png?v=1587179319710" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxms/xz2.png?v=1586932461356" alt="">
+                            <img src="/assets/images/youxi/yxms/xz2.png?v=1587179319710" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxms/xz3.png?v=1586932461356" alt="">
+                            <img src="/assets/images/youxi/yxms/xz3.png?v=1587179319710" alt="">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -339,7 +414,7 @@
                 <div class="section-list">
                     <div class="section-item">
                         <h3>手游设计制作</h3>
-                        <img class="section-cover" src="/assets/images/youxi/yxms/xinzi1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/xinzi1.png?v=1587179319710">
                         <div class="section-txt">
                             <p>提成薪资</p>
                             <div class="royalty-label">6000元</div>
@@ -347,7 +422,7 @@
                     </div>
                     <div class="section-item">
                         <h3>场景/道具制作</h3>
-                        <img class="section-cover" src="/assets/images/youxi/yxms/xinzi2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/xinzi2.png?v=1587179319710">
                         <div class="section-txt">
                             <p>提成薪资</p>
                             <div class="royalty-label">10000元</div>
@@ -355,7 +430,7 @@
                     </div>
                     <div class="section-item">
                         <h3>角色/怪物制作</h3>
-                        <img class="section-cover" src="/assets/images/youxi/yxms/xinzi3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/xinzi3.png?v=1587179319710">
                         <div class="section-txt">
                             <p>提成薪资</p>
                             <div class="royalty-label">11000元</div>
@@ -371,7 +446,7 @@
                         到底有什么差别
                     </b>
                 </div>
-                <img src="/assets/images/youxi/yxms/duibi.png?v=1586932461356" alt="">
+                <img src="/assets/images/youxi/yxms/duibi.png?v=1587179319710" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">了解更多优势</a>
                 </div>
@@ -388,25 +463,25 @@
                 <div class="swiper-container" slidesPerView='3' spaceBetween='8' autoplay='false'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxms/rj1.png?v=1586932461356">
+                            <img src="/assets/images/youxi/yxms/rj1.png?v=1587179319710">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxms/rj2.png?v=1586932461356">
+                            <img src="/assets/images/youxi/yxms/rj2.png?v=1587179319710">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxms/rj3.jpg?v=1586932461356">
+                            <img src="/assets/images/youxi/yxms/rj3.jpg?v=1587179319710">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxms/rj4.jpg?v=1586932461356">
+                            <img src="/assets/images/youxi/yxms/rj4.jpg?v=1587179319710">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxms/rj5.jpg?v=1586932461356">
+                            <img src="/assets/images/youxi/yxms/rj5.jpg?v=1587179319710">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxms/rj6.jpg?v=1586932461356">
+                            <img src="/assets/images/youxi/yxms/rj6.jpg?v=1587179319710">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxms/rj7.jpg?v=1586932461356">
+                            <img src="/assets/images/youxi/yxms/rj7.jpg?v=1587179319710">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -459,9 +534,9 @@
                     </div>
                     <div class="fivestep-method-item">
                         <dl>
-                            <dt>角色模型制作阶段</dt>
+                            <dt>角色贴图制作阶段</dt>
                             <dd>
-                                收获：可以根据自身创意制作出怪物皮肤材质以及角色高模。
+                                收获：完成怪物角色装备贴图，提升材质质感。
                             </dd>
                         </dl>
                     </div>
@@ -484,7 +559,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/3a1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/3a1.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>王者荣耀</h3>
                             <p>
@@ -493,7 +568,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/3a2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/3a2.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>神秘海域</h3>
                             <p>
@@ -511,7 +586,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/tec1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/tec1.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>周琴
                                 <span>/ 12年从业经验</span>
@@ -523,7 +598,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/tec2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/tec2.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>鲍金陶
                                 <span>/ 14年从业经验</span>
@@ -535,7 +610,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/tec3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/tec3.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>蔡雯璐
                                 <span>/ 10年从业经验</span>
@@ -547,7 +622,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/tec4.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/tec4.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>张红亮
                                 <span>/ 6年从业经验</span>
@@ -571,7 +646,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/stu-work1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/stu-work1.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>
                                 1904期 王*杰
@@ -580,7 +655,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/stu-work2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/stu-work2.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>
                                 1911期 耿*信
@@ -589,7 +664,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/stu-work3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/stu-work3.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>
                                 1915期 王*胜
@@ -598,7 +673,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/stu-work4.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/stu-work4.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>
                                 1817期 师*涵
@@ -622,37 +697,37 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/icon1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/icon1.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>入学签订就业协议</h3>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/icon2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/icon2.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>就业指导体系完善</h3>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/icon3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/icon3.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>名企HR模拟面试</h3>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/icon4.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/icon4.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>定期举办招聘会</h3>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/icon5.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/icon5.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>一对一式推荐就业</h3>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/icon6.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/icon6.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>一线名企定制人才</h3>
                         </div>
@@ -673,9 +748,9 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/stu1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/stu1.png?v=1587179319710">
                         <div class="section-txt">
-                            <h3>1607期 李*</h3>
+                            <h3>1807期 李*</h3>
                             <div class="line"></div>
                             <p>
                                 就职公司：艾迪亚<br> 现任岗位：角色设计师
@@ -687,7 +762,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/stu2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/stu2.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>1709期 陈*</h3>
                             <div class="line"></div>
@@ -701,7 +776,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxms/stu3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/youxi/yxms/stu3.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>1697 田*</h3>
                             <div class="line"></div>
@@ -728,7 +803,7 @@
                         助你搭乘高薪直通车
                     </b>
                 </div>
-                <img src="/assets/images/youxi/yxms/logo.png?v=1586932461356" alt="">
+                <img src="/assets/images/youxi/yxms/logo.png?v=1587179319710" alt="">
             </div>
         </div>
         <!-- 表单统计 -->
@@ -757,13 +832,26 @@
 
 
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
@@ -775,6 +863,8 @@
 </script>
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
+
+</div>
 </body>
 
 </html>

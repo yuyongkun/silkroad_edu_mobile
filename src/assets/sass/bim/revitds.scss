@@ -1,25 +1,23 @@
 @import "../common/variable";
 @import "../common/base";
-.section .section-title{
+.section .section-title {
     font-family: 微软雅黑;
 }
+
 // Revit在手掀起BIM“薪”革命
 .hot-software-sec {
     .section-list {
         .section-item {
             display: flex;
-
             .section-cover {
                 width: 2.3333rem;
                 height: 1.8667rem;
             }
-
             .section-txt {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 padding-left: 0.2667rem;
-
                 h3 {
                     margin-bottom: 0.1333rem;
                 }
@@ -33,27 +31,22 @@
     .section-list {
         .section-item {
             display: flex;
-
             .section-cover {
                 width: 3.7333rem;
-                height: 4.9867rem;
+                height: 5.9867rem;
             }
-
             .section-txt {
                 padding: 0px;
                 margin-left: 0.1333rem;
                 font-size: 0.2933rem;
-
                 dl {
                     line-height: 1.3;
                     padding: 0.1333rem 0.2667rem;
                     margin-bottom: 0.1333rem;
                     background: #F4F4F4;
-
                     dt {
                         color: $base-color;
                     }
-
                     dd {
                         font-size: 0.2667rem;
                     }
@@ -68,7 +61,6 @@
     .section-list {
         .section-item {
             display: flex;
-
             .section-cover {
                 width: 2.9333rem;
                 height: 3.1467rem;
@@ -83,7 +75,6 @@
         .section-item {
             width: 2.6rem;
             text-align: center;
-
             .section-cover {
                 height: 1.68rem;
             }
@@ -96,34 +87,27 @@
     .section-list {
         .section-item {
             display: flex;
-
             .section-cover {
                 width: 4.6133rem;
-                height: 3.88rem;
+                height: 4.88rem;
             }
-
             .section-txt {
                 padding-left: 0.1333rem;
-
                 h3 {
                     font-family: 微软雅黑;
                     font-size: 0.32rem;
-
                     em {
                         margin-right: 0.0667rem;
                         font-size: 0.3733rem;
                         font-weight: bold;
                     }
                 }
-
                 ul {
                     color: #666;
                     font-size: 0.2667rem;
-
                     li {
                         position: relative;
                         padding-left: 8px;
-
                         &:before {
                             content: '';
                             position: absolute;
@@ -150,41 +134,34 @@
             display: flex;
             padding: 0.1333rem;
             background: #F7F7F7;
-
             .section-cover {
                 width: 3.4133rem;
                 height: 4.68rem;
             }
-
             .section-txt {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 padding-left: 0.2667rem;
-
                 h3 {
                     line-height: 1;
                     font-size: 0.4rem;
                     color: #F54F23;
-
                     span {
                         margin-left: 0.2rem;
                         font-size: 0.2933rem;
                         color: #999;
                     }
                 }
-
                 .software-experience {
                     margin-bottom: 0.0667rem;
                     font-size: 0.2667rem;
                     color: #666;
                 }
-
                 .software-works {
                     margin-top: 0.0667rem;
                     font-size: 0.2667rem;
                     color: #999;
-
                     b {
                         color: #333;
                     }
@@ -199,10 +176,11 @@
     height: 8.88rem;
     background: url("/assets/images/bim/revitds/bottom.jpg") no-repeat center;
     background-size: cover;
-
+    margin-bottom: 15vw;
     .form-group-txt {
         line-height: 1.5;
         padding-top: 1.3333rem;
         color: #fff;
+        font-size: 0.6333rem;
     }
 }

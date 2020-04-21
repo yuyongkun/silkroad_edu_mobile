@@ -1,0 +1,252 @@
+@import "../common/variable";
+@import "../common/base";
+.title-line {
+    width: 0.5333rem;
+    height: 0.0533rem;
+    background: linear-gradient(-90deg, rgba(177, 6, 43, 1), rgba(246, 79, 35, 1));
+    margin: 0 auto 0.4rem;
+}
+.banner{
+    background-color: #fff;
+}
+
+// 渲染艺术
+.learning-guarantee-sec {
+    .section-list {
+        .section-item {
+            width: 100%;
+            font-size: 0.3467rem;
+            color: #666;
+            text-align: center;
+            background: transparent;
+            .section-cover {
+                
+                margin-bottom: 0.3333rem;
+            }
+        }
+    }
+}
+
+
+
+//你眼中的建筑渲染
+.jy{
+    color:#f64f23;
+}
+.zh{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.zj{
+    margin: 0 0.1rem;
+}
+// 一站式闭环流程
+.bj{
+    background: url("/assets/images/home/obtain/bj.jpg") no-repeat center;
+    background-size: cover; 
+}
+.treasure-land-sec {
+    .treasure-land-sec1 {
+        margin-bottom: 0.4rem;
+        text-align: center;
+        img {
+            width: 5.2667rem;
+            height: 6.52rem;
+        }
+    }
+    .treasure-land-sec2 {
+        display: flex;
+        img {
+            width: 50%;
+            width: 4.6rem;
+            height: 6.52rem;
+        }
+    }
+}
+.zy-img{
+    box-shadow: 0px 0px 20px #d9e5f2;
+}
+//丝路教育
+.bj2{
+    background: url("/assets/images/home/obtain/bj2.jpg") no-repeat center;
+    background-size: cover; 
+    .section-title{
+        color: #fff;
+    }
+    
+}
+
+//丝路教育就业学员
+.rc{
+    color: #ec6941;
+    font-weight: bold;
+    margin-bottom: 0.64rem;
+    font-size: 0.3733rem;
+    text-align: center;
+    font-family: 微软雅黑;
+}
+//从丝路毕业
+.hezuo{
+    font-size: 0.5rem;
+    text-align: center;
+    margin: 0.7rem 0 0.4rem 0;
+    color: #f64f23;
+}
+// 紧密结合市场
+.film-editing-sec {
+    .section-serial {
+        margin-bottom: 0.5333rem;
+        text-align: center;
+        .section-serial-number {
+            font-size: 0.4267rem;
+            margin-bottom: 0.1333rem;
+        }
+        .section-serial-txt {
+            font-size: 0.3733rem;
+        }
+        .section-serial-line {
+            width: 0.5333rem;
+            height: 0.0533rem;
+            margin: 0 auto 0.4rem;
+            background: linear-gradient(-90deg, rgba(177, 6, 43, 1), rgba(246, 79, 35, 1));
+        }
+    }
+    .film-editing-sec1 {
+        margin-bottom: 0.8rem;
+        .section-list {
+            .section-item {
+                margin-bottom: 0.1067rem;
+                .section-cover {
+                    width: 4.5333rem;
+                    height: 4.5rem;
+                }
+                .section-txt {
+                    font-size: 0.3733rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .film-editing-sec2 {
+        .film-editing-list {
+            .film-editing-item {
+                height: 4.8rem;
+                margin-bottom: 0.4rem;
+                &:last-child {
+                    .film-editing-txt {
+                        margin-left: 0.8rem;
+                    }
+                }
+                &:first-child {
+                    .film-editing-txt {
+                        margin-left: auto;
+                        padding-right: 0.2667rem;
+                    }
+                }
+                .film-editing-txt {
+                    width: 4.5333rem;
+                    padding-top: 0.5333rem;
+                    color: #fff;
+                    font-size: 12px;
+                    h3 {
+                        font-size: 0.3733rem;
+                        margin-bottom: 0.4rem;
+                    }
+                    ul {
+                        li {
+                            position: relative;
+                            margin-bottom: 0.1333rem;
+                            i {
+                                width: 6px;
+                                height: 6px;
+                                position: absolute;
+                                left: -10px;
+                                top: 5px;
+                                border-radius: 50%;
+                                background: #fff;
+                            }
+                            div {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .film-editing-sec33 {
+        margin-bottom: 0.8rem;
+        .section-list {
+            .section-item {
+                margin-bottom: 0.1067rem;
+                img{
+                    box-shadow: 0px 0px 20px #f1f3fb;
+                }
+                .section-cover {
+                    width: 4.5333rem;
+                }
+                .section-txt {
+                    font-size: 0.3733rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+//丝路教育渲染艺术精英班
+.bj1{
+    background: url("/assets/images/jianzhu/xrys/bj.jpg") no-repeat center;
+    background-size: cover;  
+    .section-title{
+        color: #fff;
+    }
+}
+// 学员阶段作品展示
+.stage-works-sec{
+    .section-nav-tab{
+        margin: 0 -0.4rem 0.5333rem;
+        .section-nav-item.section-nav-btn{
+            
+            height: 0.8rem;
+            border-radius: 0.1rem;
+            background-color: transparent;
+            border:1px solid #e6e6e6;
+            color: #999;
+        }
+        .section-nav-item.section-nav-btn.section-nav-active{
+            background-color: $base-color;
+            color: #fff;
+            border:1px solid $base-color;
+        }
+    }
+
+}
+.section-tab-col{
+    img{
+        height: 8.4rem;
+    }
+}
+
+// 表单
+.section-form {
+    
+    height: 11.3333rem;
+    background: url("/assets/images/home/studentworks/bottom.jpg") no-repeat center;
+    background-size: cover;
+    .form-group-txt {
+        line-height: 1rem;
+        padding-top: 1.8rem;
+        font-size: 0.8rem;
+        color: #fff;
+    }
+}
+.mf{
+    text-align: center;
+    font-size: 0.4rem;
+    color: #fff;
+    margin-bottom: 0.7rem;
+}
+.yuan{
+    color: #f64f23;
+}

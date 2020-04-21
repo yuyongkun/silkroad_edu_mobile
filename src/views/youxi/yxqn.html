@@ -13,8 +13,7 @@
         function setBodyFontSize() {
             if (document.body) {
                 document.body.style.fontSize = (12 * dpr) + 'px'
-            }
-            else {
+            } else {
                 document.addEventListener('DOMContentLoaded', setBodyFontSize)
             }
         }
@@ -30,7 +29,7 @@
 
         // reset rem unit on page resize
         window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
+        window.addEventListener('pageshow', function(e) {
             if (e.persisted) {
                 setRemUnit()
             }
@@ -50,12 +49,11 @@
         }
     }(window, document))
 </script>
-
     <title>游戏视觉全能班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1586932461356">
-    <link rel="stylesheet" href="/assets/css/youxi/yxqn.css?v=1586932461356">
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1587179319710">
+    <link rel="stylesheet" href="/assets/css/youxi/yxqn.css?v=1587179319710">
 </head>
 
 <body>
@@ -63,7 +61,9 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
      影视视效课程  
     <ul class="header-menu-secondlist">
@@ -105,7 +105,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     APEC室内课程  
+     室内设计课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -115,30 +115,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     UX全栈课程  
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
      建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -158,14 +187,25 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
@@ -210,7 +250,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      APEC室内 
+      室内设计 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -220,30 +260,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      UX全栈 
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
       建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -265,9 +334,15 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
@@ -275,7 +350,7 @@
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img src="/assets/images/youxi/yxqn/banner.jpg?v=1586932461356" alt="">
+                <img src="/assets/images/youxi/yxqn/banner.jpg?v=1587179319710" alt="">
             </a>
         </div>
         <div class="section section-bg-write games-connotation-sec">
@@ -289,10 +364,10 @@
                     在电视包装领域也表现非凡，如今已成为国内<br>
                     设计主流软件，运用更加广泛。
                 </div> -->
-                <img src="/assets/images/youxi/yxqn/yx1-1.png?v=1586932461356" alt="">
+                <img src="/assets/images/youxi/yxqn/yx1-1.png?v=1587179319710" alt="">
                 <div class="section-btn">
                     <a class="doyoo-btn">
-                        <img src="/assets/images/youxi/yxqn/btn1.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/btn1.png?v=1587179319710" alt="">
                     </a>
                 </div>
             </div>
@@ -307,7 +382,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx2-1.jpg?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx2-1.jpg?v=1587179319710" alt="">
                         <div class="section-txt">
                             《王者荣耀》
                             <br/>制作团队
@@ -315,7 +390,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx2-2.jpg?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx2-2.jpg?v=1587179319710" alt="">
                         <div class="section-txt">
                             微信小游戏
                             <br/> 《跳一跳》
@@ -323,7 +398,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx2-3.jpg?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx2-3.jpg?v=1587179319710" alt="">
                         <div class="section-txt">
                             VR游戏
                             <br/>《节奏光剑》
@@ -333,7 +408,7 @@
                 </div>
                 <div class="section-btn">
                     <a class="doyoo-btn">
-                        <img src="/assets/images/youxi/yxqn/btn2.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/btn2.png?v=1587179319710" alt="">
                     </a>
                 </div>
             </div>
@@ -352,42 +427,42 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-1.jpg?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-1.jpg?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>游戏策划师</h3>
                             <p>10k-15k/月</p>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-2.jpg?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-2.jpg?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>游戏原画设计师</h3>
                             <p>10k-15k/月</p>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-3.jpg?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-3.jpg?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>游戏场景设计师</h3>
                             <p>10k-15k/月</p>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-4.jpg?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-4.jpg?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>游戏角色设计师</h3>
                             <p>12k-17k/月</p>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-5.jpg?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-5.jpg?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>次世代游戏设计师</h3>
                             <p>11k-17k/月</p>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-6.jpg?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/yx3-6.jpg?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>游戏动作/特效师</h3>
                             <p>10k-16k/月</p>
@@ -401,7 +476,7 @@
 
                 <div class="section-btn">
                     <a class="doyoo-btn">
-                        <img src="/assets/images/youxi/yxqn/btn3.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/btn3.png?v=1587179319710" alt="">
                     </a>
                 </div>
             </div>
@@ -416,42 +491,42 @@
             <div class="six-guarantees-row six-guarantees-sec1">
                 <div class="container">
                     <div class="guarantees-title">
-                        <img src="/assets/images/youxi/yxqn/title1.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/title1.png?v=1587179319710" alt="">
                         <p>学员独享特权礼，入学练级更安心</p>
                     </div>
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon1.png?v=1586932461356" alt="">
+                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon1.png?v=1587179319710" alt="">
                             <div class="section-txt">
                                 免费试学
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon2.png?v=1586932461356" alt="">
+                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon2.png?v=1587179319710" alt="">
                             <div class="section-txt">
                                 先学后付
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon3.png?v=1586932461356" alt="">
+                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon3.png?v=1587179319710" alt="">
                             <div class="section-txt">
                                 免费重修
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon4.png?v=1586932461356" alt="">
+                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon4.png?v=1587179319710" alt="">
                             <div class="section-txt">
                                 名师面授
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon5.png?v=1586932461356" alt="">
+                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon5.png?v=1587179319710" alt="">
                             <div class="section-txt">
                                 商业实训
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon6.png?v=1586932461356" alt="">
+                            <img class="section-cover" src="/assets/images/youxi/yxqn/icon6.png?v=1587179319710" alt="">
                             <div class="section-txt">
                                 名企就业
                             </div>
@@ -459,7 +534,7 @@
                     </div>
                     <div class="section-btn">
                         <a class="doyoo-btn">
-                            <img src="/assets/images/youxi/yxqn/btn4.png?v=1586932461356" alt="">
+                            <img src="/assets/images/youxi/yxqn/btn4.png?v=1587179319710" alt="">
                         </a>
                     </div>
                 </div>
@@ -467,13 +542,13 @@
             <div class="six-guarantees-row six-guarantees-sec2">
                 <div class="container">
                     <div class="guarantees-title">
-                        <img src="/assets/images/youxi/yxqn/title2.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/title2.png?v=1587179319710" alt="">
                         <p>商业游戏制作背景，更懂企业用人需求</p>
                     </div>
-                    <img src="/assets/images/youxi/yxqn/yx4-1.png?v=1586932461356" alt="">
+                    <img src="/assets/images/youxi/yxqn/yx4-1.png?v=1587179319710" alt="">
                     <div class="section-btn">
                         <a class="doyoo-btn">
-                            <img src="/assets/images/youxi/yxqn/btn5.png?v=1586932461356" alt="">
+                            <img src="/assets/images/youxi/yxqn/btn5.png?v=1587179319710" alt="">
                         </a>
                     </div>
                 </div>
@@ -481,17 +556,17 @@
             <div class="six-guarantees-row six-guarantees-sec3">
                 <div class="container">
                     <div class="guarantees-title">
-                        <img src="/assets/images/youxi/yxqn/title3.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/title3.png?v=1587179319710" alt="">
                         <p>教科书级精编课程，0基础快速提升</p>
                     </div>
                     <div class="guarantees-list">
-                        <img src="/assets/images/youxi/yxqn/yx5-1.png?v=1586932461356" alt="">
-                        <img src="/assets/images/youxi/yxqn/yx5-2.png?v=1586932461356" alt="">
-                        <img src="/assets/images/youxi/yxqn/yx5-3.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/yx5-1.png?v=1587179319710" alt="">
+                        <img src="/assets/images/youxi/yxqn/yx5-2.png?v=1587179319710" alt="">
+                        <img src="/assets/images/youxi/yxqn/yx5-3.png?v=1587179319710" alt="">
                     </div>
                     <div class="section-btn">
                         <a class="doyoo-btn">
-                            <img src="/assets/images/youxi/yxqn/btn6.png?v=1586932461356" alt="">
+                            <img src="/assets/images/youxi/yxqn/btn6.png?v=1587179319710" alt="">
                         </a>
                     </div>
                 </div>
@@ -499,13 +574,13 @@
             <div class="six-guarantees-row six-guarantees-sec4">
                 <div class="container">
                     <div class="guarantees-title">
-                        <img src="/assets/images/youxi/yxqn/title4.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/title4.png?v=1587179319710" alt="">
                         <p>你喜爱的游戏，出自丝路讲师之手</p>
                     </div>
                     <div class="section-list">
                         <div class="section-item">
                             <div class="section-cover">
-                                <img src="/assets/images/youxi/yxqn/tec1.png?v=1586932461356" alt="">
+                                <img src="/assets/images/youxi/yxqn/tec1.png?v=1587179319710" alt="">
                             </div>
                             <div class="section-txt">
                                 <h3>
@@ -520,7 +595,7 @@
                         </div>
                         <div class="section-item">
                             <div class="section-cover">
-                                <img src="/assets/images/youxi/yxqn/tec2.png?v=1586932461356" alt="">
+                                <img src="/assets/images/youxi/yxqn/tec2.png?v=1587179319710" alt="">
                             </div>
                             <div class="section-txt">
                                 <h3>
@@ -535,7 +610,7 @@
                         </div>
                         <div class="section-item">
                             <div class="section-cover">
-                                <img src="/assets/images/youxi/yxqn/tec3.png?v=1586932461356" alt="">
+                                <img src="/assets/images/youxi/yxqn/tec3.png?v=1587179319710" alt="">
                             </div>
                             <div class="section-txt">
                                 <h3>
@@ -550,7 +625,7 @@
                         </div>
                         <div class="section-item">
                             <div class="section-cover">
-                                <img src="/assets/images/youxi/yxqn/tec4.png?v=1586932461356" alt="">
+                                <img src="/assets/images/youxi/yxqn/tec4.png?v=1587179319710" alt="">
                             </div>
                             <div class="section-txt">
                                 <h3>
@@ -566,7 +641,7 @@
                     </div>
                     <div class="section-btn">
                         <a class="doyoo-btn">
-                            <img src="/assets/images/youxi/yxqn/btn7.png?v=1586932461356" alt="">
+                            <img src="/assets/images/youxi/yxqn/btn7.png?v=1587179319710" alt="">
                         </a>
                     </div>
                 </div>
@@ -574,19 +649,19 @@
             <div class="six-guarantees-row six-guarantees-sec5">
                 <div class="container">
                     <div class="guarantees-title">
-                        <img src="/assets/images/youxi/yxqn/title5.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/title5.png?v=1587179319710" alt="">
                         <p>在校实训有提成，又长经验又拿钱</p>
                     </div>
-                    <img src="/assets/images/youxi/yxqn/yx6-1.png?v=1586932461356" alt="">
+                    <img src="/assets/images/youxi/yxqn/yx6-1.png?v=1587179319710" alt="">
                 </div>
             </div>
             <div class="six-guarantees-row six-guarantees-sec6">
                 <div class="container">
                     <div class="guarantees-title">
-                        <img src="/assets/images/youxi/yxqn/title6.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/title6.png?v=1587179319710" alt="">
                         <p>一站式闭环流程，打造无死角就业服务</p>
                     </div>
-                    <img src="/assets/images/youxi/yxqn/yx7-1.png?v=1586932461356" alt="">
+                    <img src="/assets/images/youxi/yxqn/yx7-1.png?v=1587179319710" alt="">
                 </div>
             </div>
         </div>
@@ -601,7 +676,7 @@
             <div class="container">
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu1.png?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu1.png?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>1607期 李*</h3>
                             <div class="line"></div>
@@ -613,7 +688,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu2.png?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu2.png?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>1607期 赵*</h3>
                             <div class="line"></div>
@@ -626,7 +701,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu3.png?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu3.png?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>1607期 李*</h3>
                             <div class="line"></div>
@@ -639,7 +714,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu4.png?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu4.png?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>1709期 朱**</h3>
                             <div class="line"></div>
@@ -652,7 +727,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu5.png?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu5.png?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>1807期 黄**</h3>
                             <div class="line"></div>
@@ -665,7 +740,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu6.png?v=1586932461356" alt="">
+                        <img class="section-cover" src="/assets/images/youxi/yxqn/stu6.png?v=1587179319710" alt="">
                         <div class="section-txt">
                             <h3>1807期 邹*</h3>
                             <div class="line"></div>
@@ -680,7 +755,7 @@
                 </div>
                 <div class="section-btn">
                     <a class="doyoo-btn">
-                        <img src="/assets/images/youxi/yxqn/btn8.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/btn8.png?v=1587179319710" alt="">
                     </a>
                 </div>
             </div>
@@ -698,13 +773,13 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxqn/stu-work1.png?v=1586932461356" alt="">
+                            <img src="/assets/images/youxi/yxqn/stu-work1.png?v=1587179319710" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxqn/stu-work2.png?v=1586932461356" alt="">
+                            <img src="/assets/images/youxi/yxqn/stu-work2.png?v=1587179319710" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/youxi/yxqn/stu-work3.png?v=1586932461356" alt="">
+                            <img src="/assets/images/youxi/yxqn/stu-work3.png?v=1587179319710" alt="">
                         </div>
 
                     </div>
@@ -714,7 +789,7 @@
 
                 <div class="section-btn">
                     <a class="doyoo-btn">
-                        <img src="/assets/images/youxi/yxqn/btn9.png?v=1586932461356" alt="">
+                        <img src="/assets/images/youxi/yxqn/btn9.png?v=1587179319710" alt="">
                     </a>
                 </div>
             </div>
@@ -727,7 +802,7 @@
                 <div class="section-sub-title">
                     为你的“升职主线”提供更多选择
                 </div>
-                <img src="/assets/images/youxi/yxqn/logo.png?v=1586932461356" alt="">
+                <img src="/assets/images/youxi/yxqn/logo.png?v=1587179319710" alt="">
             </div>
         </div>
         <div class="section worry-question">
@@ -772,7 +847,7 @@
             </div>
             <div class="section-btn">
                 <a class="doyoo-btn">
-                    <img src="/assets/images/youxi/yxqn/btn10.png?v=1586932461356" alt="">
+                    <img src="/assets/images/youxi/yxqn/btn10.png?v=1587179319710" alt="">
                 </a>
             </div>
         </div>
@@ -800,13 +875,26 @@
     </div>
 
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
@@ -818,6 +906,8 @@
 </script>
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
+
+</div>
 </body>
 
 </html>

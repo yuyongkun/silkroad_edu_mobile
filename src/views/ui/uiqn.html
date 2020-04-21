@@ -13,8 +13,7 @@
         function setBodyFontSize() {
             if (document.body) {
                 document.body.style.fontSize = (12 * dpr) + 'px'
-            }
-            else {
+            } else {
                 document.addEventListener('DOMContentLoaded', setBodyFontSize)
             }
         }
@@ -30,7 +29,7 @@
 
         // reset rem unit on page resize
         window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
+        window.addEventListener('pageshow', function(e) {
             if (e.persisted) {
                 setRemUnit()
             }
@@ -50,12 +49,11 @@
         }
     }(window, document))
 </script>
-
-    <title>UX全栈视效设计全能班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1586932461356">
-    <link rel="stylesheet" href="/assets/css/ui/uiqn.css?v=1586932461356">
+    <title>UX全栈视效全能班</title>
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1587179319710">
+    <link rel="stylesheet" href="/assets/css/ui/uiqn.css?v=1587179319710">
 </head>
 
 <body>
@@ -63,7 +61,9 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
      影视视效课程  
     <ul class="header-menu-secondlist">
@@ -105,7 +105,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     APEC室内课程  
+     室内设计课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -115,30 +115,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     UX全栈课程  
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
      建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -158,14 +187,25 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
@@ -210,7 +250,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      APEC室内 
+      室内设计 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -220,30 +260,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      UX全栈 
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
       建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -265,9 +334,15 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
@@ -275,18 +350,17 @@
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img src="/assets/images/ui/uiqn/banner.png?v=1586932461356" alt="">
+                <img src="/assets/images/ui/uiqn/banner.png?v=1587179319710" alt="">
             </a>
         </div>
         <div class="section section-bg-write">
             <div class="container">
                 <div class="section-title">
-                    2020了<br>
-                    你还在当传统UI吗？
+                    2020了<br> 你还在当传统UI吗？
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/nr.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/nr.png?v=1587179319710">
                     </div>
                 </div>
             </div>
@@ -295,39 +369,34 @@
             <div class="container">
                 <div class="section-title">
                     互联网新纪元
+                    <br> 高薪全栈设计岗
                     <br>
-                    高薪全栈设计岗<br>
                     <b>正在向你say Hi！</b>
                 </div>
                 <div class="section-list">
                     <div class="section-item">
                         <h3>
-                            行业覆盖率<br>
-                            99%
+                            行业覆盖率<br> 99%
                         </h3>
                         <p>
-                            覆盖金融、教育、<br>电商、媒体、<br>
-                            广告、通信等
+                            覆盖金融、教育、<br>电商、媒体、<br> 广告、通信等
                         </p>
                         <div class="line"></div>
                     </div>
                     <div class="section-item">
                         <h3>
                             平均薪资
-                            <br>
-                            19890元/月
+                            <br> 19890元/月
                         </h3>
                         <p>
-                            UX全栈设计师平均<br>薪资是其他行业<br>
-                            薪资的2倍
+                            UX全栈设计师平均<br>薪资是其他行业<br> 薪资的2倍
                         </p>
                         <div class="line"></div>
                     </div>
                     <div class="section-item">
                         <h3>
                             晋升管理岗
-                            <br>
-                            最快只需2年
+                            <br> 最快只需2年
                         </h3>
                         <p>
                             比传统设计师更懂<br>用户，职业发展更<br>迅速
@@ -343,12 +412,16 @@
         <div class="section section-bg-write">
             <div class="container">
                 <div class="section-title">
-                    UX设计师的72变
+                    UX设计师的72变<br/>在行业里升级打怪
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/zy.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/zy.png?v=1587179319710">
                     </div>
+
+                </div>
+                <div class="section-btn">
+                    <a class="btn doyoo-btn">查看更多岗位薪资</a>
                 </div>
             </div>
         </div>
@@ -356,18 +429,17 @@
             <div class="container">
                 <div class="section-title">
                     确认过眼神
-                    <br>
-                    你是需要UX视效课程的人
+                    <br> 你是需要UX视效课程的人
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/jy1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/jy1.png?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/jy2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/jy2.png?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/jy3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/jy3.png?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -382,14 +454,17 @@
             <div class="container">
                 <div class="section-title">
                     UX设计师的
-                    <br>
-                    《一稿过秘籍》
+                    <br> 《一稿过秘籍》
                 </div>
                 <div class="official-designation-num tac">01</div>
                 <div class="official-designation-title tac">软件操作 多！快！好！省！</div>
+                <div class="section-describe">
+                    多软件！快操作！好创意！省时间！一样的软件，
+                    <br/>不一样的教法，让你赢在起跑线上！
+                </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/rj.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/rj.png?v=1587179319710">
                     </div>
                 </div>
             </div>
@@ -400,19 +475,19 @@
                 <div class="official-designation-title tac">课程大纲面面俱到 实操应用无孔不入</div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/kc1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/kc1.jpg?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/kc2.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/kc2.jpg?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/kc3.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/kc3.jpg?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/kc4.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/kc4.jpg?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/kc5.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/kc5.jpg?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -424,32 +499,27 @@
             <div class="container">
                 <div class="official-designation-num tac">03</div>
                 <div class="official-designation-title tac">
-                    Adobe 官方授权培训机构<br>
-                    有证走天下
+                    Adobe 官方授权培训机构<br> 有证走天下
                 </div>
                 <div class="section-describe">
-                    Adobe官方授权的培训机构，在中国简称AATC，
-                    在学习期间，丝路教育组织参加Adobe官方考试，
-                    老师全程指导，通过考核，可获得Adobe官方授权的
-                    平面设计师、移动端应用设计师、UI设计师、
-                    UX设计师、高级交互设计师、前端工程师等专业证书
+                    Adobe官方授权的培训机构，在中国简称AATC， 在学习期间，丝路教育组织参加Adobe官方考试， 老师全程指导，通过考核，可获得Adobe官方授权的 平面设计师、移动端应用设计师、UI设计师、 UX设计师、高级交互设计师、前端工程师等专业证书
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/zs1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/ui/uiqn/zs1.jpg?v=1587179319710">
                         <h3>移动端应用设计师</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/zs2.jpg?v=1586932461356">
-                        <h3>移动端应用设计师</h3>
+                        <img class="section-cover" src="/assets/images/ui/uiqn/zs2.jpg?v=1587179319710">
+                        <h3>UI设计师</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/zs3.jpg?v=1586932461356">
-                        <h3>移动端应用设计师</h3>
+                        <img class="section-cover" src="/assets/images/ui/uiqn/zs3.jpg?v=1587179319710">
+                        <h3>UX设计师</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/ui/uiqn/zs4.jpg?v=1586932461356">
-                        <h3>移动端应用设计师</h3>
+                        <img class="section-cover" src="/assets/images/ui/uiqn/zs4.jpg?v=1587179319710">
+                        <h3>交互设计师</h3>
                     </div>
                 </div>
                 <div class="section-btn">
@@ -464,10 +534,13 @@
                 <div class="swiper-container" slidesPerView='2' spaceBetween='15'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/images/ui/uiqn/ls1.jpg?v=1586932461356">
+                            <img src="/assets/images/ui/uiqn/ls1.jpg?v=1587179319710">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/ui/uiqn/ls2.jpg?v=1586932461356">
+                            <img src="/assets/images/ui/uiqn/ls2.jpg?v=1587179319710">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/ui/uiqn/ls3.jpg?v=1587179319710">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -483,12 +556,11 @@
     <div class="section one-teaching-sec">
         <div class="container">
             <div class="section-title">
-                每1次汇报<br>
-                都是1个小型项目提案
+                每1次汇报<br> 都是1个小型项目提案
             </div>
             <div class="section-list">
                 <div class="section-item">
-                    <img class="section-cover" src="/assets/images/ui/uiqn/zp.png?v=1586932461356">
+                    <img class="section-cover" src="/assets/images/ui/uiqn/zp.png?v=1587179319710">
                 </div>
             </div>
             <div class="section-btn">
@@ -499,14 +571,13 @@
     <div class="section get-bonus-sec">
         <div class="container">
             <div class="section-title">
-                涨知识还拿奖金的实训！<br>
-                见过吗？
+                涨知识还拿奖金的实训！<br> 见过吗？
             </div>
-            <div class="section-describe">丝路教育UX全栈视效设计课程实训均由专业老师带队,承接真实项目制作，
-                让学员在真实实践中获取经验、积累行业人脉，优秀团队学员还将获得项目提成，最高可达上万元！</div>
+            <div class="section-describe">丝路教育UX全栈视效设计课程实训均由专业老师带队,承接真实项目制作， 让学员在真实实践中获取经验、积累行业人脉，优秀团队学员还将获得项目提成，最高可达上万元！
+            </div>
             <div class="section-list">
                 <div class="section-item">
-                    <img class="section-cover" src="/assets/images/ui/uiqn/hj.jpg?v=1586932461356">
+                    <img class="section-cover" src="/assets/images/ui/uiqn/hj.jpg?v=1587179319710">
                 </div>
             </div>
         </div>
@@ -514,12 +585,11 @@
     <div class="section silkroad-strength-sec">
         <div class="container">
             <div class="section-title">
-                丝路UX全栈视效设计班
-                特色优势
+                丝路UX全栈视效设计班 特色优势
             </div>
             <div class="section-list">
                 <div class="section-item">
-                    <img class="section-cover" src="/assets/images/ui/uiqn/bz.jpg?v=1586932461356">
+                    <img class="section-cover" src="/assets/images/ui/uiqn/bz.jpg?v=1587179319710">
                 </div>
             </div>
         </div>
@@ -528,23 +598,22 @@
         <div class="container">
             <div class="section-title">
                 TA们的真实反馈
-                <br>
-                就是最好的证言
+                <br> 就是最好的证言
             </div>
             <div class="section-list">
                 <div class="section-item">
                     <div class="section-cover">
-                        <img src="/assets/images/ui/uiqn/xy1.jpg?v=1586932461356">
+                        <img src="/assets/images/ui/uiqn/xy1.jpg?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-item">
                     <div class="section-cover">
-                        <img src="/assets/images/ui/uiqn/xy2.jpg?v=1586932461356">
+                        <img src="/assets/images/ui/uiqn/xy2.jpg?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-item">
                     <div class="section-cover">
-                        <img src="/assets/images/ui/uiqn/xy3.jpg?v=1586932461356">
+                        <img src="/assets/images/ui/uiqn/xy3.jpg?v=1587179319710">
                     </div>
                 </div>
             </div>
@@ -560,39 +629,56 @@
                 3000+合作名企
                 <br>让你掌握就业主动权
             </div>
-            <img src="/assets/images/ui/uiqn/hz.png?v=1586932461356" alt="">
+            <img src="/assets/images/ui/uiqn/hz.png?v=1587179319710" alt="">
             <div class="section-btn">
                 <a class="btn doyoo-btn">查看更多合作企业</a>
             </div>
         </div>
     </div>
+
+
     <!-- 表单统计 -->
     <div class="section-form">
-        <form action="/plus/diy.php?v=1586932461356" enctype="multipart/form-data" method="post" onsubmit="return checkMobile(this);">
+        <form id="form">
             <div class="form-group form-group-txt">
-                学习和锻炼身体一样，<br>
-                任何时候都不<br>
-                会错、不会晚、不嫌多！
+                学习和锻炼身体一样，<br> 任何时候都不
+                <br> 会错、不会晚、不嫌多！
             </div>
             <div class="form-group">
-                <input type='text' name='name' placeholder="姓名：请填写姓名" class="form-control" />
+                <input type='text' name='name' id="name" placeholder="姓名：请填写姓名" class="form-control" />
             </div>
             <div class="form-group">
-                <input type="text" name='tel' class="form-control" placeholder="联系方式：请填写手机号码" />
+                <input type="text" name='tel' id="tel" class="form-control" placeholder="联系方式：请填写手机号码" />
             </div>
+            <input type="text" name='time' id='time' style="display: none;" />
+
             <div class="form-submit">
-                <button class="btn" type="submit">我要学习</button>
+                <button class="btn" type="button" onclick="add_ajaxmessage()"> 我要学习</button>
             </div>
         </form>
     </div>
+
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
@@ -604,6 +690,8 @@
 </script>
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
+
+</div>
 </body>
 
 </html>

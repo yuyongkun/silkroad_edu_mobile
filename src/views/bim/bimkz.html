@@ -13,8 +13,7 @@
         function setBodyFontSize() {
             if (document.body) {
                 document.body.style.fontSize = (12 * dpr) + 'px'
-            }
-            else {
+            } else {
                 document.addEventListener('DOMContentLoaded', setBodyFontSize)
             }
         }
@@ -30,7 +29,7 @@
 
         // reset rem unit on page resize
         window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
+        window.addEventListener('pageshow', function(e) {
             if (e.persisted) {
                 setRemUnit()
             }
@@ -50,12 +49,11 @@
         }
     }(window, document))
 </script>
-
     <title>BIM考证精英班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1586932461356">
-    <link rel="stylesheet" href="/assets/css/bim/bimkz.css?v=1586932461356">
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1587179319710">
+    <link rel="stylesheet" href="/assets/css/bim/bimkz.css?v=1587179319710">
 </head>
 
 <body>
@@ -63,7 +61,9 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
      影视视效课程  
     <ul class="header-menu-secondlist">
@@ -105,7 +105,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     APEC室内课程  
+     室内设计课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -115,30 +115,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     UX全栈课程  
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
      建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -158,14 +187,25 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
@@ -210,7 +250,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      APEC室内 
+      室内设计 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -220,30 +260,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      UX全栈 
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
       建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -265,9 +334,15 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
@@ -275,7 +350,7 @@
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img src="/assets/images/bim/bimkz/banner.jpg?v=1586932461356" alt="">
+                <img src="/assets/images/bim/bimkz/banner.jpg?v=1587179319710" alt="">
             </a>
         </div>
         <div class="section section-bg-write">
@@ -288,7 +363,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimkz/img1-1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimkz/img1-1.jpg?v=1587179319710">
                     </div>
                 </div>
             </div>
@@ -300,7 +375,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimkz/img2-1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimkz/img2-1.jpg?v=1587179319710">
                         <div class="section-txt">
                             <h3>BIM证书，权威代名词</h3>
                             <p>人社部教培中心、中国图学学会联合发证，证书编号官网可查</p>
@@ -311,10 +386,10 @@
                             <h3>BIM证书，含金量高</h3>
                             <p>中铁、中建等大型企业津贴补助，项目招投标加分项</p>
                         </div>
-                        <img class="section-cover" src="/assets/images/bim/bimkz/img2-2.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimkz/img2-2.jpg?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimkz/img2-3.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimkz/img2-3.jpg?v=1587179319710">
                         <div class="section-txt">
                             <h3>BIM证书，大企业敲门砖</h3>
                             <p>评定奖学金的加分利器，也是加入大型单位的敲门砖</p>
@@ -333,7 +408,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimkz/img3-1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimkz/img3-1.png?v=1587179319710">
                     </div>
                 </div>
             </div>
@@ -350,7 +425,7 @@
                     <div class="official-designation-title tac">一站式取证流程</div>
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img4-1.png?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img4-1.png?v=1587179319710">
                         </div>
                     </div>
                 </div>
@@ -358,7 +433,7 @@
                     <div class="official-designation-title tac">全国BIM技能等级考试证书</div>
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img5-1.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img5-1.jpg?v=1587179319710">
                         </div>
                     </div>
                 </div>
@@ -382,19 +457,19 @@
                     </div>
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-1.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-1.jpg?v=1587179319710">
                             <h3>亚洲教育十大领军企业 </h3>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-2.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-2.jpg?v=1587179319710">
                             <h3>职业培训影响力品牌 </h3>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-3.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-3.jpg?v=1587179319710">
                             <h3>中国（行业）年度杰出贡献奖 </h3>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-4.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img6-4.jpg?v=1587179319710">
                             <h3> 行业示范企业 </h3>
                         </div>
                     </div>
@@ -405,20 +480,20 @@
                     </div>
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-1.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-1.jpg?v=1587179319710">
                             <h3>Adobe官方认证证书</h3>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-2.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-2.jpg?v=1587179319710">
                             <h3>AUTODESK官方认证证书</h3>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-3.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-3.jpg?v=1587179319710">
                             <h3>建筑装修装饰工程专业
                                 <br/>承包壹级证书</h3>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-4.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img7-4.jpg?v=1587179319710">
                             <h3>中国展览陈列工程设计
                                 <br/>与施工一体化一级资质</h3>
                         </div>
@@ -442,10 +517,10 @@
                     </div>
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img8-1.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img8-1.jpg?v=1587179319710">
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img8-2.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img8-2.jpg?v=1587179319710">
                         </div>
                     </div>
                     <div class="section-btn">
@@ -458,7 +533,7 @@
                     </div>
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img9-1.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img9-1.jpg?v=1587179319710">
                             <div class="section-txt">
                                 <h3>
                                     肖丽红 <span>
@@ -472,7 +547,7 @@
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimkz/img9-2.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimkz/img9-2.jpg?v=1587179319710">
                             <div class="section-txt">
                                 <h3>
                                     胡亚夫 <span>
@@ -512,37 +587,37 @@
                 <div class="section-list">
                     <div class="section-item">
                         <div class="section-cover">
-                            <img src="/assets/images/bim/bimkz/icon1.png?v=1586932461356">
+                            <img src="/assets/images/bim/bimkz/icon1.png?v=1587179319710">
                         </div>
                         <h3>0元试听</h3>
                     </div>
                     <div class="section-item">
                         <div class="section-cover">
-                            <img src="/assets/images/bim/bimkz/icon2.png?v=1586932461356">
+                            <img src="/assets/images/bim/bimkz/icon2.png?v=1587179319710">
                         </div>
                         <h3>先学后付</h3>
                     </div>
                     <div class="section-item">
                         <div class="section-cover">
-                            <img src="/assets/images/bim/bimkz/icon3.png?v=1586932461356">
+                            <img src="/assets/images/bim/bimkz/icon3.png?v=1587179319710">
                         </div>
                         <h3>免费重修</h3>
                     </div>
                     <div class="section-item">
                         <div class="section-cover">
-                            <img src="/assets/images/bim/bimkz/icon4.png?v=1586932461356">
+                            <img src="/assets/images/bim/bimkz/icon4.png?v=1587179319710">
                         </div>
                         <h3>名师面授</h3>
                     </div>
                     <div class="section-item">
                         <div class="section-cover">
-                            <img src="/assets/images/bim/bimkz/icon5.png?v=1586932461356">
+                            <img src="/assets/images/bim/bimkz/icon5.png?v=1587179319710">
                         </div>
                         <h3>商业实训</h3>
                     </div>
                     <div class="section-item">
                         <div class="section-cover">
-                            <img src="/assets/images/bim/bimkz/icon6.png?v=1586932461356">
+                            <img src="/assets/images/bim/bimkz/icon6.png?v=1587179319710">
                         </div>
                         <h3>名企就业</h3>
                     </div>
@@ -559,10 +634,10 @@
                 <div class="section-describe">
                     与建筑设计/工程施工/房地产等众多名企进行合作，了解市场最新动态，培养企业紧缺优秀人才， 实现真正的持证上岗两无忧。
                 </div>
-                <img src="/assets/images/bim/bimkz/logo.jpg?v=1586932461356" alt="">
+                <img src="/assets/images/bim/bimkz/logo.jpg?v=1587179319710" alt="">
             </div>
         </div>
-        <!-- 表单统计 -->
+
         <!-- 表单统计 -->
         <div class="section-form">
             <form id="form">
@@ -593,13 +668,26 @@
         </div>
 
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
@@ -611,6 +699,8 @@
 </script>
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
+
+</div>
 </body>
 
 </html>

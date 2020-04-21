@@ -13,8 +13,7 @@
         function setBodyFontSize() {
             if (document.body) {
                 document.body.style.fontSize = (12 * dpr) + 'px'
-            }
-            else {
+            } else {
                 document.addEventListener('DOMContentLoaded', setBodyFontSize)
             }
         }
@@ -30,7 +29,7 @@
 
         // reset rem unit on page resize
         window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
+        window.addEventListener('pageshow', function(e) {
             if (e.persisted) {
                 setRemUnit()
             }
@@ -50,12 +49,11 @@
         }
     }(window, document))
 </script>
-
     <title>BIM应用全能班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1586932461356">
-    <link rel="stylesheet" href="/assets/css/bim/bimqn.css?v=1586932461356">
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1587179319710">
+    <link rel="stylesheet" href="/assets/css/bim/bimqn.css?v=1587179319710">
 </head>
 
 <body>
@@ -63,7 +61,9 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
      影视视效课程  
     <ul class="header-menu-secondlist">
@@ -105,7 +105,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     APEC室内课程  
+     室内设计课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -115,30 +115,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     UX全栈课程  
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
      建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -158,14 +187,25 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
@@ -210,7 +250,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      APEC室内 
+      室内设计 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -220,30 +260,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      UX全栈 
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
       建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -265,9 +334,15 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
@@ -275,14 +350,14 @@
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img src="/assets/images/bim/bimqn/banner.jpg?v=1586932461356" alt="">
+                <img src="/assets/images/bim/bimqn/banner.jpg?v=1587179319710" alt="">
             </a>
         </div>
         <div class="section banner-next-sec">
             <div class="container">
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda1.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>免费试听</h3>
                             <p>
@@ -292,7 +367,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda2.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>先学后付</h3>
                             <p>
@@ -302,7 +377,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda3.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>免费重修</h3>
                             <p>
@@ -312,7 +387,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda4.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda4.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>名师面授</h3>
                             <p>
@@ -321,7 +396,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda5.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda5.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>项目实训</h3>
                             <p>
@@ -330,7 +405,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda6.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/liuda6.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>名企就业</h3>
                             <p>
@@ -349,7 +424,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/gongneng.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/gongneng.png?v=1587179319710">
                     </div>
 
                 </div>
@@ -369,13 +444,13 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zhengce1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zhengce1.png?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zhengce2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zhengce2.png?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zhengce3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zhengce3.png?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -390,7 +465,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/xinzi.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/xinzi.png?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -409,7 +484,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi1.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>
                                 亚洲教育<br> 十大领军企业
@@ -417,7 +492,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi2.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>
                                 职业培训
@@ -426,7 +501,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi3.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>
                                 展览展示设计
@@ -435,7 +510,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi4.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi4.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>
                                 Adobe官方
@@ -444,7 +519,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi5.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi5.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>
                                 Autodesk官方
@@ -453,7 +528,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi5.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zizhi5.png?v=1587179319710">
                         <div class="section-txt tac">
                             <h3>
                                 建筑装修装饰工程
@@ -479,7 +554,7 @@
                     </div>
                     <div class="section-list">
 
-                        <img class="section-cover" src="/assets/images/bim/bimqn/ruanjian1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/ruanjian1.jpg?v=1587179319710">
 
 
                     </div>
@@ -499,13 +574,13 @@
                     </div>
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimqn/zhengshu1.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimqn/zhengshu1.jpg?v=1587179319710">
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimqn/zhengshu2.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimqn/zhengshu2.jpg?v=1587179319710">
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/bim/bimqn/zhengshu3.jpg?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/bim/bimqn/zhengshu3.jpg?v=1587179319710">
                         </div>
                     </div>
                     <div class="section-btn">
@@ -522,39 +597,39 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng1.jpg?v=1587179319710">
                         <h3>Revit软件教学</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng2.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng2.jpg?v=1587179319710">
                         <h3>Revit结构专业</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng3.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng3.jpg?v=1587179319710">
                         <h3>出图与工程量</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng4.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng4.jpg?v=1587179319710">
                         <h3>Revit建筑专业</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng5.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng5.jpg?v=1587179319710">
                         <h3>工作流与族命令</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng6.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng6.jpg?v=1587179319710">
                         <h3>Revit机电专业</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng7.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng7.jpg?v=1587179319710">
                         <h3>Revit桥梁专业</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng8.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng8.jpg?v=1587179319710">
                         <h3>动画制作与协同</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng9.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/kecheng9.jpg?v=1587179319710">
                         <h3>工程管理与运维</h3>
                     </div>
                 </div>
@@ -570,10 +645,10 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/laoshi1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/laoshi1.jpg?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/laoshi2.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/laoshi2.jpg?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -588,10 +663,10 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zuoping1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zuoping1.jpg?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/zuoping2.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/zuoping2.jpg?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -606,27 +681,27 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao1.png?v=1587179319710">
                         <h3>入学签订就业协议</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao2.png?v=1587179319710">
                         <h3>完善就业培训体系</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao3.png?v=1587179319710">
                         <h3>企业HR面试指导</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao4.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao4.png?v=1587179319710">
                         <h3>定期企业专场招聘</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao5.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao5.png?v=1587179319710">
                         <h3>一对一推荐就业</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao6.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/bimqn/tubiao6.png?v=1587179319710">
                         <h3>丝路名企定制委培</h3>
                     </div>
                 </div>
@@ -642,7 +717,7 @@
                     与众多名企达成合作
                     <br>学员还未毕业已被“预定”
                 </div>
-                <img src="/assets/images/bim/bimqn/logo.jpg?v=1586932461356" alt="">
+                <img src="/assets/images/bim/bimqn/logo.jpg?v=1587179319710" alt="">
             </div>
         </div>
         <!-- 表单统计 -->
@@ -666,13 +741,26 @@
         </div>
 
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
@@ -684,6 +772,8 @@
 </script>
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
+
+</div>
 </body>
 
 </html>

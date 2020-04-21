@@ -177,6 +177,30 @@
     height: 10.44rem;
 }
 
+// 学员
+.stu {
+    .swiper-container {
+        height: 11rem;
+        .swiper-wrapper {
+            height: 10rem;
+            .swiper-slide {
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        .swiper-pagination-bullet {
+            width: 0.2667rem;
+            height: 0.2667rem;
+            border-radius: 50%;
+            background-color: #EC6941;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #F39800;
+        }
+    }
+}
+
 // 表单
 .section-form {
     height: 13.4133rem;

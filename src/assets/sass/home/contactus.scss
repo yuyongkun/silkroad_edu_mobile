@@ -1,0 +1,140 @@
+@import "../common/variable";
+@import "../common/base";
+.title-line {
+    width: 0.5333rem;
+    height: 0.0533rem;
+    background: linear-gradient(-90deg, rgba(177, 6, 43, 1), rgba(246, 79, 35, 1));
+    margin: 0 auto 0.4rem;
+}
+.banner{
+    background-color: #fff;
+}
+
+//整合资源 精品办学
+
+.img{
+    position: relative;
+    .dw{
+        position: absolute;
+        left: 0;
+        top: 2.1rem;
+        .form-group{
+            margin-bottom: 0;
+        .form-control{
+            border-radius: 4px;
+            border:solid 1px #dddddd;
+            padding: 6px 12px 6px 12px;
+            height: 35px;
+            width: 100%;
+        }
+        }
+        .btn{
+            width: 4.4rem;
+        }
+    }
+}
+.img1{
+    position: relative;
+    .dw{
+        position: absolute;
+        right: 0;
+        top: 2.1rem;
+        .form-group{
+            margin-bottom: 0;
+        .form-control{
+            border-radius: 4px;
+            border:solid 1px #dddddd;
+            padding: 6px 12px 6px 12px;
+            height: 35px;
+            width: 100%;
+        }
+        }
+        .btn{
+            width: 4.4rem;
+        }
+    }
+}
+//想去校区看看，求路线
+.zy{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 50%;
+        height: 5.0rem;
+    }
+    .dw{
+       margin-top: -0.38rem;
+        left: 0;
+        top: 2.1rem;
+        .form-group{
+            margin-bottom: 0;
+        .form-control{
+            border-radius: 4px;
+            border:solid 1px #dddddd;
+            padding: 6px 12px 6px 12px;
+            height: 35px;
+            width: 100%;
+        }
+        }
+        .btn{
+            width: 4.4rem;
+        }
+    }
+}
+
+.form_select{
+    border-radius: 4px;
+        border:solid 1px #dddddd;
+        padding: 6px 0px 6px 8px;
+        height: 35px;
+        width: 4.4rem;
+        background-color: #fff;
+        color: #666;
+}
+.form-submit{
+    margin-top: -0.2rem;
+}
+//丝路教育渲染艺术精英班
+.bj1{
+    background: url("/assets/images/jianzhu/xrys/bj.jpg") no-repeat center;
+    background-size: cover;  
+    .section-title{
+        color: #fff;
+    }
+}
+// 学员阶段作品展示
+.stage-works-sec{
+    .section-nav-tab{
+        margin: 0 -0.4rem 0.5333rem;
+        .section-nav-item.section-nav-btn{
+            
+            height: 1.0667rem;
+            border-radius: 0.5333rem;
+            background-color: transparent;
+            border:1px solid $base-color;
+            color: $base-color;
+        }
+        .section-nav-item.section-nav-btn.section-nav-active{
+            background-color: $base-color;
+            color: #fff;
+        }
+    }
+
+}
+.form-group{
+    margin-bottom: 0.4rem
+}
+
+// 表单
+.section-form {
+    height: 11.3333rem;
+    
+    background: url("/assets/images/home/contactus/bottom.jpg") no-repeat center;
+    background-size: cover;
+    .form-group-txt {
+        line-height: 1rem;
+        padding-top: 1.8rem;
+        font-size: 0.7rem;
+        color: #fff;
+    }
+}

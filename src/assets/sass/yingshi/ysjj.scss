@@ -24,6 +24,9 @@
             }
         }
     }
+    .section-btn {
+        margin-top: 0;
+    }
 }
 
 // 影视已成聚宝地
@@ -77,6 +80,7 @@
                 .section-txt {
                     font-size: 0.3733rem;
                     text-align: center;
+                    color: #fff;
                 }
             }
         }
@@ -216,4 +220,5 @@
     padding-top: 5.8rem;
     background: url("/assets/images/yingshi/ysjj/bottom.png") no-repeat center;
     background-size: cover;
+    margin-bottom: 15vw;
 }

@@ -13,8 +13,7 @@
         function setBodyFontSize() {
             if (document.body) {
                 document.body.style.fontSize = (12 * dpr) + 'px'
-            }
-            else {
+            } else {
                 document.addEventListener('DOMContentLoaded', setBodyFontSize)
             }
         }
@@ -30,7 +29,7 @@
 
         // reset rem unit on page resize
         window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
+        window.addEventListener('pageshow', function(e) {
             if (e.persisted) {
                 setRemUnit()
             }
@@ -50,12 +49,11 @@
         }
     }(window, document))
 </script>
-
     <title>建筑视效全能班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1586932461356">
-    <link rel="stylesheet" href="/assets/css/jianzhu/jzsx.css?v=1586932461356">
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1587179319710">
+    <link rel="stylesheet" href="/assets/css/jianzhu/jzsx.css?v=1587179319710">
 </head>
 
 <body>
@@ -63,7 +61,9 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
      影视视效课程  
     <ul class="header-menu-secondlist">
@@ -105,7 +105,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     APEC室内课程  
+     室内设计课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -115,30 +115,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     UX全栈课程  
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
      建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -158,14 +187,25 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
@@ -210,7 +250,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      APEC室内 
+      室内设计 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -220,30 +260,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      UX全栈 
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
       建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -265,9 +334,15 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
@@ -275,7 +350,7 @@
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img class="banner-cover" src="/assets/images/jianzhu/jzsx/banner.png?v=1586932461356" alt="">
+                <img class="banner-cover" src="/assets/images/jianzhu/jzsx/banner.png?v=1587179319710" alt="">
             </a>
         </div>
         <!-- 建筑视效市场持续火爆 -->
@@ -291,10 +366,10 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/jianzhu/jzsx/img1-1.png?v=1586932461356" alt="">
-                        
+                        <img class="section-cover" src="/assets/images/jianzhu/jzsx/img1-1.png?v=1587179319710" alt="">
+
                     </div>
-                    
+
                 </div>
                 <div class="section-btn">
                     <a class="btn doyoo-btn">了解更多岗位选择</a>
@@ -305,15 +380,15 @@
         <div class="section section-bg-write treasure-land-sec" style="background-color: #f9fafc;">
             <div class="container">
                 <div class="section-title">
-                    建筑视效行业发展迅猛 
+                    建筑视效行业发展迅猛
                     <br><b>从此“金”非昔比</b>
                 </div>
                 <div class="section-describe">
                     背靠行业发展机遇，就业前景广阔，薪资待遇高
                 </div>
-                
-                <img src="/assets/images/jianzhu/jzsx/img2-1.jpg?v=1586932461356" alt="">
-                
+
+                <img src="/assets/images/jianzhu/jzsx/img2-1.jpg?v=1587179319710" alt="">
+
             </div>
         </div>
         <!-- 建筑视效行业发展迅猛 -->
@@ -331,8 +406,8 @@
                 <div class="section-describe" style="color: #bfc0c5;">
                     丝路视觉（股票代码：300556）作为中国视觉科技领域第一家上市公司，深耕建筑表现行业二十年，将前沿项目经验融入到丝路教育的课程中，给学员提供企业实训平台，使学院在教学上拥有无可比拟的资源优势。
                 </div>
-                <img src="/assets/images/jianzhu/jzsx/img3-1.jpg?v=1586932461356" alt="">
-                
+                <img src="/assets/images/jianzhu/jzsx/img3-1.jpg?v=1587179319710" alt="">
+
             </div>
         </div>
         <!-- 建筑视效领域 -->
@@ -345,23 +420,23 @@
                 <div class="section-list">
                     <div>
                         <div class="fourzi">40000<span class="z">张</span></div>
-                        <div class="yw">业务总量<br/>
-                            年产效果图</div>
+                        <div class="yw">业务总量<br/> 年产效果图
+                        </div>
                     </div>
                     <div class="shu"></div>
                     <div>
                         <div class="fourzi">500<span class="z2">部</span></div>
-                        <div class="yw">业务总量<br/>
-                            年产项目投标动画</div>
+                        <div class="yw">业务总量<br/> 年产项目投标动画
+                        </div>
                     </div>
                     <div class="shu"></div>
                     <div>
                         <div class="fourzi">20<span class="z3">国</span></div>
-                        <div class="yw">业务范围<br/>
-                            面向世界</div>
+                        <div class="yw">业务范围<br/> 面向世界
+                        </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <!-- CG技术应用领域 -->
@@ -371,7 +446,7 @@
                     CG技术应用领域
                     <br><b>国家级</b>
                 </div>
-                <img src="/assets/images/jianzhu/jzsx/icon.png?v=1586932461356" alt="">
+                <img src="/assets/images/jianzhu/jzsx/icon.png?v=1587179319710" alt="">
             </div>
         </div>
         <!-- 毕业入职丝路视觉 -->
@@ -380,28 +455,28 @@
                 <div class="container">
                     <div class="section-title">
                         毕业入职丝路视觉
-                    <br><b>有特权</b>
+                        <br><b>有特权</b>
                     </div>
                     <div class="section-describe">
                         丝路教育优秀学员毕业后可直接进入丝路视觉各制作公司工作，享受高薪的福利待遇和广阔的平台人脉资源。
                     </div>
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img4-1.jpg?v=1586932461356" alt="">
-                            
+                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img4-1.jpg?v=1587179319710" alt="">
+
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img4-2.jpg?v=1586932461356" alt="">
-                            
+                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img4-2.jpg?v=1587179319710" alt="">
+
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img4-3.jpg?v=1586932461356" alt="">
-                            
+                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img4-3.jpg?v=1587179319710" alt="">
+
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img4-4.jpg?v=1586932461356" alt="">
-                            
-                        </div>                        
+                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img4-4.jpg?v=1587179319710" alt="">
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -412,54 +487,55 @@
                 <div class="container">
                     <div class="section-title">
                         丝路建筑视效课程
-                    <br><b>精准直击4类人群痛点</b>
+                        <br><b>精准直击4类人群痛点</b>
                     </div>
-                    
+
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img5-1.jpg?v=1586932461356" alt="">
-                            
+                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img5-1.jpg?v=1587179319710" alt="">
+
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img5-2.jpg?v=1586932461356" alt="">
-                            
+                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img5-2.jpg?v=1587179319710" alt="">
+
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img5-3.jpg?v=1586932461356" alt="">
-                            
+                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img5-3.jpg?v=1587179319710" alt="">
+
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img5-4.jpg?v=1586932461356" alt="">
-                            
-                        </div>                        
+                            <img class="section-cover" src="/assets/images/jianzhu/jzsx/img5-4.jpg?v=1587179319710" alt="">
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-         <!-- 五大核心教学阶段 -->
-         <div class="section treasure-land-sec">
+        <!-- 五大核心教学阶段 -->
+        <div class="section treasure-land-sec">
             <div class="container">
                 <div class="section-title">
                     五大核心教学阶段
                     <br><b>培养综合型人才</b>
                 </div>
-                <img src="/assets/images/jianzhu/jzsx/img6-1.jpg?v=1586932461356" alt="">
-                <img src="/assets/images/jianzhu/jzsx/img6-2.jpg?v=1586932461356" alt="">
-                <img src="/assets/images/jianzhu/jzsx/img6-3.jpg?v=1586932461356" alt="">
-                <img src="/assets/images/jianzhu/jzsx/img6-4.jpg?v=1586932461356" alt="">
+                <img src="/assets/images/jianzhu/jzsx/img6-1.jpg?v=1587179319710" alt="">
+                <img src="/assets/images/jianzhu/jzsx/img6-2.jpg?v=1587179319710" alt="">
+                <img src="/assets/images/jianzhu/jzsx/img6-3.jpg?v=1587179319710" alt="">
+                <img src="/assets/images/jianzhu/jzsx/img6-4.jpg?v=1587179319710" alt="">
+                <img src="/assets/images/jianzhu/jzsx/img6-5.jpg?v=1587179319710" alt="">
             </div>
             <div class="section-btn">
                 <a class="btn doyoo-btn">查看完整课程大纲</a>
             </div>
         </div>
-         <!-- 大师级专家联合任教 -->
-         <div class="section section-bg-write treasure-land-sec bj5">
+        <!-- 大师级专家联合任教 -->
+        <div class="section section-bg-write treasure-land-sec bj5">
             <div class="container">
                 <div class="section-title">
                     大师级专家联合任教
                     <br><b>手把手教学</b>
                 </div>
-                <img src="/assets/images/jianzhu/jzsx/ls.png?v=1586932461356" alt="">
+                <img src="/assets/images/jianzhu/jzsx/ls.png?v=1587179319710" alt="">
             </div>
             <div class="section-btn">
                 <a class="btn doyoo-btn">与名师对话</a>
@@ -479,13 +555,13 @@
                 </div>
                 <div class="section-tab-list">
                     <div class="section-tab-col">
-                        <img src="/assets/images/jianzhu/jzsx/mx1.png?v=1586932461356">
+                        <img src="/assets/images/jianzhu/jzsx/mx1.png?v=1587179319710">
                     </div>
                     <div class="section-tab-col">
-                        <img src="/assets/images/jianzhu/jzsx/mx2.png?v=1586932461356">
+                        <img src="/assets/images/jianzhu/jzsx/mx2.png?v=1587179319710">
                     </div>
                     <div class="section-tab-col">
-                        <img src="/assets/images/jianzhu/jzsx/mx3.png?v=1586932461356">
+                        <img src="/assets/images/jianzhu/jzsx/mx3.png?v=1587179319710">
                     </div>
                 </div>
             </div>
@@ -500,28 +576,28 @@
                     就业一站式护航
                     <br><b>丝路教育学员专属福利</b>
                 </div>
-                <img src="/assets/images/jianzhu/jzsx/bz.jpg?v=1586932461356" alt="">
+                <img src="/assets/images/jianzhu/jzsx/bz.jpg?v=1587179319710" alt="">
             </div>
-            
+
         </div>
         <!-- 名企定制委培 -->
         <div class="section section-bg-write stage-works-sec">
             <div class="container">
-                <img src="/assets/images/jianzhu/jzsx/title2.jpg?v=1586932461356" alt="">
+                <img src="/assets/images/jianzhu/jzsx/title2.jpg?v=1587179319710" alt="">
             </div>
-            
+
         </div>
         <!-- 合作企业 -->
         <div class="section stage-works-sec">
             <div class="container">
-                
-                <img src="/assets/images/jianzhu/jzsx/logo.jpg?v=1586932461356" alt="">
-            </div>
-           
-        </div>
-        
 
-        
+                <img src="/assets/images/jianzhu/jzsx/logo.jpg?v=1587179319710" alt="">
+            </div>
+
+        </div>
+
+
+
 
         <!-- 表单统计 -->
         <!-- 表单统计 -->
@@ -546,13 +622,26 @@
             </form>
         </div>
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
@@ -565,8 +654,10 @@
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
 
+</div>
 
-   
+
+
 </body>
 
 </html>

@@ -1,0 +1,119 @@
+@import "../common/variable";
+@import "../common/base";
+.title-line {
+    width: 0.5333rem;
+    height: 0.0533rem;
+    background: linear-gradient(-90deg, rgba(177, 6, 43, 1), rgba(246, 79, 35, 1));
+    margin: 0 auto 0.4rem;
+}
+.banner{
+    background-color: #fff;
+}
+
+// 渲染艺术
+.learning-guarantee-sec {
+    .section-list {
+        .section-item {
+            width: 100%;
+            font-size: 0.3467rem;
+            color: #666;
+            text-align: center;
+            background: transparent;
+            .section-cover {
+                
+                margin-bottom: 0.3333rem;
+            }
+        }
+    }
+}
+
+
+
+//你眼中的建筑渲染
+.jy{
+    color:#f64f23;
+}
+.zh{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.zj{
+    margin: 0 0.1rem;
+}
+// 一站式闭环流程
+.bj{
+    background: url("/assets/images/home/onlinebao/img2.jpg") no-repeat center;
+    background-size: cover; 
+    .section-title{
+        color:#fff;
+    }
+    .section-describe{
+        color:#fff;
+    }
+}
+.treasure-land-sec {
+    .treasure-land-sec1 {
+        margin-bottom: 0.4rem;
+        text-align: center;
+        img {
+            width: 5.2667rem;
+            height: 6.52rem;
+        }
+    }
+    .treasure-land-sec2 {
+        display: flex;
+        img {
+            width: 50%;
+            width: 4.6rem;
+            height: 6.52rem;
+        }
+    }
+}
+.zy-img{
+    box-shadow: 0px 0px 20px #d9e5f2;
+}
+
+//丝路教育渲染艺术精英班
+.bj1{
+    background: url("/assets/images/jianzhu/xrys/bj.jpg") no-repeat center;
+    background-size: cover;  
+    .section-title{
+        color: #fff;
+    }
+}
+// 学员阶段作品展示
+.stage-works-sec{
+    .section-nav-tab{
+        margin: 0 -0.4rem 0.5333rem;
+        .section-nav-item.section-nav-btn{
+            
+            height: 1.0667rem;
+            border-radius: 0.5333rem;
+            background-color: transparent;
+            border:1px solid $base-color;
+            color: $base-color;
+        }
+        .section-nav-item.section-nav-btn.section-nav-active{
+            background-color: $base-color;
+            color: #fff;
+        }
+    }
+
+}
+
+
+// 表单
+.section-form {
+    
+    height: 10.3333rem;
+    
+    background: url("/assets/images/home/onlinebao/bj.jpg") no-repeat center;
+    background-size: cover;
+    .form-group-txt {
+        line-height: 1rem;
+        padding-top: 1.8rem;
+        font-size: 0.7rem;
+        color: #fff;
+    }
+}

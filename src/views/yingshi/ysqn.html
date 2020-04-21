@@ -13,8 +13,7 @@
         function setBodyFontSize() {
             if (document.body) {
                 document.body.style.fontSize = (12 * dpr) + 'px'
-            }
-            else {
+            } else {
                 document.addEventListener('DOMContentLoaded', setBodyFontSize)
             }
         }
@@ -30,7 +29,7 @@
 
         // reset rem unit on page resize
         window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
+        window.addEventListener('pageshow', function(e) {
             if (e.persisted) {
                 setRemUnit()
             }
@@ -50,12 +49,11 @@
         }
     }(window, document))
 </script>
-
     <title>影视视效全能班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1586932461356">
-    <link rel="stylesheet" href="/assets/css/yingshi/ysqn.css?v=1586932461356">
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1587179319710">
+    <link rel="stylesheet" href="/assets/css/yingshi/ysqn.css?v=1587179319710">
 </head>
 
 <body>
@@ -63,7 +61,9 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
      影视视效课程  
     <ul class="header-menu-secondlist">
@@ -105,7 +105,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     APEC室内课程  
+     室内设计课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -115,30 +115,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     UX全栈课程  
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
      建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -158,14 +187,25 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
@@ -210,7 +250,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      APEC室内 
+      室内设计 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -220,30 +260,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      UX全栈 
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
       建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -265,9 +334,15 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
@@ -275,7 +350,7 @@
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img class="banner-cover" src="/assets/images/yingshi/ysqn/banner.jpg?v=1586932461356" alt="">
+                <img class="banner-cover" src="/assets/images/yingshi/ysqn/banner.jpg?v=1587179319710" alt="">
             </a>
         </div>
 
@@ -315,7 +390,7 @@
                         <div class="hot-market-num">03</div>
                         <h3>平台</h3>
                         <p>
-                            自媒体、电商、视频
+                            自媒体、电商、视频、
                             <br/>小视频、综合资讯
                             <br/>平台百花齐放
                             <br/>为从业者提供更多选择
@@ -352,49 +427,49 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c1.jpg?v=1587179319710">
                         <div class="section-txt section-abs">
                             TVC广告片
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c2.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c2.jpg?v=1587179319710">
                         <div class="section-txt section-abs">
                             MV制作
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c3.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c3.jpg?v=1587179319710">
                         <div class="section-txt section-abs">
                             微电影制作
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c4.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c4.jpg?v=1587179319710">
                         <div class="section-txt section-abs">
                             电视栏目包装
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c5.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c5.jpg?v=1587179319710">
                         <div class="section-txt section-abs">
                             电影/电视/网剧制作
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c6.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c6.jpg?v=1587179319710">
                         <div class="section-txt section-abs">
                             地产宣传片
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c7.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c7.jpg?v=1587179319710">
                         <div class="section-txt section-abs">
                             游戏CG制作
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c8.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/c8.jpg?v=1587179319710">
                         <div class="section-txt section-abs">
                             自媒体视频
                         </div>
@@ -417,7 +492,7 @@
                 <div class="section-describe">
                     学完影视后期，就业前景广阔更多金，玩转创意的同时赚得盆满钵满
                 </div>
-                <img src="/assets/images/yingshi/ysqn/d1.png?v=1586932461356" alt="">
+                <img src="/assets/images/yingshi/ysqn/d1.png?v=1587179319710" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">测测我学完能挣多少？</a>
                 </div>
@@ -426,7 +501,7 @@
 
         <!-- 获取短视频素材 -->
         <div class="section section-bg-write source-material-sec">
-            <img src="/assets/images/yingshi/ysqn/d1.jpg?v=1586932461356" alt="">
+            <img src="/assets/images/yingshi/ysqn/d1.jpg?v=1587179319710" alt="">
             <div class="section-btn">
                 <a class="btn doyoo-btn">获取短视频素材</a>
             </div>
@@ -446,16 +521,16 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/images/yingshi/ysqn/b1.png?v=1586932461356" alt="">
+                            <img src="/assets/images/yingshi/ysqn/b1.png?v=1587179319710" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/yingshi/ysqn/b2.png?v=1586932461356" alt="">
+                            <img src="/assets/images/yingshi/ysqn/b2.png?v=1587179319710" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/yingshi/ysqn/b3.png?v=1586932461356" alt="">
+                            <img src="/assets/images/yingshi/ysqn/b3.png?v=1587179319710" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/yingshi/ysqn/b4.png?v=1586932461356" alt="">
+                            <img src="/assets/images/yingshi/ysqn/b4.png?v=1587179319710" alt="">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -485,7 +560,7 @@
                         丝路教育 给你不一样的学习体验
                     </div>
                 </div>
-                <img src="/assets/images/yingshi/ysqn/f2.png?v=1586932461356" alt="">
+                <img src="/assets/images/yingshi/ysqn/f2.png?v=1587179319710" alt="">
                 <div class="movie-television-list">
                     <div class="hot-market-item">
                         <div class="hot-market-num">01</div>
@@ -502,7 +577,7 @@
                             <br/> 企业定制
                         </h3>
                         <p>
-                            采用线下式教学，将效率发挥为极致
+                            采用线下式教学，将效率发挥为<br/>极致
                         </p>
                     </div>
                     <div class="hot-market-item">
@@ -512,7 +587,7 @@
                             <br/>就业保障
                         </h3>
                         <p>
-                            对市场需求精确定位，帮助学员入职名企
+                            对市场需求精确定位，帮助学员<br/>入职名企
                         </p>
                     </div>
                 </div>
@@ -525,44 +600,46 @@
                         丝路教育 影视视效设计 6大核心技能
                     </div>
                 </div>
-                <div class="section-list">
-                    <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/g1.png?v=1586932461356">
-                        <div class="section-txt">
-                            视频包装
+                <a class="doyoo-btn">
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ysqn/g1.png?v=1587179319710">
+                            <div class="section-txt">
+                                视频包装
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ysqn/g2.png?v=1587179319710">
+                            <div class="section-txt">
+                                视效合成
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ysqn/g3.png?v=1587179319710">
+                            <div class="section-txt">
+                                艺术剪辑
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ysqn/g4.png?v=1587179319710">
+                            <div class="section-txt">
+                                电商产品
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ysqn/g5.png?v=1587179319710">
+                            <div class="section-txt">
+                                综合包装
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/yingshi/ysqn/g6.png?v=1587179319710">
+                            <div class="section-txt">
+                                综合实操
+                            </div>
                         </div>
                     </div>
-                    <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/g2.png?v=1586932461356">
-                        <div class="section-txt">
-                            视效合成
-                        </div>
-                    </div>
-                    <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/g3.png?v=1586932461356">
-                        <div class="section-txt">
-                            艺术剪辑
-                        </div>
-                    </div>
-                    <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/g4.png?v=1586932461356">
-                        <div class="section-txt">
-                            电商产品
-                        </div>
-                    </div>
-                    <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/g5.png?v=1586932461356">
-                        <div class="section-txt">
-                            综合包装
-                        </div>
-                    </div>
-                    <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/g6.png?v=1586932461356">
-                        <div class="section-txt">
-                            综合实操
-                        </div>
-                    </div>
-                </div>
+                </a>
 
             </div>
             <div class="movie-television-sec3">
@@ -573,7 +650,7 @@
                         丝路教育 打造影视“闭环”课程体系
                     </div>
                     <div class="film-editing-list">
-                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h1.png) no-repeat center;?v=1586932461356">
+                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h1.png) no-repeat center; background-size: cover;?v=1587179319710">
                             <div class="film-editing-txt">
                                 <h3>影视包装登堂入室 夯实基础步步为“赢”</h3>
                                 <ul>
@@ -599,7 +676,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h2.png) no-repeat center;?v=1586932461356">
+                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h2.png) no-repeat center; background-size: cover;?v=1587179319710">
                             <div class="film-editing-txt">
                                 <h3>视效合成高阶操作 覆盖多行业影视制作</h3>
                                 <ul>
@@ -625,7 +702,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h3.png) no-repeat center;?v=1586932461356">
+                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h3.png) no-repeat center;background-size: cover;?v=1587179319710">
                             <div class="film-editing-txt">
                                 <h3>艺术剪辑设计 影视行业的必修课</h3>
                                 <ul>
@@ -651,7 +728,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h4.png) no-repeat center;?v=1586932461356">
+                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h4.png) no-repeat center;background-size: cover;?v=1587179319710">
                             <div class="film-editing-txt">
                                 <h3>电商产品设计 C4D大法好领域覆盖广</h3>
                                 <ul>
@@ -677,7 +754,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h5.png) no-repeat center;?v=1586932461356">
+                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h5.png) no-repeat center;background-size: cover;?v=1587179319710">
                             <div class="film-editing-txt">
                                 <h3>综合包装设计 影视行业必杀技</h3>
                                 <ul>
@@ -703,7 +780,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h6.png) no-repeat center;?v=1586932461356">
+                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysqn/h6.png) no-repeat center; background-size: cover;?v=1587179319710">
                             <div class="film-editing-txt">
                                 <h3>项目实战 提前进入影视行业工作状态</h3>
                                 <ul>
@@ -743,7 +820,7 @@
                 <div class="section-title">
                     <b>影视行业主流软件</b><br>通通掌握
                 </div>
-                <img src="/assets/images/yingshi/ysqn/j2.png?v=1586932461356" alt="">
+                <img src="/assets/images/yingshi/ysqn/j2.png?v=1587179319710" alt="">
             </div>
         </div>
 
@@ -767,7 +844,7 @@
                                 <br> 代表项目：《极限挑战》、<br/>《快乐大本营》
                             </p>
                         </div>
-                        <img class="strong-points-cover" src="/assets/images/yingshi/ysqn/y1.png?v=1586932461356" alt="">
+                        <img class="strong-points-cover" src="/assets/images/yingshi/ysqn/y1.png?v=1587179319710" alt="">
                     </div>
                     <div class="strong-points-item">
                         <div class="strong-points-txt">
@@ -778,7 +855,7 @@
                                 <br> 代表项目：《天龙八部3D》、<br/>《风云》
                             </p>
                         </div>
-                        <img class="strong-points-cover" src="/assets/images/yingshi/ysqn/y2.png?v=1586932461356" alt="">
+                        <img class="strong-points-cover" src="/assets/images/yingshi/ysqn/y2.png?v=1587179319710" alt="">
                     </div>
                     <div class="strong-points-item">
                         <div class="strong-points-txt">
@@ -790,7 +867,7 @@
                                 <br/> 《CCTV财经教育栏目》
                             </p>
                         </div>
-                        <img class="strong-points-cover" src="/assets/images/yingshi/ysqn/y3.png?v=1586932461356" alt="">
+                        <img class="strong-points-cover" src="/assets/images/yingshi/ysqn/y3.png?v=1587179319710" alt="">
                     </div>
                     <div class="strong-points-item">
                         <div class="strong-points-txt">
@@ -802,7 +879,7 @@
                                 <br/> 《360推广视频》
                             </p>
                         </div>
-                        <img class="strong-points-cover" src="/assets/images/yingshi/ysqn/y4.png?v=1586932461356" alt="">
+                        <img class="strong-points-cover" src="/assets/images/yingshi/ysqn/y4.png?v=1587179319710" alt="">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -829,13 +906,13 @@
                 </div>
                 <div class="section-tab-list">
                     <div class="section-tab-col">
-                        <img src="/assets/images/yingshi/ysqn/k1.png?v=1586932461356">
+                        <img src="/assets/images/yingshi/ysqn/k1.png?v=1587179319710">
                     </div>
                     <div class="section-tab-col">
-                        <img src="/assets/images/yingshi/ysqn/k2.png?v=1586932461356">
+                        <img src="/assets/images/yingshi/ysqn/k2.png?v=1587179319710">
                     </div>
                     <div class="section-tab-col">
-                        <img src="/assets/images/yingshi/ysqn/k3.png?v=1586932461356">
+                        <img src="/assets/images/yingshi/ysqn/k3.png?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -861,13 +938,13 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img class="section-cover" src="/assets/images/yingshi/ysqn/l1.png?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/yingshi/ysqn/l1.png?v=1587179319710">
                         </div>
                         <div class="swiper-slide">
-                            <img class="section-cover" src="/assets/images/yingshi/ysqn/l2.png?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/yingshi/ysqn/l2.png?v=1587179319710">
                         </div>
                         <div class="swiper-slide">
-                            <img class="section-cover" src="/assets/images/yingshi/ysqn/l3.png?v=1586932461356">
+                            <img class="section-cover" src="/assets/images/yingshi/ysqn/l3.png?v=1587179319710">
                         </div>
 
                     </div>
@@ -890,7 +967,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/m1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/m1.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>郭*</h3>
                             <div class="line"></div>
@@ -905,7 +982,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/m2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/m2.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>谢*</h3>
                             <div class="line"></div>
@@ -920,7 +997,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/m3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/m3.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>余**</h3>
                             <div class="line"></div>
@@ -935,7 +1012,7 @@
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/m4.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/m4.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>陈*</h3>
                             <div class="line"></div>
@@ -968,31 +1045,31 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/n2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/n2.png?v=1587179319710">
                         <div class="section-txt">
                             一线名师<br> 全程面授
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/n3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/n3.png?v=1587179319710">
                         <div class="section-txt">
                             不定期<br> 名企大咖分享会
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/n4.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/n4.png?v=1587179319710">
                         <div class="section-txt">
                             学院内<br> 线下招聘会
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/n5.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/n5.png?v=1587179319710">
                         <div class="section-txt">
                             阶段性学员<br> 作品汇报
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysqn/n6.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/yingshi/ysqn/n6.png?v=1587179319710">
                         <div class="section-txt">
                             耳熟能详的<br> 项目案例
                         </div>
@@ -1007,7 +1084,7 @@
                 <div class="section-title">
                     <b>3000+名企合作</b> <br>直通高薪岗位
                 </div>
-                <img src="/assets/images/yingshi/c4d/logo.jpg?v=1586932461356" alt="">
+                <img src="/assets/images/yingshi/c4d/logo.jpg?v=1587179319710" alt="">
             </div>
         </div>
 
@@ -1032,13 +1109,26 @@
             </form>
         </div>
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
@@ -1050,6 +1140,8 @@
 </script>
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
+
+</div>
 </body>
 
 </html>

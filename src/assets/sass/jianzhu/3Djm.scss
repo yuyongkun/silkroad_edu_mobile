@@ -76,10 +76,8 @@
         }
     }
 }
-.zy-img{
-    
-}
-//视觉领域上市公司
+
+//丝路教育背后
 .bj3{
     background-color: #0f053b;;
     .section-title{
@@ -239,14 +237,7 @@
         }
     }
 }
-//丝路教育渲染艺术精英班
-.bj1{
-    background: url("/assets/images/jianzhu/xrys/bj.jpg") no-repeat center;
-    background-size: cover;  
-    .section-title{
-        color: #fff;
-    }
-}
+
 // 学员阶段作品展示
 .stage-works-sec{
     .section-nav-tab{
@@ -266,8 +257,13 @@
     }
 
 }
-
-
+//丝路好不好
+.fu{
+    text-align: center;
+    font-size: 0.5rem;
+    color: #ec6941;
+    margin-bottom: 0.5rem;
+}
 // 表单
 .section-form {
     height: 11.3333rem;
@@ -277,7 +273,7 @@
     .form-group-txt {
         line-height: 1rem;
         padding-top: 1.8rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color: #fff;
     }
 }

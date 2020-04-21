@@ -13,8 +13,7 @@
         function setBodyFontSize() {
             if (document.body) {
                 document.body.style.fontSize = (12 * dpr) + 'px'
-            }
-            else {
+            } else {
                 document.addEventListener('DOMContentLoaded', setBodyFontSize)
             }
         }
@@ -30,7 +29,7 @@
 
         // reset rem unit on page resize
         window.addEventListener('resize', setRemUnit)
-        window.addEventListener('pageshow', function (e) {
+        window.addEventListener('pageshow', function(e) {
             if (e.persisted) {
                 setRemUnit()
             }
@@ -50,12 +49,11 @@
         }
     }(window, document))
 </script>
-
     <title>Revit大师班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1586932461356">
-<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1586932461356">
-    <link rel="stylesheet" href="/assets/css/bim/revitds.css?v=1586932461356">
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587179319710">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1587179319710">
+    <link rel="stylesheet" href="/assets/css/bim/revitds.css?v=1587179319710">
 </head>
 
 <body>
@@ -63,7 +61,9 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
      影视视效课程  
     <ul class="header-menu-secondlist">
@@ -105,7 +105,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     APEC室内课程  
+     室内设计课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -115,30 +115,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-     UX全栈课程  
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
      建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -158,14 +187,25 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
@@ -210,7 +250,7 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      APEC室内 
+      室内设计 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/shinei/snqk.html">APEC室内设计全能班</a>
@@ -220,30 +260,59 @@
             </a>
         </li>
         <li class="header-menu-second">
-            <a href="/shinei/cad.html">室内软装精英班</a>
+            <a href="/shinei/snrz.html">室内软装精英班</a>
         </li>
-        <li class="header-menu-second">室内手绘创意班</li>
-        <li class="header-menu-second">室内效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-      UX全栈 
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">UX全栈视效全能班</li>
-        <li class="header-menu-second"> Photoshop大师班</li>
-        <li class="header-menu-second">品牌视觉创意班</li>
-        <li class="header-menu-second">电商美工精英班</li>
-        <li class="header-menu-second">全链路设计精英班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
       建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">建筑视效全能班</li>
-        <li class="header-menu-second">3ds MAX大师班</li>
-        <li class="header-menu-second">3D建模精英班</li>
-        <li class="header-menu-second">渲染艺术精英班</li>
-        <li class="header-menu-second">建筑效果图精英班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
@@ -265,9 +334,15 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
@@ -275,7 +350,7 @@
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img class="banner-cover" src="/assets/images/bim/revitds/banner.jpg?v=1586932461356" alt="">
+                <img class="banner-cover" src="/assets/images/bim/revitds/banner.jpg?v=1587179319710" alt="">
             </a>
         </div>
         <div class="section section-bg-write hot-software-sec">
@@ -284,28 +359,28 @@
                     Revit在手
                     <br> 掀起BIM“薪”革命
                 </div>
-                <div class="section-describe">随着地产建筑行业的进一步发展，BIM技术将在建筑行业得到全面普及和应用，预计到2020年，BIM专业人才需求量将突破60万人，
-                    人才紧缺！而Revit是入行BIM的必学软件之一，成为高薪就业的第一步！</div>
+                <div class="section-describe">随着地产建筑行业的进一步发展，BIM技术将在建筑行业得到全面普及和应用，预计到2020年，BIM专业人才需求量将突破60万人， 人才紧缺！而Revit是入行BIM的必学软件之一，成为高薪就业的第一步！
+                </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/two1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/two1.png?v=1587179319710">
                         <div class="section-txt">
                             <h3>《建筑业信息化发展纲要的通知》</h3>
                             <p>2020年末，实现企业BIM团队管理一体应用90%建设项目采用BIM进行管理。</p>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/two2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/two2.png?v=1587179319710">
                         <div class="section-txt">
-                            <h3>《建筑业信息化发展纲要的通知》</h3>
-                            <p>2020年末，实现企业BIM团队管理一体应用90%建设项目采用BIM进行管理。</p>
+                            <h3>《施工总承包企业特级资质标准》</h3>
+                            <p>BIM应用和装配式建筑的业绩将作为考核资质的标准。</p>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/two3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/two3.png?v=1587179319710">
                         <div class="section-txt">
-                            <h3>《建筑业信息化发展纲要的通知》</h3>
-                            <p>2020年末，实现企业BIM团队管理一体应用90%建设项目采用BIM进行管理。</p>
+                            <h3>《工程质量安全提升行动季度报表》</h3>
+                            <p>颁布通知中，强调需把BIM技术单独立项填报明确列出工程技术进步情况。</p>
                         </div>
                     </div>
                 </div>
@@ -317,12 +392,11 @@
         <div class="section">
             <div class="container">
                 <div class="section-title">
-                    掌握建工龙头企业必备技<br>
-                    能行业薪资由你引领
+                    掌握建工龙头企业必备<br>技能行业薪资由你引领
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/zyxz.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/zyxz.png?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -333,15 +407,14 @@
         <div class="section section-bg-write efficient-software-sec">
             <div class="container">
                 <div class="section-title">
-                    高效软件Revit<br>
-                    备受行业人士青睐
+                    高效软件Revit<br> 备受行业人士青睐
                 </div>
                 <div class="section-describe">
                     Revit是Autodesk公司一套系列软件的名称，可帮助建筑设计师设计、建造和维护质量更好、能效更高的建筑。是我国建筑业BIM体系中使用最广泛的软件之一。
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/left.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/left.jpg?v=1587179319710">
                         <div class="section-txt">
                             <dl>
                                 <dt>Architecture 建筑设计</dt>
@@ -371,13 +444,13 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/rq1.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/rq1.png?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/rq2.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/rq2.png?v=1587179319710">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/rq3.png?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/rq3.png?v=1587179319710">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -386,58 +459,56 @@
             </div>
         </div>
         <div class="section">
-            <img src="/assets/images/bim/revitds/bd.jpg?v=1586932461356" alt="">
+            <a class="doyoo-btn">
+                <img src="/assets/images/bim/revitds/bd.jpg?v=1587179319710" alt="">
+            </a>
         </div>
         <div class="section section-bg-write fivestep-method-sec">
             <div class="container">
                 <div class="section-title">
-                    丝路教育 <br>
-                    视觉创意领域的先行者
+                    丝路教育 <br> 视觉创意领域的先行者
                 </div>
-                <div class="section-describe">丝路教育是上市公司丝路视觉旗下的CG人才培养基地，依托丝路集团二十年大型视觉项目经验和技术成果，专注CG培训十数年。
-                    同时，丝路教育拥有Adobe与Autodesk公司权威资格认证，
-                    并且丝路教育还是国内唯一拥有展览展示设计及施工甲级资质、高级建筑装饰工程设计及施工资质的教育学院。</div>
+                <div class="section-describe">丝路教育是上市公司丝路视觉旗下的CG人才培养基地，依托丝路集团二十年大型视觉项目经验和技术成果，专注CG培训十数年。 同时，丝路教育拥有Adobe与Autodesk公司权威资格认证， 并且丝路教育还是国内唯一拥有展览展示设计及施工甲级资质、高级建筑装饰工程设计及施工资质的教育学院。
+                </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/zs1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/zs1.jpg?v=1587179319710">
                         <h3>
-                            亚洲教育<br>
-                            十大领军企业
+                            亚洲教育<br> 十大领军企业
                         </h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/zs2.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/zs2.jpg?v=1587179319710">
                         <h3>
-                            亚洲教育<br>
-                            十大领军企业
+                            职业培训
+                            <br/> 影响力品牌
                         </h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/zs3.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/zs3.jpg?v=1587179319710">
                         <h3>
-                            亚洲教育<br>
-                            十大领军企业
+                            中国（行业）年度
+                            <br/>杰出贡献奖
                         </h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/zs4.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/zs4.jpg?v=1587179319710">
                         <h3>
-                            亚洲教育<br>
-                            十大领军企业
+                            Adobe官方
+                            <br/>认证证书
                         </h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/zs5.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/zs5.jpg?v=1587179319710">
                         <h3>
-                            亚洲教育<br>
-                            十大领军企业
+                            AUTODESK官方
+                            <br/>认证证书
                         </h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/zs6.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/zs6.jpg?v=1587179319710">
                         <h3>
-                            亚洲教育<br>
-                            十大领军企业
+                            建筑装修装饰工程 <br/>专业承包壹级证书
                         </h3>
                     </div>
                 </div>
@@ -454,7 +525,7 @@
             <div class="container">
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/kc1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/kc1.jpg?v=1587179319710">
                         <div class="section-txt">
                             <h3><em>01</em>Revit建筑阶段</h3>
                             <ul>
@@ -468,22 +539,22 @@
                         <div class="section-txt">
                             <h3><em>02</em>Revit结构阶段</h3>
                             <ul>
-                                <li>BIM基础及Revit系列软件基础操作，CAD处理及导入。</li>
-                                <li>桩、基础、结构柱、剪力墙、梁结构构件创建。</li>
-                                <li>出图与工程量，尺寸标注、标记、明细表、漫游动画等。</li>
+                                <li>砌体墙、幕墙、门窗、楼板、屋顶等Revit建筑构件创建。</li>
+                                <li>自定义族及高级命令，拉伸、融合、旋转、放样融合等。</li>
+                                <li>Revit工作流，链接模型、创建工作集和中心文件注意事项。</li>
                             </ul>
                         </div>
-                        <img class="section-cover" src="/assets/images/bim/revitds/kc2.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/kc2.jpg?v=1587179319710">
 
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/revitds/kc3.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/kc3.jpg?v=1587179319710">
                         <div class="section-txt">
                             <h3><em>03</em>Revit机电阶段</h3>
                             <ul>
-                                <li>BIM基础及Revit系列软件基础操作，CAD处理及导入。</li>
-                                <li>桩、基础、结构柱、剪力墙、梁结构构件创建。</li>
-                                <li>出图与工程量，尺寸标注、标记、明细表、漫游动画等。</li>
+                                <li>风管、水管、电缆桥架的创建，创建风管系统、管道布置。</li>
+                                <li>管线基本识图，不同区域管线排布方案，管线方案及明细表。</li>
+                                <li>MEP族的基本功能介绍，MEP族连接件与族制作。</li>
                             </ul>
                         </div>
                     </div>
@@ -491,12 +562,12 @@
                         <div class="section-txt">
                             <h3><em>04</em>项目管理阶段</h3>
                             <ul>
-                                <li>BIM基础及Revit系列软件基础操作，CAD处理及导入。</li>
-                                <li>桩、基础、结构柱、剪力墙、梁结构构件创建。</li>
-                                <li>出图与工程量，尺寸标注、标记、明细表、漫游动画等。</li>
+                                <li>Project进度管理，Project的界面介绍以及和Excel的区别。</li>
+                                <li>项目信息及创建工作分解结构WBS，设置任务依赖关系。</li>
+                                <li>设置里程碑、周期性任务，分析历史数据。</li>
                             </ul>
                         </div>
-                        <img class="section-cover" src="/assets/images/bim/revitds/kc4.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/revitds/kc4.jpg?v=1587179319710">
                     </div>
 
                 </div>
@@ -509,35 +580,32 @@
             <div class="container">
                 <div class="section-title">
                     高级讲师全程面授
-                    <br>
-                    Revit软件强势操作经验
+                    <br> Revit软件强势操作经验
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/lumion/img5-1.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/lumion/img5-1.jpg?v=1587179319710">
                         <div class="section-txt">
                             <h3>肖丽红<span>BIM应用高级讲师</span></h3>
                             <div class="software-experience">8年从业经验</div>
-                            <p>多次参与国内外重大的模型项目和BIM项目制作，曾任北京伟景行数字科技有限公司可视化设计项目负责人，
-                                被中铁十一局等多家企业指定为BIM专业课程培训讲师。</p>
+                            <p>多次参与国内外重大的模型项目和BIM项目制作，曾任北京伟景行数字科技有限公司可视化设计项目负责人， 被中铁十一局等多家企业指定为BIM专业课程培训讲师。
+                            </p>
                             <div class="software-works"><b>
                                     代表项目：
-                                </b>
-                                珠海横琴、柳州三江汇、杭州商储地等。
+                                </b> 北京CBD、德胜门修复、妇幼保健院中心地下工程规划等。
                             </div>
                         </div>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/bim/lumion/img5-2.jpg?v=1586932461356">
+                        <img class="section-cover" src="/assets/images/bim/lumion/img5-2.jpg?v=1587179319710">
                         <div class="section-txt">
-                            <h3>肖丽红<span>BIM应用高级讲师</span></h3>
-                            <div class="software-experience">8年从业经验</div>
-                            <p>多次参与国内外重大的模型项目和BIM项目制作，曾任北京伟景行数字科技有限公司可视化设计项目负责人，
-                                被中铁十一局等多家企业指定为BIM专业课程培训讲师。</p>
+                            <h3>胡亚夫<span>BIM应用高级讲师</span></h3>
+                            <div class="software-experience">7年从业经验</div>
+                            <p>拥有丰富的企业培训经验，曾为中建电力、江苏华建、中核二三南方核电、华强地产等众多知名公司进行BIM培训。
+                            </p>
                             <div class="software-works"><b>
                                     代表项目：
-                                </b>
-                                珠海横琴、柳州三江汇、杭州商储地等。
+                                </b>宏发天汇城商业综合体、国银/民生金融大厦、深圳万科滨海大厦等。
                             </div>
                         </div>
                     </div>
@@ -555,7 +623,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img src="/assets/images/bim/revitds/zp.png?v=1586932461356" alt="">
+                        <img src="/assets/images/bim/revitds/zp.png?v=1587179319710" alt="">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -571,7 +639,7 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img src="/assets/images/bim/revitds/xy.png?v=1586932461356" alt="">
+                        <img src="/assets/images/bim/revitds/xy.png?v=1587179319710" alt="">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -586,7 +654,7 @@
                     丝路学员
                     <br>企业优先之选
                 </div>
-                <img src="/assets/images/bim/revitds/logo.png?v=1586932461356" alt="">
+                <img src="/assets/images/bim/revitds/logo.png?v=1587179319710" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">查看更多合作企业</a>
                 </div>
@@ -594,32 +662,47 @@
         </div>
         <!-- 表单统计 -->
         <div class="section-form">
-            <form action="/plus/diy.php?v=1586932461356" enctype="multipart/form-data" method="post"
-                onsubmit="return checkMobile(this);">
+            <form id="form">
                 <div class="form-group form-group-txt">
                     Revit专为BIM而生
-                    <br>
-                    高薪第一步，就等你来！
+                    <br> 高薪第一步，就等你来！
                 </div>
                 <div class="form-group">
-                    <input type='text' name='name' placeholder="姓名：" class="form-control" />
+                    <input type='text' name='name' id="name" placeholder="姓名：请填写姓名" class="form-control" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name='tel' class="form-control" placeholder="电话：" />
+                    <input type="text" name='tel' id="tel" class="form-control" placeholder="联系方式：请填写手机号码" />
                 </div>
+
+                <input type="text" name='time' id='time' style="display: none;" />
+
                 <div class="form-submit">
-                    <button class="btn" type="submit">预约免费试学</button>
+                    <button class="btn" type="button" onclick="add_ajaxmessage()"> 预约免费试学</button>
                 </div>
             </form>
         </div>
+
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> -->
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
@@ -631,6 +714,8 @@
 </script>
 <!-- 表单 -->
 <script src="/assets/js/plugs/formbd.js"></script>
+
+</div>
 </body>
 
 </html>

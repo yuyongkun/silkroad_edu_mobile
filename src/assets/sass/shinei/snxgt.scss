@@ -1,0 +1,83 @@
+@import "../common/variable";
+@import "../common/base";
+.section-serial {
+    text-align: center;
+    font-family: HiraginoSansGB-W3;
+    .section-serial-number {
+        font-size: 0.5267rem;
+        font-weight: bold;
+    }
+    .section-serial-line {
+        height: 10px;
+        margin-bottom: 0.3333rem;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .section-serial-txt {
+        font-size: 0.3733rem;
+    }
+    .section-serial-txt1 {
+        font-size: 0.5rem;
+        color: #999;
+    }
+}
+
+.huisedi {
+    background: #eeeeee;
+}
+
+//介绍
+.study-design-sec {
+    .section-serial {
+        margin-bottom: 0.6267rem;
+    }
+    .study-design-sec2 {
+        margin-top: 1.2933rem;
+    }
+}
+
+//六大
+.liudabjtu {
+    background: url("/assets/images/shinei/snxgt/liudabj.jpg") no-repeat center;
+}
+
+// 优秀作品
+.good-works-sec {
+    .section-title {
+        font-family: HiraginoSansGB-W3;
+    }
+    .section-nav-tab .section-nav-item.section-nav-btn {
+        min-width: 0.88rem;
+        width: 3.9867rem;
+        height: 1.0667rem;
+        border-radius: 0.5333rem;
+        margin-bottom: 0.2667rem;
+        background: #fff;
+        border: 1px solid #333;
+    }
+    .section-nav-tab .section-nav-item.section-nav-btn.section-nav-active {
+        border: 1px solid #d2aa4a;
+        color: #d2aa4a;
+    }
+    .section-tab-list {
+        padding: 0 0.4rem;
+    }
+}
+
+//优势
+.youshibjtu {
+    background: url("/assets/images/shinei/snxgt/jituanbj.jpg") no-repeat center;
+}
+
+// 表单
+.section-form {
+    height: 12.12rem;
+    background: url("/assets/images/shinei/snxgt/biaodan.jpg") no-repeat center;
+    background-size: cover;
+    margin-bottom: 15vw;
+    form {
+        padding-top: 6rem;
+    }
+}

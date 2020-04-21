@@ -6,7 +6,11 @@
         height: 0.8rem;
     }
 }
-
+.section-btn{
+    .doyoo-btn img{
+        display: inline;
+    }
+}
 .section {
     background-color: #211d25;
     .section-title {
@@ -234,7 +238,7 @@
 
 // 表单
 .section-form {
-    height: 9.1733rem;
+    height: 10.1733rem;
     background: url("/assets/images/youxi/yxqn/foot-bj.png") no-repeat center;
     background-size: cover;
     .form-group-txt {
@@ -252,5 +256,6 @@
         line-height: 1.0667rem;
         background-color: #FCAF0E;
         color: #333;
+        border:solid 1px #FCAF0E
     }
 }
