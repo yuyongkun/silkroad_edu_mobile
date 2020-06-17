@@ -1,0 +1,159 @@
+/*重置*/
+
+@import "../common/variable";
+@import "../common/base";
+html {
+    font-size: 100px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+button,
+input,
+select,
+textarea,
+submit {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+input[type="text"] {
+    -webkit-appearance: none;
+}
+
+input[type="submit"] {
+    -webkit-appearance: button;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*公用*/
+
+.container {
+    position: relative;
+    z-index: 0;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+    margin-top: 0.44rem;
+    position: relative;
+}
+
+.part-box {
+    padding: 0.4rem 0;
+}
+
+.titlebox h1 {
+    font-size: 0.6133rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.titlebox p:nth-of-type(1) {
+    font-size: 0.3733rem;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 0.1rem;
+}
+
+.titlebox .line {
+    width: 12%;
+    height: 1px;
+    margin: 0.1rem auto 0 auto;
+}
+
+.titlebox p:nth-of-type(2) {
+    font-size: 0.3733rem;
+    color: #999;
+    line-height: 1.5;
+    margin-top: 6vw;
+}
+
+.titlebox {
+    text-align: center;
+}
+
+.part-content {
+    width: 92%;
+    margin: 0.2rem auto 0 auto;
+}
+
+.btn {
+    margin: 0.2rem auto 0 auto;
+    font-size: 0.15rem;
+    color: #333;
+    text-align: center;
+    line-height: 0.4rem;
+    border-radius: 0.2rem;
+}
+
+.cle {
+    clear: both;
+}
+
+
+/*表单*/
+
+.part-form .titlebox h1 {
+    color: #fff;
+}
+
+.part-form form {
+    margin-top: 0.2rem;
+}
+
+.part-form input {
+    display: block;
+}
+
+.part-form .infor {
+    width: 60%;
+    margin: 0 auto 0.15rem auto;
+    font-size: 0.14rem;
+    color: #999;
+    line-height: 0.4rem;
+    border-radius: 0.2rem;
+    background: #fff;
+    padding-left: 4%;
+}
+
+.part-form .btn {
+    width: 64%;
+    margin-top: 0;
+}
