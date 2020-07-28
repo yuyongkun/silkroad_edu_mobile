@@ -389,25 +389,30 @@ img {
 
 // endfoot
 .endfoot-box {
+    margin-top: 0.3rem;
     background-color: #1a1a1d;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 99999999;
+    padding-left: 0;
+    padding-right: 0;
     .endfoot {
         .endfoot-item {
             display: flex;
             justify-content: space-around;
+            height: 50px;
+            width: 100%;
         }
         p {
             width: 49.5%;
-            font-size: 0.32rem;
+            font-size: 0.4rem;
+            line-height: 50px;
             color: #fff;
             border-right: 0.1vw solid #000;
             border-bottom: 0.1vw solid #000;
             text-align: center;
-            padding: 0.24rem 0;
         }
     }
     h3 {
