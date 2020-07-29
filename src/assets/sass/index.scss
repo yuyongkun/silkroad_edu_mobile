@@ -1,410 +1,217 @@
 @import "./common/variable";
 @import "./common/base";
-
 .section-serial {
     text-align: center;
     font-family: HiraginoSansGB-W3;
     font-weight: bold;
-
     .section-serial-number {
         font-size: 0.4267rem;
     }
-
     .section-serial-line {
         height: 10px;
         margin-bottom: 0.3333rem;
-
         img {
             display: block;
             margin: 0 auto;
         }
     }
-
     .section-serial-txt {
         font-size: 0.3733rem;
     }
 }
 
-
-
-// 为什么学室内设计？
-.study-design-sec {
-    .section-serial {
-        margin-bottom: 0.6267rem;
-    }
-
-    .study-design-sec2 {
-        margin-top: 1.2933rem;
-    }
-}
-
-// 为何大部分设计师沦为“设计民工”？
-.designing-workers-sec {
-    .section-title {
-        font-weight: bold;
-    }
-
-    .designing-workers-content {
-        .designing-workers-row {
-            margin-bottom: 1.32rem;
-
-            &:first-child {
-                .designing-workers-area {
-                    display: flex;
-                    justify-content: space-between;
-
-                    img {
-                        width: 4.48rem;
-                        height: 5.9333rem;
-                    }
-                }
-            }
-
-            &:last-child {
-                margin-bottom: 0px;
-            }
-        }
-    }
-}
-
-// 哪些人群 适合学室内设计？
-.fit-design-sec {
-    background: url("/assets/images/index/bj1.jpg") no-repeat center;
-    color: #fff;
-
-    .section-title {
-        color: #fff;
-    }
-
-    .fit-design-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        .fit-design-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
-            margin-bottom: 0.8rem;
-
-            img {
-                max-width: 1.3333rem;
-                max-height: 1.3333rem;
-                margin-bottom: 0.2667rem;
-            }
-
-            dl {
-                text-align: center;
-
-                dt {
-                    line-height: 1;
-                    margin-bottom: 0.2667rem;
-                    font-size: 0.32rem;
-                    color: $base-color;
-                }
-
-                dd {
-                    line-height: 0.48rem;
-                    font-size: 0.2667rem;
-                }
-            }
-        }
-    }
-}
-
-// 为什么选择丝路教育？
-.select-silkroad-reason-sec {
-    .select-silkroad-reason-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        .select-silkroad-reason-item {
-            width: 4.5333rem;
+// banner图标
+.banner-next {
+    box-shadow: 0px 8px 46px 0px rgba(200, 191, 255, 0.38);
+    .section-list {
+        .section-item {
+            width: 25%;
+            padding: 0.5333rem 0rem;
             text-align: center;
-            margin-bottom: 0.4rem;
-
             h3 {
-                font-size: 0.2667rem;
-                color: #666666;
-                font-weight: normal;
+                font-size: 0.34rem;
+            }
+            .section-cover {
+                width: 0.8267rem;
+                height: 0.8rem;
             }
         }
     }
 }
 
-// APEC亚太高端室内设计课程
-.apec-course-sec {
-    padding: 0px;
-
-    .apec-course-sec1 {
-        height: 20.3733rem;
-        padding-top: 1.3333rem;
-        background: url("/assets/images/index/bj2.jpg") no-repeat center;
-        color: #fff;
-
-        .section-serial {
-            margin-bottom: 0.7467rem;
-        }
-
-        .section-title {
-            color: #fff;
-        }
-
-        .fit-design-list {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-
-            .fit-design-item {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 50%;
-                margin-bottom: 0.6667rem;
-
-                img {
-                    width: 1.3333rem;
-                    height: 1.3333rem;
-                    margin-bottom: 0.4rem;
-                }
-
-                dl {
-                    text-align: center;
-
-                    dt {
-                        line-height: 1;
-                        margin-bottom: 0.2667rem;
-                        font-size: 0.3733rem;
-                        color: $base-color;
-                    }
-
-                    dd {
-                        font-size: 0.3733rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .apec-course-sec2 {
-        height: 15.7333rem;
-        padding: 1.3333rem 0 1.6rem;
-        background: url("/assets/images/index/bj3.jpg") no-repeat center;
-        background-size: cover;
-
-        .section-serial {
-            margin-bottom: 0.7467rem;
-        }
-
-        .fit-design-list {
-            text-align: center;
-
-            img {
-                width: 80vw;
-            }
-        }
-    }
-
-    .apec-course-sec3 {
-        padding-top: 1.3333rem;
-        padding-bottom: 0;
-
-        .section-serial {
-            margin-bottom: 0.7467rem;
-        }
-
-        .fit-design-list {
-            text-align: center;
-
-            .fit-design-item {
-                width: 9.2rem;
-                height: 4.8rem;
-                margin-bottom: 0.4rem;
-
-                &:nth-child(odd) {
-                    text-align: left;
-                }
-
-                &:nth-child(even) {
-                    text-align: right;
-                }
-
-                dl {
-                    padding: 0.48rem;
-                    color: #fff;
-
-                    dt {
-                        margin-bottom: 0.5333rem;
-                        font-size: 0.3733rem;
-                    }
-
-                    dd {
-                        margin-bottom: 0.1333rem;
-                        font-size: 0.2667rem;
-
-                        &::before {
-                            content: '';
-                            display: inline-block;
-                            width: 6px;
-                            height: 6px;
-                            border-radius: 50%;
-                            background: #fff;
-                            margin-right: 5px;
-                            vertical-align: middle;
-                        }
-                    }
-                }
-
-                &:first-child {
-                    background: url("/assets/images/index/image9-1.png") no-repeat center;
-                    background-size: cover;
-                }
-
-                &:nth-child(2) {
-                    background: url("/assets/images/index/image9-2.png") no-repeat center;
-                    background-size: cover;
-                }
-
-                &:nth-child(3) {
-                    background: url("/assets/images/index/image9-3.png") no-repeat center;
-                    background-size: cover;
-                }
-
-                &:nth-child(4) {
-                    background: url("/assets/images/index/image9-4.png") no-repeat center;
-                    background-size: cover;
-                }
-
-                &:nth-child(5) {
-                    margin-bottom: 0;
-                    background: url("/assets/images/index/image9-5.png") no-repeat center;
-                    background-size: cover;
-                }
-            }
-        }
-    }
-}
-
-// 一线大咖全力传授设计宝典
-.oneline-coffee-sec {
-    .oneline-coffee-list {
-        display: flex;
-        justify-content: space-between;
-
-        img {
-            width: 4.4rem;
-            height: 6.6667rem;
-        }
-    }
-}
-
-// 至高薪资
-.highest-salary-sec {
-    padding-bottom: 0px;
-
-    img {
-        display: block;
-    }
-}
-
-// 优秀作品让你在HR眼里脱颖而出
+//    丝路出品 必属精品
 .good-works-sec {
+    background-color: #f7f9ff;
     .section-title {
         font-family: HiraginoSansGB-W3;
     }
-
     .section-nav-tab .section-nav-item.section-nav-btn {
         min-width: 0.88rem;
         width: 1.9867rem;
         height: 1.0667rem;
         border-radius: 0.5333rem;
         margin-bottom: 0.2667rem;
-        background: #fff;
-        border: 1px solid #333;
+        background: #f7f9ff;
+        border: 1px solid #cfbfbb;
+        color: #999;
     }
-
     .section-nav-tab .section-nav-item.section-nav-btn.section-nav-active {
-        border: 1px solid #d2aa4a;
-        color: #d2aa4a;
+        border: 1px solid #fc9a6f;
+        color: #eb6100;
     }
-
     .section-tab-list {
         padding: 0 0.4rem;
-    }
-}
-
-// 真实学员评价实力打Call
-.student-evaluation-sec {
-    padding-bottom: 0.9867rem;
-
-    .student-evaluation-list {
-        .student-evaluation-item {
-            margin-bottom: 0.2667rem;
-
-            &:last-child {
-                margin-bottom: 0px;
-            }
-
-            img {
-                display: block;
-                margin: 0 auto;
+        .section-tab-col {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .item {
+                width: 32%;
+                margin-bottom: 0.5rem;
+                img {
+                    width: 2.9333rem;
+                    height: 2.9333rem;
+                }
+                p {
+                    font-size: 0.2667rem;
+                    color: #333333;
+                    text-align: center;
+                }
             }
         }
     }
 }
 
-// 丝路教育六大学习保障
-.learning-guarantee-sec {
-    height: 13.96rem;
-    background: url("/assets/images/index/bj4.jpg") no-repeat center;
-
-    .section-title {
-        color: #fff;
+.good-works-sec {
+    .section-tab-list {
+        .section-tab-col20 {
+            justify-content: left;
+        }
     }
+}
 
-    .learning-guarantee-list {
-        display: flex;
-        flex-wrap: wrap;
+.item {
+    margin-left: 0.05rem;
+    margin-right: 0.05rem;
+}
 
-        .learning-guarantee-item {
-            width: 33.33%;
-            text-align: center;
-            padding-top: 0.4667rem;
-            padding-bottom: 0.5333rem;
-            border-right: 1px solid #999;
-            border-bottom: 1px solid #999;
-
-            &:nth-child(n+4) {
-                border-bottom: none;
-                padding-bottom: 0px;
-                padding-top: 1.0667rem;
-            }
-
-            &:nth-child(3n) {
-                border-right: none;
-            }
-
-            .learning-guarantee-cover {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto 0.9333rem;
-                width: 1.0667rem;
-                height: 0.8667rem;
-
+// 众所周知的项目实训？
+.shixun {
+    .swiper-container {
+        height: 7.8667rem;
+        .swiper-wrapper {
+            height: 6.8667rem;
+            .swiper-slide {
+                box-shadow: 0px 8px 29px -9px rgba(101, 114, 170, 0.1);
+                p {
+                    font-size: 10px;
+                    color: #333;
+                }
                 img {
-                    display: block;
+                    height: 100%;
                 }
             }
+        }
+        .swiper-pagination-bullet {
+            width: 0.1667rem;
+            height: 0.1667rem;
+            border-radius: 50%;
+            background-color: #EC6941;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #f64f23;
+        }
+    }
+}
 
+// 为什么选择丝路教育？
+.select-silkroad-reason-sec {
+    background-color: #f7f9ff;
+    .select-silkroad-reason-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .select-silkroad-reason-item {
+            border-radius: 4px;
+            width: 4.5333rem;
+            text-align: center;
+            margin-bottom: 0.4rem;
+            background-color: #eb6100;
+            box-shadow: 0px 8px 29px 2px rgba(75, 87, 144, 0.1);
             h3 {
-                font-size: 0.3467rem;
-                font-weight: normal;
+                font-size: 0.2667rem;
                 color: #fff;
+                font-weight: normal;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+// 一张作品决胜职场
+.stu-work {
+    background-color: #f7f9ff;
+    .section-title {
+        font-family: HiraginoSansGB-W3;
+    }
+    .section-nav-tab .section-nav-item.section-nav-btn {
+        min-width: 0.88rem;
+        width: 1.9867rem;
+        height: 1.0667rem;
+        border-radius: 0.5333rem;
+        margin-bottom: 0.2667rem;
+        background: #f7f9ff;
+        border: 1px solid #cfbfbb;
+        color: #999;
+    }
+    .section-nav-tab .section-nav-item.section-nav-btn.section-nav-active {
+        border: 1px solid #fc9a6f;
+        color: #eb6100;
+    }
+    .section-tab-list {
+        padding: 0 0.4rem;
+        .section-tab-col {
+            img {
+                width: 9.2rem;
+                height: 6.1733rem;
+            }
+            p {
+                font-size: 0.1867rem;
+                color: #333333;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// 百家高校的信任 知名企业的选择 
+.logo {
+    background-color: #f7f9ff;
+    .section-title {
+        font-family: HiraginoSansGB-W3;
+    }
+    .section-nav-tab .section-nav-item.section-nav-btn {
+        min-width: 0.88rem;
+        width: 1.9867rem;
+        height: 1.0667rem;
+        border-radius: 0.5333rem;
+        margin-bottom: 0.2667rem;
+        background: #f7f9ff;
+        color: #999;
+    }
+    .section-nav-tab .section-nav-item.section-nav-btn.section-nav-active {
+        color: #eb6100;
+    }
+    .section-tab-list {
+        padding: 0 0.4rem;
+        .section-tab-col {
+            img {
+                width: 9.2rem;
+                height: 4.16rem;
+            }
+            p {
+                font-size: 0.1867rem;
+                color: #333333;
+                text-align: center;
             }
         }
     }
@@ -412,11 +219,15 @@
 
 // 表单
 .section-form {
-    height: 12.12rem;
-    background: url("/assets/images/index/bj5.jpg") no-repeat center;
+    background: url("/assets/images/index/bdbj.jpg") no-repeat center;
     background-size: cover;
-
+    height: 11.0rem;
+    margin-bottom: 15vw;
     form {
-        padding-top: 6rem;
+        padding-top: 1.5rem;
+        .form-group-txt {
+            color: #fff;
+            line-height: 1.5;
+        }
     }
 }

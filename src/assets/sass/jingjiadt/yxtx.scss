@@ -1,0 +1,245 @@
+.btn {
+    background: #fcc800;
+}
+
+.titlebox .line {
+    background: #333;
+}
+
+
+/*薪资*/
+
+.part-xinzi img {
+    width: 100%;
+    display: block;
+}
+
+.part-xinzi .btn {
+    width: 40%;
+}
+
+
+/*问题*/
+
+.part-wenti {
+    background: url(../../img/youxi/yxtx/wenti.jpg)no-repeat center;
+    background-size: cover;
+}
+
+.part-wenti .titlebox h1 {
+    color: #fff;
+    font-size: 6vw;
+}
+
+.wenti-item {
+    margin-bottom: 0.15rem;
+}
+
+.wenti-lastitem {
+    margin-bottom: 0;
+}
+
+.wenti-item p {
+    font-size: 0.12rem;
+    color: #fff;
+    line-height: 0.3rem;
+    float: left;
+}
+
+.wenti-item p:nth-of-type(1) {
+    width: 72%;
+    padding-left: 3%;
+    border: 1px solid #5e5e66;
+    border-right: none;
+}
+
+.wenti-item p:nth-of-type(2) {
+    width: 24%;
+    text-align: center;
+    background: #fcc800;
+    border: 1px solid #fcc800;
+}
+
+
+/*介绍*/
+
+.part-jieshao img {
+    width: 100%;
+    display: block;
+}
+
+.part-jieshao .btn {
+    width: 40%;
+}
+
+.part-jieshao1 {
+    background: url(../../img/youxi/yxtx/jieshao.jpg) no-repeat center;
+    font-size: 0.11rem;
+    color: aliceblue;
+}
+
+.part-jieshao1 h1 {
+    margin-top: 5%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.kongqi {
+    height: 20px;
+}
+
+
+/*教学保障*/
+
+.part-jxbz {
+    background: #f6f6f6;
+}
+
+.part-jxbz .titlebox h1 {
+    line-height: 0.3rem;
+}
+
+.jxbz-item {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+}
+
+.jxbz-item img {
+    width: 52%;
+    margin: 0 auto;
+    display: block;
+}
+
+.jxbz-threeitem {
+    float: right;
+}
+
+.jxbz-item h2 {
+    color: #333;
+    font-size: 0.14rem;
+    line-height: 0.14rem;
+    margin-top: 0.1rem;
+}
+
+.jxbz-ctn {
+    margin-top: 0.15rem;
+}
+
+
+/*课程大纲*/
+
+.kecheng {
+    padding-top: 6%;
+    width: 45%;
+    line-height: 0.45rem;
+    padding-left: 3%;
+    float: left;
+}
+
+.kecheng img {
+    display: block;
+}
+
+.kecheng1 {
+    padding-top: 6%;
+    width: 45%;
+    line-height: 0.45rem;
+    padding-left: 3%;
+    float: left;
+}
+
+.kechengming {
+    font-size: 0.14rem;
+    padding-left: 10%;
+    background: #fff9ef;
+}
+
+
+/*小表单*/
+
+.part-oneform {
+    background: url(../../img/youxi/yxtx/biaodan1.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+
+/*讲师*/
+
+.part-teacher .titlebox h1 {
+    line-height: 0.3rem;
+}
+
+.teacher-item {
+    margin-bottom: 0.1rem;
+}
+
+.teacher-item img {
+    float: left;
+    width: 23.2%;
+}
+
+.teacher-text {
+    float: right;
+    width: 72.5%;
+}
+
+.teacher-text h2 {
+    color: #333;
+    font-size: 0.15rem;
+    line-height: 0.15rem;
+    margin-top: 0.08rem;
+}
+
+.teacher-text h2 span,
+.teacher-text p {
+    font-size: 0.12rem;
+    line-height: 0.18rem;
+    color: #999;
+}
+
+.teacher-text img {
+    display: block;
+    width: 100%;
+    margin: 0.1rem 0;
+}
+
+.part-teacher .btn {
+    width: 56%;
+}
+
+
+/*作品*/
+
+.part-zuopin {
+    background: #f4f4f4;
+}
+
+.part-zuopin img {
+    display: block;
+    width: 100%;
+}
+
+.part-zuopin .btn {
+    width: 50%;
+}
+
+
+/*合作*/
+
+.part-hezuo img {
+    display: block;
+    width: 100%;
+}
+
+.part-hezuo .btn {
+    width: 40%;
+}
+
+
+/*表单2*/
+
+.part-twoform {
+    background: url(../../img/youxi/yxtx/biaodan2.jpg)no-repeat center;
+    background-size: 100%;
+}

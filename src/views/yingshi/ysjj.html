@@ -4,12 +4,56 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script>
+    (function flexible(window, document) {
+        var docEl = document.documentElement
+        var dpr = window.devicePixelRatio || 1
 
+        // adjust body font size
+        function setBodyFontSize() {
+            if (document.body) {
+                document.body.style.fontSize = (12 * dpr) + 'px'
+            } else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            }
+        }
+        setBodyFontSize();
+
+        // set 1rem = viewWidth / 10
+        function setRemUnit() {
+            var rem = docEl.clientWidth / 10
+            docEl.style.fontSize = rem + 'px'
+        }
+
+        setRemUnit()
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit)
+        window.addEventListener('pageshow', function(e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+        })
+
+        // detect 0.5px supports
+        if (dpr >= 2) {
+            var fakeBody = document.createElement('body')
+            var testElement = document.createElement('div')
+            testElement.style.border = '.5px solid transparent'
+            fakeBody.appendChild(testElement)
+            docEl.appendChild(fakeBody)
+            if (testElement.offsetHeight === 1) {
+                docEl.classList.add('hairlines')
+            }
+            docEl.removeChild(fakeBody)
+        }
+    }(window, document))
+</script>
     <title>剪辑包装创意班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1587002425038">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587002425038">
-<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1587002425038">
-    <link rel="stylesheet" href="/assets/css/yingshi/ysjj.css?v=1587002425038">
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1592537531003">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1592537531003">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1592537531003">
+    <link rel="stylesheet" href="/assets/css/yingshi/ysjj.css?v=1592537531003">
 </head>
 
 <body>
@@ -17,18 +61,17 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html" style="color: #fff;">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
-    
-    影视视效课程
-    
-    
+     影视视效课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
-            <a href="/yingshi/ysqn.html">影视后期全能班</a>
+            <a href="/yingshi/ysqn.html">影视视效全能班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/yingshi/ystx.html">影视特效合成大师班</a>
+            <a href="/yingshi/ystx.html">特效合成大师班</a>
         </li>
         <li class="header-menu-second">
             <a href="/yingshi/ysjj.html">剪辑包装创意班</a>
@@ -42,72 +85,93 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    游戏视觉课程
-    
-    
+     游戏视觉课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
-            <a href="/youxi/yxqn.html">游戏视觉设计全能班</a>
+            <a href="/youxi/yxqn.html">游戏视觉全能班</a>
         </li>
         <li class="header-menu-second">
             <a href="/youxi/yxyh.html">游戏原画创意班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/youxi/yxms.html">游戏3D美术精英班</a>
+            <a href="/youxi/yxms.html">3D美术精英班</a>
         </li>
         <li class="header-menu-second">
             <a href="/youxi/yxrj.html">游戏软件精英班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/youxi/yxtx.html">游戏动作特效精英班</a>
+            <a href="/youxi/yxtx.html">动作特效精英班</a>
         </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    APEC室内课程
-    
-    
+     室内设计课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snqk.html">APEC室内设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/cad.html">CAD制图大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snrz.html">室内软装精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    UX全栈课程
-    
-    
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    建筑视效课程
-    
-    
+     建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    BIM应用课程
-    
-    
+     BIM应用课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/bim/bimqn.html">BIM应用全能班</a>
@@ -123,28 +187,36 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html" style="color: #fff;">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html" style="color: #fff;">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html" style="color: #fff;">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
                     <li class="header-menu-first arrow-right">
-    
-    
-    影视视效
-    
+      影视视效 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
-            <a href="/yingshi/ysqn.html">影视后期全能班</a>
+            <a href="/yingshi/ysqn.html">影视视效全能班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/yingshi/ystx.html">影视特效合成大师班</a>
+            <a href="/yingshi/ystx.html">特效合成大师班</a>
         </li>
         <li class="header-menu-second">
             <a href="/yingshi/ysjj.html">剪辑包装创意班</a>
@@ -158,72 +230,93 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    
-    游戏视觉
-    
+      游戏视觉 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
-            <a href="/youxi/yxqn.html">游戏视觉设计全能班</a>
+            <a href="/youxi/yxqn.html">游戏视觉全能班</a>
         </li>
         <li class="header-menu-second">
             <a href="/youxi/yxyh.html">游戏原画创意班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/youxi/yxms.html">游戏3D美术精英班</a>
+            <a href="/youxi/yxms.html">3D美术精英班</a>
         </li>
         <li class="header-menu-second">
             <a href="/youxi/yxrj.html">游戏软件精英班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/youxi/yxtx.html">游戏动作特效精英班</a>
+            <a href="/youxi/yxtx.html">动作特效精英班</a>
         </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    
-    APEC室内
-    
+      室内设计 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snqk.html">APEC室内设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/cad.html">CAD制图大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snrz.html">室内软装精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    
-    UX全栈
-    
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    
-    建筑视效
-    
+      建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    
-    BIM应用
-    
+      BIM应用 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/bim/bimqn.html">BIM应用全能班</a>
@@ -241,18 +334,23 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
 <div class="header-mask" id="header-mask"></div>
-<script src="/assets/js/libs/lib-flexible.js"></script>
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img class="banner-cover" src="/assets/images/yingshi/ysjj/banner.jpg?v=1587002425038" alt="">
+                <img class="banner-cover" src="/assets/images/yingshi/ysjj/banner.jpg?v=1592537531003" alt="">
             </a>
         </div>
         <!-- 丝路教育学员 -->
@@ -264,27 +362,27 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon1.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon1.png?v=1592537531003" alt="">
                         <h3>0元试听</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon2.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon2.png?v=1592537531003" alt="">
                         <h3>先学后付</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon3.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon3.png?v=1592537531003" alt="">
                         <h3>免费重修</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon4.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon4.png?v=1592537531003" alt="">
                         <h3>名师面授</h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon5.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon5.png?v=1592537531003" alt="">
                         <h3>商业实训 </h3>
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon6.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/icon6.png?v=1592537531003" alt="">
                         <h3>名企就业</h3>
                     </div>
                 </div>
@@ -301,11 +399,11 @@
                     <br>5G来临再掀狂潮
                 </div>
                 <div class="treasure-land-sec1">
-                    <img src="/assets/images/yingshi/ysjj/pj1.png?v=1587002425038" alt="">
+                    <img src="/assets/images/yingshi/ysjj/pj1.png?v=1592537531003" alt="">
                 </div>
                 <div class="treasure-land-sec2">
-                    <img src="/assets/images/yingshi/ysjj/pj2.png?v=1587002425038" alt="">
-                    <img src="/assets/images/yingshi/ysjj/pj3.png?v=1587002425038" alt="">
+                    <img src="/assets/images/yingshi/ysjj/pj2.png?v=1592537531003" alt="">
+                    <img src="/assets/images/yingshi/ysjj/pj3.png?v=1592537531003" alt="">
                 </div>
 
                 <div class="section-btn">
@@ -330,57 +428,55 @@
                     </div>
                     <div class="section-list">
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy1.jpg?v=1587002425038" alt="">
+                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy1.jpg?v=1592537531003" alt="">
                             <div class="section-txt section-abs">
                                 影视后期制作
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy2.jpg?v=1587002425038" alt="">
+                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy2.jpg?v=1592537531003" alt="">
                             <div class="section-txt section-abs">
                                 综艺创意包装
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy3.jpg?v=1587002425038" alt="">
+                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy3.jpg?v=1592537531003" alt="">
                             <div class="section-txt section-abs">
                                 短视频/vlog剪辑
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy4.jpg?v=1587002425038" alt="">
+                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy4.jpg?v=1592537531003" alt="">
                             <div class="section-txt section-abs">
                                 宣传片制作
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy5.jpg?v=1587002425038" alt="">
+                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy5.jpg?v=1592537531003" alt="">
                             <div class="section-txt section-abs">
                                 商业广告制作
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy6.jpg?v=1587002425038" alt="">
+                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy6.jpg?v=1592537531003" alt="">
                             <div class="section-txt section-abs">
                                 电商视觉设计
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy7.jpg?v=1587002425038" alt="">
+                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy7.jpg?v=1592537531003" alt="">
                             <div class="section-txt section-abs">
                                 MG动画制作
                             </div>
                         </div>
                         <div class="section-item">
-                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy8.jpg?v=1587002425038" alt="">
+                            <img class="section-cover" src="/assets/images/yingshi/ysjj/zy8.jpg?v=1592537531003" alt="">
                             <div class="section-txt section-abs">
                                 个人独立接单
                             </div>
                         </div>
                     </div>
-                    <div class="section-btn">
-                        <a class="btn doyoo-btn">测一测自己适合哪类岗位</a>
-                    </div>
+
                 </div>
             </div>
             <div class="film-editing-sec2">
@@ -392,7 +488,7 @@
                             岗位薪资高、晋升快
                         </div>
                     </div>
-                    <img src="/assets/images/yingshi/ysjj/xz.png?v=1587002425038" alt="">
+                    <img src="/assets/images/yingshi/ysjj/xz.png?v=1592537531003" alt="">
                     <div class="section-btn">
                         <a class="btn doyoo-btn">测一测自己适合哪类岗位</a>
                     </div>
@@ -414,7 +510,7 @@
                             覆盖主流软件<br> 0基础也可速成
                         </div>
                     </div>
-                    <img src="/assets/images/yingshi/ysjj/gj.png?v=1587002425038" alt="">
+                    <img src="/assets/images/yingshi/ysjj/gj.png?v=1592537531003" alt="">
                     <div class="section-btn">
                         <a class="btn doyoo-btn">免费领取软件教程</a>
                     </div>
@@ -431,7 +527,7 @@
                         </div>
                     </div>
                     <div class="film-editing-list">
-                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysjj/kc1.png) no-repeat center;?v=1587002425038">
+                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysjj/kc1.png) no-repeat center;background-size: cover;?v=1592537531003">
                             <div class="film-editing-txt">
                                 <h3>视频包装设计</h3>
                                 <ul>
@@ -447,7 +543,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysjj/kc2.png) no-repeat center;?v=1587002425038">
+                        <div class="film-editing-item" style="background: url(/assets/images/yingshi/ysjj/kc2.png) no-repeat center;background-size: cover;?v=1592537531003">
                             <div class="film-editing-txt">
                                 <h3>艺术剪辑设计</h3>
                                 <ul>
@@ -486,22 +582,22 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/images/yingshi/ysjj/js1.png?v=1587002425038" alt="">
+                            <img src="/assets/images/yingshi/ysjj/js1.png?v=1592537531003" alt="">
                             <h3>《中华儿女》</h3>
                             <dd>国庆70周年阅兵式北京彩车LED数字影像视频</dd>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/yingshi/ysjj/js2.png?v=1587002425038" alt="">
+                            <img src="/assets/images/yingshi/ysjj/js2.png?v=1592537531003" alt="">
                             <h3>《乾隆南巡图》</h3>
                             <dd>为历史画卷制作数字复原动画，现为国家博物馆“一级馆藏”</dd>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/yingshi/ysjj/js3.png?v=1587002425038" alt="">
+                            <img src="/assets/images/yingshi/ysjj/js3.png?v=1592537531003" alt="">
                             <h3>《哪吒之魔童降世》</h3>
                             <dd>丝路联合阿里布局“云渲染”，为该影片提供动画渲染服务</dd>
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/yingshi/ysjj/js4.png?v=1587002425038" alt="">
+                            <img src="/assets/images/yingshi/ysjj/js4.png?v=1592537531003" alt="">
                             <h3>《战狼2》</h3>
                             <dd>丝路旗下瑞云科技为该影片提供场景、动画等渲染服务</dd>
                         </div>
@@ -534,16 +630,16 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/ls1.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/ls1.png?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/ls2.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/ls2.png?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/ls3.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/ls3.png?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/ls4.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/ls4.png?v=1592537531003" alt="">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -559,7 +655,7 @@
                     学员阶段作品
                     <br>点滴记录进步
                 </div>
-                <img src="/assets/images/yingshi/ysjj/zp.png?v=1587002425038" alt="">
+                <img src="/assets/images/yingshi/ysjj/zp.png?v=1592537531003" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">查看更多作品</a>
                 </div>
@@ -573,13 +669,16 @@
                     内部项目特供实训阶段
                     <br>学员涨经验、赚学费
                 </div>
+                <div class="section-describe">
+                    实训阶段均由总监级讲师带队，承接丝路集团内部项目，不仅让学员在实践中获取经验，优秀团队学员还将获得项目提成奖励，在校期间即可赚回学费！
+                </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/images/yingshi/ysjj/al1.png?v=1587002425038" alt="">
+                            <img src="/assets/images/yingshi/ysjj/al1.png?v=1592537531003" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/yingshi/ysjj/al2.png?v=1587002425038" alt="">
+                            <img src="/assets/images/yingshi/ysjj/al2.png?v=1592537531003" alt="">
                         </div>
 
                     </div>
@@ -602,16 +701,16 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/xy1.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/xy1.png?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/xy2.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/xy2.png?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/xy3.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/xy3.png?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img class="section-cover" src="/assets/images/yingshi/ysjj/xy4.png?v=1587002425038" alt="">
+                        <img class="section-cover" src="/assets/images/yingshi/ysjj/xy4.png?v=1592537531003" alt="">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -627,7 +726,7 @@
                     6大就业保障
                     <br>让你掌握求职主动权
                 </div>
-                <img src="/assets/images/yingshi/ysjj/sixbz.png?v=1587002425038" alt="">
+                <img src="/assets/images/yingshi/ysjj/sixbz.png?v=1592537531003" alt="">
             </div>
         </div>
 
@@ -637,7 +736,10 @@
                 <div class="section-title">
                     3000+名企合作<br>直通高薪岗位
                 </div>
-                <img src="/assets/images/yingshi/c4d/logo.jpg?v=1587002425038" alt="">
+                <img src="/assets/images/yingshi/c4d/logo.jpg?v=1592537531003" alt="">
+                <div class="section-btn">
+                    <a class="btn doyoo-btn">查看企业招聘信息</a>
+                </div>
             </div>
         </div>
 
@@ -647,43 +749,45 @@
                 <div class="section-title">
                     你是否还在担心以下问题？
                 </div>
-                <div class="worry-question-list">
-                    <div class="worry-question-item">
-                        <div class="worry-question-txt">我学历低，没有基础，能学会吗？</div>
-                        <div class="worry-question-btn">查看答案</div>
+                <a class="doyoo-btn">
+                    <div class="worry-question-list">
+                        <div class="worry-question-item">
+                            <div class="worry-question-txt">我学历低，没有基础，能学会吗？</div>
+                            <div class="worry-question-btn">查看答案</div>
+                        </div>
+                        <div class="worry-question-item">
+                            <div class="worry-question-txt">学费是多少？最近有没有优惠？</div>
+                            <div class="worry-question-btn">查看答案</div>
+                        </div>
+                        <div class="worry-question-item">
+                            <div class="worry-question-txt">真的可以贷款学习吗？</div>
+                            <div class="worry-question-btn">查看答案</div>
+                        </div>
+                        <div class="worry-question-item">
+                            <div class="worry-question-txt">要学多长时间，上课时间是怎么安排的？</div>
+                            <div class="worry-question-btn">查看答案</div>
+                        </div>
+                        <div class="worry-question-item">
+                            <div class="worry-question-txt">白天没有时间学，晚上学可以吗？</div>
+                            <div class="worry-question-btn">查看答案</div>
+                        </div>
+                        <div class="worry-question-item">
+                            <div class="worry-question-txt">有周末班吗？</div>
+                            <div class="worry-question-btn">查看答案</div>
+                        </div>
+                        <div class="worry-question-item">
+                            <div class="worry-question-txt">学不会能重新学吗？</div>
+                            <div class="worry-question-btn">查看答案</div>
+                        </div>
                     </div>
-                    <div class="worry-question-item">
-                        <div class="worry-question-txt">学费是多少？最近有没有优惠？</div>
-                        <div class="worry-question-btn">查看答案</div>
-                    </div>
-                    <div class="worry-question-item">
-                        <div class="worry-question-txt">真的可以贷款学习吗？</div>
-                        <div class="worry-question-btn">查看答案</div>
-                    </div>
-                    <div class="worry-question-item">
-                        <div class="worry-question-txt">要学多长时间，上课时间是怎么安排的？</div>
-                        <div class="worry-question-btn">查看答案</div>
-                    </div>
-                    <div class="worry-question-item">
-                        <div class="worry-question-txt">白天没有时间学，晚上学可以吗？</div>
-                        <div class="worry-question-btn">查看答案</div>
-                    </div>
-                    <div class="worry-question-item">
-                        <div class="worry-question-txt">有周末班吗？</div>
-                        <div class="worry-question-btn">查看答案</div>
-                    </div>
-                    <div class="worry-question-item">
-                        <div class="worry-question-txt">学不会能重新学吗？</div>
-                        <div class="worry-question-btn">查看答案</div>
-                    </div>
-                </div>
+                </a>
             </div>
             <div class="section-btn">
                 <a class="btn doyoo-btn">咨询更多问题</a>
             </div>
         </div>
 
-        <!-- 表单统计 -->
+
         <!-- 表单统计 -->
 
         <div class="section-form">
@@ -703,28 +807,42 @@
             </form>
         </div>
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> 
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
-        doyooBtns[i].onclick = function () {
-            doyoo.util.openChat('g=10075108'); return false;
+        doyooBtns[i].onclick = function() {
+            doyoo.util.openChat('g=10075108');
+            return false;
         }
     }
 </script>
+<!-- 表单 -->
+<script src="/assets/js/plugs/formbd.js"></script>
 
-<!-- 表单 -->
-<script src="/assets/js/plugs/formbd.js"></script>
+</div>
 
 
-    <!-- 表单 -->
-    <script src="/static/js/formbd.js"></script>
+
 </body>
 
 </html>

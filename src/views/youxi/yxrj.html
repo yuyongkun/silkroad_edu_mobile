@@ -4,12 +4,56 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script>
+    (function flexible(window, document) {
+        var docEl = document.documentElement
+        var dpr = window.devicePixelRatio || 1
 
-    <title>C4D特效大师班</title>
-    <link rel="stylesheet" href="/assets/js/plugs/vide7.4.1/css/video-js.min.css?v=1587002425038">
-<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1587002425038">
-<link rel="stylesheet" href="/assets/js/plugs/swiper/swiper.min.css?v=1587002425038">
-    <link rel="stylesheet" href="/assets/css/youxi/yxrj.css?v=1587002425038">
+        // adjust body font size
+        function setBodyFontSize() {
+            if (document.body) {
+                document.body.style.fontSize = (12 * dpr) + 'px'
+            } else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            }
+        }
+        setBodyFontSize();
+
+        // set 1rem = viewWidth / 10
+        function setRemUnit() {
+            var rem = docEl.clientWidth / 10
+            docEl.style.fontSize = rem + 'px'
+        }
+
+        setRemUnit()
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit)
+        window.addEventListener('pageshow', function(e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+        })
+
+        // detect 0.5px supports
+        if (dpr >= 2) {
+            var fakeBody = document.createElement('body')
+            var testElement = document.createElement('div')
+            testElement.style.border = '.5px solid transparent'
+            fakeBody.appendChild(testElement)
+            docEl.appendChild(fakeBody)
+            if (testElement.offsetHeight === 1) {
+                docEl.classList.add('hairlines')
+            }
+            docEl.removeChild(fakeBody)
+        }
+    }(window, document))
+</script>
+    <title>游戏软件精英班</title>
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1592537531003">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1592537531003">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1592537531003">
+    <link rel="stylesheet" href="/assets/css/youxi/yxrj.css?v=1592537531003">
 </head>
 
 <body>
@@ -17,18 +61,17 @@
     <div class="header-tp" id="header-tp">
         <div class="header-menu"></div>
         <ul class="header-menu-list">
-            <li class="header-menu-first">首页</li>
+            <li class="header-menu-first">
+                <a href="/index.html" style="color: #fff;">首页</a>
+            </li>
             <li class="header-menu-first arrow-right">
-    
-    影视视效课程
-    
-    
+     影视视效课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
-            <a href="/yingshi/ysqn.html">影视后期全能班</a>
+            <a href="/yingshi/ysqn.html">影视视效全能班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/yingshi/ystx.html">影视特效合成大师班</a>
+            <a href="/yingshi/ystx.html">特效合成大师班</a>
         </li>
         <li class="header-menu-second">
             <a href="/yingshi/ysjj.html">剪辑包装创意班</a>
@@ -42,72 +85,93 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    游戏视觉课程
-    
-    
+     游戏视觉课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
-            <a href="/youxi/yxqn.html">游戏视觉设计全能班</a>
+            <a href="/youxi/yxqn.html">游戏视觉全能班</a>
         </li>
         <li class="header-menu-second">
             <a href="/youxi/yxyh.html">游戏原画创意班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/youxi/yxms.html">游戏3D美术精英班</a>
+            <a href="/youxi/yxms.html">3D美术精英班</a>
         </li>
         <li class="header-menu-second">
             <a href="/youxi/yxrj.html">游戏软件精英班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/youxi/yxtx.html">游戏动作特效精英班</a>
+            <a href="/youxi/yxtx.html">动作特效精英班</a>
         </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    APEC室内课程
-    
-    
+     室内设计课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snqk.html">APEC室内设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/cad.html">CAD制图大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snrz.html">室内软装精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    UX全栈课程
-    
-    
+     U X 全栈课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    建筑视效课程
-    
-    
+     建筑视效课程  
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    BIM应用课程
-    
-    
+     BIM应用课程  
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/bim/bimqn.html">BIM应用全能班</a>
@@ -123,28 +187,36 @@
         </li>
     </ul>
 </li>
-            <li class="header-menu-first">联系我们</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html" style="color: #fff;">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html" style="color: #fff;">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html" style="color: #fff;">联系我们</a>
+            </li>
+
         </ul>
         <div class="header-logo"></div>
         <div class="header-phone"></div>
     </div>
     <div class="header-nav">
         <ul class="header-nav-wrap">
-            <li class="header-nav-first header-nav-active">首页</li>
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
             <li class="header-nav-first" id="header-nav-first-course">课程
                 <span class="arrow-down"></span>
                 <ul class="header-nav-course">
                     <li class="header-menu-first arrow-right">
-    
-    
-    影视视效
-    
+      影视视效 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
-            <a href="/yingshi/ysqn.html">影视后期全能班</a>
+            <a href="/yingshi/ysqn.html">影视视效全能班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/yingshi/ystx.html">影视特效合成大师班</a>
+            <a href="/yingshi/ystx.html">特效合成大师班</a>
         </li>
         <li class="header-menu-second">
             <a href="/yingshi/ysjj.html">剪辑包装创意班</a>
@@ -158,72 +230,93 @@
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    
-    游戏视觉
-    
+      游戏视觉 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
-            <a href="/youxi/yxqn.html">游戏视觉设计全能班</a>
+            <a href="/youxi/yxqn.html">游戏视觉全能班</a>
         </li>
         <li class="header-menu-second">
             <a href="/youxi/yxyh.html">游戏原画创意班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/youxi/yxms.html">游戏3D美术精英班</a>
+            <a href="/youxi/yxms.html">3D美术精英班</a>
         </li>
         <li class="header-menu-second">
             <a href="/youxi/yxrj.html">游戏软件精英班</a>
         </li>
         <li class="header-menu-second">
-            <a href="/youxi/yxtx.html">游戏动作特效精英班</a>
+            <a href="/youxi/yxtx.html">动作特效精英班</a>
         </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    
-    APEC室内
-    
+      室内设计 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/shinei/snqk.html">APEC室内设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/cad.html">CAD制图大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snrz.html">室内软装精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    
-    UX全栈
-    
+      UX 全栈 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    
-    建筑视效
-    
+      建筑视效 
     <ul class="header-menu-secondlist">
-        <li class="header-menu-second">影视后期全能班</li>
-        <li class="header-menu-second">影视特效合成大师班</li>
-        <li class="header-menu-second">剪辑包装创意班</li>
-        <li class="header-menu-second">影视动画精英班</li>
-        <li class="header-menu-second">C4D特效大师班</li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
     </ul>
 </li>
 <li class="header-menu-first arrow-right">
-    
-    
-    BIM应用
-    
+      BIM应用 
     <ul class="header-menu-secondlist">
         <li class="header-menu-second">
             <a href="/bim/bimqn.html">BIM应用全能班</a>
@@ -241,18 +334,23 @@
 </li>
                 </ul>
             </li>
-            <li class="header-nav-first">名师</li>
-            <li class="header-nav-first">就业</li>
-            <li class="header-nav-first">关于丝路</li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
         </ul>
     </div>
 </div>
 <div class="header-mask" id="header-mask"></div>
-<script src="/assets/js/libs/lib-flexible.js"></script>
     <div class="layout">
         <div class="banner">
             <a class="doyoo-btn">
-                <img class="banner-cover" src="/assets/images/youxi/yxrj/banner.jpg?v=1587002425038" alt="">
+                <img class="banner-cover" src="/assets/images/youxi/yxrj/banner.jpg?v=1592537531003" alt="">
             </a>
         </div>
         <div class="section section-bg-write hot-software-sec">
@@ -271,8 +369,8 @@
                             <div class="section-nav-item">Unity 3D引擎</div>
                         </div>
                         <div class="section-tab-list">
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-1.jpg?v=1587002425038" alt=""></div>
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-1.jpg?v=1587002425038" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-1.jpg?v=1592537531003" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-2.jpg?v=1592537531003" alt=""></div>
                         </div>
                     </div>
                     <div class="hot-software-item">
@@ -284,10 +382,10 @@
                             <div class="section-nav-item">Substance Painter</div>
                         </div>
                         <div class="section-tab-list">
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-1.jpg?v=1587002425038" alt=""></div>
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-1.jpg?v=1587002425038" alt=""></div>
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-1.jpg?v=1587002425038" alt=""></div>
-                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj1-1.jpg?v=1587002425038" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-1.jpg?v=1592537531003" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-2.jpg?v=1592537531003" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-3.jpg?v=1592537531003" alt=""></div>
+                            <div class="section-tab-col"> <img src="/assets/images/youxi/yxrj/rj2-4.jpg?v=1592537531003" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -301,7 +399,10 @@
                         学软件，做游戏，拿高薪
                     </b>
                 </div>
-                <img src="/assets/images/youxi/yxrj/xinzi.jpg?v=1587002425038" alt="">
+                <img src="/assets/images/youxi/yxrj/xinzi.jpg?v=1592537531003" alt="">
+                <div class="section-btn">
+                    <a class="btn doyoo-btn">测一测我适合学吗？</a>
+                </div>
             </div>
         </div>
         <div class="section section-bg-write">
@@ -315,12 +416,12 @@
                 <div class="section-describe">
                     掌握游戏主流软件，更好“淘金”
                 </div>
-                <img src="/assets/images/youxi/yxrj/dachang1.jpg?v=1587002425038" alt="">
+                <img src="/assets/images/youxi/yxrj/dachang1.jpg?v=1592537531003" alt="">
                 <br><br>
                 <div class="section-describe">
                     游戏产业概况
                 </div>
-                <img src="/assets/images/youxi/yxrj/dachang2.jpg?v=1587002425038" alt="">
+                <img src="/assets/images/youxi/yxrj/dachang2.jpg?v=1592537531003" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">查看更多薪资</a>
                 </div>
@@ -335,9 +436,9 @@
                 <div class="line"></div>
                 <div class="section-describe">
                     丝路教育深耕游戏培训十数年，拥有完善的培训与就业体系，学员毕业即就业，85%的毕业学员入职2-3年
-                    晋升管理层！
+                    <br/>晋升管理层！
                 </div>
-                <img src="/assets/images/youxi/yxrj/duibi.jpg?v=1587002425038" alt="">
+                <img src="/assets/images/youxi/yxrj/duibi.jpg?v=1592537531003" alt="">
             </div>
         </div>
         <div class="section section-bg-write autodesk-official-sec">
@@ -353,10 +454,12 @@
                 </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1587002425038" alt=""></div>
-                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1587002425038" alt=""></div>
-                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1587002425038" alt=""></div>
-                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1587002425038" alt=""></div>
+                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs1.jpg?v=1592537531003" alt=""></div>
+                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs2.jpg?v=1592537531003" alt=""></div>
+                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs3.jpg?v=1592537531003" alt=""></div>
+                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs4.jpg?v=1592537531003" alt=""></div>
+                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs5.jpg?v=1592537531003" alt=""></div>
+                        <div class="swiper-slide"> <img src="/assets/images/youxi/yxrj/zs6.jpg?v=1592537531003" alt=""></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -371,7 +474,7 @@
                         一身神装战职场
                     </b>
                 </div>
-                <img src="/assets/images/youxi/yxrj/ruanjian1.jpg?v=1587002425038" alt="">
+                <img src="/assets/images/youxi/yxrj/ruanjian1.jpg?v=1592537531003" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">领取学习教程</a>
                 </div>
@@ -405,103 +508,103 @@
                     </div>
                     <div class="fivestep-method-item">
                         <dl>
-                            <dt>Body Painter课程大纲</dt>
+                            <dt>UE4（虚幻4）引擎课程大纲</dt>
                             <dd>
-                                软件基础界面熟悉与操作
+                                UE4引擎基础功能模块
                             </dd>
                             <dd>
-                                场景原画设计的原理
+                                FPS、RPG等多类型游戏功能实现
                             </dd>
                             <dd>
-                                自然地貌绘制与场景模型的制作
+                                蓝图与代码功能操作
                             </dd>
                             <dd>
-                                四方连续、二方连续贴图的使用
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="fivestep-method-item">
-                        <dl>
-                            <dt>Body Painter课程大纲</dt>
-                            <dd>
-                                软件基础界面熟悉与操作
-                            </dd>
-                            <dd>
-                                场景原画设计的原理
-                            </dd>
-                            <dd>
-                                自然地貌绘制与场景模型的制作
-                            </dd>
-                            <dd>
-                                四方连续、二方连续贴图的使用
+                                UE4引擎创建内容编辑与最终生成
                             </dd>
                         </dl>
                     </div>
                     <div class="fivestep-method-item">
                         <dl>
-                            <dt>Body Painter课程大纲</dt>
+                            <dt>Unity3D引擎课程大纲</dt>
                             <dd>
-                                软件基础界面熟悉与操作
+                                Unity3D界面与基础操作
                             </dd>
                             <dd>
-                                场景原画设计的原理
+                                功能面板与高级控件
                             </dd>
                             <dd>
-                                自然地貌绘制与场景模型的制作
+                                Unity脚本、游戏场景创建
                             </dd>
                             <dd>
-                                四方连续、二方连续贴图的使用
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="fivestep-method-item">
-                        <dl>
-                            <dt>Body Painter课程大纲</dt>
-                            <dd>
-                                软件基础界面熟悉与操作
-                            </dd>
-                            <dd>
-                                场景原画设计的原理
-                            </dd>
-                            <dd>
-                                自然地貌绘制与场景模型的制作
-                            </dd>
-                            <dd>
-                                四方连续、二方连续贴图的使用
+                                UI系统设置与优化呈现
                             </dd>
                         </dl>
                     </div>
                     <div class="fivestep-method-item">
                         <dl>
-                            <dt>Body Painter课程大纲</dt>
+                            <dt>MAYA课程大纲</dt>
                             <dd>
-                                软件基础界面熟悉与操作
+                                Maya软件基础操作与基础建模
                             </dd>
                             <dd>
-                                场景原画设计的原理
+                                游戏场景/道具/人物建模
                             </dd>
                             <dd>
-                                自然地貌绘制与场景模型的制作
+                                贴图/材质制作与灯光渲染应用
                             </dd>
                             <dd>
-                                四方连续、二方连续贴图的使用
+                                布料模拟/粒子特效等动效实现
                             </dd>
                         </dl>
                     </div>
                     <div class="fivestep-method-item">
                         <dl>
-                            <dt>Body Painter课程大纲</dt>
+                            <dt>3ds MAX课程大纲</dt>
                             <dd>
-                                软件基础界面熟悉与操作
+                                3ds MAX软件基础与插件应用
                             </dd>
                             <dd>
-                                场景原画设计的原理
+                                次世代游戏角色/道具/场景建模
                             </dd>
                             <dd>
-                                自然地貌绘制与场景模型的制作
+                                高清贴图与皮肤褶皱/人体毛发
                             </dd>
                             <dd>
-                                四方连续、二方连续贴图的使用
+                                游戏角色动作与特效制作
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="fivestep-method-item">
+                        <dl>
+                            <dt>ZBrush课程大纲</dt>
+                            <dd>
+                                ZBrush道具/人体雕刻造型
+                            </dd>
+                            <dd>
+                                ZBrush贴图投射技法与渲染
+                            </dd>
+                            <dd>
+                                多类型模型机构细节和布线技巧
+                            </dd>
+                            <dd>
+                                皮肤装备纹理的绘制表现技巧
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="fivestep-method-item">
+                        <dl>
+                            <dt>Substance Painter课程大纲</dt>
+                            <dd>
+                                软件基础界面与新建项目
+                            </dd>
+                            <dd>
+                                烘焙贴图与手绘贴图
+                            </dd>
+                            <dd>
+                                多层叠加贴图与渲染
+                            </dd>
+                            <dd>
+                                多风格道具/人像/硬材质制作
                             </dd>
                         </dl>
                     </div>
@@ -519,17 +622,17 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/tec1.jpg?v=1587002425038" alt="">
+                        <img src="/assets/images/youxi/yxrj/tec1.jpg?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/tec2.jpg?v=1587002425038" alt="">
+                        <img src="/assets/images/youxi/yxrj/tec2.jpg?v=1592537531003" alt="">
+                    </div>
+                    <!-- <div class="section-item">
+                        <img src="/assets/images/youxi/yxrj/tec3.jpg?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/tec3.jpg?v=1587002425038" alt="">
-                    </div>
-                    <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/tec4.jpg?v=1587002425038" alt="">
-                    </div>
+                        <img src="/assets/images/youxi/yxrj/tec4.jpg?v=1592537531003" alt="">
+                    </div> -->
                 </div>
                 <div class="section-btn">
                     <a class="btn doyoo-btn">一键与老师聊课程</a>
@@ -549,16 +652,16 @@
                 </div>
                 <div class="section-list">
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/stu1.jpg?v=1587002425038" alt="">
+                        <img src="/assets/images/youxi/yxrj/stu1.jpg?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/stu2.jpg?v=1587002425038" alt="">
+                        <img src="/assets/images/youxi/yxrj/stu2.jpg?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/stu3.jpg?v=1587002425038" alt="">
+                        <img src="/assets/images/youxi/yxrj/stu3.jpg?v=1592537531003" alt="">
                     </div>
                     <div class="section-item">
-                        <img src="/assets/images/youxi/yxrj/stu4.jpg?v=1587002425038" alt="">
+                        <img src="/assets/images/youxi/yxrj/stu4.jpg?v=1592537531003" alt="">
                     </div>
                 </div>
                 <div class="section-btn">
@@ -576,9 +679,9 @@
                 </div>
                 <div class="section-describe">
                     在校学习有机会参与一线大厂项目制作，
-                    涨经验还拿奖金！
+                    <br/> 涨经验还拿奖金！
                 </div>
-                <img src="/assets/images/youxi/yxrj/shixun.png?v=1587002425038" alt="">
+                <img src="/assets/images/youxi/yxrj/shixun.png?v=1592537531003" alt="">
                 <div class="section-btn">
                     <a class="btn doyoo-btn">了解项目实训过程</a>
                 </div>
@@ -589,46 +692,64 @@
                 <div class="section-title">
                     丝路与3000+名企合作
                     <br><b>
-                        助你搭乘高薪直通车
+                        达成人才战略合作
                     </b>
                 </div>
-                <img src="/assets/images/youxi/yxrj/logo.png?v=1587002425038" alt="">
+                <img src="/assets/images/youxi/yxrj/logo.png?v=1592537531003" alt="">
             </div>
         </div>
         <!-- 表单统计 -->
         <div class="section-form">
-            <form action="/plus/diy.php?v=1587002425038" enctype="multipart/form-data" method="post"
-                onsubmit="return checkMobile(this);">
+            <form id="form">
+
                 <div class="form-group">
-                    <input type='text' name='name' placeholder="姓名：" class="form-control" />
+                    <input type='text' name='name' id="name" placeholder="请输入您的姓名" class="form-control" />
                 </div>
                 <div class="form-group">
-                    <input type="text" name='tel' class="form-control" placeholder="电话：" />
+                    <input type="text" name='tel' id="tel" class="form-control" placeholder="请输入您的手机号码" />
                 </div>
+                <input type="text" name='time' id='time' style="display: none;" />
+
                 <div class="form-submit">
-                    <button class="btn" type="submit">预约免费试学</button>
+                    <button class="btn" type="button" onclick="add_ajaxmessage()"> 预约免费试学</button>
                 </div>
             </form>
         </div>
+
     </div>
-    <script src="/assets/js/libs/jquery.min.js"></script>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
 <script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
 <script src="/assets/js/plugs/picViewer/picViewer.js"></script>
 <script src="/assets/js/plugs/swiper/swiper.js"></script>
 <script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
 <script src="/assets/js/global/common.js"></script>
-<!-- <script src="http://op.jiain.net/20002985/10085553.js"></script> -->
+<script src="http://op.jiain.net/20002985/10085553.js"></script> 
 <script>
     var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
     for (var i = 0, len = doyooBtns.length; i < len; i++) {
-        doyooBtns[i].onclick = function () {
-            doyoo.util.openChat('g=10075108'); return false;
+        doyooBtns[i].onclick = function() {
+            doyoo.util.openChat('g=10075108');
+            return false;
         }
     }
 </script>
+<!-- 表单 -->
+<script src="/assets/js/plugs/formbd.js"></script>
 
-<!-- 表单 -->
-<script src="/assets/js/plugs/formbd.js"></script>
+</div>
 </body>
 
 </html>

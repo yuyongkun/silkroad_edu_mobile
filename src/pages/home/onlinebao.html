@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../layout/_meta.html')
+    <title>在线报名</title>
+    @@include('../layout/_link.html')
+    <link rel="stylesheet" href="/assets/css/home/onlinebao.css">
+</head>
+
+<body>
+    @@include('../layout/_header.html')
+    <div class="layout">
+        <div class="banner">
+            <a class="doyoo-btn">
+                <img class="banner-cover" src="/assets/images/home/onlinebao/banner.jpg" alt="">
+            </a>
+        </div>
+        <!-- 选择丝路教育的4个理由 -->
+        <div class="section section-bg-write learning-guarantee-sec">
+            <div class="container">
+                <div class="section-title">
+                    选择丝路教育的4个理由
+                </div>
+                <img src="/assets/images/home/onlinebao/img1.jpg" alt="">
+
+            </div>
+            <div class="section-btn">
+                <a class="btn doyoo-btn">了解更多</a>
+            </div>
+        </div>
+        <!-- 0基础、低学历 -->
+        <div class="section treasure-land-sec bj">
+            <div class="container">
+                <div class="section-title">
+                    0基础、低学历
+                    <br/>能学会吗？
+                </div>
+                <div class="section-describe">
+                    丝路教育汇集行业名师，培养兴趣、夯实基础、强化提升，在这里“自律使你更自由”。
+                </div>
+                <a class="doyoo-btn">
+                    <img src="/assets/images/home/onlinebao/img2.png" alt="" class="banner-cover">
+                </a>
+            </div>
+            <div class="section-btn">
+                <a class="btn doyoo-btn">我有更多疑问</a>
+            </div>
+        </div>
+        <!-- 丝路教育名企双选会 -->
+        <div class="section section-bg-write treasure-land-sec ">
+            <div class="container">
+                <div class="section-title">
+                    丝路教育名企双选会
+                </div>
+                <img src="/assets/images/home/onlinebao/img1.png" alt="">
+            </div>
+        </div>
+        <!-- 以就业为结果 -->
+        <div class="section treasure-land-sec">
+            <div class="container">
+                <div class="section-title">
+                    以就业为结果
+                    <br>学员口碑爆棚！
+                </div>
+
+                <img src="/assets/images/home/onlinebao/img3.png" alt="">
+
+            </div>
+            <div class="section-btn">
+                <a class="btn doyoo-btn">查看更多就业学员</a>
+            </div>
+        </div>
+
+
+
+        <!-- 表单统计 -->
+
+        <div class="section-form">
+            <form id="form">
+                <div class="form-group form-group-txt">
+                    你还在立2020的小目标
+                    <br> 别人已经学起来
+                </div>
+                <div class="form-group">
+                    <input type='text' name='name' id="name" placeholder="姓名：请填写姓名" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name='tel' id="tel" class="form-control" placeholder="联系方式：请填写手机号码" />
+                </div>
+                <input type="text" name='time' id='time' style="display: none;" />
+
+                <div class="form-submit">
+                    <button class="btn" type="button" onclick="add_ajaxmessage()"> 立即报名享优惠</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    @@include('../layout/_script.html')
+
+
+
+</body>
+
+</html>

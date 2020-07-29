@@ -1,0 +1,90 @@
+@import "../common/variable";
+@import "../common/base";
+.section-serial {
+    text-align: center;
+    font-family: HiraginoSansGB-W3;
+    
+
+    .section-serial-number {
+        font-size: 0.4267rem;
+    }
+
+    .section-serial-line {
+        height: 10px;
+        margin-bottom: 0.3333rem;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .section-serial-txt {
+        font-size: 0.3733rem;
+    }
+    .section-serial-txt1 {
+        font-size: 0.5rem;
+        color: #999;
+    }
+}
+
+.huisedi{
+    background: #eeeeee;
+}
+
+
+//介绍
+.study-design-sec {
+    .section-serial {
+        margin-bottom: 0.6267rem;
+    }
+
+    .study-design-sec2 {
+        margin-top: 1.2933rem;
+    }
+}
+
+
+.heibj{
+background: #222222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 表单
+.section-form {
+    height: 10rem;
+    background: url("/assets/images/home/famousteacher/112.jpg") no-repeat center;
+    background-size: cover;
+    
+
+    form {
+        padding-top: 4rem;
+    }
+}

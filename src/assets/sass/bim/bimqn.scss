@@ -1,6 +1,5 @@
 @import "../common/variable";
 @import "../common/base";
-
 .container {
     padding: 0 0.2667rem;
 }
@@ -13,11 +12,9 @@
 .banner-next-sec {
     padding: 1.3333rem 0rem;
     background: #FAFAFA;
-
     .section-list {
         .section-item {
             width: 30%;
-
             .section-cover {
                 width: 0.8rem;
                 margin-bottom: 0.1333rem;
@@ -29,7 +26,6 @@
 // BIM：国家“十三五” 规划主推技术
 .five-plan-sec {
     background: #FAFAFA;
-
     .section-list {
         .section-item {
             width: 32%;
@@ -44,17 +40,18 @@
         font-size: 0.3733rem;
         color: #F54F23;
     }
-
     .bim-expert-sec1 {
         margin-bottom: 1.3333rem;
-
         .section-list {
+            img {
+                height: 2.9067rem;
+                margin: 0 auto;
+            }
             .section-item {
                 width: 20%;
             }
         }
     }
-
     .bim-expert-sec2 {
         .section-list {
             .section-item {
@@ -89,7 +86,7 @@
         .section-item {
             width: 33.33%;
             text-align: center;
-            .section-cover{
+            .section-cover {
                 width: 1.6rem;
                 height: 1.6rem;
             }
@@ -102,14 +99,13 @@
     height: 7.8667rem;
     background: url("/assets/images/bim/bimqn/foot-bj.jpg") no-repeat center;
     background-size: cover;
-
+    margin-bottom: 15vw;
     .form-group-txt {
         padding-top: 0.9333rem;
         margin-bottom: 0.5333rem;
         font-size: 0.75rem;
         color: #fff;
     }
-
     .btn {
         height: 1.0667rem;
         line-height: 1.0667rem;

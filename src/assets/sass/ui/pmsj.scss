@@ -1,0 +1,200 @@
+@import "../common/variable";
+@import "../common/base";
+.banner-next {
+    box-shadow: 0px 8px 46px 0px rgba(200, 191, 255, 0.38);
+    .section-list {
+        .section-item {
+            width: 25%;
+            padding: 0.5333rem 0rem;
+            text-align: center;
+            h3 {
+                font-size: 0.34rem;
+            }
+            .section-cover {
+                width: 0.8267rem;
+                height: 0.8rem;
+            }
+        }
+    }
+}
+
+.no-worries-sec {
+    .section-list {
+        .section-item {
+            width: 2.9067rem;
+            .section-cover {
+                height: 1.8267rem;
+            }
+            .section-txt {
+                background: #fff;
+                text-align: center;
+                h3 {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+// 传统平面与品牌设计的
+.bim-expert-sec {
+    background: #F5F5F5;
+    .section-list {
+        position: relative;
+        margin-bottom: 0.8667rem;
+        align-items: center;
+        img {
+            display: block;
+        }
+        .bim-expert-arrow1 {
+            width: 0.5333rem;
+            height: 0.4rem;
+        }
+        .bim-expert-arrow2 {
+            position: absolute;
+            width: 0.4rem;
+            height: 0.5333rem;
+            right: 1.5rem;
+            top: 4rem;
+        }
+        .bim-expert-arrow3 {
+            width: 0.5333rem;
+            height: 0.4rem;
+        }
+        .section-item {
+            width: 3.9rem;
+            padding-top: 0.2rem;
+            margin-bottom: 0;
+            text-align: center;
+            background: #fff;
+            h3 {
+                margin-bottom: 0.2rem;
+                font-size: 0.32rem;
+                color: $base-color;
+            }
+            p {
+                padding-bottom: 0.2rem;
+                font-size: 0.32rem;
+                color: #999;
+            }
+            .bim-expert-btm {
+                line-height: 0.6667rem;
+                height: 0.6667rem;
+                font-size: 0.2667rem;
+                background: #FE743E;
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// 独家精编课程
+.intensive-course-sec {
+    .section-list {
+        .section-item {
+            display: flex;
+            background: #F8F8F8;
+            .section-cover {
+                widows: 4.3733rem;
+                height: 2.4667rem;
+            }
+            .section-txt {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 0.6rem 0 0.2667rem;
+                h3 {
+                    margin-bottom: 0.2rem;
+                }
+            }
+        }
+    }
+}
+
+// 每月前100名报名课程送价值2000元手绘课程！
+.delivering-courses-sec {
+    height: 9.68rem;
+    background: url("/assets/images/ui/pmsj/bd.jpg") no-repeat center;
+    background-size: cover;
+    .section-title {
+        color: #fff;
+        font-size: 0.6667rem;
+    }
+    form {
+        width: 8.5333rem;
+        height: 1.0667rem;
+        margin: 0 auto;
+        text-align: center;
+        .form-group {
+            .form-control {
+                width: 100%;
+                border-radius: 8px;
+                border-color: #fff;
+            }
+        }
+        .form-submit {
+            .btn {
+                width: 8.5333rem;
+                height: 1.0667rem;
+            }
+        }
+    }
+}
+
+// 设计大咖全程面授
+.silkroad-strength-sec {
+    .swiper-container {
+        height: 5.7rem;
+        .swiper-wrapper {
+            height: 4.6667rem;
+        }
+        .swiper-pagination {
+            line-height: 1;
+        }
+    }
+}
+
+// 你是否还在担心以下问题？
+.put-action-sec {
+    .section-list {
+        .section-item {
+            display: flex;
+            align-items: center;
+            width: 9rem;
+            height: 0.92rem;
+            margin-bottom: 0.4rem;
+            padding-left: 0.32rem;
+            box-shadow: 0px 0.08rem 0.4rem 0px rgba(86, 101, 178, 0.36);
+            font-size: 0.32rem;
+            border-radius: 0.1067rem 0rem 0rem 0.1067rem;
+            background: #F8F8F8;
+            .put-action-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.6667rem;
+                height: 100%;
+                margin-left: auto;
+                font-size: 0.3467rem;
+                background: #FE743E;
+                color: #fff;
+                border-radius: 0px 8px 8px 0px;
+            }
+        }
+    }
+}
+
+// 表单
+.section-form {
+    height: 11.2133rem;
+    background: url("/assets/images/ui/pmsj/bottom.jpg") no-repeat center;
+    background-size: cover;
+    margin-bottom: 15vw;
+    .form-group-txt {
+        line-height: 1rem;
+        padding-top: 1.8rem;
+        font-size: 0.8rem;
+        color: #fff;
+    }
+}

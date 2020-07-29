@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script>
+    (function flexible(window, document) {
+        var docEl = document.documentElement
+        var dpr = window.devicePixelRatio || 1
+
+        // adjust body font size
+        function setBodyFontSize() {
+            if (document.body) {
+                document.body.style.fontSize = (12 * dpr) + 'px'
+            } else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            }
+        }
+        setBodyFontSize();
+
+        // set 1rem = viewWidth / 10
+        function setRemUnit() {
+            var rem = docEl.clientWidth / 10
+            docEl.style.fontSize = rem + 'px'
+        }
+
+        setRemUnit()
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit)
+        window.addEventListener('pageshow', function(e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+        })
+
+        // detect 0.5px supports
+        if (dpr >= 2) {
+            var fakeBody = document.createElement('body')
+            var testElement = document.createElement('div')
+            testElement.style.border = '.5px solid transparent'
+            fakeBody.appendChild(testElement)
+            docEl.appendChild(fakeBody)
+            if (testElement.offsetHeight === 1) {
+                docEl.classList.add('hairlines')
+            }
+            docEl.removeChild(fakeBody)
+        }
+    }(window, document))
+</script>
+    <title>电商美工精英班</title>
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1592537531003">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1592537531003">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1592537531003">
+    <link rel="stylesheet" href="/assets/css/ui/dsmg.css?v=1592537531003">
+</head>
+
+<body>
+    <div class="header">
+    <div class="header-tp" id="header-tp">
+        <div class="header-menu"></div>
+        <ul class="header-menu-list">
+            <li class="header-menu-first">
+                <a href="/index.html" style="color: #fff;">首页</a>
+            </li>
+            <li class="header-menu-first arrow-right">
+     影视视效课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/yingshi/ysqn.html">影视视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ystx.html">特效合成大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysjj.html">剪辑包装创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysdh.html">影视动画精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/c4d.html">C4D特效大师班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+     游戏视觉课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/youxi/yxqn.html">游戏视觉全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxyh.html">游戏原画创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxms.html">3D美术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxrj.html">游戏软件精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxtx.html">动作特效精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+     室内设计课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/shinei/snqk.html">APEC室内设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/cad.html">CAD制图大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snrz.html">室内软装精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+     U X 全栈课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+     建筑视效课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+     BIM应用课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/bim/bimqn.html">BIM应用全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/bimkz.html">BIM考证精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/revitds.html">Revit大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/lumion.html">Lumion大师班</a>
+        </li>
+    </ul>
+</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html" style="color: #fff;">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html" style="color: #fff;">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html" style="color: #fff;">联系我们</a>
+            </li>
+
+        </ul>
+        <div class="header-logo"></div>
+        <div class="header-phone"></div>
+    </div>
+    <div class="header-nav">
+        <ul class="header-nav-wrap">
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
+            <li class="header-nav-first" id="header-nav-first-course">课程
+                <span class="arrow-down"></span>
+                <ul class="header-nav-course">
+                    <li class="header-menu-first arrow-right">
+      影视视效 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/yingshi/ysqn.html">影视视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ystx.html">特效合成大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysjj.html">剪辑包装创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysdh.html">影视动画精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/c4d.html">C4D特效大师班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+      游戏视觉 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/youxi/yxqn.html">游戏视觉全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxyh.html">游戏原画创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxms.html">3D美术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxrj.html">游戏软件精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxtx.html">动作特效精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+      室内设计 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/shinei/snqk.html">APEC室内设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/cad.html">CAD制图大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snrz.html">室内软装精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+      UX 全栈 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+      建筑视效 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+      BIM应用 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/bim/bimqn.html">BIM应用全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/bimkz.html">BIM考证精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/revitds.html">Revit大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/lumion.html">Lumion大师班</a>
+        </li>
+    </ul>
+</li>
+                </ul>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="header-mask" id="header-mask"></div>
+    <div class="layout">
+        <div class="banner">
+            <a class="doyoo-btn">
+                <img src="/assets/images/ui/dsmg/banner.jpg?v=1592537531003" alt="">
+            </a>
+        </div>
+        <div class="section section-bg-write high-suppliers-sec">
+            <div class="container">
+                <div class="section-title">
+                    高薪电商阳关道<br> 不必去挤独木桥
+                </div>
+                <div class="section-describe">
+                    新零售时代的崛起，电商设计岗位需求日渐旺盛，
+                    <br/>电商设计、网店运营条条大路通高薪。
+                </div>
+                <div class="section-list">
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/pp.jpg?v=1592537531003">
+                    </div>
+                </div>
+                <div class="high-suppliers-sec2">
+                    <div class="high-suppliers-nav">
+                        <h3><span>02</span>电商设计师—紧缺高薪人才</h3>
+                        <p>
+                            优秀的电商设计师是视觉营销大师，<br> “带货”于无形之中！
+                        </p>
+                    </div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/ui/dsmg/zy.jpg?v=1592537531003">
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/ui/dsmg/zy2.jpg?v=1592537531003">
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/ui/dsmg/zy3.jpg?v=1592537531003">
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/ui/dsmg/zy4.jpg?v=1592537531003">
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/ui/dsmg/zy5.jpg?v=1592537531003">
+                        </div>
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/ui/dsmg/zy6.jpg?v=1592537531003">
+                        </div>
+                    </div>
+                    <div class="section-btn">
+                        <a class="doyoo-btn">
+                            <img src="/assets/images/ui/dsmg/ann1.png?v=1592537531003">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section five-plan-sec">
+            <div class="container">
+                <div class="section-title">
+                    <em>丝路电商视效精英班课程</em>
+                    <br> 直击4类人群痛点
+                </div>
+                <div class="section-list">
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/rz1.png?v=1592537531003">
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/rz2.png?v=1592537531003">
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/rz3.png?v=1592537531003">
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/rz4.png?v=1592537531003">
+                    </div>
+                </div>
+                <div class="section-btn">
+                    <a class="doyoo-btn">
+                        <img src="/assets/images/ui/dsmg/ann2.png?v=1592537531003">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section section-bg-write no-worries-sec">
+            <div class="container">
+                <div class="section-title">
+                    一个月<em>18000</em>的电商设计<br>师是怎样炼成的？
+                </div>
+                <div class="no-worries-sec1">
+                    <div class="no-worries-nav">
+                        <h3><span>01</span>有些硬核技能 是自学不来的</h3>
+                    </div>
+                    <div class="no-worrie-tab">
+                        <img src="/assets/images/ui/dsmg/kcan.png?v=1592537531003">
+                    </div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/ui/dsmg/db.png?v=1592537531003">
+                        </div>
+                    </div>
+                </div>
+                <div class="no-worries-sec2">
+                    <div class="no-worries-nav">
+                        <h3><span>02</span>电商专属软件C4D 你值得拥有</h3>
+                    </div>
+                    <div class="section-describe">
+                        C4D是时下电商设计所需最热门的软件， 最为显著的优点是极高的运算速度和强大的渲染插件。 C4D在电商设计方面的应用，让其迅速在设计圈蹿红 催生了一大批岗位需求，从大厂到网店， 人才可谓是千金难求。
+                    </div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/ui/dsmg/zp.png?v=1592537531003">
+                        </div>
+                    </div>
+                </div>
+                <div class="no-worries-sec3">
+                    <div class="no-worries-nav">
+                        <h3>
+                            <span>03</span>
+                            <div class="no-worries-rt"> 电商领域全覆盖 <br> 超高性价比课程1节顶8节
+                            </div>
+                        </h3>
+                    </div>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <img class="section-cover" src="/assets/images/ui/dsmg/nl.jpg?v=1592537531003">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section actual-combat-sec">
+            <div class="container">
+                <div class="section-title">
+                    丝路教育电商设计大法
+                    <br> 打造高薪人才
+                </div>
+                <div class="section-describe">
+                    2020年课程大纲全新迭代，全面洗练的课程内容，
+                    <br/>打造百万电商视效设计大师。
+                </div>
+                <div class="section-list">
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/kc1.jpg?v=1592537531003">
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/kc2.jpg?v=1592537531003">
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/kc3.jpg?v=1592537531003">
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/kc4.jpg?v=1592537531003">
+                    </div>
+                </div>
+                <div class="section-btn">
+                    <a class="doyoo-btn">
+                        <img src="/assets/images/ui/dsmg/ann3.png?v=1592537531003">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section section-bg-write bim-expert-sec">
+            <div class="container">
+                <div class="section-title">
+                    Adobe官方授权培训机构
+                    <br> 有证走天下
+                </div>
+                <div class="section-list">
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/zs1.jpg?v=1592537531003">
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/zs2.jpg?v=1592537531003">
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/zs3.jpg?v=1592537531003">
+                    </div>
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/zs4.jpg?v=1592537531003">
+                    </div>
+                </div>
+                <div class="section-btn">
+                    <a class="doyoo-btn">
+                        <img src="/assets/images/ui/dsmg/ann4.png?v=1592537531003">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section one-teaching-sec">
+            <div class="container">
+                <div class="section-title">
+                    <em>BAT</em> 实战经验导师
+                    <br> 传授电商设计秘诀
+                </div>
+                <div class="section-describe">
+                    丝路电商视效精英班课程组老师均来自行业大厂，
+                    <br/>多年电商设计实战和教学经验，带学员掌握
+                    <br/>“旺铺运营法则”。
+                </div>
+
+                <div class="swiper-container" slidesPerView='2'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="one-teaching-cover" src="/assets/images/ui/dsmg/ls1.png?v=1592537531003">
+                            <h3>
+                                吴红桥 <span>
+                                    / UX全栈高级讲师
+                                </span>
+                            </h3>
+                            <div class="one-teaching-experience">
+                                9年从业经验
+                            </div>
+                            <div class="one-teaching-works">
+                                代表项目：爱拍APP、女生派APP、
+                                <br/>教育培训在线APP……
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="one-teaching-cover" src="/assets/images/ui/dsmg/ls2.png?v=1592537531003">
+                            <h3>
+                                杨威宇 <span>
+                                    / UX全栈高级讲师
+                                </span>
+                            </h3>
+                            <div class="one-teaching-experience">
+                                8年从业经验
+                            </div>
+                            <div class="one-teaching-works">
+                                代表项目：王者荣耀网页设计、
+                                <br/>地下城与勇士网页设计……
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="one-teaching-cover" src="/assets/images/ui/dsmg/ls3.png?v=1592537531003">
+                            <h3>
+                                黄轶琼 <span>
+                                    / UX全栈高级讲师
+                                </span>
+                            </h3>
+                            <div class="one-teaching-experience">
+                                9年从业经验
+                            </div>
+                            <div class="one-teaching-works">
+                                代表项目：随易APP、
+                                <br/>大庆油田工会APP……
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section silkroad-strength-sec">
+            <div class="container">
+                <div class="section-title">
+                    学员作品
+                    <br>看完就想买买买
+                </div>
+                <div class="section-list">
+                    <div class="section-item">
+                        <img class="section-cover" src="/assets/images/ui/dsmg/xszp.jpg?v=1592537531003">
+                    </div>
+                </div>
+                <div class="section-btn">
+                    <a class="doyoo-btn">
+                        <img src="/assets/images/ui/dsmg/ann5.png?v=1592537531003">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section put-action-sec">
+            <div class="container">
+                <div class="section-title">
+                    丝路教育学员专属福利
+                </div>
+                <div class="section-list">
+                    <div class="section-cover">
+                        <img src="/assets/images/ui/dsmg/fl.jpg?v=1592537531003">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 丝路与3000+名企合作 -->
+        <div class="section section-bg-write">
+            <div class="container">
+                <div class="section-title">
+                    3000+合作名企
+                    <br>大厂主动找到你
+                </div>
+                <img src="/assets/images/ui/dsmg/hz.png?v=1592537531003" alt="">
+                <div class="section-btn">
+                    <a class="btn doyoo-btn">
+                        查看更多合作企业
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 表单统计 -->
+        <div class="section-form">
+            <form id="form">
+                <div class="form-group form-group-txt">
+                    放弃了今天，<br> 明天永远不会来！
+                </div>
+                <div class="form-group">
+                    <input type='text' name='name' id="name" placeholder="姓名：请填写姓名" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name='tel' id="tel" class="form-control" placeholder="联系方式：请填写手机号码" />
+                </div>
+                <input type="text" name='time' id='time' style="display: none;" />
+
+                <div class="form-submit">
+                    <button class="btn" type="button" onclick="add_ajaxmessage()"> 预约免费试听</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
+<script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
+<script src="/assets/js/plugs/picViewer/picViewer.js"></script>
+<script src="/assets/js/plugs/swiper/swiper.js"></script>
+<script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
+<script src="/assets/js/global/common.js"></script>
+<script src="http://op.jiain.net/20002985/10085553.js"></script> 
+<script>
+    var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
+    for (var i = 0, len = doyooBtns.length; i < len; i++) {
+        doyooBtns[i].onclick = function() {
+            doyoo.util.openChat('g=10075108');
+            return false;
+        }
+    }
+</script>
+<!-- 表单 -->
+<script src="/assets/js/plugs/formbd.js"></script>
+
+</div>
+</body>
+
+</html>

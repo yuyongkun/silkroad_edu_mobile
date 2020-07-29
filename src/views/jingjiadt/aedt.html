@@ -1,0 +1,901 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script>
+    (function flexible(window, document) {
+        var docEl = document.documentElement
+        var dpr = window.devicePixelRatio || 1
+
+        // adjust body font size
+        function setBodyFontSize() {
+            if (document.body) {
+                document.body.style.fontSize = (12 * dpr) + 'px'
+            } else {
+                document.addEventListener('DOMContentLoaded', setBodyFontSize)
+            }
+        }
+        setBodyFontSize();
+
+        // set 1rem = viewWidth / 10
+        function setRemUnit() {
+            var rem = docEl.clientWidth / 10
+            docEl.style.fontSize = rem + 'px'
+        }
+
+        setRemUnit()
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit)
+        window.addEventListener('pageshow', function(e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+        })
+
+        // detect 0.5px supports
+        if (dpr >= 2) {
+            var fakeBody = document.createElement('body')
+            var testElement = document.createElement('div')
+            testElement.style.border = '.5px solid transparent'
+            fakeBody.appendChild(testElement)
+            docEl.appendChild(fakeBody)
+            if (testElement.offsetHeight === 1) {
+                docEl.classList.add('hairlines')
+            }
+            docEl.removeChild(fakeBody)
+        }
+    }(window, document))
+</script>
+    <title>AE影视后期培训|AE软件培训|AE培训全科班</title>
+    <link rel="stylesheet" href="/assets/js/plugs/vide-7.4.1/css/video-js.min.css?v=1592550206305">
+<link rel="stylesheet" href="/assets/js/plugs/picViewer/picViewer.css?v=1592550206305">
+<link rel="stylesheet" href="/assets/js/plugs/swiper-3.4.0/swiper-3.4.2.min.css?v=1592550206305">
+    <link rel="stylesheet" href="/assets/css/jingjiadt/public.css?v=1592550206305">
+
+    <!--menu-->
+    <link rel="stylesheet" href="/assets/css/jingjiadt/yxtx.css?v=1592550206305">
+</head>
+
+<body>
+    <div class="header">
+    <div class="header-tp" id="header-tp">
+        <div class="header-menu"></div>
+        <ul class="header-menu-list">
+            <li class="header-menu-first">
+                <a href="/index.html" style="color: #fff;">首页</a>
+            </li>
+            <li class="header-menu-first arrow-right">
+     影视视效课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/yingshi/ysqn.html">影视视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ystx.html">特效合成大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysjj.html">剪辑包装创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysdh.html">影视动画精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/c4d.html">C4D特效大师班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+     游戏视觉课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/youxi/yxqn.html">游戏视觉全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxyh.html">游戏原画创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxms.html">3D美术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxrj.html">游戏软件精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxtx.html">动作特效精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+     室内设计课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/shinei/snqk.html">APEC室内设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/cad.html">CAD制图大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snrz.html">室内软装精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+     U X 全栈课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+     建筑视效课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+     BIM应用课程  
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/bim/bimqn.html">BIM应用全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/bimkz.html">BIM考证精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/revitds.html">Revit大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/lumion.html">Lumion大师班</a>
+        </li>
+    </ul>
+</li>
+            <li class="header-menu-first">
+                <a href="/home/studentworks.html" style="color: #fff;">学员作品</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/onlinebao.html" style="color: #fff;">在线报名</a>
+            </li>
+            <li class="header-menu-first">
+                <a href="/home/contactus.html" style="color: #fff;">联系我们</a>
+            </li>
+
+        </ul>
+        <div class="header-logo"></div>
+        <a class="doyoo-btn">
+            <div class="header-phone"></div>
+        </a>
+    </div>
+    <div class="header-nav">
+        <ul class="header-nav-wrap">
+            <li class="header-nav-first header-nav-active">
+                <a href="/index.html">首页</a>
+            </li>
+            <li class="header-nav-first" id="header-nav-first-course">课程
+                <span class="arrow-down"></span>
+                <ul class="header-nav-course">
+                    <li class="header-menu-first arrow-right">
+      影视视效 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/yingshi/ysqn.html">影视视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ystx.html">特效合成大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysjj.html">剪辑包装创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/ysdh.html">影视动画精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/yingshi/c4d.html">C4D特效大师班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+      游戏视觉 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/youxi/yxqn.html">游戏视觉全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxyh.html">游戏原画创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxms.html">3D美术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxrj.html">游戏软件精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/youxi/yxtx.html">动作特效精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+      室内设计 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/shinei/snqk.html">APEC室内设计全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/cad.html">CAD制图大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snrz.html">室内软装精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snsh.html">室内手绘创意班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/shinei/snxgt.html">室内效果图精英班</a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+      UX 全栈 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/ui/uiqn.html">UX全栈视效全能班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/psds.html">Photoshop大师班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/pmsj.html">品牌视觉创意班
+            </a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/ui/dsmg.html">
+                电商美工精英班
+            </a></li>
+        <li class="header-menu-second">
+            <a href="/ui/wysj.html">全链路设计精英班
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+      建筑视效 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzsx.html">建筑视效全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3dsMax.html">3ds MAX大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/3djm.html"> 3D建模精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/xrys.html">渲染艺术精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/jianzhu/jzxgt.html"> 建筑效果图精英班 </a>
+        </li>
+    </ul>
+</li>
+<li class="header-menu-first arrow-right">
+      BIM应用 
+    <ul class="header-menu-secondlist">
+        <li class="header-menu-second">
+            <a href="/bim/bimqn.html">BIM应用全能班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/bimkz.html">BIM考证精英班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/revitds.html">Revit大师班</a>
+        </li>
+        <li class="header-menu-second">
+            <a href="/bim/lumion.html">Lumion大师班</a>
+        </li>
+    </ul>
+</li>
+                </ul>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/famousteacher.html">名师</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/obtain.html">就业</a>
+            </li>
+            <li class="header-nav-first">
+                <a href="/home/about.html">关于丝路</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="header-mask" id="header-mask"></div>
+
+
+    <!--公用-->
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .bim * {
+            font-family: "Microsoft YaHei", PingFangSC-Mediu, SimSun, Arial, Helvetica;
+            color: #323232;
+            font-size: 4vw;
+            line-height: 4vw;
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+        }
+        
+        .uibox {
+            padding: 10% 0;
+        }
+        
+        .uinrk {
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .uibt {
+            text-align: center;
+            font-size: 6vw;
+            line-height: 8vw;
+            margin-bottom: 6%;
+        }
+        
+        .ui img {
+            display: block;
+        }
+        
+        h1,
+        h2 {
+            font-weight: normal;
+        }
+        
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .clearfix {
+            clear: both;
+        }
+        
+        .anniu {
+            color: #333;
+            text-align: center;
+            line-height: 12vw;
+            border-radius: 6vw;
+            font-size: 4.5vw;
+            margin: 0 auto;
+            background: #fcc800;
+        }
+        
+        .line {
+            background: #dcdcdc;
+            width: 95%;
+            height: 0.2vw;
+            margin: 0 auto;
+            margin-top: 4vw;
+            margin-bottom: 4vw;
+        }
+        
+        .anniubox {
+            margin: 0 auto;
+            padding-top: 6vw;
+            width: 80%;
+        }
+    </style>
+    <div class="ui">
+
+        <!--banner-->
+        <div>
+            <a class="doyoo-btn"><img src="/assets/images/jingjiadt/ae/banner2.jpg?v=1592550206305" style="width: 100%;margin-top: 22%;"></a>
+        </div>
+
+        <!--风口大-->
+        <style>
+            .guiquan-bj {
+                background: url(/assets/images/jingjiadt/ae/bj1.jpg)no-repeat center;
+                background-size: 100%;
+            }
+        </style>
+
+
+        <section style="padding: 10% 0;" class="guiquan-bj">
+            <div class="uinrk">
+                <h1 class="uibt" style="margin-bottom: 4vw;">“影视圈”风口大 学习AE抓住机遇<br/>从此走向人生巅峰</h1>
+                <p style="text-align: center;font-size: 4vw;color: #666; padding-bottom: 4vw;">2019年春节档期间，全国电影综合票房58亿，1.3亿人次走进电影院，观影289万场，平均增长23%。影视行业正处于增长红利期，面对上不见顶的发展空间，AE作为影视制作必备软件，现在学习抓住机遇，职业前景大不同。 </p>
+                
+                    <img src="/assets/images/jingjiadt/ae/yy1.jpg?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                    <img src="/assets/images/jingjiadt/ae/yy2.jpg?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+    
+                
+            </div>
+        </section>
+
+
+       <!-- 表单统计 -->
+    <style>
+        .section-form {
+            background: url(/assets/images/jingjiadt/ae/bd3.jpg) no-repeat center;
+            background-size: cover;
+            height: 8.2667rem;
+            padding-top: 0.5333rem;
+        }
+        
+        .section-form .form-group {
+            font-size: 0.6133rem;
+            line-height: 1.5;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .section-form .btn {
+            display: inline-block;
+            line-height: 1;
+            width: 5.3333rem;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.3733rem;
+            border: 1px solid #EC6941;
+            text-align: center;
+            color: #fff;
+            background-color: #EC6941;
+            -webkit-appearance: none;
+        }
+    </style>
+    <div class="section-form" style="background: url(/assets/images/jingjiadt/ae/bd3.jpg) no-repeat center; background-size: cover; margin-bottom: 0px;">
+        <form id="form">
+            <div class="form-group form-group-txt">
+                商业案例解析 + 课程免费试学<br/>
+                现场感受效果，不收一分钱
+            </div>
+            <div class="form-group">
+                <input type='text' name='name' id="name" placeholder="请输入您的姓名" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="text" name='tel' id="tel" class="form-control" placeholder="请输入您的手机号码" />
+            </div>
+            <input type="text" name='time' id='time' style="display: none;" />
+
+            <div class="form-submit">
+                <button class="btn" type="button" onclick="add_ajaxmessage()"> 预约免费试学</button>
+            </div>
+        </form>
+    </div> 
+       
+
+        <!--人群-->
+        <section style="padding: 14% 0; background:#f5f5f5;">
+            <div class="uinrk">
+                <h1 class="uibt">什么样的人<br/>适合学习AE影视后期？</h1>
+                <img src="/assets/images/jingjiadt/yingshihq/renqun1.png?v=1592550206305" style="width: 100%">
+                <div class="line"></div>
+                <img src="/assets/images/jingjiadt/yingshihq/renqun2.png?v=1592550206305" style="width: 100%">
+                <div class="line"></div>
+                <img src="/assets/images/jingjiadt/yingshihq/renqun3.png?v=1592550206305" style="width: 100%">
+                <div class="line"></div>
+                <img src="/assets/images/jingjiadt/yingshihq/renqun4.png?v=1592550206305" style="width: 100%">
+                <div class="anniubox">
+                    <a class="doyoo-btn">
+                        <div class="anniu" style="width: 60%; margin-top: 4vw;">看看我适合学吗？</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--薪资-->
+        <style>
+            .xinzi-bj {
+                background: url(/assets/images/jingjiadt/ae/bj2.jpg) no-repeat center;
+                background-size: 100%;
+            }
+        </style>
+
+        <section class="xinzi-bj" style="padding: 10% 0;">
+            <h1 class="uibt" style="color: #fff;">AE影视后期人才走俏<br/>赶超传统行业薪资</h1>
+            <div class="uinrk">
+                <img src="/assets/images/jingjiadt/ae/xinzi.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                <img src="/assets/images/jingjiadt/ae/gs1.png?v=1592550206305" style="width: 100%">
+                <img src="/assets/images/jingjiadt/ae/gs2.png?v=1592550206305" style="width: 100%">
+                <img src="/assets/images/jingjiadt/ae/gs3.png?v=1592550206305" style="width: 100%">
+                <img src="/assets/images/jingjiadt/ae/gs4.png?v=1592550206305" style="width: 100%">
+                <a class="doyoo-btn">
+                    <div class="anniu" style="width: 60%; margin-top: 5vw;">有适合我的岗位吗？</div>
+                </a>
+            </div>
+        </section>
+
+      
+
+        <!--课程-->
+        <section class="uibox" style="background:#151b33;">
+            <h1 class="uibt" style="color: #fff;">课程全面升级 匠心为你赋能</h1>
+            <div class="uinrk">
+                <img src="/assets/images/jingjiadt/ae/kc1.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                <img src="/assets/images/jingjiadt/ae/kc2.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                <img src="/assets/images/jingjiadt/ae/kc3.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                <img src="/assets/images/jingjiadt/ae/kc4.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                <img src="/assets/images/jingjiadt/ae/kc5.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                <img src="/assets/images/jingjiadt/ae/kc6.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+            </div>
+            <a class="doyoo-btn">
+                <div class="anniu" style="width: 60%;" margin-top: 5vw;>查看全部课程大纲</div>
+            </a>
+        </section>
+
+        <!--软件-->
+        <section class="uibox" style="background: #f8f7fc;">
+            <h1 class="uibt">相关软件一并学习</h1>
+            <img src="/assets/images/jingjiadt/yingshihq/ruanjian.png?v=1592550206305" style="width: 100%; padding-bottom: 2vw;">
+            <div class="anniubox">
+                <a class="doyoo-btn">
+                    <div class="anniu" style="width: 60%; margin-top: 4vw;">免费领取学习资料</div>
+                </a>
+            </div>
+        </section>
+
+        <!--讲师-->
+        <section class="uibox" style="background:#151b33;">
+            <h1 class="uibt" style="color: #fff;">“双经验”大咖，专注“刻意练习”</h1>
+            <div class="uinrk">
+                <p style="text-align: center;font-size: 4vw;color: #fff; padding-bottom: 4vw; opacity:0.5;?v=1592550206305">丝路严选业内一线大咖组成教学团队，由兼备5年以上项目制作和教学“双经验”的实战派讲师为你全程面授课程，极度重视“刻意练习” 针对专业阶段性知识点设置实践作业+实训项目。
+                </p>
+                <img src="/assets/images/jingjiadt/ae/jiangshi1.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                <img src="/assets/images/jingjiadt/ae/jiangshi2.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+
+            </div>
+            <a class="doyoo-btn">
+                <div class="anniu" style="width: 60%; margin-top: 5vw;">与讲师一对一交流</div>
+            </a>
+        </section>
+
+
+        <!--六大-->
+        <section class="uibox" style="background: #f8f7fc;">
+            <h1 class="uibt">丝路学员6大保障</h1>
+            <a class="doyoo-btn">
+                <div style="width: 100%">
+                    <img src="/assets/images/jingjiadt/ae/liuda1.png?v=1592550206305" style="width: 90%; padding-bottom: 2vw; margin: 0 auto;">
+                    <img src="/assets/images/jingjiadt/ae/liuda2.png?v=1592550206305" style="width: 90%; padding-bottom: 2vw; margin: 0 auto;"> </div>
+            </a>
+        </section>
+
+        <!--项目-->
+        <section class="ysjjbox;" style=" padding-bottom: 10%;  padding-top: 10%;">
+            <div class="titlebox">
+                <h1 class="ysjjbt" style="padding-bottom: 0;">好莱坞级技术水准<br/>是你学习的不二选择</h1>
+                <p>丝路参与制作过的影视项目耳熟能详</p>
+            </div>
+            <img src="/assets/images/jingjiadt/ysjj/xiangmu1.png?v=1592550206305" style="width: 100%; margin: 6% 0 6% 0;">
+            <img src="/assets/images/jingjiadt/ysjj/xiangmu2.png?v=1592550206305" style="width: 100%; margin: 6% 0 6% 0;">
+            <img src="/assets/images/jingjiadt/ysjj/xiangmu3.png?v=1592550206305" style="width: 100%; margin: 6% 0 6% 0;">
+        </section>
+
+        <!--学员-->
+        <section class="uibox" style="background: #797b96;">
+            <h1 class="uibt" style="color: #fff;">明星学员 用“薪资”为丝路证言</h1>
+            <img src="/assets/images/jingjiadt/yingshihq/xueyuan.png?v=1592550206305" style="width: 100%; padding-bottom: 2vw; margin: 0 auto;">
+        </section>
+
+        <!--学员作品-->
+        <section class="uibox">
+            <h1 class="uibt" style="color: #333;">商业级影视作品<br/>学完后你也可以拥有</h1>
+            <div class="uinrk">
+                <img src="/assets/images/jingjiadt/ae/zuoping1.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                <img src="/assets/images/jingjiadt/ae/zuoping2.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+
+
+            </div>
+            <a class="doyoo-btn">
+                <div class="anniu" style="width: 60%; margin-top: 5vw;">查看更多作品</div>
+            </a>
+        </section>
+
+
+        <!--学员访谈-->
+        <section class="uibox" style="background:#151b33;">
+            <h1 class="uibt" style="color: #fff;">加入丝路<br/>是他们踏入职场前最重要的决定</h1>
+            <div class="uinrk">
+                <img src="/assets/images/jingjiadt/ae/fangtan1.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                <img src="/assets/images/jingjiadt/ae/fangtan2.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                <img src="/assets/images/jingjiadt/ae/fangtan3.png?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+
+            </div>
+            <a class="doyoo-btn">
+                <div class="anniu" style="width: 60%; margin-top: 5vw;">与讲师一对一交流</div>
+            </a>
+        </section>
+
+
+        <!--合作-->
+        <section class="uibox">
+            <h1 class="uibt" style="color: #333; margin-bottom: 4%;">合作名企</h1>
+            <div class="uinrk">
+                <p style="text-align: center;font-size: 4vw;color: #666; padding-bottom: 4vw;">入学签协议 毕业即就业</p>
+                <div class="uinrk">
+                    <img src="/assets/images/jingjiadt/ae/hz.jpg?v=1592550206305" style="width: 100%;padding-bottom: 4vw;">
+                </div>
+                <a class="doyoo-btn">
+                    <div class="anniu" style="width: 60%; margin-top: 5vw;">我要进名企</div>
+                </a>
+            </div>
+        </section>
+
+        <!--问题-->
+        <style>
+            .part-wenti {
+                background: url(/assets/images/jingjiadt/ae/wenti.jpg)no-repeat center;
+                background-size: 100%;
+                margin-bottom: -5px;
+            }
+            
+            .part-wenti .titlebox h1 {
+                color: #fff;
+                font-size: 6vw;
+                margin-bottom: 6vw;
+            }
+            
+            .wenti-item {
+                margin-bottom: 0.15rem;
+            }
+            
+            .wenti-lastitem {
+                margin-bottom: 0;
+            }
+            
+            .wenti-item p {
+                font-size: 0.32rem;
+                color: #fff;
+                line-height: 1.8;
+                float: left;
+            }
+            
+            .wenti-item p:nth-of-type(1) {
+                width: 72%;
+                padding-left: 3%;
+                border: 1px solid #5e5e66;
+                border-right: none;
+            }
+            
+            .wenti-item p:nth-of-type(2) {
+                width: 24%;
+                text-align: center;
+                background: #fcc800;
+                border: 1px solid #fcc800;
+            }
+        </style>
+        <div class="part-box part-wenti">
+            <div class="titlebox">
+                <h1>你是否还在担心下列问题？</h1>
+            </div>
+            <div class="part-content">
+                <a class="doyoo-btn">
+                    <div class="wenti-item">
+                        <p>AE课程学费是多少？有优惠吗？</p>
+                        <p style="color: #333;">查看答案</p>
+                        <div class="cle"></div>
+                    </div>
+                    <a>
+                        <a class="doyoo-btn">
+                            <div class="wenti-item">
+                                <p>学完能找到工作？</p>
+                                <p style="color: #333;">查看答案</p>
+                                <div class="cle"></div>
+                            </div>
+                        </a>
+                        <a class="doyoo-btn">
+                            <div class="wenti-item">
+                                <p>没钱学怎么办？</p>
+                                <p style="color: #333;">查看答案</p>
+                                <div class="cle"></div>
+                            </div>
+                        </a>
+                        <a class="doyoo-btn">
+                            <div class="wenti-item">
+                                <p>学历低能学影视后期吗？</p>
+                                <p style="color: #333;">查看答案</p>
+                                <div class="cle"></div>
+                            </div>
+                        </a>
+                        <a class="doyoo-btn">
+                            <div class="wenti-item">
+                                <p>平时没时间，周末能学AE吗？</p>
+                                <p style="color: #333;">查看答案</p>
+                                <div class="cle"></div>
+                            </div>
+                        </a>
+                        <a class="doyoo-btn">
+                            <div class="wenti-item">
+                                <p>AE课程要学多久？课时怎么安排？</p>
+                                <p style="color: #333;">查看答案</p>
+                                <div class="cle"></div>
+                            </div>
+                        </a>
+                        <a class="doyoo-btn">
+                            <div class="wenti-item">
+                                <p>零基础能学会吗？</p>
+                                <p style="color: #333;">查看答案</p>
+                                <div class="cle"></div>
+                            </div>
+                        </a>
+                        <a class="doyoo-btn">
+                            <div class="wenti-item wenti-lastitem">
+                                <p>可以免费试学吗？</p>
+                                <p style="color: #333;">查看答案</p>
+                                <div class="cle"></div>
+                            </div>
+                        </a>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- 表单统计 -->
+        <style>
+            .section-form {
+                background: url(/assets/images/jingjiadt/ae/bd1.jpg) no-repeat center;
+                background-size: cover;
+                height: 8.2667rem;
+                padding-top: 0.5333rem;
+            }
+            
+            .section-form .form-group {
+                font-size: 0.6133rem;
+                line-height: 1.5;
+                text-align: center;
+                color: #fff;
+            }
+            
+            .section-form .btn {
+                display: inline-block;
+                line-height: 1;
+                width: 5.3333rem;
+                height: 0.8rem;
+                line-height: 0.8rem;
+                border-radius: 4px;
+                font-size: 0.3733rem;
+                border: 1px solid #EC6941;
+                text-align: center;
+                color: #fff;
+                background-color: #EC6941;
+                -webkit-appearance: none;
+            }
+        </style>
+        <div class="section-form">
+            <form id="form">
+                <div class="form-group form-group-txt">
+                    免费领取课程资料
+                    <br>预约7天免费试听
+                </div>
+                <div class="form-group">
+                    <input type='text' name='name' id="name" placeholder="请输入您的姓名" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="text" name='tel' id="tel" class="form-control" placeholder="请输入您的手机号码" />
+                </div>
+                <input type="text" name='time' id='time' style="display: none;" />
+
+                <div class="form-submit">
+                    <button class="btn" type="button" onclick="add_ajaxmessage()"> 预约免费试学</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--页脚 -->
+<div class="endfoot-box">
+    <div class="endfoot">
+        <a class="doyoo-btn">
+            <div class="endfoot-item">
+                <p>名师在线</p>
+                <p>免费试听</p>
+            </div>
+        </a>
+    </div>
+    <h3>本网站版权归丝路教育所有，盗用必究</h3>
+</div>
+
+<script src="/assets/js/libs/jquery.min.js"></script>
+<script src="/assets/js/plugs/vide7.4.1/js/video.js"></script>
+<script src="/assets/js/plugs/picViewer/picViewer.js"></script>
+<script src="/assets/js/plugs/swiper/swiper.js"></script>
+<script src="/assets/js/plugs/layer-v3.1.1/layer/layer.js"></script>
+<script src="/assets/js/global/common.js"></script>
+<script src="http://op.jiain.net/20002985/10085553.js"></script>
+<script>
+    var doyooBtns = [].slice.call(document.querySelectorAll('.doyoo-btn'));
+    for (var i = 0, len = doyooBtns.length; i < len; i++) {
+        doyooBtns[i].onclick = function() {
+            doyoo.util.openChat('g=10075108');
+            return false;
+        }
+    }
+</script>
+
+<!-- 百度统计代码 -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?57448cbcd9efb5a61b8ba648ba49f3e2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<!-- 表单 -->
+<script src="/assets/js/plugs/formbd.js"></script>
+
+</div>
+
+
+
+    <!--统计工具：CNZZ-->
+    <div style="font-size: 0.1rem;?v=1592550206305">
+        <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1276821672'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1276821672%26show%3Dpic' type='text/javascript'%3E%3C/script%3E?v=1592550206305"));
+        </script>
+    </div>
+
+    <!--百度呼-->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?57448cbcd9efb5a61b8ba648ba49f3e2";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript" charset="utf-8" async src="http://lxbjs.baidu.com/lxb.js?sid=8881824"></script>
+</body>
+
+</html>

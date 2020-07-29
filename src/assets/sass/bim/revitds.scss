@@ -1,152 +1,186 @@
 @import "../common/variable";
 @import "../common/base";
-
-// 游戏红利席卷全球
-.game-bonus-sec {
-    .game-bonus-sub {
-        padding-top: 0.6667rem;
-
-        .section-item {
-            margin-bottom: 0.4rem;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
+.section .section-title {
+    font-family: 微软雅黑;
 }
 
-// 丝路学员独享6大保障
-.six-guarantee-sec {
+// Revit在手掀起BIM“薪”革命
+.hot-software-sec {
     .section-list {
         .section-item {
-            width: 33.33%;
-            margin-bottom: 0.8rem;
-            text-align: center;
-
+            display: flex;
             .section-cover {
-                width: 1.6533rem;
-                height: 1.6533rem;
+                width: 2.3333rem;
+                height: 1.8667rem;
             }
-        }
-    }
-}
-
-// 热门课程
-.hot-courses-sec {
-    .section-list {
-        .section-item {
-            width: 100%;
-            height: 4.36rem;
-            margin-bottom: 0.4rem;
-            padding: 0.5333rem 0.2667rem;
-            background: url("/assets/images/youxi/yxtx/kc1.png") no-repeat center;
-            background-size: cover;
-
-            &:nth-child(2) {
-                background: url("/assets/images/youxi/yxtx/kc2.png") no-repeat center;
-                background-size: cover;
-            }
-
-            &:nth-child(3) {
-                background: url("/assets/images/youxi/yxtx/kc3.png") no-repeat center;
-                background-size: cover;
-            }
-
             .section-txt {
-                width: 6rem;
-                font-size: 0.3733rem;
-                color: #fff;
-
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 0.2667rem;
                 h3 {
-                    margin-bottom: 0.2rem;
-                }
-
-                p {
-                    color: #fff;
+                    margin-bottom: 0.1333rem;
                 }
             }
         }
     }
 }
 
+// 高效软件Revit
+.efficient-software-sec {
+    .section-list {
+        .section-item {
+            display: flex;
+            .section-cover {
+                width: 3.7333rem;
+                height: 5.9867rem;
+            }
+            .section-txt {
+                padding: 0px;
+                margin-left: 0.1333rem;
+                font-size: 0.2933rem;
+                dl {
+                    line-height: 1.3;
+                    padding: 0.1333rem 0.2667rem;
+                    margin-bottom: 0.1333rem;
+                    background: #F4F4F4;
+                    dt {
+                        color: $base-color;
+                    }
+                    dd {
+                        font-size: 0.2667rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 丝路教育Revit课程专为以下人士打造
+.autodesk-official-sec {
+    .section-list {
+        .section-item {
+            display: flex;
+            .section-cover {
+                width: 2.9333rem;
+                height: 3.1467rem;
+            }
+        }
+    }
+}
+
+//丝路教育视觉创意领域的先行者
+.fivestep-method-sec {
+    .section-list {
+        .section-item {
+            width: 2.6rem;
+            text-align: center;
+            .section-cover {
+                height: 1.68rem;
+            }
+        }
+    }
+}
+
+// BIM专家精编
+.accompanied-teachers-sec {
+    .section-list {
+        .section-item {
+            display: flex;
+            .section-cover {
+                width: 4.6133rem;
+                height: 4.88rem;
+            }
+            .section-txt {
+                padding-left: 0.1333rem;
+                h3 {
+                    font-family: 微软雅黑;
+                    font-size: 0.32rem;
+                    em {
+                        margin-right: 0.0667rem;
+                        font-size: 0.3733rem;
+                        font-weight: bold;
+                    }
+                }
+                ul {
+                    color: #666;
+                    font-size: 0.2667rem;
+                    li {
+                        position: relative;
+                        padding-left: 8px;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 6px;
+                            left: 0;
+                            display: inline-block;
+                            width: 3px;
+                            height: 3px;
+                            border-radius: 50%;
+                            margin-right: 4px;
+                            background: $base-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 高级讲师全程面授Revit软件强势操作经验
 .software-sec {
-    background-color: #F7F2FF;
-
     .section-list {
         .section-item {
-            width: 25%;
-            margin-bottom: 0.2667rem;
-            text-align: center;
-
+            display: flex;
+            padding: 0.1333rem;
+            background: #F7F7F7;
             .section-cover {
-                width: 1.4667rem;
-                height: 1.4667rem;
+                width: 3.4133rem;
+                height: 4.68rem;
             }
-
-            h3 {
-                font-size: 0.2667rem;
+            .section-txt {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 0.2667rem;
+                h3 {
+                    line-height: 1;
+                    font-size: 0.4rem;
+                    color: #F54F23;
+                    span {
+                        margin-left: 0.2rem;
+                        font-size: 0.2933rem;
+                        color: #999;
+                    }
+                }
+                .software-experience {
+                    margin-bottom: 0.0667rem;
+                    font-size: 0.2667rem;
+                    color: #666;
+                }
+                .software-works {
+                    margin-top: 0.0667rem;
+                    font-size: 0.2667rem;
+                    color: #999;
+                    b {
+                        color: #333;
+                    }
+                }
             }
         }
     }
-}
-
-// 3A级项目实训
-.dachang-making-sec {
-    .section-list {
-        .section-item {
-            margin-bottom: 0.2667rem;
-            text-align: center;
-
-            .section-cover {
-                margin-bottom: 0.2667rem;
-                height: 4.1867rem;
-            }
-
-            h3 {
-                font-size: 0.2667rem;
-            }
-        }
-    }
-}
-
-// 行业一线大咖名师
-.line-coffee-sec {
-    background-color: #F7F2FF;
-
-    .section-list {
-        .section-item {
-            width: 50%;
-            margin-bottom: 0.2667rem;
-            background-color: transparent;
-            text-align: center;
-
-            .section-cover {
-                width: 4.2rem;
-                margin-bottom: 0.2667rem;
-            }
-
-            h3 {
-                font-size: 0.2667rem;
-            }
-        }
-    }
-}
-
-// 完善就业体系
-.perfect-employment-sec {
-    background-color: #F7F2FF;
 }
 
 // 表单
 .section-form {
-    height: 10.8rem;
-    background: url("/assets/images/youxi/yxtx/foot-bj.png") no-repeat center;
+    height: 8.88rem;
+    background: url("/assets/images/bim/revitds/bottom.jpg") no-repeat center;
     background-size: cover;
-
+    margin-bottom: 15vw;
     .form-group-txt {
         line-height: 1.5;
         padding-top: 1.3333rem;
         color: #fff;
+        font-size: 0.6333rem;
     }
 }

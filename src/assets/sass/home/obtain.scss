@@ -1,0 +1,111 @@
+@import "../common/variable";
+@import "../common/base";
+.section-serial {
+    text-align: center;
+    font-family: HiraginoSansGB-W3;
+    
+
+    .section-serial-number {
+        font-size: 0.4267rem;
+    }
+
+    .section-serial-line {
+        height: 10px;
+        margin-bottom: 0.3333rem;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .section-serial-txt {
+        font-size: 0.3733rem;
+    }
+    .section-serial-txt1 {
+        font-size: 0.5rem;
+        color: #f64f23;
+        margin-top: 0.5333rem;
+    }
+}
+
+.huisedi{
+    background: #eeeeee;
+}
+
+
+//介绍
+.study-design-sec {
+    .section-serial {
+        margin-bottom: 0.6267rem;
+    }
+
+    .study-design-sec2 {
+        margin-top: 1.2933rem;
+    }
+}
+
+
+.heibj{
+background: #222222;
+}
+
+.huisedi1{
+    background: #f9f9f9;
+}
+
+
+
+
+
+.bj{
+    background: url("/assets/images/home/obtain/bj.jpg") no-repeat center;
+    height: 570px;
+}
+
+
+
+
+
+.bj2{
+    background: url("/assets/images/home/obtain/bj2.jpg") no-repeat center;
+    height: 11rem;
+    .section-title{
+        color: #fff;
+    }
+}
+
+
+.hezuo{
+    font-size: 0.5rem;
+    color: #f64f23;
+    margin-top: 0.5rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 表单
+.section-form {
+    height: 11rem;
+    background: url("/assets/images/home/obtain/bottom.jpg") no-repeat center;
+    background-size: cover;
+    
+
+    form {
+        padding-top: 5rem;
+    }
+}
