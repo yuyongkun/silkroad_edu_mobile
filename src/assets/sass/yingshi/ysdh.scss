@@ -9,7 +9,6 @@
 
 // 中国公映的电影动画票房代表
 .designing-workers-sec {
-    height: 10.2667rem;
     padding-top: 0.8rem;
     background: url("/assets/images/yingshi/ysdh/one-back.jpg");
     background-size: cover;
@@ -18,10 +17,11 @@
     }
     .designing-workers-list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         .section-item {
             width: 2.9333rem;
-            height: 4rem;
+            height: 5.5rem;
             background: transparent;
             .section-txt {
                 padding: 10px 0px;
@@ -297,8 +297,10 @@
         }
         .section-txt {
             display: flex;
+            text-align: left;
             align-items: center;
             font-size: 0.2667rem;
+            padding-left: 0.1333rem;
             h3 {
                 margin-bottom: 0.1333rem;
             }
@@ -311,24 +313,32 @@
 
 // 学员毕业轻松入职名企成为高薪代言人
 .spokesperson-sec {
-    .section-item {
-        text-align: center;
-        background: transparent;
-        .section-cover {
-            width: 1.6933rem;
-            height: 1.6933rem;
-        }
-        p {
-            color: #999;
-        }
-        h3 {
-            color: #333;
-            margin-bottom: 0.1333rem;
-        }
-        div {
-            margin-top: 0.1333rem;
-            font-size: 0.32rem;
-            color: #F64F23;
+    .section-list {
+        display: flex;
+        flex-wrap: nowrap;
+        .section-item {
+            text-align: center;
+            background: transparent;
+            .section-cover {
+                width: 1.6933rem;
+                height: 1.6933rem;
+            }
+            .section-txt {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            p {
+                color: #999;
+            }
+            h3 {
+                color: #333;
+                margin-bottom: 0.1333rem;
+            }
+            div {
+                margin-top: 0.1333rem;
+                font-size: 0.32rem;
+                color: #F64F23;
+            }
         }
     }
 }
