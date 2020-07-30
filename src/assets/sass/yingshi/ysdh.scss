@@ -246,12 +246,23 @@
 
 //上市公司强势助力0距离接轨顶级技术
 .student-evaluation-sec {
+    background: url(/assets/images/yingshi/ysdh/bj.jpg)no-repeat center;
+    height: 14rem;
+    background-size: cover;
     padding-bottom: 0.9867rem;
+    .section-title {
+        color: #fff;
+    }
+    .section-describe {
+        color: #fff;
+        opacity: 0.6;
+    }
     .student-evaluation-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         .student-evaluation-item {
+            color: #fff;
             width: 50%;
             padding: 0.4rem;
             border-right: 1px solid #ddd;
@@ -341,6 +352,31 @@
             }
         }
     }
+}
+
+// 问题
+.wenti-bj1 {
+    width: 94%;
+    background: #fff;
+    border-radius: 1vw;
+    box-shadow: 0px 0.5vw 0.8vw #d5e3e6;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+}
+
+.wenti-an {
+    font-size: 4vw;
+    line-height: 3vw;
+    padding: 4vw 0;
+    padding-left: 5%;
+    color: #999;
+    float: left;
+}
+
+.wt-an {
+    width: 10%;
+    padding: 2vw 0;
+    margin-left: 85%;
 }
 
 // 表单
