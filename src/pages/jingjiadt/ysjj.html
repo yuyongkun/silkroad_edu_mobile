@@ -328,25 +328,22 @@
 
         <!--表单2-->
         <div class="section-form" style="background: url(/assets/images/jingjiadt/yszz/bj2.jpg) center no-repeat;background-size: cover;margin-bottom: 10vw;">
-            <form id="form">
-                <div class="form-group form-group-txt">
+            <form id=" form ">
+                <div class="form-group form-group-txt ">
                     来丝路，成为影视剪辑大师！？
                 </div>
-                <div class="form-group">
-                    <input type='text' name='name2' id="name2" placeholder="请输入您的姓名" class="form-control" />
+                <div class="form-group ">
+                    <input type='text' name='name' id="name2 " placeholder="请输入您的姓名 " class="form-control " />
                 </div>
-                <div class="form-group">
-                    <input type="text" name='tel2' id="tel2" class="form-control" placeholder="请输入您的手机号码" />
+                <div class="form-group ">
+                    <input type="text " name='tel' id="tel2 " class="form-control " placeholder="请输入您的手机号码 " />
                 </div>
-                <input type="text" name='time' id='time' style="display: none;" />
+                <input type="text " name='time' id='time' style="display: none; " />
 
-                <div class="form-submit">
-                    <button class="btn" type="button" onclick="add_ajaxmessage2()"> 一键预约免费试听</button>
+                <div class="form-submit ">
+                    <button class="btn " type="button " onclick="add_ajaxmessage1() "> 一键预约免费试听</button>
                 </div>
             </form>
-            
-            
-            
         </div>
 
 
@@ -379,94 +376,5 @@
 </body>
 
 </html>
-<script>
-	function add_ajaxmessage() {
 
-var name = document.getElementById("name");
-var tel = document.getElementById("tel");
-var time = document.getElementById("time");
-var url = window.location.href;
-var mobile = "!/^1\d{10}$/";
-
-if ($("#name").val() == "") {
-
-	layer.msg("姓名不能为空，请输入姓名!");
-
-	return;
-
-}
-if ($("#tel").val() == "" || !/^1\d{10}$/.test($("#tel").val())) {
-
-	layer.msg("请输入正确的手机号码!");
-
-	return;
-
-}
-
-var dataString =
-	'name=' + name.value +
-	'&tel=' + tel.value +
-	'&time=' + time.value +
-	'&url=' + url +
-	'&action=post' +
-	'&diyid=1&do=2&dede_fields=name,text;tel,text;time,text;url,text&dede_fieldshash=3d48ac0a96fa6a607608161ca1e226e9';
-
-
-$.ajax({
-	type: "POST",
-	url: "/plus/diy.php", //提交到后台文件
-	data: dataString, //传值
-	success: function(data) {
-		//$("#666").html(data);//以html的形式显示在指定id的元素里，看下面注释01
-		layer.msg("提交成功"); //显示PHP返回的值，如不需要显示，注释掉这行即可
-		$('#form')[0].reset(); //提交后清除id="form"的值
-	}
-});
-return false;
-}
-function add_ajaxmessage2() {
-
-var name = document.getElementById("name2");
-var tel = document.getElementById("tel2");
-var time = document.getElementById("time");
-var url = window.location.href;
-var mobile = "!/^1\d{10}$/";
-
-if ($("#name2").val() == "") {
-
-	layer.msg("姓名不能为空，请输入姓名!");
-
-	return;
-
-}
-if ($("#tel2").val() == "" || !/^1\d{10}$/.test($("#tel2").val())) {
-
-	layer.msg("请输入正确的手机号码!");
-
-	return;
-
-}
-
-var dataString =
-	'name=' + name.value +
-	'&tel=' + tel.value +
-	'&time=' + time.value +
-	'&url=' + url +
-	'&action=post' +
-	'&diyid=1&do=2&dede_fields=name,text;tel,text;time,text;url,text&dede_fieldshash=3d48ac0a96fa6a607608161ca1e226e9';
-
-
-$.ajax({
-	type: "POST",
-	url: "/plus/diy.php", //提交到后台文件
-	data: dataString, //传值
-	success: function(data) {
-		//$("#666").html(data);//以html的形式显示在指定id的元素里，看下面注释01
-		layer.msg("提交成功"); //显示PHP返回的值，如不需要显示，注释掉这行即可
-		$('#form')[0].reset(); //提交后清除id="form"的值
-	}
-});
-return false;
-}
-</script>
 </html>

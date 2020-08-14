@@ -1,0 +1,340 @@
+/*公用*/
+
+@import "../common/variable";
+@import "../common/base";
+.btn {
+    background: #fcc800;
+}
+
+.titlebox .line {
+    background: #333;
+}
+
+
+/*阐述*/
+
+.part-chanshu .part-content {
+    margin-top: 0.1rem;
+}
+
+.part-chanshu img {
+    display: block;
+    width: 100%;
+}
+
+
+/*画像*/
+
+.part-hx {
+    background: #f5f5f5;
+}
+
+.hx-item {
+    float: left;
+    width: 46.5%;
+    margin: 0 7% 0.15rem 0;
+}
+
+.hx-evenitem {
+    margin-right: 0;
+}
+
+.hx-pic {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.1rem;
+}
+
+.hx-text img {
+    float: left;
+    width: 7%;
+    margin-right: 0.05rem;
+}
+
+.hx-text p {
+    color: #333;
+    font-size: 0.12rem;
+    line-height: 1.5;
+}
+
+.part-hx .btn {
+    width: 50%;
+    margin-top: 0.05rem;
+}
+
+
+/*岗位*/
+
+.part-gw {
+    background: url(/assets/images/jingjiadt/yxcehua/gw-bj.jpg) center no-repeat;
+    background-size: cover;
+    height: 12rem;
+}
+
+.part-gw .titlebox h1 {
+    color: #fff;
+}
+
+.part-gw .titlebox p {
+    color: #999;
+}
+
+.part-gw img {
+    display: block;
+    width: 100%;
+}
+
+
+/*薪资*/
+
+.part-xinzi .titlebox span {
+    color: #ff6600;
+}
+
+.part-xinzi img {
+    width: 100%;
+    display: block;
+    margin-top: 0.15rem;
+}
+
+.part-xinzi .btn {
+    width: 40%;
+}
+
+
+/*表单1*/
+
+.part-oneform {
+    background: url(/assets/images/jingjiadt/yxcehua/biaodan-bj1.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+
+/*教学保障*/
+
+.part-jxbz .titlebox h1 {
+    line-height: 1.5;
+}
+
+.jxbz-item {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+}
+
+.jxbz-item img {
+    width: 52%;
+    margin: 0 auto;
+    display: block;
+}
+
+.jxbz-threeitem {
+    float: right;
+}
+
+.jxbz-item h2 {
+    color: #333;
+    font-size: 0.14rem;
+    line-height: 0.14rem;
+    margin-top: 0.1rem;
+}
+
+.jxbz-ctn {
+    margin-top: 0.15rem;
+}
+
+
+/*丝路实力*/
+
+.part-slsl {
+    background: #f5f5f5;
+}
+
+.slsl-item {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+}
+
+.slsl-item img {
+    width: 91%;
+    margin: 0 auto;
+    display: block;
+}
+
+.slsl-threeitem {
+    float: right;
+}
+
+.slsl-item h2 {
+    color: #333;
+    font-size: 0.12rem;
+    line-height: 1.5;
+    margin-top: 0.1rem;
+}
+
+.slsl-ctn {
+    margin-top: 0.12rem;
+}
+
+.part-slsl .btn {
+    width: 40%;
+}
+
+
+/*讲师*/
+
+.part-teacher .titlebox h1 {
+    line-height: 0.3rem;
+}
+
+.teacher-item {
+    margin-bottom: 0.1rem;
+}
+
+.teacher-item img {
+    float: left;
+    width: 23.2%;
+}
+
+.teacher-text {
+    float: right;
+    width: 72.5%;
+}
+
+.teacher-text h2 {
+    color: #333;
+    font-size: 0.15rem;
+    line-height: 0.15rem;
+    margin-top: 0.08rem;
+}
+
+.teacher-text h2 span,
+.teacher-text p {
+    font-size: 0.12rem;
+    line-height: 0.18rem;
+    color: #999;
+}
+
+.teacher-text img {
+    display: block;
+    width: 100%;
+    margin: 0.1rem 0;
+}
+
+.part-teacher .btn {
+    width: 56%;
+}
+
+
+/*技能*/
+
+.part-skill {
+    background: #f2f2f5;
+}
+
+.skill-uneven img {
+    float: left;
+    margin-right: 0.25rem;
+    width: 29%;
+}
+
+.skill-even img {
+    float: right;
+    width: 29%;
+}
+
+.skill-text {
+    float: left;
+}
+
+.skill-even .skill-text {
+    margin-left: 0.05rem;
+}
+
+.skill-text h2 {
+    color: #333;
+    font-size: 0.3733rem;
+    line-height: 1.5;
+    margin: 0.2rem 0 0.12rem 0;
+}
+
+.skill-text p {
+    color: #999;
+    font-size: 0.32rem;
+    line-height: 1.5;
+}
+
+
+/*作品*/
+
+.part-zuopin {
+    background: #4b4b52;
+}
+
+.part-zuopin .titlebox h1 {
+    color: #fff;
+}
+
+.part-zuopin img {
+    display: block;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+.part-zuopin .btn {
+    width: 50%;
+}
+
+
+/*就业*/
+
+.part-jiuye {
+    background: #f5f5f5;
+}
+
+.part-jiuye img {
+    display: block;
+    width: 100%;
+}
+
+
+/*合作*/
+
+.part-hezuo {
+    padding-bottom: 0;
+}
+
+.part-hezuo .titlebox h1 {
+    line-height: 1.5;
+}
+
+.part-hezuo img {
+    display: block;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+
+/*企业评价*/
+
+.part-qypj .titlebox h1 {
+    line-height: 1.5;
+}
+
+.part-qypj img {
+    display: block;
+    width: 100%;
+}
+
+
+/*表单2*/
+
+.part-twoform {
+    background: url(/assets/images/jingjiadt/yxcehua/biaodan-bj2.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+.part-twoform .titlebox p {
+    color: #ff6600;
+}

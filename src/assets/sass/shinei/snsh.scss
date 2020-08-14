@@ -3,22 +3,17 @@
 .section-serial {
     text-align: center;
     font-family: HiraginoSansGB-W3;
-    
-
     .section-serial-number {
         font-size: 0.4267rem;
     }
-
     .section-serial-line {
         height: 10px;
         margin-bottom: 0.3333rem;
-
         img {
             display: block;
             margin: 0 auto;
         }
     }
-
     .section-serial-txt {
         font-size: 0.3733rem;
     }
@@ -28,65 +23,26 @@
     }
 }
 
-.huisedi{
+.huisedi {
     background: #eeeeee;
 }
-
 
 //介绍
 .study-design-sec {
     .section-serial {
         margin-bottom: 0.6267rem;
     }
-
     .study-design-sec2 {
         margin-top: 1.2933rem;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 表单
 .section-form {
-    height: 9.2rem;
+    height: 9.12rem;
     background: url("/assets/images/shinei/snsh/biaodan.jpg") no-repeat center;
     background-size: cover;
-
+    margin-bottom: 17vw;
     form {
         padding-top: 3.5rem;
     }
