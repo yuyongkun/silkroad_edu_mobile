@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header {
+	height: 3.2rem;
+	width: 100%;
+    background: #4b4b52;
+    padding-top:0.7rem;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    top: 0;
+	left: 0;
+    transition: margin-left 0.4s;
+    z-index: 1;
+}
+.header a:nth-child(1) {
+    width: 7.5%;
+    padding-left: 4%;
+    box-sizing: content-box;
+}
+
+.header a:nth-child(2) {
+    width: 22%;
+}
+
+.header a:nth-child(3) {
+    width: 16%;
+    padding-right: 4%;
+	margin-top: 1%;
+}
+.mm-list a.mm-subopen+a {
+    display: none;
+}
+
+.mm-slideout {
+    width: 100vw;
+    transition: margin-left 0.4s;
+}
+
+html.mm-opening .mm-slideout {
+    transform: none;
+    margin-left: 50vw;
+}
+
+.mm-opening .mm-menu+.mm-page .header {
+    margin-left: 50vw;
+}
+.mm-menu .mm-list {
+    padding: 0px;
+}
