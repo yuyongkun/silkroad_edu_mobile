@@ -1,0 +1,285 @@
+
+body{
+	font-size: 0.35rem;
+}
+.btn{
+	background: #fcc800;
+}
+.titlebox .line{
+	background: #fcc800;
+}
+
+/*薪资*/
+
+.part-xinzi{
+	background: #e7eef5;
+}
+
+.part-xinzi img{
+	width: 100%;
+	display: block;
+}
+.part-xinzi .btn{
+	width: 40%;
+}
+
+
+.xinzi-item{
+	float:left;
+	text-align: center;
+	width: 33.33%;
+}
+.xinzi-item img{
+	width:52%;
+	margin: 0 auto;
+	display: block;
+}
+.xinzi-threeitem{
+	float:right;
+}
+.xinzi-item h2{
+	color:#333;
+	font-size: 0.14rem;
+	line-height: 0.14rem;
+	margin-top: 0.1rem;
+}
+.xinzi-ctn{
+	margin-top: 0.15rem;
+}
+
+.xinzi-item p{
+	color:#999;
+	font-size: 0.12rem;
+	line-height: 0.14rem;
+	margin-top: 0.1rem;
+}
+
+
+.part-xinzi .jieshao{
+	margin-top: 5%;
+}
+
+
+.part-xinzi .xinzi{
+	margin-top: 5%;
+	width: 90%;
+	margin-left: 5%;
+}
+
+
+
+/*问题*/
+.part-wenti{
+	background: url(/assets/images/uisheji/meigong/wenti.jpg)no-repeat center;
+	background-size: 100%;
+}
+.part-wenti .titlebox h1{
+	color:#fff;
+}
+.wenti-item{
+	margin-bottom: 0.15rem;
+} 
+.wenti-lastitem{
+	margin-bottom: 0;
+}
+.wenti-item p{
+	font-size: 0.35rem;
+	color: #fff;
+	line-height: 0.8rem;
+	float: left;
+}
+.wenti-item p:nth-of-type(1){
+	width: 75%;
+	padding-left: 3%;
+	border: 1px solid #5e5e66;
+	border-right: none;
+}
+.wenti-item p:nth-of-type(2){
+	width: 24%;
+	text-align: center;
+	background: #fcc800;
+	border: 1px solid #fcc800;
+	color: #333;
+}
+
+
+
+
+/*学员*/
+.part-kaozheng{
+	
+}
+.part-kaozheng img{
+	width: 100%;
+	display: block;
+}
+.part-kaozheng .btn{
+	width: 40%;
+}
+
+.part-kaozheng .part-content img{
+	margin-bottom: 10px;
+}
+
+
+
+/*教学保障*/
+
+.part-jxbz{
+	background: #e7eef5;
+}
+
+
+.jxbz-item{
+	float:left;
+	text-align: center;
+	width: 33.33%;
+}
+.jxbz-item img{
+	width:52%;
+	margin: 0 auto;
+	display: block;
+}
+.jxbz-threeitem{
+	float:right;
+}
+.jxbz-item h2{
+	color:#333;
+	font-size: 0.14rem;
+
+	margin-top: 0.1rem;
+}
+.jxbz-ctn{
+	margin-top: 0.15rem;
+}
+
+
+/*小表单*/
+.part-oneform{
+	background: url(/assets/images/uisheji/meigong/biaodan1.jpg)no-repeat center;
+	background-size: 100%;
+	background-size: cover
+	
+}
+
+
+/*讲师*/
+
+.part-teacher{
+	background: #e7eef5;
+}
+
+
+.teacher-item{
+	margin-bottom: 0.1rem;
+}
+.teacher-item img{
+	float: left;
+	width: 23.2%;
+}
+.teacher-text{
+	float:right;
+	width: 72.5%;
+}
+.teacher-text h2{
+	color:#333;
+	font-size: 0.35rem;
+
+	margin-top: 0.08rem;
+}
+.teacher-text h2 span,.teacher-text p{
+	font-size: 0.12rem;
+
+	color:#999;
+}
+.teacher-text img{
+	display: block;
+	width: 100%;
+	margin: 0.1rem 0;
+}
+.part-teacher .btn{
+	width: 56%;
+}
+
+
+
+
+/*作品*/
+.part-zuopin{
+	
+}
+.part-zuopin img{
+	display: block;
+	width: 100%;
+}
+.part-zuopin .btn{
+	width: 50%;
+}
+
+
+
+/*环境*/
+.part-huanjing{
+	background: #e7eef5;
+}
+.part-huanjing img{
+	display: block;
+	width: 100%;
+}
+.part-huanjing .btn{
+	width: 50%;
+}
+
+
+
+/*合作*/
+.part-hezuo{
+	
+}
+.part-hezuo img{
+	display: block;
+	width: 100%;
+}
+.part-hezuo .btn{
+	width: 40%;
+}
+
+
+
+/*表单2*/
+.part-twoform{
+	background: url(/assets/images/uisheji/meigong/biaodan2.jpg)no-repeat center;
+	background-size: 100%;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

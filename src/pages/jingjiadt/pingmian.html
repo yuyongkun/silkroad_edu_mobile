@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+	<head>
+		@@include('../layout/_meta.html')
+		<title>平面设计大师班</title>
+		@@include('../layout/_link.html')
+		<link rel="stylesheet" href="/assets/css/jingjiadt/public.css">
+	</head>
+	
+	<body>
+		@@include('../layout/_header.html')
+	
+
+<!--公用-->
+<style>
+body{margin:0;}
+.bim *{font-family:"Microsoft YaHei",PingFangSC-Mediu,SimSun,Arial,Helvetica;color: #323232;font-size: 4vw;line-height: 4vw;margin: 0;padding: 0;box-shadow:none;}
+.pingmianbox{ margin-bottom: 10%;}
+.pingmiannrk{width:90%;margin: 0 auto;}
+.pingmianbt{text-align: center;font-size: 6vw;line-height: 8vw; padding-bottom: 6%; padding-top: 10%; }	
+.pingmian img{display: block;}
+h1,h2{font-weight: normal;}
+a{text-decoration:none;cursor: pointer;}
+.clearfix{ clear:both;}
+.anniu{color:#333;text-align: center;line-height: 12vw;border-radius: 6vw;font-size: 4.5vw;margin: 0 auto;background: #fcc800;}
+.jxbz-ctn {
+    margin-top: 0.5rem;
+}
+.jxbz-item h2 {
+    color: #333;
+    font-size: 0.35rem;
+ 
+	margin-top: 0.3rem;
+}
+.titlebox p:nth-of-type(1){
+	font-size: 0.4rem;
+	line-height: normal;
+}
+</style>
+<div class="pingmian"> 
+	
+
+  
+  <!--banner-->
+  <div> <a class="doyoo-btn"><img src="/assets/images/jingjiadt/pingmian/banner.jpg" style="width: 100%;margin-top:2.24rem;;"></a> </div>
+  
+
+  
+  <!--前景-->
+	<div class="pingmianbox;" style="background: #f5f5f5; padding-bottom: 10%;">
+  <section >
+    <h1 class="pingmianbt">您的顾虑，我们都会尽力解决</h1>
+    <a class="doyoo-btn"><img src="/assets/images/jingjiadt/pingmian/renquan1.png" style="width: 96%; margin: 0 2% 3% 2%;"></a> <a class="doyoo-btn"><img src="/assets/images/jingjiadt/pingmian/renquan2.png" style="width: 96%; margin: 0 2% 3% 2%;"></a> <a class="doyoo-btn"><img src="/assets/images/jingjiadt/pingmian/renquan3.png" style="width: 96%; margin: 0 2% 3% 2%;"></a> 
+	<a class="doyoo-btn"><img src="/assets/images/jingjiadt/pingmian/renquan4.png" style="width: 96%; margin: 0 2% 3% 2%;"></a>
+	<a class="doyoo-btn"><img src="/assets/images/jingjiadt/pingmian/renquan5.png" style="width: 96%; margin: 0 2% 6% 2%;"></a>  
+	<a class="doyoo-btn"><div class="anniu" style=" width: 60%; ">我还有其他顾虑</div></a>
+	</section>
+		</div>
+
+
+
+
+
+<!--薪资-->
+  <section class="pingmianbox; ">
+    <h1 class="pingmianbt" >互联网+时代<br/>学平面设计，掌握高薪未来</h1>
+    <img src="/assets/images/jingjiadt/pingmian/xingzi.png" style="width: 90%; margin: 0 5% 10% 5%;"> 
+	<img src="/assets/images/jingjiadt/pingmian/shuju.png" style="width: 90%; margin: 0 5% 10% 5%;">
+	  <a class="doyoo-btn"><img src="/assets/images/jingjiadt/pingmian/zhiye.png" style="width: 90%; margin: 0 5% 10% 5%;"></a> 
+	</section>
+	
+
+
+<style>
+/*表单按钮*/	
+.btn{background: #fcc800;color: #333;font-size: 4.5vw;font-weight: bold;}	
+</style>
+<div class="part-box part-form" style="background: url(/assets/images/jingjiadt/pingmian/bj1.jpg) center no-repeat;background-size: 100%;">
+  <div class="titlebox">
+    <h1 style="font-weight: bold;">0门槛也可速成，免费试学无顾虑</h1>
+	  <p style="color:#a0a5a6;">只要想学都能学，0元试学无负担，7天实操看效果</p>
+  </div>
+  <form id="form">
+                
+	<div class="form-group">
+		<input type='text' name='name2' id="name2" placeholder="姓名：请填写姓名" class="infor" />
+	</div>
+	<div class="form-group">
+		<input type="text" name='tel2' id="tel2" class="infor" placeholder="联系方式：请填写手机号码" />
+	</div>
+	<input type="text" name='time' id='time' style="display: none;" />
+
+	<div class="form-submit" style="text-align: center;">
+		<button class="btn" type="button" onclick="add_ajaxmessage2()"> 确认提交</button>
+	</div>
+</form>
+</div>
+<script>
+	$('#subInfoForm1').submit(function(){
+		$(this).ajaxSubmit(function(){
+			alert('提交成功')
+		});
+		return false;
+	});
+</script>
+
+
+<!--教学保障-->
+	<style>
+.part-jxbz .titlebox h1{
+	line-height: 0.3rem;
+}
+.jxbz-item{
+	float:left;
+	text-align: center;
+	width: 33.33%;
+}
+.jxbz-item img{
+	width:52%;
+	margin: 0 auto;
+	display: block;
+}
+.jxbz-threeitem{
+	float:right;
+}
+
+
+</style>
+	
+<!--软件-->
+<div class="part-box part-jxbz" style="background: #f5f5f5;">
+	<h1 class="pingmianbt" style="padding-top: 0;">掌握一线设计软件<br/>触碰名企高薪offer</h1>
+	<div class="titlebox">
+		
+		<p>匹配平面设计全类型招聘要求</p>
+	</div>
+	<div class="part-content">
+		<a class="doyoo-btn"><div class="jxbz-item">
+			<img src="/assets/images/jingjiadt/pingmian/ruanjian1.png">
+			<h2>Photoshop</h2>
+		</div></a>
+		<a class="doyoo-btn"><div class="jxbz-item">
+			<img src="/assets/images/jingjiadt/pingmian/ruanjian2.png">
+			<h2>Ilustrator</h2>
+		</div></a>
+		<a class="doyoo-btn"><div class="jxbz-item  jxbz-threeitem">
+			<img src="/assets/images/jingjiadt/pingmian/ruanjian3.png">
+			<h2>Indesign</h2>
+		</div></a>
+		<div class="cle"></div>
+	</div>
+	<div class="part-content jxbz-ctn">
+		<a class="doyoo-btn"><div class="jxbz-item">
+			<img src="/assets/images/jingjiadt/pingmian/ruanjian4.png">
+			<h2>CorelDRAW</h2>
+		</div></a>
+		<a class="doyoo-btn"><div class="jxbz-item">
+			<img src="/assets/images/jingjiadt/pingmian/ruanjian5.png">
+			<h2>C4D</h2>
+		</div></a>
+		<a class="doyoo-btn"><div class="jxbz-item  jxbz-threeitem">
+			<img src="/assets/images/jingjiadt/pingmian/ruanjian6.png">
+			<h2>Adobe XD</h2>
+		</div></a>
+		<div class="cle"></div>
+	</div>
+		<div class="part-content jxbz-ctn">
+		<a class="doyoo-btn"><div class="jxbz-item">
+			<img src="/assets/images/jingjiadt/pingmian/ruanjian7.png">
+			<h2>Dreamweaver</h2>
+		</div></a>
+		<a class="doyoo-btn"><div class="jxbz-item">
+			<img src="/assets/images/jingjiadt/pingmian/ruanjian8.png">
+			<h2>Axure RP</h2>
+		</div></a>
+		<a class="doyoo-btn"><div class="jxbz-item  jxbz-threeitem">
+			<img src="/assets/images/jingjiadt/pingmian/ruanjian9.png">
+			<h2>Sktech</h2>
+		</div></a>
+		<div class="cle"></div>
+	</div>
+	<a class="doyoo-btn"><div class="anniu" style=" width: 50%; margin-top: 8%;">免费领取学习资料</div></a>
+</div>
+	
+	
+	
+	
+	<!--丝路教育-->
+	<div class="yxmsbox;" style=" padding-bottom: 10%;">
+  <section >
+    <h1 class="pingmianbt">丝路教育  12年匠心打磨教学高品质</h1>
+    <img src="/assets/images/jingjiadt/wangye/wenhua.png" style="width: 92%; margin: 0 4% 3% 4%;">
+	<a class="doyoo-btn"><div class="anniu" style=" width: 50%; margin-top: 20px; ">进一步了解丝路</div></a>
+	</section>
+		</div> 
+	
+	
+
+	
+	
+	
+
+<!--课程-->
+  <section class="pingmianbox;" style=" padding-bottom: 10%; background: #f5f5f5;" >
+    <h1 class="pingmianbt" >阶段性精编内容<br/>解锁平面设计核心技能</h1>
+    <img src="/assets/images/jingjiadt/pingmian/kecheng1.png" style="width: 96%; margin: 0 2% 3% 2%;"> 
+	<img src="/assets/images/jingjiadt/pingmian/kecheng2.png" style="width: 96%; margin: 0 2% 3% 2%;"> 
+	<img src="/assets/images/jingjiadt/pingmian/kecheng3.png" style="width: 96%; margin: 0 2% 3% 2%;">
+	<a class="doyoo-btn"><div class="anniu" style=" width: 50%; margin-top: 8%;">查看详细课程大纲</div></a></section>
+	
+	<!--学员-->
+  <section class="pingmianbox;" style=" padding-bottom: 10%;" >
+    <h1 class="pingmianbt" >丝路学员毕业月薪9000+<br/>别羡慕你也可以</h1>
+    <img src="/assets/images/jingjiadt/pingmian/xueyuan.png" style="width: 90%; margin: 0 5% 3% 5%;">
+	 </section>
+	
+	<!--作品-->
+  <section class="pingmianbox;" style=" padding-bottom: 10%; background: #f5f5f5;" >
+    <h1 class="pingmianbt" >这样的作品，学完即可拥有</h1>
+    <img src="/assets/images/jingjiadt/pingmian/zuoping.png" style="width: 90%; margin: 0 5% 3% 5%;">
+	 </section>
+	
+	
+	<!--教师-->
+  <section class="pingmianbox;" style=" padding-bottom: 10%; " >
+    <h1 class="pingmianbt" >一线平面设计大咖亲临授课<br/>带你攻克设计壁垒</h1>
+    <img src="/assets/images/jingjiadt/pingmian/laoshi1.png" style="width: 90%; margin: 0 5% 3% 5%;">
+	<img src="/assets/images/jingjiadt/pingmian/laoshi2.png" style="width: 90%; margin: 0 5% 3% 5%;">
+	<a class="doyoo-btn"><div class="anniu" style=" width: 50%; margin-top: 8%;">预约讲师1对1咨询</div></a></section>
+
+
+	<!--教学保障-->
+<div class="part-box part-jxbz" style="background: #f5f5f5;">
+	
+		<h1 class="pingmianbt" style="padding-top: 0;">6大教学保障<br/>保证每位学员都能学有所成</h1>
+	
+	<div class="part-content">
+		<a class="doyoo-btn"><div class="jxbz-item">
+			<img src="/assets/images/jingjiadt/pingmian/jxbz1.png">
+			<h2>免费试听体验</h2>
+		</div></a>
+		<a class="doyoo-btn"><div class="jxbz-item">
+			<img src="/assets/images/jingjiadt/pingmian/jxbz2.png">
+			<h2>名企定向就业</h2>
+		</div></a>
+		<a class="doyoo-btn"><div class="jxbz-item  jxbz-threeitem">
+			<img src="/assets/images/jingjiadt/pingmian/jxbz3.png">
+			<h2>全程名师面授</h2>
+		</div></a>
+		<div class="cle"></div>
+	</div>
+	<div class="part-content jxbz-ctn">
+		<a class="doyoo-btn"><div class="jxbz-item">
+			<img src="/assets/images/jingjiadt/pingmian/jxbz4.png">
+			<h2>先学习后付款</h2>
+		</div></a>
+		<a class="doyoo-btn"><div class="jxbz-item">
+			<img src="/assets/images/jingjiadt/pingmian/jxbz5.png">
+			<h2>免费重修课程</h2>
+		</div></a>
+		<a class="doyoo-btn"><div class="jxbz-item  jxbz-threeitem">
+			<img src="/assets/images/jingjiadt/pingmian/jxbz6.png">
+			<h2>真实项目实训</h2>
+		</div></a>
+		<div class="cle"></div>
+	</div>
+</div>	
+	
+	
+<!--合作-->
+	<div class="yxmsbox;" style="padding-bottom: 10%;">
+  <section >
+    <div class="titlebox">
+    <h1 class="ysjjbt"  style="padding-top: 40px;">名企定向就业 毕业工作不愁</h1>
+	<p style="padding-bottom: 20px;">来丝路学平面设计，毕业即就业</p> 
+    </div> 
+    <img src="/assets/images/jingjiadt/wangye/logo.jpg" style="width: 92%; margin: 0 4% 3% 4%;">
+	<p style=" font-size: 0.14rem; margin: 6% 20% 2% 20%">(*丝路学员入职企业环境部分展示)</p>
+	<img src="/assets/images/jingjiadt/pingmian/huanjing.png" style="width: 90%; margin: 0 5% 3% 5%;">  
+	</section>
+		</div> 			
+
+	
+	
+	<style>
+/*表单按钮*/	
+.btn{background: #fcc800;color: #333;font-size: 4.5vw;font-weight: bold;}	
+</style>
+<div class="part-box part-form" style="background: url(/assets/images/jingjiadt/pingmian/bj2.jpg) center no-repeat;background-size: 100%; margin-bottom:7vw;    background-size: cover; ">
+  <div class="titlebox">
+    <h1 style="font-weight: bold;">你的数月努力<br/>将让别人的望尘莫及！</h1>
+  </div>
+  <form id="form">
+                
+	<div class="form-group">
+		<input type='text' name='name' id="name" placeholder="姓名：请填写姓名" class="infor" />
+	</div>
+	<div class="form-group">
+		<input type="text" name='tel' id="tel" class="infor" placeholder="联系方式：请填写手机号码" />
+	</div>
+	<input type="text" name='time' id='time' style="display: none;" />
+
+	<div class="form-submit" style="text-align: center;">
+		<button class="btn" type="button" onclick="add_ajaxmessage()"> 确认提交</button>
+	</div>
+</form>
+</div>
+<script>
+	$('#subInfoForm1').submit(function(){
+		$(this).ajaxSubmit(function(){
+			alert('提交成功')
+		});
+		return false;
+	});
+</script>
+
+
+
+
+<!-- end footer -->    
+@@include('../layout/_script.html')
+
+
+
+
+
+<!--乐语系统--> 
+<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20002985/10086210.js"></script> 
+
+<!--统计工具：CNZZ-->
+<div style="font-size: 0.1rem;"> 
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276821672'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1276821672%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+  </div>
+
+<!--百度呼--> 
+<script>
+var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?57448cbcd9efb5a61b8ba648ba49f3e2"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); 
+</script> 
+<script type="text/javascript" charset="utf-8" async src="http://lxbjs.baidu.com/lxb.js?sid=8881824"></script>
+</body>
+<script>
+	function add_ajaxmessage() {
+
+var name = document.getElementById("name");
+var tel = document.getElementById("tel");
+var time = document.getElementById("time");
+var url = window.location.href;
+var mobile = "!/^1\d{10}$/";
+
+if ($("#name").val() == "") {
+
+	layer.msg("姓名不能为空，请输入姓名!");
+
+	return;
+
+}
+if ($("#tel").val() == "" || !/^1\d{10}$/.test($("#tel").val())) {
+
+	layer.msg("请输入正确的手机号码!");
+
+	return;
+
+}
+
+var dataString =
+	'name=' + name.value +
+	'&tel=' + tel.value +
+	'&time=' + time.value +
+	'&url=' + url +
+	'&action=post' +
+	'&diyid=1&do=2&dede_fields=name,text;tel,text;time,text;url,text&dede_fieldshash=3d48ac0a96fa6a607608161ca1e226e9';
+
+
+$.ajax({
+	type: "POST",
+	url: "/plus/diy.php", //提交到后台文件
+	data: dataString, //传值
+	success: function(data) {
+		//$("#666").html(data);//以html的形式显示在指定id的元素里，看下面注释01
+		layer.msg("提交成功"); //显示PHP返回的值，如不需要显示，注释掉这行即可
+		$('#form')[0].reset(); //提交后清除id="form"的值
+	}
+});
+return false;
+}
+function add_ajaxmessage2() {
+
+var name = document.getElementById("name2");
+var tel = document.getElementById("tel2");
+var time = document.getElementById("time");
+var url = window.location.href;
+var mobile = "!/^1\d{10}$/";
+
+if ($("#name2").val() == "") {
+
+	layer.msg("姓名不能为空，请输入姓名!");
+
+	return;
+
+}
+if ($("#tel2").val() == "" || !/^1\d{10}$/.test($("#tel2").val())) {
+
+	layer.msg("请输入正确的手机号码!");
+
+	return;
+
+}
+
+var dataString =
+	'name=' + name.value +
+	'&tel=' + tel.value +
+	'&time=' + time.value +
+	'&url=' + url +
+	'&action=post' +
+	'&diyid=1&do=2&dede_fields=name,text;tel,text;time,text;url,text&dede_fieldshash=3d48ac0a96fa6a607608161ca1e226e9';
+
+
+$.ajax({
+	type: "POST",
+	url: "/plus/diy.php", //提交到后台文件
+	data: dataString, //传值
+	success: function(data) {
+		//$("#666").html(data);//以html的形式显示在指定id的元素里，看下面注释01
+		layer.msg("提交成功"); //显示PHP返回的值，如不需要显示，注释掉这行即可
+		$('#form')[0].reset(); //提交后清除id="form"的值
+	}
+});
+return false;
+}
+</script>
+</html>
