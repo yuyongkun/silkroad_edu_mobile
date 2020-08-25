@@ -1,0 +1,331 @@
+                * {
+                    font-family: "微软雅黑";
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                h1 {
+                    font-size: 0.6667rem;
+                    font-weight: normal;
+                    text-align: center;
+                    color: #333;
+                    margin: auto;
+                    line-height: 1.5;
+                }
+                
+                h1>span {
+                    color: #f64f23;
+                }
+                /*丝路独有六大学员保障*/
+                
+                .bzhang {
+                    /*width: 750px;*/
+                    padding: 1.3333rem 0;
+                    overflow: hidden;
+                }
+                
+                .bz_content {
+                    /*width: 690px;*/
+                    margin: auto;
+                    padding-top: 0.4rem;
+                    overflow: hidden;
+                }
+                
+                .bz_01 {
+                    width: 33%;
+                    float: left;
+                }
+                
+                .bz_01 img {
+                    display: block;
+                    margin: auto;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+                
+                .bz_01 p {
+                    font-size: 0.2933rem;
+                    color: #333;
+                    text-align: center;
+                    padding-top: 0.1867rem;
+                    padding-bottom: 0.2667rem;
+                }
+                
+                .button {
+                    width: 100%;
+                    margin: auto;
+                    margin-top: 0.6667rem;
+                }
+                
+                .button a {
+                    display: block;
+                    font-size: 0.45rem;
+                    width: 60%;
+                    line-height: 1rem;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                    background: #f64f23;
+                    border-radius: 4px;
+                    margin: 0 auto;
+                    height: 1rem;
+                }
+                /*“贵圈”人才缺口 数十万，抓住机遇月薪 过万so easy！*/
+                
+                .chance {
+                    /*width: 750px;*/
+                    /*height: 1830px;*/
+                    background: url(/assets/images/jingjiadt/ysjjmb/chance_bg.png)no-repeat center;
+                    background-size: cover;
+                    margin: auto;
+                    padding: 1.3333rem 0;
+                }
+                
+                .chance p {
+                    font-size: 0.4rem;
+                    color: rgba(255, 255, 255, 0.5);
+                    text-align: center;
+                    line-height: 1.5;
+                    margin-bottom: 0.4rem;
+                    padding: 0.6667rem 0.4rem;
+                }
+                
+                .chance img {
+                    display: block;
+                    margin: auto;
+                }
+                /*学会影视剪辑包装，你 能够做什么？*/
+                
+                .work {
+                    /*width: 750px;*/
+                    background: #ffffff;
+                    background-size: cover;
+                    margin: auto;
+                    padding: 1.3333rem 0;
+                }
+                
+                .work p {
+                    font-size: 0.4533rem;
+                    text-align: center;
+                    padding: 1.2rem 0.4rem;
+                    color: #999;
+                }
+                
+                .work_img {
+                    /*padding: 0 30px;*/
+                    overflow: hidden;
+                }
+                
+                .work_img img {
+                    width: 48%;
+                    height: 32%;
+                    display: block;
+                    float: left;
+                    margin-right: 0.2667rem;
+                    margin-bottom: 0.2667rem;
+                }
+                
+                .work>img {
+                    display: block;
+                    width: 95%;
+                    height: 95%;
+                    margin: auto;
+                }
+                /*丝路课程全面升级 堪比科班出身能力*/
+                
+                .soft {
+                    /*width: 750px;*/
+                    background: #f9fafc;
+                    background-size: cover;
+                    margin: auto;
+                    padding: 0.6667rem 0.4rem;
+                    overflow: hidden;
+                }
+                
+                .soft p {
+                    font-size: 0.4rem;
+                    text-align: center;
+                    padding: 30px;
+                    color: #999;
+                }
+                
+                .soft>img {
+                    width: 100%;
+                    /*background: url(img/soft_img.png)no-repeat center;*/
+                }
+                
+                .soft_class {
+                    width: 92%;
+                    height: 62%;
+                    background: white;
+                    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+                    margin: auto;
+                }
+                
+                .soft_class img {
+                    display: block;
+                    width: 100%;
+                }
+                
+                .soft_class span {
+                    margin-top: 0.2667rem;
+                    margin-bottom: 0.2667rem;
+                    display: block;
+                    width: 30%;
+                    line-height: 1.5;
+                    background: #f64f23;
+                    color: white;
+                    border-radius: 6rem;
+                    font-size: 0.4rem;
+                    text-align: center;
+                }
+                
+                .soft_class p {
+                    font-size: 0.34rem;
+                    text-align: left;
+                    padding: 0;
+                }
+                /*前学院，后企业 大项目，好课程！*/
+                
+                .project {
+                    width: 100%;
+                    background: url(/assets/images/jingjiadt/ysjjmb/pro_bg.png)no-repeat center;
+                    background-size: cover;
+                    padding-bottom: 0.6667rem;
+                }
+                /*padding: 0 30px;*/
+                
+                .project h1 {
+                    padding-top: 1.3333rem;
+                }
+                
+                .project p {
+                    font-size: 0.32rem;
+                    line-height: 1.5;
+                    text-align: center;
+                    padding: 30px;
+                    color: rgba(255, 255, 255, 0.8);
+                }
+                
+                .project img {
+                    display: block;
+                    width: 92%;
+                    margin: auto;
+                }
+                
+                .project>p>span {
+                    color: #f6d623;
+                }
+                /*一线影视制作大咖 全程陪同面授教学*/
+                
+                .teacher {
+                    padding: 1.3333rem 0;
+                    background: #f9fafc;
+                }
+                
+                .teacher h1 {
+                    margin-bottom: 0.6667rem;
+                }
+                
+                .teacher img {
+                    display: block;
+                    width: 92%;
+                    margin: auto;
+                }
+                /*学员阶段作品 点滴记录进步*/
+                
+                .stu_works {
+                    padding: 1.3333rem 0;
+                    background: #000;
+                }
+                
+                .stu_works h1 {
+                    margin-bottom: 0.6667rem;
+                }
+                
+                .stu_works img {
+                    width: 100%;
+                }
+                /*内部项目特供实训阶段 学员涨经验、赚学费*/
+                
+                .life {
+                    padding: 1.3333rem 0;
+                }
+                
+                .life p {
+                    padding: 0.5333rem 0.4rem;
+                    text-align: center;
+                    color: #999;
+                    font-size: 0.32rem;
+                    line-height: 1.5;
+                }
+                
+                .life img {
+                    display: block;
+                    width: 92%;
+                    margin: auto;
+                }
+                /*丝路学员毕业 有实力轻松入名企*/
+                
+                .student {
+                    background: #f9fafc;
+                    padding: 1.3333rem 0;
+                }
+                
+                .student img {
+                    display: block;
+                    width: 92%;
+                    margin: auto;
+                }
+                
+                .student h1 {
+                    margin-bottom: 0.5333rem;
+                }
+                /*6大就业保障 让你掌握求职主动权*/
+                
+                .jiuye {
+                    padding: 1.3333rem 0;
+                }
+                
+                .jiuye img {
+                    display: block;
+                    margin: auto;
+                    width: 92%;
+                }
+                
+                .jiuye h1 {
+                    padding-bottom: 0.5333rem;
+                }
+                /*与3000+名企 达成人才合作 只缺你的一份简历*/
+                
+                .partner {
+                    padding: 1.3333rem 0;
+                    background: #f9fafc;
+                }
+                
+                .partner img {
+                    display: block;
+                    margin: auto;
+                    width: 92%;
+                }
+                
+                .partner h1 {
+                    padding-bottom: 0.5333rem;
+                }
+                /*你是否还有以下 疑问咨询？*/
+                
+                .question {
+                    padding: 1.3333rem 0;
+                    background: url(/assets/images/jingjiadt/ysjjmb/question_bg.png)no-repeat center;
+                    background-size: cover;
+                }
+                
+                .question img {
+                    display: block;
+                    width: 92%;
+                    margin: auto;
+                }
+                
+                .question h1 {
+                    margin-bottom: 0.5333rem;
+                }
