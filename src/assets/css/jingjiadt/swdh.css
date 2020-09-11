@@ -1,0 +1,310 @@
+	html,
+	body,
+	div,
+	span,
+	applet,
+	object,
+	iframe,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	font,
+	img,
+	ins,
+	kbd,
+	q,
+	s,
+	samp,
+	small,
+	strike,
+	strong,
+	sub,
+	sup,
+	tt,
+	var,
+	dl,
+	dt,
+	dd,
+	ol,
+	ul,
+	li,
+	fieldset,
+	form,
+	label,
+	legend,
+	table,
+	caption,
+	tbody,
+	tfoot,
+	thead,
+	tr,
+	th,
+	td {
+	    border: 0 none;
+	    font-family: inherit;
+	    font-size: 100%;
+	    font-style: inherit;
+	    font-weight: inherit;
+	    margin: 0;
+	    outline: 0 none;
+	    padding: 0;
+	    font-family: "微软雅黑";
+	}
+	
+	.box_title {
+	    color: #333;
+	    text-align: center;
+	    font-size: 0.8rem;
+	    padding-bottom: 0.8533rem;
+	    padding-top: 1.3333rem;
+	    line-height: 1.5;
+	}
+	
+	.box_title>span {
+	    color: #f64f23;
+	}
+	
+	.box_title_02 {
+	    color: #fff;
+	    text-align: center;
+	    font-size: 0.8rem;
+	    margin-bottom: 0.8533rem;
+	    margin-top: 1.3333rem;
+	    line-height: 1.0667rem;
+	}
+	
+	.box_title_02>span {
+	    color: #f64f23;
+	}
+	
+	.a_button {
+	    width: 50%;
+	    font-size: 0.3733rem;
+	    line-height: 0.8533rem;
+	    color: #fff;
+	    background-color: #f64f23;
+	    text-align: center;
+	    margin: auto;
+	    margin-top: 0.7467rem;
+	    margin-bottom: 1.3333rem;
+	    border-radius: 0.0533rem;
+	}
+	
+	p {
+	    color: #999;
+	    text-align: center;
+	    font-size: 27.9975px;
+	    width: 92%;
+	    margin: auto;
+	    margin-bottom: 48px;
+	}
+	/*30万+人才缺口*/
+	
+	.ruhang {
+	    background: url(/assets/images/jingjiadt/swdh/ruhang_bg.png)no-repeat center;
+	    background-size: cover;
+	    overflow: hidden;
+	}
+	
+	.rencai_img {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.rencai_img img {
+	    width: 100%;
+	    margin-bottom: 80.0025px;
+	}
+	/*入行正当时*/
+	
+	.ruhang_img {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.ruhang_img img {
+	    width: 100%;
+	    margin-bottom: 30px;
+	}
+	/*先进课程体系*/
+	
+	.course {
+	    background: url(/assets/images/jingjiadt/swdh/course_top_bg.png)no-repeat center;
+	    background-size: cover;
+	    overflow: hidden;
+	}
+	
+	.course_top {
+	    width: 92%;
+	    margin: auto;
+	    /*box-shadow: 0 0.4667rem 0.6667rem rgba(0,0,0,0.1);*/
+	    /*position: relative;*/
+	}
+	
+	.course_top img {
+	    /*display: block;*/
+	    width: 100%;
+	    margin-bottom: 0.4rem;
+	}
+	
+	.course>img {
+	    display: block;
+	    width: 100%;
+	}
+	/*讲师阵容*/
+	
+	.teacher {
+	    background: url(/assets/images/jingjiadt/swdh/teacher_bg.png)no-repeat center;
+	    background-size: cover;
+	    overflow: hidden;
+	}
+	
+	.teacher_img {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.teacher img {
+	    width: 100%;
+	    margin-bottom: 0.4rem;
+	}
+	/*项目奖项*/
+	
+	.jxiang {
+	    background: #f9fafc;
+	    overflow: hidden;
+	}
+	
+	.jxiang_img {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.jxiang img {
+	    width: 100%;
+	    margin-bottom: 0.5333rem;
+	}
+	/*项目案例*/
+	
+	.works {
+	    background: #fff;
+	    overflow: hidden;
+	}
+	
+	.works_img {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.works img {
+	    width: 100%;
+	    margin-bottom: 0.5333rem;
+	}
+	/*六大保障*/
+	
+	.bzhang {
+	    background: #111723;
+	    overflow: hidden;
+	}
+	
+	.bzhang_img {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.bzhang img {
+	    width: 100%;
+	    margin-bottom: 0.5333rem;
+	}
+	/*明星学员*/
+	
+	.student {
+	    background: #f9fafc;
+	    overflow: hidden;
+	}
+	
+	.stu_img {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.student img {
+	    width: 100%;
+	    margin-bottom: 0.5333rem;
+	}
+	/*合作企业*/
+	
+	.company {
+	    background: #fff;
+	    overflow: hidden;
+	}
+	
+	.company_img {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.company img {
+	    width: 100%;
+	    margin-bottom: 1.3333rem;
+	}
+	/*以下疑问*/
+	
+	.question {
+	    background: #f9fafc;
+	    overflow: hidden;
+	}
+	
+	.question_img {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.question img {
+	    width: 100%;
+	    margin-bottom: 0.5333rem;
+	}
+	
+	.section-form {
+	    background: url(/assets/images/jingjiadt/swdh/form_bg.png)no-repeat center;
+	    background-size: cover;
+	    overflow: hidden;
+	}
+	
+	.form-group {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.form-group>input {
+	    width: 100%;
+	    margin: auto;
+	    line-height: 1.0667rem;
+	    font-size: 0.3733rem;
+	    text-indent: 0.5333rem;
+	    margin-bottom: 0.4267rem;
+	    padding: 0;
+	    border: none;
+	}
+	
+	.form-submit {
+	    width: 92%;
+	    margin: auto;
+	}
+	
+	.form-submit>button {
+	    width: 100%;
+	    margin: auto;
+	    line-height: 1.0667rem;
+	    font-size: 0.3733rem;
+	    text-align: center;
+	    margin-bottom: 1.3333rem;
+	    color: #fff;
+	    background: #f64f23;
+	    border: none;
+	    border-radius: 0.0533rem;
+	}
